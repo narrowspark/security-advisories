@@ -1,0 +1,19 @@
+includes:
+#    - vendor/pepakriz/phpstan-exception-rules/extension.neon
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+    - vendor/phpstan/phpstan-mockery/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+#    - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
+
+parameters:
+    autoload_directories:
+        - %currentWorkingDirectory%/src
+
+    excludes_analyse:
+        - %currentWorkingDirectory%/src/Automatic/Prefetcher/CurlDownloader.php
+        - %currentWorkingDirectory%/src/Automatic/Prefetcher/ComposerRepository.php
+        - %currentWorkingDirectory%/src/Automatic/Prefetcher/ParallelDownloader.php
+        - %currentWorkingDirectory%/src/Automatic/Prefetcher/Prefetcher.php
+        - %currentWorkingDirectory%/src/Automatic/Prefetcher/TruncatedComposerRepository.php
