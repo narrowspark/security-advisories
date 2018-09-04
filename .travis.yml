@@ -29,9 +29,6 @@ before_script:
   - wget https://cdn.rawgit.com/prisis/43a2a7b137998ac92e24ee4daaa8e296/raw/681b89b8e156750de46558ead661509c468fb9a2/try_catch.sh -P ./build/travis
   - wget https://cdn.rawgit.com/prisis/e050c4da44c6ee7fa1519912eac19563/raw/7a72a7df7718af30e703c1ef0379cdf7ff24ce10/tfold.sh -P ./build/travis
 
-script:
-  - ./build/travis/script.sh
-
 jobs:
   fast_finish: true
   allow_failures:
@@ -40,6 +37,8 @@ jobs:
     - stage: Test
       php: 7.2
       env: PHPUNIT=true REMOVE_XDEBUG=true
+      script:
+        - ./build/travis/script.sh
 
     - stage: Coding standard
       php: 7.2
@@ -53,13 +52,12 @@ jobs:
       script:
         - ./vendor/bin/phpstan analyse -c phpstan.neon -l 7 src
 
-    - stage: Coverage
+    - stage: Build
       php: 7.2
-      env: REMOVE_XDEBUG=false
+      env: REMOVE_XDEBUG=true
       script:
-        - bash -xc "$TEST -c ./phpunit.xml.dist --coverage-clover=coverage.xml"
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
+        - php cerebro build
+        - php cerebro commit
 
 notifications:
   email:

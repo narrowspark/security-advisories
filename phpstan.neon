@@ -17,3 +17,5 @@ parameters:
         - %currentWorkingDirectory%/src/Automatic/Prefetcher/ParallelDownloader.php
         - %currentWorkingDirectory%/src/Automatic/Prefetcher/Prefetcher.php
         - %currentWorkingDirectory%/src/Automatic/Prefetcher/TruncatedComposerRepository.php
+
+    ignoreErrors:

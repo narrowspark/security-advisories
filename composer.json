@@ -1,8 +1,8 @@
 {
-    "name": "narrowspark/security-advisories-builder",
+    "name": "narrowspark/security-advisories",
     "type": "library",
-    "description": "Travis cron to build security.sensiolabs.org database as a json file",
-    "homepage": "http://github.com/narrowspark/security-advisories-builder",
+    "description": "The security.sensiolabs.org database as json file.",
+    "homepage": "http://github.com/narrowspark/security-advisories",
     "license": "MIT",
     "authors": [
         {
@@ -12,22 +12,21 @@
             "role": "Developer"
         }
     ],
-    "require": {
+    "require-dev": {
         "php": "^7.2",
         "ext-mbstring": "*",
         "sensiolabs/security-advisories": "dev-master",
         "viserio/console": "^1.0@dev",
         "viserio/parser": "^1.0@dev",
-        "symfony/yaml": "^4.1"
-    },
-    "require-dev": {
+        "symfony/process": "^4.1",
+        "symfony/yaml": "^4.1",
         "narrowspark/coding-standard": "^1.2.0",
-        "phpunit/phpunit": "^7.2.0"
+        "phpunit/phpunit": "^7.2.0",
+        "symfony/filesystem": "^4.1"
     },
-
     "autoload": {
         "psr-4": {
-            "Narrowspark\\SecurityAdvisoriesBuilder\\": "src/"
+            "Narrowspark\\SecurityAdvisories\\": "src/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -47,7 +46,7 @@
         "test": "phpunit"
     },
     "support": {
-        "issues": "https://github.com/narrowspark/security-advisories-builder/issues",
-        "source": "https://github.com/narrowspark/security-advisories-builder"
+        "issues": "https://github.com/narrowspark/security-advisories/issues",
+        "source": "https://github.com/narrowspark/security-advisories"
     }
 }
