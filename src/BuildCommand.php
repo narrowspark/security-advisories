@@ -81,21 +81,19 @@ class BuildCommand extends AbstractCommand
             return 1;
         }
 
-        $gitSha1Process = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
-        $gitSha1Process->run();
+        $gitShaProcess = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
+        $gitShaProcess->run();
 
-        if (! $gitSha1Process->isSuccessful()) {
-            $commitSha1 = null;
-            $this->error((new ProcessFailedException($gitSha1Process))->getMessage());
+        if (! $gitShaProcess->isSuccessful()) {
+            $this->error((new ProcessFailedException($gitShaProcess))->getMessage());
 
             return 1;
         }
 
-        $commitSha1 = $gitSha1Process->getOutput();
+        $commitSha1 = $gitShaProcess->getOutput();
+        $update     = true;
 
-        $update = true;
-
-        if ($commitSha1 !== null && \file_exists($securityAdvisoriesSha)) {
+        if (\file_exists($securityAdvisoriesSha)) {
             $update = $commitSha1 !== \file_get_contents($securityAdvisoriesSha);
         }
 

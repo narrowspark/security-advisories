@@ -4,10 +4,13 @@ namespace Narrowspark\SecurityAdvisories\Test;
 
 use PHPUnit\Framework\TestCase;
 
-class JsonTest extends TestCase
+/**
+ * @internal
+ */
+final class JsonTest extends TestCase
 {
     public function testJson(): void
     {
-        static::assertJson(\file_get_contents(\dirname(__DIR__) . DIRECTORY_SEPARATOR . 'security-advisories.json'));
+        static::assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
     }
 }

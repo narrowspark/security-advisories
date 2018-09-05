@@ -39,7 +39,7 @@ class CommitCommand extends AbstractCommand
 
         $this->info('Making a commit to narrowspark/security-advisories.');
 
-        $gitCommitProcess = new Process('git commit -a -m "Automatically updated on '.(new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231).'"');
+        $gitCommitProcess = new Process('git commit -a -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"');
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {
