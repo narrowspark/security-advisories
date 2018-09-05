@@ -6,7 +6,7 @@ source ./build/travis/tfold.sh
 if [[ "$PHPUNIT" = true ]]; then
     for f in ./src/*; do
         if [[ -d "$f" && ! -L "$f" ]]; then
-            TESTSUITE="Narrowspark Builder Test Suite";
+            TESTSUITE="Narrowspark Test Suite";
 
             try
                 tfold "$TESTSUITE" "$TEST -c ./phpunit.xml.dist";

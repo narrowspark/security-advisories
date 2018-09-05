@@ -32,6 +32,11 @@
             "/tests/"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Narrowspark\\SecurityAdvisories\\Test\\": "tests/"
+        }
+    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist"

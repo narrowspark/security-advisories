@@ -6,6 +6,7 @@ env:
   global:
     - TEST="./vendor/bin/phpunit --verbose"
     - COMPOSER_UP="composer update --no-interaction --prefer-dist --no-progress --profile --no-suggest"
+    - secure: "C/01TYJgWGEYO2SqhfuOvIDiAe2Qr28kFxUliFxCcsBjdZ/W7sMpIX36OblAyRXC7wfmutjGNkxufAXfnXUZxXGlwgObWOlp+St8wrPioHMImh/Po8mO//TLxSoGK894gNb4pq5EiY+fKhxMjcWqGqZ0rSb2sqYd5DbkV9U3TweKZnYiCCoaGUQJehIqfjIXjWW8WWQR8/ZebyDvvDEUo8WLC0GzUBthfubsuklWSMGCrNQEP8FL7d9eop/un1SFrIKWO1tKiP5TTfk7XhlB0ND3224VY0cpwqYT2y7iEeKbUYAwgZlaW4KuS4i6zxZdpqfYj7dvb5R8YuAfn07ZlGuTsjUkqZS25CWJIxU1ih3nu4O4wGEpqUTk6hHUNt1og7iYblo4maY4TrMJ9rt0URWUpS28nxAfLj/B6IEuj9ajTh8kOWBT6MjdUnrdjqZjsMbA6REqONcAG9ZFAN4qgDbudoYMPZNsqDd8D45VYtqE6pmj4vmG/OCmCZGwTuNZ1Pio2CEKZrQW0hB0TgtE5cqD50DEHVxTO0DAjekSQl33SYqF6X3Camsesr6fcZExMNrW9T52pZ9VTpstHvQco+rHm8QkLisJug5CqYnGLWN8Nzxn2IA1ClMoMAKJ+rhpM65j+A4XAr8lxnaGfptuuMdoR70rdetr8/5L5d3vSwQ="
 
 cache:
   directories:
@@ -15,9 +16,7 @@ cache:
 before_install:
   - stty cols 120
   - mkdir -p ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d
-  - |
-    chmod a+x ./build/travis/configure_php.sh
-    chmod a+x ./build/travis/script.sh
+  - chmod a+x ./build/travis/configure_php.sh
   - ./build/travis/configure_php.sh
   - composer validate
 
@@ -30,31 +29,36 @@ before_script:
   - wget https://cdn.rawgit.com/prisis/e050c4da44c6ee7fa1519912eac19563/raw/7a72a7df7718af30e703c1ef0379cdf7ff24ce10/tfold.sh -P ./build/travis
 
 jobs:
-  fast_finish: true
-  allow_failures:
-    - php: nightly
   include:
     - stage: Test
+      if: NOT type = cron
       php: 7.2
       env: PHPUNIT=true REMOVE_XDEBUG=true
       script:
+        - chmod a+x ./build/travis/script.sh
         - ./build/travis/script.sh
 
     - stage: Coding standard
+      if: NOT type = cron
       php: 7.2
       env: REMOVE_XDEBUG=true
       script:
         - ./vendor/bin/php-cs-fixer fix --verbose --diff --dry-run
 
     - stage: Static Analysis
+      if: NOT type = cron
       php: 7.2
       env: REMOVE_XDEBUG=false
       script:
         - ./vendor/bin/phpstan analyse -c phpstan.neon -l 7 src
 
     - stage: Build
+      if: type = cron
       php: 7.2
       env: REMOVE_XDEBUG=true
+      before_script:
+        - chmod a+x ./build/travis/set_up_ssh.sh
+        - ./build/travis/set_up_ssh.sh
       script:
         - php cerebro build
         - php cerebro commit
