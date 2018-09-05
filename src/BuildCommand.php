@@ -77,6 +77,8 @@ class BuildCommand extends AbstractCommand
 
         if (! $gitCloneProcess->isSuccessful()) {
             $this->error((new ProcessFailedException($gitCloneProcess))->getMessage());
+
+            return 1;
         }
 
         $gitSha1Process = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
@@ -85,9 +87,11 @@ class BuildCommand extends AbstractCommand
         if (! $gitSha1Process->isSuccessful()) {
             $commitSha1 = null;
             $this->error((new ProcessFailedException($gitSha1Process))->getMessage());
-        } else {
-            $commitSha1 = $gitSha1Process->getOutput();
+
+            return 1;
         }
+
+        $commitSha1 = $gitSha1Process->getOutput();
 
         $update = true;
 
