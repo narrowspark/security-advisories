@@ -3,16 +3,14 @@
 source ./build/travis/try_catch.sh
 source ./build/travis/tfold.sh
 
-if [[ "$PHPUNIT" = true ]]; then
-    for f in ./src/*; do
-        if [[ -d "$f" && ! -L "$f" ]]; then
-            TESTSUITE="Narrowspark Test Suite";
+for f in ./src/*; do
+    if [[ -d "$f" && ! -L "$f" ]]; then
+        TESTSUITE="Narrowspark Test Suite";
 
-            try
-                tfold "$TESTSUITE" "$TEST -c ./phpunit.xml.dist";
-            catch || {
-                exit 1
-            }
-        fi
-    done
-fi
+        try
+            tfold "$TESTSUITE" "$TEST -c ./phpunit.xml.dist";
+        catch || {
+            exit 1
+        }
+    fi
+done

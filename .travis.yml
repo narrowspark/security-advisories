@@ -33,7 +33,7 @@ jobs:
     - stage: Test
       if: NOT type = cron
       php: 7.2
-      env: PHPUNIT=true REMOVE_XDEBUG=true
+      env: REMOVE_XDEBUG=true
       script:
         - chmod a+x ./build/travis/script.sh
         - ./build/travis/script.sh
