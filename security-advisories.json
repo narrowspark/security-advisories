@@ -1,6 +1,6 @@
 {
     "laravel/socialite": {
-        "2015-08-03.": {
+        "2015-08-03": {
             "title": "State guessing vulnerability",
             "link": "https://github.com/laravel/socialite/pull/93",
             "cve": null,
@@ -22,7 +22,7 @@
             },
             "reference": "composer://laravel/socialite"
         },
-        "2015-07-23.": {
+        "2015-07-23": {
             "title": "Insecure state generation",
             "link": "https://github.com/laravel/socialite/pull/91",
             "cve": null,
@@ -46,7 +46,7 @@
         }
     },
     "laravel/framework": {
-        "2018-03-30-1.": {
+        "2018-03-30-1": {
             "title": "Exploit of encryption failure vulnerability",
             "link": "https://medium.com/@taylorotwell/laravel-security-release-5-6-15-and-5-5-40-56f1257933a0",
             "cve": null,
@@ -124,7 +124,7 @@
             },
             "reference": "composer://laravel/framework"
         },
-        "CVE-2017-9303.": {
+        "CVE-2017-9303": {
             "title": "Password reset phishing vulnerability",
             "link": "https://laravel.com/docs/5.4/releases#laravel-5.4.22",
             "cve": "CVE-2017-9303",
@@ -146,7 +146,7 @@
             },
             "reference": "composer://laravel/framework"
         },
-        "2018-08-08-1.": {
+        "2018-08-08-1": {
             "title": "Cookie serialization vulnerability",
             "link": "https://laravel.com/docs/5.6/upgrade#upgrade-5.6.30",
             "cve": null,
@@ -224,7 +224,7 @@
             },
             "reference": "composer://laravel/framework"
         },
-        "2014-05-20.": {
+        "2014-05-20": {
             "title": "Risk of mass-assignment vulnerabilities",
             "link": "https://laravel.com/docs/5.3/upgrade#upgrade-4.1.29",
             "cve": null,
@@ -246,7 +246,7 @@
             },
             "reference": "composer://laravel/framework"
         },
-        "CVE-2017-14775.": {
+        "CVE-2017-14775": {
             "title": "Timing attack vector for remember me token",
             "link": "https://github.com/laravel/framework/pull/21320",
             "cve": "CVE-2017-14775",
@@ -310,7 +310,7 @@
             },
             "reference": "composer://laravel/framework"
         },
-        "2014-04-15.": {
+        "2014-04-15": {
             "title": "Hijacked authentication cookies vulnerability",
             "link": "https://laravel.com/docs/5.3/upgrade#upgrade-4.1.26",
             "cve": null,
@@ -334,7 +334,7 @@
         }
     },
     "contao-components/mediaelement": {
-        "CVE-2016-4567.": {
+        "CVE-2016-4567": {
             "title": "Cross-site scripting (XSS) vulnerability in flashmediaelement.swf in MediaElement.js before 2.11.2 (see CVE-2013-1967)",
             "link": "https://contao.org/en/news/contao-3_5_15.html",
             "cve": "CVE-2016-4567",
@@ -351,7 +351,7 @@
         }
     },
     "silverstripe/userforms": {
-        "SS-2015-018-1.": {
+        "SS-2015-018-1": {
             "title": "SS-2015-018: File upload exposure on UserForms module",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-018/",
             "cve": null,
@@ -367,7 +367,7 @@
         }
     },
     "silverstripe/forum": {
-        "SS-2015-017-1.": {
+        "SS-2015-017-1": {
             "title": "SS-2015-017: Forum Module CSRF Vulnerability",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-017/",
             "cve": null,
@@ -390,7 +390,7 @@
         }
     },
     "silverstripe/framework": {
-        "SS-2015-026-1.": {
+        "SS-2015-026-1": {
             "title": "SS-2015-026: Form field validation message XSS vulnerability",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2015-026/",
             "cve": null,
@@ -419,7 +419,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-014-1.": {
+        "SS-2015-014-1": {
             "title": "SS-2015-014: Vulnerability on 'isDev', 'isTest' and 'flush' $_GET validation",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-014/",
             "cve": null,
@@ -441,7 +441,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-007-1.": {
+        "SS-2015-007-1": {
             "title": "SS-2015-007: XSS In FormAction",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-007/",
             "cve": null,
@@ -456,7 +456,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-028-1.": {
+        "SS-2015-028-1": {
             "title": "SS-2015-028: Missing security check on dev/build/defaults",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2015-028/",
             "cve": null,
@@ -485,7 +485,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-016-1.": {
+        "SS-2015-016-1": {
             "title": "SS-2015-016: XSS in install.php",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-016/",
             "cve": null,
@@ -500,7 +500,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-009-1.": {
+        "SS-2015-009-1": {
             "title": "SS-2015-009: XSS In rewritten hash links",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-009-xss-in-rewritten-hash-links/",
             "cve": null,
@@ -522,7 +522,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2014-015-1.": {
+        "SS-2014-015-1": {
             "title": "SS-2014-015: IE requests not properly behaving with rewritehashlinks",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2014-015-ie-requests-not-properly-behaving-with-rewritehashlinks/",
             "cve": null,
@@ -544,7 +544,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-010-1.": {
+        "SS-2015-010-1": {
             "title": "SS-2015-010: XSS in Director::force_redirect()",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-010-xss-in-directorforce-redirect/",
             "cve": null,
@@ -559,7 +559,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-015-1.": {
+        "SS-2015-015-1": {
             "title": "SS-2015-015: XSS in dev/build returnURL Parameter",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-015/",
             "cve": null,
@@ -574,7 +574,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-011-1.": {
+        "SS-2015-011-1": {
             "title": "SS-2015-011: Potential SQL Injection Vulnerability",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-011/",
             "cve": null,
@@ -596,7 +596,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2016-003-1.": {
+        "SS-2016-003-1": {
             "title": "SS-2016-003: Hostname, IP and Protocol Spoofing through HTTP Headers",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2016-003/",
             "cve": null,
@@ -625,7 +625,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-012-1.": {
+        "SS-2015-012-1": {
             "title": "SS-2015-012: External redirection risk in Security?ReturnURL",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-012/",
             "cve": null,
@@ -647,7 +647,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-004-1.": {
+        "SS-2015-004-1": {
             "title": "SS-2015-004: TreeDropdownField and TreeMultiSelectField XSS",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-004/",
             "cve": null,
@@ -662,7 +662,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-006-1.": {
+        "SS-2015-006-1": {
             "title": "SS-2015-006: XSS In GridField print",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-006/",
             "cve": null,
@@ -677,7 +677,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2014-017-1.": {
+        "SS-2014-017-1": {
             "title": "SS-2014-017: XML Quadratic Blowup Attack",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2014-017-xml-quadratic-blowup-attack/",
             "cve": null,
@@ -692,7 +692,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2016-002-1.": {
+        "SS-2016-002-1": {
             "title": "SS-2016-002: CSRF vulnerability in GridFieldAddExistingAutocompleter",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2016-002/",
             "cve": null,
@@ -721,7 +721,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-013-1.": {
+        "SS-2015-013-1": {
             "title": "SS-2015-013: X-Forwarded-Host request hostname injection",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-013/",
             "cve": null,
@@ -736,7 +736,7 @@
             },
             "reference": "composer://silverstripe/framework"
         },
-        "SS-2015-027-1.": {
+        "SS-2015-027-1": {
             "title": "SS-2015-027: HtmlEditor embed url sanitisation",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2015-027/",
             "cve": null,
@@ -767,7 +767,7 @@
         }
     },
     "silverstripe/cms": {
-        "SS-2015-008-1.": {
+        "SS-2015-008-1": {
             "title": "SS-2015-008: SiteTree Creation Permission Vulnerability",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-008-sitetree-creation-permission-vulnerability/",
             "cve": null,
@@ -789,7 +789,7 @@
             },
             "reference": "composer://silverstripe/cms"
         },
-        "SS-2015-005-1.": {
+        "SS-2015-005-1": {
             "title": "SS-2015-005: VirtualPage XSS",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-005/",
             "cve": null,
@@ -804,7 +804,7 @@
             },
             "reference": "composer://silverstripe/cms"
         },
-        "SS-2015-003-1.": {
+        "SS-2015-003-1": {
             "title": "SS-2015-003: History XSS Vulnerability",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2015-003/",
             "cve": null,
@@ -821,7 +821,7 @@
         }
     },
     "namshi/jose": {
-        "2015-03-10.": {
+        "2015-03-10": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
             "link": "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/",
             "cve": null,
@@ -835,7 +835,7 @@
             },
             "reference": "composer://namshi/jose"
         },
-        "2015-02-19.": {
+        "2015-02-19": {
             "title": "Attackers able to impersonate users",
             "link": "https://github.com/namshi/jose/commit/009f86d6ced000b806b2f602c0b7393060ebb34e",
             "cve": null,
@@ -872,7 +872,7 @@
         }
     },
     "erusev/parsedown": {
-        "2017-05-01.": {
+        "2017-05-01": {
             "title": "Cross-Site Scripting",
             "link": "https://github.com/erusev/parsedown/pull/495",
             "cve": "CVE-2018-1000162",
@@ -888,7 +888,7 @@
         }
     },
     "joomla/session": {
-        "2015-12-14.": {
+        "2015-12-14": {
             "title": "Remote Code Execution Vulnerability",
             "link": "https://developer.joomla.org/security-centre/637-20151205-session-remote-code-execution-vulnerability.html",
             "cve": null,
@@ -904,7 +904,7 @@
         }
     },
     "zetacomponents/mail": {
-        "2017-11-15-1.": {
+        "2017-11-15-1": {
             "title": "Arbitrary code execution via a crafted email address",
             "link": "https://github.com/zetacomponents/Mail/issues/58",
             "reference": "composer://zetacomponents/mail",
@@ -920,7 +920,7 @@
         }
     },
     "onelogin/php-saml": {
-        "2017-02-28.": {
+        "2017-02-28": {
             "title": "An error during signature verification can be treated as a successful verification.",
             "link": "https://github.com/onelogin/php-saml/commit/949359f5cad5e1d085c4e5447d9aa8f49a6e82a1",
             "cve": null,
@@ -934,7 +934,7 @@
             },
             "reference": "composer://onelogin/php-saml"
         },
-        "2016-10-04.": {
+        "2016-10-04": {
             "title": "Vulnerability to Response Wrapping attacks resulting in a malicious user gaining unauthorized access to a system.",
             "link": "https://github.com/onelogin/php-saml/commit/9d31baa97a57b0989020f62d24307c29e325dac3",
             "cve": "CVE-2016-1000253",
@@ -950,7 +950,7 @@
         }
     },
     "phpxmlrpc/extras": {
-        "2017-10-29.": {
+        "2017-10-29": {
             "title": "XSS in class documenting_xmlrpc_server",
             "link": "https://github.com/gggeek/phpxmlrpc-extras/releases/tag/0.6.1",
             "cve": null,
@@ -966,7 +966,7 @@
         }
     },
     "amphp/artax": {
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "HTTP Proxy header vulnerability",
             "link": "https://twitter.com/asyncphp/status/755136084917583872",
             "cve": "CVE-2016-5385",
@@ -988,7 +988,7 @@
             },
             "reference": "composer://amphp/artax"
         },
-        "2017-05-09.": {
+        "2017-05-09": {
             "title": "Cookie leakage to wrong origins and non-restricted cookie acceptance",
             "link": "https://github.com/amphp/artax/releases/tag/v2.0.6",
             "cve": null,
@@ -1011,7 +1011,7 @@
         }
     },
     "amphp/http": {
-        "2018-03-15.": {
+        "2018-03-15": {
             "title": "Incorrect header injection check",
             "link": "https://github.com/amphp/http/releases/tag/v1.0.1",
             "cve": null,
@@ -1027,7 +1027,7 @@
         }
     },
     "guzzlehttp/guzzle": {
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "HTTP Proxy header vulnerability",
             "link": "https://github.com/guzzle/guzzle/releases/tag/6.2.1",
             "cve": "CVE-2016-5385",
@@ -1058,7 +1058,7 @@
         }
     },
     "sylius/sylius": {
-        "2018-07-09.": {
+        "2018-07-09": {
             "title": "CSRF vulnerability in the admin panel",
             "link": "https://sylius.com/blog/csrf-vulnerability-in-admin-panel/",
             "cve": null,
@@ -1089,7 +1089,7 @@
         }
     },
     "sylius/admin-bundle": {
-        "2018-07-09.": {
+        "2018-07-09": {
             "title": "CSRF vulnerability in the admin panel",
             "link": "https://sylius.com/blog/csrf-vulnerability-in-admin-panel/",
             "cve": null,
@@ -1120,7 +1120,7 @@
         }
     },
     "cart2quote/module-quotation": {
-        "2017-02-01.": {
+        "2017-02-01": {
             "title": "Remote Code Execution in Qquoteadv/controllers/DownloadController.php",
             "link": "https://cart2quote.zendesk.com/hc/en-us/articles/115000616303--FIXED-Security-Vulnerability-in-downloadCustomOptionAction",
             "cve": null,
@@ -1145,7 +1145,7 @@
         }
     },
     "ezsystems/ezpublish-legacy": {
-        "2017-09-11-1.": {
+        "2017-09-11-1": {
             "title": "EZSA-2017-006 Information disclosure in backend content tree menu",
             "link": "http://share.ez.no/community-project/security-advisories/ezsa-2017-006-information-disclosure-in-backend-content-tree-menu",
             "branches": {
@@ -1173,7 +1173,7 @@
             },
             "reference": "composer://ezsystems/ezpublish-legacy"
         },
-        "2017-08-22-1.": {
+        "2017-08-22-1": {
             "title": "EZSA-2017-005 XSS issue in search",
             "link": "http://share.ez.no/community-project/security-advisories/ezsa-2017-005-xss-issue-in-search",
             "cve": "CVE-2017-1000431",
@@ -1195,7 +1195,7 @@
             },
             "reference": "composer://ezsystems/ezpublish-legacy"
         },
-        "2018-02-26-1.": {
+        "2018-02-26-1": {
             "title": "EZSA-2018-001 Several vulnerabilities in Forgot password, Information collector, XML text, and Matrix field type features",
             "link": "http://share.ez.no/community-project/security-advisories/ezsa-2018-001-several-vulnerabilities-in-forgot-password-information-collector-xml-text-and-matrix-field-type-features",
             "branches": {
@@ -1225,7 +1225,7 @@
         }
     },
     "padraic/humbug_get_contents": {
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "HTTP Proxy header vulnerability",
             "link": "https://github.com/humbug/file_get_contents/releases/tag/1.1.2",
             "cve": "CVE-2016-5385",
@@ -1241,7 +1241,7 @@
         }
     },
     "magento/magento1ce": {
-        "2018-06-29.": {
+        "2018-06-29": {
             "title": "SUPEE-10752 - Multiple security enhancements vulnerabilities",
             "link": "https://magento.com/security/patches/supee-10752",
             "cve": null,
@@ -1256,7 +1256,7 @@
             "reference": "composer://magento/magento1ce",
             "composer-repository": false
         },
-        "2017-02-07.": {
+        "2017-02-07": {
             "title": "SUPEE-9652 - Remote Code Execution using mail vulnerability",
             "link": "https://magento.com/security/patches/supee-9652",
             "cve": null,
@@ -1274,7 +1274,7 @@
         }
     },
     "magento/magento1ee": {
-        "2017-02-07.": {
+        "2017-02-07": {
             "title": "SUPEE-9652 - Remote Code Execution using mail vulnerability",
             "link": "https://magento.com/security/patches/supee-9652",
             "cve": null,
@@ -1292,7 +1292,7 @@
         }
     },
     "magento/product-community-edition": {
-        "2016-07-19.": {
+        "2016-07-19": {
             "title": "Unauthenticated crypto and weak IV in Magento\\Framework\\Encryption",
             "link": "http://www.openwall.com/lists/oss-security/2016/07/19/3",
             "cve": "CVE-2016-6485",
@@ -1322,7 +1322,7 @@
             "reference": "composer://magento/product-community-edition",
             "composer-repository": false
         },
-        "2018-06-27.": {
+        "2018-06-27": {
             "title": "Magento 2.2.5 and 2.1.14 Security update",
             "link": "https://magento.com/security/patches/magento-2.2.5-and-2.1.14-security-update",
             "cve": null,
@@ -1347,7 +1347,7 @@
         }
     },
     "asymmetricrypt/asymmetricrypt": {
-        "2017-11-20.": {
+        "2017-11-20": {
             "title": "Padding Oracle Vulnerability in RSA Encryption",
             "link": "https://github.com/Cosmicist/AsymmetriCrypt/issues/4",
             "cve": null,
@@ -1364,7 +1364,7 @@
         }
     },
     "cartalyst/sentry": {
-        "2016-09-05.": {
+        "2016-09-05": {
             "title": "Null reset codes were allowed",
             "link": "https://haxx.ml/post/149975211631/how-i-hacked-your-cfp-and-probably-some-other",
             "cve": null,
@@ -1380,7 +1380,7 @@
         }
     },
     "willdurand/js-translation-bundle": {
-        "2014-07-29-1.": {
+        "2014-07-29-1": {
             "title": "Fixed potential path traversal attack and remote code injection",
             "link": "https://github.com/willdurand/BazingaJsTranslationBundle/releases/tag/v2.1.1",
             "cve": null,
@@ -1396,7 +1396,7 @@
         }
     },
     "fuel/core": {
-        "2016-06-29-1.": {
+        "2016-06-29-1": {
             "title": "ImageMagick driver does not escape all shell arguments.",
             "link": "https://fuelphp.com/security-advisories",
             "cve": null,
@@ -1410,7 +1410,7 @@
             },
             "reference": "composer://fuel/core"
         },
-        "2018-04-14-1.": {
+        "2018-04-14-1": {
             "title": "Crypt encryption compromised.",
             "link": "https://fuelphp.com/security-advisories",
             "cve": null,
@@ -1426,7 +1426,7 @@
         }
     },
     "firebase/php-jwt": {
-        "2015-04-02.": {
+        "2015-04-02": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
             "link": "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/",
             "cve": null,
@@ -1442,7 +1442,7 @@
         }
     },
     "gree/jose": {
-        "2016-08-30.": {
+        "2016-08-30": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
             "link": "https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/",
             "cve": null,
@@ -1458,7 +1458,7 @@
         }
     },
     "cakephp/cakephp": {
-        "2015-05-28.": {
+        "2015-05-28": {
             "title": "Denial of Service attack through XML payloads",
             "link": "https://bakery.cakephp.org/2015/05/28/cakephp_2_6_6_and_3_0_6_released.html",
             "cve": null,
@@ -1522,7 +1522,7 @@
             },
             "reference": "composer://cakephp/cakephp"
         },
-        "2015-05-07.": {
+        "2015-05-07": {
             "title": "Incorrect CSRF validation",
             "link": "https://bakery.cakephp.org/2015/05/07/cakephp_3_0_4_released.html",
             "cve": null,
@@ -1537,7 +1537,7 @@
             },
             "reference": "composer://cakephp/cakephp"
         },
-        "2015-11-05.": {
+        "2015-11-05": {
             "title": "Remote File Inclusion through View template name manipulation",
             "link": "https://bakery.cakephp.org/2015/11/05/cakephp_3015_314_2612_276_released.html",
             "cve": null,
@@ -1615,7 +1615,7 @@
             },
             "reference": "composer://cakephp/cakephp"
         },
-        "2014-04-29.": {
+        "2014-04-29": {
             "title": "SecurityComponent cross form submission issue",
             "link": "https://bakery.cakephp.org/2014/04/29/CakePHP-1-3-18-and-2-4-8-released.html",
             "cve": null,
@@ -1637,7 +1637,7 @@
             },
             "reference": "composer://cakephp/cakephp"
         },
-        "2015-08-06.": {
+        "2015-08-06": {
             "title": "Direct access of prefixed controller actions",
             "link": "https://bakery.cakephp.org/2015/08/06/cakephp_2_5_9_2_6_10_2_7_2_released.html",
             "cve": null,
@@ -1701,7 +1701,7 @@
             },
             "reference": "composer://cakephp/cakephp"
         },
-        "2018-05-20.": {
+        "2018-05-20": {
             "title": "XSS in some development error pages",
             "link": "https://bakery.cakephp.org/2018/05/20/cakephp_364_3517_3414_released.html",
             "cve": null,
@@ -1732,7 +1732,7 @@
         }
     },
     "zf-commons/zfc-user": {
-        "2015-01-08.": {
+        "2015-01-08": {
             "title": "XSS vulnerability in login redirect param",
             "link": "https://github.com/ZF-Commons/ZfcUser/issues/550",
             "cve": "CVE-2015-1039",
@@ -1748,7 +1748,7 @@
         }
     },
     "adodb/adodb-php": {
-        "CVE-2016-4855.": {
+        "CVE-2016-4855": {
             "title": "XSS vulnerability in old test script",
             "link": "https://github.com/ADOdb/ADOdb/issues/274",
             "cve": "CVE-2016-4855",
@@ -1762,7 +1762,7 @@
             },
             "reference": "composer://adodb/adodb-php"
         },
-        "2018-03-06.": {
+        "2018-03-06": {
             "title": "Potential SQL injection vector",
             "link": "https://github.com/ADOdb/ADOdb/pull/401",
             "branches": {
@@ -1777,7 +1777,7 @@
         }
     },
     "sensiolabs/connect": {
-        "2018-06-08-1.": {
+        "2018-06-08-1": {
             "title": "Missing state parameter in OAuth requests leading to CSRF vulnerability",
             "link": "https://github.com/sensiolabs/connect/pull/63",
             "cve": null,
@@ -1793,7 +1793,7 @@
         }
     },
     "slim/slim": {
-        "CVE-2015-2171.": {
+        "CVE-2015-2171": {
             "title": "PHP object injection attack vulnerability in Slim.",
             "link": "https://github.com/slimphp/Slim/issues/1034",
             "cve": "CVE-2015-2171",
@@ -1809,7 +1809,7 @@
         }
     },
     "yiisoft/yii2-redis": {
-        "CVE-2018-8073.": {
+        "CVE-2018-8073": {
             "title": "Potential remote code execution in LUA context of the redis server via methods `yii\\redis\\ActiveRecord::findOne()` and `::findAll()`",
             "link": "https://www.yiiframework.com/news/168/releasing-yii-2-0-15-and-database-extensions-with-security-fixes/",
             "cve": "CVE-2018-8073",
@@ -1825,7 +1825,7 @@
         }
     },
     "yiisoft/yii": {
-        "CVE-2014-4672.": {
+        "CVE-2014-4672": {
             "title": "The CDetailView widget allows remote attackers to execute arbitrary PHP scripts via vectors related to the value property",
             "link": "https://www.yiiframework.com/news/78/yii-1-1-15-is-released-security-fix/",
             "cve": "CVE-2014-4672",
@@ -1842,7 +1842,7 @@
         }
     },
     "yiisoft/yii2": {
-        "CVE-2018-7269.": {
+        "CVE-2018-7269": {
             "title": "Potential SQL injection in methods `yii\\db\\ActiveRecord::findOne()` and `::findAll()`",
             "link": "https://www.yiiframework.com/news/168/releasing-yii-2-0-15-and-database-extensions-with-security-fixes/",
             "cve": "CVE-2018-7269",
@@ -1870,7 +1870,7 @@
             },
             "reference": "composer://yiisoft/yii2"
         },
-        "CVE-2018-6009.": {
+        "CVE-2018-6009": {
             "title": "The switchIdentity() function in yii\\web\\User did not regenerate the CSRF token upon a change of identity",
             "link": "https://www.yiiframework.com/news/165/yii-2-0-14-is-released/",
             "cve": "CVE-2018-6009",
@@ -1884,7 +1884,7 @@
             },
             "reference": "composer://yiisoft/yii2"
         },
-        "CVE-2018-6010.": {
+        "CVE-2018-6010": {
             "title": "Remote attackers could obtain potentially sensitive information from exception messages printed by the error handler in non-debug mode.",
             "link": "https://www.yiiframework.com/news/165/yii-2-0-14-is-released/",
             "cve": "CVE-2018-6010",
@@ -1898,7 +1898,7 @@
             },
             "reference": "composer://yiisoft/yii2"
         },
-        "CVE-2015-5467.": {
+        "CVE-2015-5467": {
             "title": "class yii\\web\\ViewAction allowed to include arbitrary files that end with .php",
             "link": "https://www.yiiframework.com/news/87/yii-2-0-5-is-released-security-fix/",
             "cve": "CVE-2015-5467",
@@ -1912,7 +1912,7 @@
             },
             "reference": "composer://yiisoft/yii2"
         },
-        "CVE-2015-3397.": {
+        "CVE-2015-3397": {
             "title": "JSON Data encoded for use in HTML was not safe to use in IE6/IE7, possible XSS attacks",
             "link": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/",
             "cve": "CVE-2015-3397",
@@ -1928,7 +1928,7 @@
         }
     },
     "yiisoft/yii2-dev": {
-        "CVE-2018-7269.": {
+        "CVE-2018-7269": {
             "title": "Potential SQL injection in methods `yii\\db\\ActiveRecord::findOne()` and `::findAll()`",
             "link": "https://www.yiiframework.com/news/168/releasing-yii-2-0-15-and-database-extensions-with-security-fixes/",
             "cve": "CVE-2018-7269",
@@ -1956,7 +1956,7 @@
             },
             "reference": "composer://yiisoft/yii2-dev"
         },
-        "CVE-2018-6009.": {
+        "CVE-2018-6009": {
             "title": "The switchIdentity() function in yii\\web\\User did not regenerate the CSRF token upon a change of identity",
             "link": "https://www.yiiframework.com/news/165/yii-2-0-14-is-released/",
             "cve": "CVE-2018-6009",
@@ -1970,7 +1970,7 @@
             },
             "reference": "composer://yiisoft/yii2-dev"
         },
-        "CVE-2018-6010.": {
+        "CVE-2018-6010": {
             "title": "Remote attackers could obtain potentially sensitive information from exception messages printed by the error handler in non-debug mode.",
             "link": "https://www.yiiframework.com/news/165/yii-2-0-14-is-released/",
             "cve": "CVE-2018-6010",
@@ -1984,7 +1984,7 @@
             },
             "reference": "composer://yiisoft/yii2-dev"
         },
-        "CVE-2015-5467.": {
+        "CVE-2015-5467": {
             "title": "class yii\\web\\ViewAction allowed to include arbitrary files that end with .php",
             "link": "https://www.yiiframework.com/news/87/yii-2-0-5-is-released-security-fix/",
             "cve": "CVE-2015-5467",
@@ -1998,7 +1998,7 @@
             },
             "reference": "composer://yiisoft/yii2-dev"
         },
-        "CVE-2015-3397.": {
+        "CVE-2015-3397": {
             "title": "JSON Data encoded for use in HTML was not safe to use in IE6/IE7, possible XSS attacks",
             "link": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/",
             "cve": "CVE-2015-3397",
@@ -2014,7 +2014,7 @@
         }
     },
     "yiisoft/yii2-gii": {
-        "CVE-2015-3397.": {
+        "CVE-2015-3397": {
             "title": "JSON Data encoded for use in HTML was not safe to use in IE6/IE7, possible XSS attacks",
             "link": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/",
             "cve": "CVE-2015-3397",
@@ -2030,7 +2030,7 @@
         }
     },
     "yiisoft/yii2-elasticsearch": {
-        "CVE-2018-8074.": {
+        "CVE-2018-8074": {
             "title": "Possibility of manipulated condition when unfiltered input is passed to `yii\\elasticsearch\\ActiveRecord::findOne()` and `::findAll()`",
             "link": "https://www.yiiframework.com/news/168/releasing-yii-2-0-15-and-database-extensions-with-security-fixes/",
             "cve": "CVE-2018-8074",
@@ -2046,7 +2046,7 @@
         }
     },
     "yiisoft/yii2-bootstrap": {
-        "CVE-2015-3397.": {
+        "CVE-2015-3397": {
             "title": "JSON Data encoded for use in HTML was not safe to use in IE6/IE7, possible XSS attacks",
             "link": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/",
             "cve": "CVE-2015-3397",
@@ -2062,7 +2062,7 @@
         }
     },
     "yiisoft/yii2-jui": {
-        "CVE-2015-3397.": {
+        "CVE-2015-3397": {
             "title": "JSON Data encoded for use in HTML was not safe to use in IE6/IE7, possible XSS attacks",
             "link": "https://www.yiiframework.com/news/86/yii-2-0-4-is-released/",
             "cve": "CVE-2015-3397",
@@ -2078,7 +2078,7 @@
         }
     },
     "oro/crm": {
-        "2015-07-08.": {
+        "2015-07-08": {
             "title": "Forced Redirect to External Website",
             "link": "https://www.orocrm.com/blog/news/orocrm-security-announcement",
             "cve": null,
@@ -2095,7 +2095,7 @@
         }
     },
     "oro/platform": {
-        "2015-07-08.": {
+        "2015-07-08": {
             "title": "Forced Redirect to External Website",
             "link": "https://www.orocrm.com/blog/news/orocrm-security-announcement",
             "cve": null,
@@ -2112,7 +2112,7 @@
         }
     },
     "3f/pygmentize": {
-        "2017-05-15.": {
+        "2017-05-15": {
             "title": "Remote Code Execution",
             "link": "https://github.com/dedalozzo/pygmentize/issues/1",
             "cve": null,
@@ -2128,7 +2128,7 @@
         }
     },
     "zfr/zfr-oauth2-server-module": {
-        "2014-04-26.": {
+        "2014-04-26": {
             "title": "Authentication adapter did not verify validity of tokens",
             "link": "https://github.com/zf-fr/zfr-oauth2-server-module/issues/6",
             "cve": null,
@@ -2144,7 +2144,7 @@
         }
     },
     "pusher/pusher-php-server": {
-        "2015-05-13.": {
+        "2015-05-13": {
             "title": "Exploit in the private channel authentication",
             "link": "https://blog.pusher.com/update-on-security/",
             "cve": null,
@@ -2160,7 +2160,7 @@
         }
     },
     "shopware/shopware": {
-        "2017-01-25.": {
+        "2017-01-25": {
             "title": "Remote Code Execution Vulnerability",
             "link": "https://community.shopware.com/_detail_1989.html",
             "branches": {
@@ -2202,7 +2202,7 @@
             },
             "reference": "composer://shopware/shopware"
         },
-        "2018-01-22.": {
+        "2018-01-22": {
             "title": "Non-Persistent XSS",
             "link": "https://community.shopware.com/_detail_2048.html",
             "branches": {
@@ -2223,7 +2223,7 @@
             },
             "reference": "composer://shopware/shopware"
         },
-        "2017-01-24.": {
+        "2017-01-24": {
             "title": "Remote Code Execution Vulnerability",
             "link": "https://community.shopware.com/_detail_1989.html",
             "branches": {
@@ -2265,7 +2265,7 @@
             },
             "reference": "composer://shopware/shopware"
         },
-        "CVE-2016-3109.": {
+        "CVE-2016-3109": {
             "title": "Unauthenticated Remote Code Execution Vulnerability",
             "link": "https://community.shopware.com/_detail_1918.html",
             "cve": "CVE-2016-3109",
@@ -2293,7 +2293,7 @@
             },
             "reference": "composer://shopware/shopware"
         },
-        "2017-06-22.": {
+        "2017-06-22": {
             "title": "Remote Code Execution Vulnerability",
             "link": "https://community.shopware.com/_detail_2015.html",
             "branches": {
@@ -2337,7 +2337,7 @@
         }
     },
     "drupal/drupal": {
-        "CVE-2016-6211.": {
+        "CVE-2016-6211": {
             "title": "Saving user accounts can sometimes grant the user all roles",
             "link": "https://www.drupal.org/SA-CORE-2016-002",
             "cve": "CVE-2016-6211",
@@ -2359,7 +2359,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "Drupal Core - Highly Critical - Injection - SA-CORE-2016-003",
             "link": "https://www.drupal.org/SA-CORE-2016-003",
             "cve": "CVE-2016-5385",
@@ -2381,7 +2381,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6928.": {
+        "CVE-2017-6928": {
             "title": "Private file access bypass.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6928",
@@ -2424,7 +2424,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3167.": {
+        "CVE-2016-3167": {
             "title": "Open redirect via double-encoded 'destination' parameter",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3167",
@@ -2439,7 +2439,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6929.": {
+        "CVE-2017-6929": {
             "title": "jQuery vulnerability with untrusted domains.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6929",
@@ -2482,7 +2482,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6925.": {
+        "CVE-2017-6925": {
             "title": "Entity access bypass for entities that do not have UUIDs or have protected revisions.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6925",
@@ -2518,7 +2518,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3164.": {
+        "CVE-2016-3164": {
             "title": "Open redirect via path manipulation",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3164",
@@ -2533,7 +2533,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-6212.": {
+        "CVE-2016-6212": {
             "title": "Views can allow unauthorized users to see Statistics information",
             "link": "https://www.drupal.org/SA-CORE-2016-002",
             "cve": "CVE-2016-6212",
@@ -2555,7 +2555,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3165.": {
+        "CVE-2016-3165": {
             "title": "Form API ignores access restrictions on submit buttons",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3165",
@@ -2570,7 +2570,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6926.": {
+        "CVE-2017-6926": {
             "title": "Comment reply form allows access to restricted content.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6926",
@@ -2613,7 +2613,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6379.": {
+        "CVE-2017-6379": {
             "title": "Some admin paths were not protected with a CSRF token",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6379",
@@ -2642,7 +2642,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-7570.": {
+        "CVE-2016-7570": {
             "title": "Users without \"Administer comments\" can set comment visibility on nodes they can edit",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7570",
@@ -2664,7 +2664,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-7572.": {
+        "CVE-2016-7572": {
             "title": "Full config export can be downloaded without administrative permissions",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7572",
@@ -2686,7 +2686,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2018-7602.": {
+        "CVE-2018-7602": {
             "title": "Critical - Remote Code Execution",
             "link": "https://www.drupal.org/sa-core-2018-004",
             "cve": "CVE-2018-7602",
@@ -2743,7 +2743,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6921.": {
+        "CVE-2017-6921": {
             "title": "File REST resource does not properly validate",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6921",
@@ -2779,7 +2779,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3169.": {
+        "CVE-2016-3169": {
             "title": "Saving user accounts can sometimes grant the user all roles",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3169",
@@ -2794,7 +2794,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6922.": {
+        "CVE-2017-6922": {
             "title": "Files uploaded by anonymous users into a private file system can be accessed by other anonymous users",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6922",
@@ -2830,7 +2830,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3166.": {
+        "CVE-2016-3166": {
             "title": "HTTP header injection using line breaks",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3166",
@@ -2845,7 +2845,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3162.": {
+        "CVE-2016-3162": {
             "title": "File upload access bypass and denial of service",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3162",
@@ -2860,7 +2860,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6930.": {
+        "CVE-2017-6930": {
             "title": "Language fallback can be incorrect on multilingual sites with node access restrictions.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6930",
@@ -2903,7 +2903,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6919.": {
+        "CVE-2017-6919": {
             "title": "Access bypass",
             "link": "https://www.drupal.org/SA-2017-002",
             "cve": "CVE-2017-6919",
@@ -2939,7 +2939,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-9449.": {
+        "CVE-2016-9449": {
             "title": "Inconsistent name for term access query",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9449",
@@ -2968,7 +2968,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6927.": {
+        "CVE-2017-6927": {
             "title": "JavaScript cross-site scripting prevention is incomplete.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6927",
@@ -3011,7 +3011,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6920.": {
+        "CVE-2017-6920": {
             "title": "PECL YAML parser unsafe object handling",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6920",
@@ -3047,7 +3047,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6377.": {
+        "CVE-2017-6377": {
             "title": "Editor module incorrectly checks access to inline private files",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6377",
@@ -3076,7 +3076,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-7571.": {
+        "CVE-2016-7571": {
             "title": "Cross-site Scripting in http exceptions",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7571",
@@ -3098,7 +3098,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3170.": {
+        "CVE-2016-3170": {
             "title": "Email address can be matched to an account",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3170",
@@ -3113,7 +3113,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "2018-04-18.": {
+        "2018-04-18": {
             "title": "Moderately critical - Cross Site Scripting",
             "link": "https://www.drupal.org/sa-core-2018-003",
             "branches": {
@@ -3162,7 +3162,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3163.": {
+        "CVE-2016-3163": {
             "title": "Brute force amplification attacks via XML-RPC",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3163",
@@ -3177,7 +3177,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6932.": {
+        "CVE-2017-6932": {
             "title": "External link injection on 404 pages when linking to the current page.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6932",
@@ -3220,7 +3220,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2018-7600.": {
+        "CVE-2018-7600": {
             "title": "Highly critical - Remote Code Execution",
             "link": "https://www.drupal.org/sa-core-2018-002",
             "cve": "CVE-2018-7600",
@@ -3256,7 +3256,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3168.": {
+        "CVE-2016-3168": {
             "title": "Reflected file download vulnerability",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3168",
@@ -3271,7 +3271,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-3171.": {
+        "CVE-2016-3171": {
             "title": "Session data truncation can lead to unserialization of user provided data",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3171",
@@ -3286,7 +3286,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6931.": {
+        "CVE-2017-6931": {
             "title": "Settings Tray access bypass.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6931",
@@ -3329,7 +3329,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6923.": {
+        "CVE-2017-6923": {
             "title": "Views does not properly restrict access to the Ajax endpoint.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6923",
@@ -3365,7 +3365,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6381.": {
+        "CVE-2017-6381": {
             "title": "Remote code execution",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6381",
@@ -3394,7 +3394,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-9452.": {
+        "CVE-2016-9452": {
             "title": "Denial of service via transliterate mechanism",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9452",
@@ -3423,7 +3423,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2017-6924.": {
+        "CVE-2017-6924": {
             "title": "REST API can bypass comment approval.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6924",
@@ -3459,7 +3459,7 @@
             },
             "reference": "composer://drupal/drupal"
         },
-        "CVE-2016-9450.": {
+        "CVE-2016-9450": {
             "title": "Incorrect cache context on password reset page",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9450",
@@ -3490,7 +3490,7 @@
         }
     },
     "drupal/core": {
-        "CVE-2016-6211.": {
+        "CVE-2016-6211": {
             "title": "Saving user accounts can sometimes grant the user all roles",
             "link": "https://www.drupal.org/SA-CORE-2016-002",
             "cve": "CVE-2016-6211",
@@ -3512,7 +3512,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "Drupal Core - Highly Critical - Injection - SA-CORE-2016-003",
             "link": "https://www.drupal.org/SA-CORE-2016-003",
             "cve": "CVE-2016-5385",
@@ -3534,7 +3534,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6928.": {
+        "CVE-2017-6928": {
             "title": "Private file access bypass.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6928",
@@ -3577,7 +3577,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3167.": {
+        "CVE-2016-3167": {
             "title": "Open redirect via double-encoded 'destination' parameter",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3167",
@@ -3592,7 +3592,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6929.": {
+        "CVE-2017-6929": {
             "title": "jQuery vulnerability with untrusted domains.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6929",
@@ -3635,7 +3635,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6925.": {
+        "CVE-2017-6925": {
             "title": "Entity access bypass for entities that do not have UUIDs or have protected revisions.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6925",
@@ -3671,7 +3671,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3164.": {
+        "CVE-2016-3164": {
             "title": "Open redirect via path manipulation",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3164",
@@ -3686,7 +3686,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-6212.": {
+        "CVE-2016-6212": {
             "title": "Views can allow unauthorized users to see Statistics information",
             "link": "https://www.drupal.org/SA-CORE-2016-002",
             "cve": "CVE-2016-6212",
@@ -3708,7 +3708,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3165.": {
+        "CVE-2016-3165": {
             "title": "Form API ignores access restrictions on submit buttons",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3165",
@@ -3723,7 +3723,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6926.": {
+        "CVE-2017-6926": {
             "title": "Comment reply form allows access to restricted content.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6926",
@@ -3766,7 +3766,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6379.": {
+        "CVE-2017-6379": {
             "title": "Some admin paths were not protected with a CSRF token",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6379",
@@ -3795,7 +3795,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-7570.": {
+        "CVE-2016-7570": {
             "title": "Users without \"Administer comments\" can set comment visibility on nodes they can edit",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7570",
@@ -3817,7 +3817,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-7572.": {
+        "CVE-2016-7572": {
             "title": "Full config export can be downloaded without administrative permissions",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7572",
@@ -3839,7 +3839,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2018-7602.": {
+        "CVE-2018-7602": {
             "title": "Critical - Remote Code Execution",
             "link": "https://www.drupal.org/sa-core-2018-004",
             "cve": "CVE-2018-7602",
@@ -3896,7 +3896,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6921.": {
+        "CVE-2017-6921": {
             "title": "File REST resource does not properly validate",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6921",
@@ -3932,7 +3932,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3169.": {
+        "CVE-2016-3169": {
             "title": "Saving user accounts can sometimes grant the user all roles",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3169",
@@ -3947,7 +3947,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6922.": {
+        "CVE-2017-6922": {
             "title": "Files uploaded by anonymous users into a private file system can be accessed by other anonymous users",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6922",
@@ -3983,7 +3983,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3166.": {
+        "CVE-2016-3166": {
             "title": "HTTP header injection using line breaks",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3166",
@@ -3998,7 +3998,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3162.": {
+        "CVE-2016-3162": {
             "title": "File upload access bypass and denial of service",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3162",
@@ -4013,7 +4013,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6930.": {
+        "CVE-2017-6930": {
             "title": "Language fallback can be incorrect on multilingual sites with node access restrictions.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6930",
@@ -4056,7 +4056,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6919.": {
+        "CVE-2017-6919": {
             "title": "Access bypass",
             "link": "https://www.drupal.org/SA-2017-002",
             "cve": "CVE-2017-6919",
@@ -4092,7 +4092,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-9449.": {
+        "CVE-2016-9449": {
             "title": "Inconsistent name for term access query",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9449",
@@ -4121,7 +4121,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6927.": {
+        "CVE-2017-6927": {
             "title": "JavaScript cross-site scripting prevention is incomplete.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6927",
@@ -4164,7 +4164,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6920.": {
+        "CVE-2017-6920": {
             "title": "PECL YAML parser unsafe object handling",
             "link": "https://www.drupal.org/SA-CORE-2017-003",
             "cve": "CVE-2017-6920",
@@ -4200,7 +4200,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6377.": {
+        "CVE-2017-6377": {
             "title": "Editor module incorrectly checks access to inline private files",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6377",
@@ -4229,7 +4229,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-7571.": {
+        "CVE-2016-7571": {
             "title": "Cross-site Scripting in http exceptions",
             "link": "https://www.drupal.org/SA-CORE-2016-004",
             "cve": "CVE-2016-7571",
@@ -4251,7 +4251,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3170.": {
+        "CVE-2016-3170": {
             "title": "Email address can be matched to an account",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3170",
@@ -4266,7 +4266,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "2018-04-18.": {
+        "2018-04-18": {
             "title": "Moderately critical - Cross Site Scripting",
             "link": "https://www.drupal.org/sa-core-2018-003",
             "branches": {
@@ -4315,7 +4315,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3163.": {
+        "CVE-2016-3163": {
             "title": "Brute force amplification attacks via XML-RPC",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3163",
@@ -4330,7 +4330,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6932.": {
+        "CVE-2017-6932": {
             "title": "External link injection on 404 pages when linking to the current page.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6932",
@@ -4373,7 +4373,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2018-7600.": {
+        "CVE-2018-7600": {
             "title": "Highly critical - Remote Code Execution",
             "link": "https://www.drupal.org/sa-core-2018-002",
             "cve": "CVE-2018-7600",
@@ -4409,7 +4409,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3168.": {
+        "CVE-2016-3168": {
             "title": "Reflected file download vulnerability",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3168",
@@ -4424,7 +4424,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-3171.": {
+        "CVE-2016-3171": {
             "title": "Session data truncation can lead to unserialization of user provided data",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
             "cve": "CVE-2016-3171",
@@ -4439,7 +4439,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6931.": {
+        "CVE-2017-6931": {
             "title": "Settings Tray access bypass.",
             "link": "https://www.drupal.org/SA-CORE-2018-001",
             "cve": "CVE-2017-6931",
@@ -4482,7 +4482,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6923.": {
+        "CVE-2017-6923": {
             "title": "Views does not properly restrict access to the Ajax endpoint.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6923",
@@ -4518,7 +4518,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6381.": {
+        "CVE-2017-6381": {
             "title": "Remote code execution",
             "link": "https://www.drupal.org/SA-2017-001",
             "cve": "CVE-2017-6381",
@@ -4547,7 +4547,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-9452.": {
+        "CVE-2016-9452": {
             "title": "Denial of service via transliterate mechanism",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9452",
@@ -4576,7 +4576,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2017-6924.": {
+        "CVE-2017-6924": {
             "title": "REST API can bypass comment approval.",
             "link": "https://www.drupal.org/SA-CORE-2017-004",
             "cve": "CVE-2017-6924",
@@ -4612,7 +4612,7 @@
             },
             "reference": "composer://drupal/core"
         },
-        "CVE-2016-9450.": {
+        "CVE-2016-9450": {
             "title": "Incorrect cache context on password reset page",
             "link": "https://www.drupal.org/SA-CORE-2016-005",
             "cve": "CVE-2016-9450",
@@ -4643,7 +4643,7 @@
         }
     },
     "doctrine/common": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4667,7 +4667,7 @@
         }
     },
     "doctrine/annotations": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4684,7 +4684,7 @@
         }
     },
     "doctrine/doctrine-module": {
-        "2013-05-16.": {
+        "2013-05-16": {
             "title": "Authentication Vulnerability - possible attempt to login via zero-valued password credential",
             "link": "https://github.com/doctrine/DoctrineModule/issues/249",
             "cve": null,
@@ -4706,7 +4706,7 @@
         }
     },
     "doctrine/mongodb-odm": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4723,7 +4723,7 @@
         }
     },
     "doctrine/mongodb-odm-bundle": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4740,7 +4740,7 @@
         }
     },
     "doctrine/dbal": {
-        "2011-09-25.": {
+        "2011-09-25": {
             "title": "SQL injection possibility",
             "link": "https://www.doctrine-project.org/blog/dbal-security-2011-1.html",
             "cve": null,
@@ -4764,7 +4764,7 @@
         }
     },
     "doctrine/doctrine-bundle": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4780,7 +4780,7 @@
         }
     },
     "doctrine/cache": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4804,7 +4804,7 @@
         }
     },
     "doctrine/orm": {
-        "2011-09-25.": {
+        "2011-09-25": {
             "title": "SQL injection possibility",
             "link": "https://www.doctrine-project.org/blog/doctrine-security-fix.html",
             "cve": null,
@@ -4819,7 +4819,7 @@
             },
             "reference": "composer://doctrine/orm"
         },
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -4843,7 +4843,7 @@
         }
     },
     "phpunit/phpunit": {
-        "CVE-2017-9841.": {
+        "CVE-2017-9841": {
             "title": "RCE vulnerability in phpunit",
             "link": "http://phpunit.vulnbusters.com/",
             "cve": "CVE-2017-9841",
@@ -4867,7 +4867,7 @@
         }
     },
     "propel/propel": {
-        "2018-02-14.": {
+        "2018-02-14": {
             "title": "SQL injection possible with limit() on MySQL",
             "link": "https://github.com/propelorm/Propel2/issues/1463",
             "cve": null,
@@ -4884,7 +4884,7 @@
         }
     },
     "propel/propel1": {
-        "2018-02-14.": {
+        "2018-02-14": {
             "title": "SQL injection possible with limit() on MySQL",
             "link": "https://github.com/propelorm/Propel/issues/1052",
             "cve": null,
@@ -4901,7 +4901,7 @@
         }
     },
     "simplesamlphp/saml2": {
-        "CVE-2016-9814.": {
+        "CVE-2016-9814": {
             "title": "Incorrect signature verification",
             "link": "https://simplesamlphp.org/security/201612-01",
             "cve": "CVE-2016-9814",
@@ -4936,7 +4936,7 @@
             },
             "reference": "composer://simplesamlphp/saml2"
         },
-        "CVE-2018-6519.": {
+        "CVE-2018-6519": {
             "title": "Denial of Service in timestamp validation function",
             "link": "https://simplesamlphp.org/security/201801-01",
             "cve": "CVE-2018-6519",
@@ -4964,7 +4964,7 @@
             },
             "reference": "composer://simplesamlphp/saml2"
         },
-        "CVE-2018-7711.": {
+        "CVE-2018-7711": {
             "title": "Incorrect signature validation",
             "link": "https://simplesamlphp.org/security/201803-01",
             "cve": "CVE-2018-7711",
@@ -4992,7 +4992,7 @@
             },
             "reference": "composer://simplesamlphp/saml2"
         },
-        "CVE-2018-7644.": {
+        "CVE-2018-7644": {
             "title": "Incorrect signature validation",
             "link": "https://simplesamlphp.org/security/201802-01",
             "cve": "CVE-2018-7644",
@@ -5022,7 +5022,7 @@
         }
     },
     "simplesamlphp/simplesamlphp": {
-        "CVE-2018-6520.": {
+        "CVE-2018-6520": {
             "title": "Open redirection protection bypass",
             "link": "https://simplesamlphp.org/security/201801-02",
             "cve": "CVE-2018-6520",
@@ -5036,7 +5036,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2016-9955.": {
+        "CVE-2016-9955": {
             "title": "Incorrect signature verification",
             "link": "https://simplesamlphp.org/security/201612-02",
             "cve": "CVE-2016-9955",
@@ -5050,7 +5050,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-18121.": {
+        "CVE-2017-18121": {
             "title": "Cross Site Scripting (XSS) in the consentAdmin module",
             "link": "https://simplesamlphp.org/security/201709-01",
             "cve": "CVE-2017-18121",
@@ -5079,7 +5079,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12867.": {
+        "CVE-2017-12867": {
             "title": "Invalid token creation and validation",
             "link": "https://simplesamlphp.org/security/201708-01",
             "cve": "CVE-2017-12867",
@@ -5094,7 +5094,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12870.": {
+        "CVE-2017-12870": {
             "title": "Unauthenticated encryption in CBC mode",
             "link": "https://simplesamlphp.org/security/201704-01",
             "cve": "CVE-2017-12870",
@@ -5108,7 +5108,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12872.": {
+        "CVE-2017-12872": {
             "title": "Multiple timing side-channel issues",
             "link": "https://simplesamlphp.org/security/201703-01",
             "cve": "CVE-2017-12872",
@@ -5137,7 +5137,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12871.": {
+        "CVE-2017-12871": {
             "title": "Incorrect IV generation for encryption",
             "link": "https://simplesamlphp.org/security/201703-02",
             "cve": "CVE-2017-12871",
@@ -5152,7 +5152,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12873.": {
+        "CVE-2017-12873": {
             "title": "Incorrect persistent NameID generation",
             "link": "https://simplesamlphp.org/security/201612-04",
             "cve": "CVE-2017-12873",
@@ -5167,7 +5167,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "201710-01.": {
+        "201710-01": {
             "title": "Signature validation bypass",
             "link": "https://simplesamlphp.org/security/201710-01",
             "branches": {
@@ -5195,7 +5195,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-18122.": {
+        "CVE-2017-18122": {
             "title": "Signature validation bypass (SAML 1.1)",
             "link": "https://simplesamlphp.org/security/201710-01",
             "cve": "CVE-2018-18122",
@@ -5209,7 +5209,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12869.": {
+        "CVE-2017-12869": {
             "title": "Authentication context bypass (multiauth module)",
             "link": "https://simplesamlphp.org/security/201704-02",
             "cve": "CVE-2017-12869",
@@ -5223,7 +5223,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2018-6521.": {
+        "CVE-2018-6521": {
             "title": "Use of insecure connection charset (sqlauth module)",
             "link": "https://simplesamlphp.org/security/201801-03",
             "cve": "CVE-2018-6521",
@@ -5237,7 +5237,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2016-3124.": {
+        "CVE-2016-3124": {
             "title": "Information leakage issue in the sanitycheck module",
             "link": "https://simplesamlphp.org/security/201603-01",
             "cve": "CVE-2016-3124",
@@ -5251,7 +5251,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "201606-01.": {
+        "201606-01": {
             "title": "Link injection",
             "link": "https://simplesamlphp.org/security/201606-01",
             "branches": {
@@ -5264,7 +5264,7 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
-        "CVE-2017-12868.": {
+        "CVE-2017-12868": {
             "title": "Session fixation and authentication bypass (authcrypt module)",
             "link": "https://simplesamlphp.org/security/201705-01",
             "cve": "CVE-2017-12868",
@@ -5281,7 +5281,7 @@
         }
     },
     "simplesamlphp/simplesamlphp-module-infocard": {
-        "CVE-2017-12874.": {
+        "CVE-2017-12874": {
             "title": "Incorrect signature verification",
             "link": "https://simplesamlphp.org/security/201612-03",
             "cve": "CVE-2017-12874",
@@ -5297,7 +5297,7 @@
         }
     },
     "zfcampus/zf-apigility-doctrine": {
-        "ZF2015-07.": {
+        "ZF2015-07": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
@@ -5314,7 +5314,7 @@
         }
     },
     "illuminate/cookie": {
-        "2018-08-08-1.": {
+        "2018-08-08-1": {
             "title": "Cookie serialization vulnerability",
             "link": "https://laravel.com/docs/5.6/upgrade#upgrade-5.6.30",
             "cve": null,
@@ -5394,7 +5394,7 @@
         }
     },
     "illuminate/encryption": {
-        "2018-03-30-1.": {
+        "2018-03-30-1": {
             "title": "Exploit of encryption failure vulnerability",
             "link": "https://medium.com/@taylorotwell/laravel-security-release-5-6-15-and-5-5-40-56f1257933a0",
             "cve": null,
@@ -5474,7 +5474,7 @@
         }
     },
     "illuminate/auth": {
-        "CVE-2017-9303.": {
+        "CVE-2017-9303": {
             "title": "Password reset phishing vulnerability",
             "link": "https://laravel.com/docs/5.4/releases#laravel-5.4.22",
             "cve": "CVE-2017-9303",
@@ -5496,7 +5496,7 @@
             },
             "reference": "composer://illuminate/auth"
         },
-        "CVE-2017-14775.": {
+        "CVE-2017-14775": {
             "title": "Timing attack vector for remember me token",
             "link": "https://github.com/laravel/framework/pull/21320",
             "cve": "CVE-2017-14775",
@@ -5560,7 +5560,7 @@
             },
             "reference": "composer://illuminate/auth"
         },
-        "2014-04-15.": {
+        "2014-04-15": {
             "title": "Hijacked authentication cookies vulnerability",
             "link": "https://laravel.com/docs/5.1/upgrade#upgrade-4.1.26",
             "cve": null,
@@ -5584,7 +5584,7 @@
         }
     },
     "illuminate/database": {
-        "2014-05-20.": {
+        "2014-05-20": {
             "title": "Risk of mass-assignment vulnerabilities",
             "link": "https://laravel.com/docs/5.1/upgrade#upgrade-4.1.29",
             "cve": null,
@@ -5608,7 +5608,7 @@
         }
     },
     "pagarme/pagarme-php": {
-        "2017-11-20.": {
+        "2017-11-20": {
             "title": "Padding Oracle Vulnerability in RSA Encryption",
             "link": "https://github.com/pagarme/pagarme-php/issues/29",
             "cve": null,
@@ -5625,7 +5625,7 @@
         }
     },
     "stormpath/sdk": {
-        "2017-11-20.": {
+        "2017-11-20": {
             "title": "Insecure Random Number Generator",
             "link": "https://github.com/stormpath/stormpath-sdk-php/issues/132",
             "cve": null,
@@ -5642,7 +5642,7 @@
         }
     },
     "aws/aws-sdk-php": {
-        "2015-08-31.": {
+        "2015-08-31": {
             "title": "Security Misconfiguration Vulnerability in the AWS SDK for PHP",
             "link": "https://github.com/aws/aws-sdk-php/releases/tag/3.2.1",
             "cve": "CVE-2015-5723",
@@ -5659,7 +5659,7 @@
         }
     },
     "codeigniter/framework": {
-        "2016-07-26-1.": {
+        "2016-07-26-1": {
             "title": "Critical SQL injection bug in the ODBC database driver",
             "link": "https://forum.codeigniter.com/thread-65803.html",
             "cve": null,
@@ -5673,7 +5673,7 @@
             },
             "reference": "composer://codeigniter/framework"
         },
-        "2015-10-31-1.": {
+        "2015-10-31-1": {
             "title": "XSS attack vector in Security Library method xss_clean()",
             "link": "https://www.codeigniter.com/user_guide/changelog.html#version-3-0-3",
             "cve": null,
@@ -5689,7 +5689,7 @@
         }
     },
     "paypal/merchant-sdk-php": {
-        "CVE-2017-6099.": {
+        "CVE-2017-6099": {
             "title": "Cross-site scripting (XSS) vulnerability in Paypal-Merchant-SDK-PHP",
             "link": "https://github.com/paypal/merchant-sdk-php/issues/129",
             "cve": "CVE-2017-6099",
@@ -5712,7 +5712,7 @@
         }
     },
     "bugsnag/bugsnag-laravel": {
-        "CVE-2016-5385.": {
+        "CVE-2016-5385": {
             "title": "HTTP Proxy header vulnerability",
             "link": "https://github.com/bugsnag/bugsnag-laravel/releases/tag/v2.0.2",
             "cve": "CVE-2016-5385",
@@ -5729,7 +5729,7 @@
         }
     },
     "typo3/neos": {
-        "2015-03-28.": {
+        "2015-03-28": {
             "title": "Privilege Escalation in TYPO3 Neos",
             "link": "https://www.neos.io/news/neos-sa-2015-001.html",
             "cve": null,
@@ -5751,7 +5751,7 @@
             },
             "reference": "composer://typo3/neos"
         },
-        "2015-11-23.": {
+        "2015-11-23": {
             "title": "XSS vulnerabilities in Neos",
             "link": "https://www.neos.io/news/neos-sa-2015-002.html",
             "cve": null,
@@ -5775,7 +5775,7 @@
         }
     },
     "typo3/cms-core": {
-        "2018-07-12-2.": {
+        "2018-07-12-2": {
             "title": "Insecure Deserialization & Arbitrary Code Execution in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-002/",
             "branches": {
@@ -5796,7 +5796,7 @@
             },
             "reference": "composer://typo3/cms-core"
         },
-        "2018-07-12-3.": {
+        "2018-07-12-3": {
             "title": "Privilege Escalation & SQL Injection in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-003/",
             "branches": {
@@ -5817,7 +5817,7 @@
             },
             "reference": "composer://typo3/cms-core"
         },
-        "2018-07-12-1.": {
+        "2018-07-12-1": {
             "title": "Authentication Bypass in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-001/",
             "branches": {
@@ -5838,7 +5838,7 @@
             },
             "reference": "composer://typo3/cms-core"
         },
-        "2018-07-12-4.": {
+        "2018-07-12-4": {
             "title": "Insecure Deserialization in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-004/",
             "branches": {
@@ -5861,7 +5861,7 @@
         }
     },
     "typo3/flow": {
-        "2015-11-23.": {
+        "2015-11-23": {
             "title": "Arbitrary file upload and XML External Entity processing",
             "link": "https://www.neos.io/news/flow-sa-2015-001.html",
             "cve": null,
@@ -5883,7 +5883,7 @@
             },
             "reference": "composer://typo3/flow"
         },
-        "2016-11-01.": {
+        "2016-11-01": {
             "title": "Time-Based Information Disclosure Vulnerability in Flow",
             "link": "https://www.neos.io/blog/flow-sa-2016-001.html",
             "cve": null,
@@ -5926,7 +5926,7 @@
             },
             "reference": "composer://typo3/flow"
         },
-        "CVE-2013-7082.": {
+        "CVE-2013-7082": {
             "title": "Cross-Site Scripting in TYPO3 Flow",
             "link": "https://www.neos.io/news/flow-sa-2013-001.html",
             "cve": "CVE-2013-7082",
@@ -5948,7 +5948,7 @@
             },
             "reference": "composer://typo3/flow"
         },
-        "2012-03-28.": {
+        "2012-03-28": {
             "title": "Insecure Unserialize Vulnerability in FLOW3",
             "link": "https://www.neos.io/news/flow-sa-2012-001.html",
             "cve": null,
@@ -5965,7 +5965,7 @@
         }
     },
     "typo3/cms": {
-        "2015-12-15-1.": {
+        "2015-12-15-1": {
             "title": "Multiple Cross-Site Scripting vulnerabilities in TYPO3 backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-011/",
             "branches": {
@@ -6028,7 +6028,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "CVE-2014-3944.": {
+        "CVE-2014-3944": {
             "title": "Improper Session Invalidation",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
             "cve": "CVE-2014-3944",
@@ -6043,7 +6043,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-23-4.": {
+        "2016-02-23-4": {
             "title": "Denial of Service attack possibility in TYPO3 component Indexed Search",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-008/",
             "branches": {
@@ -6064,7 +6064,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2014-10-22-2.": {
+        "2014-10-22-2": {
             "title": "Arbitrary Shell Execution in Swiftmailer library",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-002/",
             "branches": {
@@ -6078,7 +6078,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-2.": {
+        "2015-07-01-2": {
             "title": "Frontend login Session Fixation",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-003/",
             "branches": {
@@ -6120,7 +6120,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-04-12-3.": {
+        "2016-04-12-3": {
             "title": "Authentication Bypass in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-011/",
             "branches": {
@@ -6148,7 +6148,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-04-12-4.": {
+        "2016-04-12-4": {
             "title": "Privilege Escalation in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-012/",
             "branches": {
@@ -6176,7 +6176,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-2.": {
+        "2016-07-19-2": {
             "title": "Insecure Unserialize in TYPO3 Import/Export",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-015",
             "branches": {
@@ -6218,7 +6218,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-4.": {
+        "2016-07-19-4": {
             "title": "Information Disclosure in TYPO3 Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-017",
             "branches": {
@@ -6260,7 +6260,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-11-22-2.": {
+        "2016-11-22-2": {
             "title": "Path Traversal in TYPO3 Core",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-024/",
             "branches": {
@@ -6316,7 +6316,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-04-12-1.": {
+        "2016-04-12-1": {
             "title": "Cross-Site Scripting in TYPO3 Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-009/",
             "branches": {
@@ -6344,7 +6344,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-01-03-1.": {
+        "2017-01-03-1": {
             "title": "Remote Code Execution in third party library swiftmailer",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-001/",
             "branches": {
@@ -6407,7 +6407,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-09-14-1.": {
+        "2016-09-14-1": {
             "title": "Cross-Site Scripting in TYPO3 Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-021",
             "branches": {
@@ -6456,7 +6456,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-12-15-5.": {
+        "2015-12-15-5": {
             "title": "Cross-Site Scripting in TYPO3 component Indexed Search",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-015/",
             "branches": {
@@ -6470,7 +6470,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-1.": {
+        "2015-07-01-1": {
             "title": "Access bypass when editing file metadata",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-002/",
             "branches": {
@@ -6512,7 +6512,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-7.": {
+        "2016-07-19-7": {
             "title": "Cross-Site Scripting in third party library mso/idna-convert",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-020",
             "branches": {
@@ -6547,7 +6547,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-4.": {
+        "2015-07-01-4": {
             "title": "Information Disclosure possibility exploitable by Editors",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-005/",
             "branches": {
@@ -6589,7 +6589,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-12-15-4.": {
+        "2015-12-15-4": {
             "title": "TYPO3 is susceptible to Cross-Site Flashing",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-014/",
             "branches": {
@@ -6603,7 +6603,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-02-28-1.": {
+        "2017-02-28-1": {
             "title": "Authentication Bypass in TYPO3 Frontend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-002/",
             "branches": {
@@ -6645,7 +6645,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-09-05-4.": {
+        "2017-09-05-4": {
             "title": "Arbitrary Code Execution in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-007/",
             "branches": {
@@ -6715,7 +6715,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-09-05-3.": {
+        "2017-09-05-3": {
             "title": "Information Disclosure in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-006/",
             "branches": {
@@ -6785,7 +6785,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-5.": {
+        "2015-07-01-5": {
             "title": "Brute Force Protection Bypass in backend login",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-006/",
             "branches": {
@@ -6827,7 +6827,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-23-2.": {
+        "2016-02-23-2": {
             "title": "Cross-Site Scripting in TYPO3 component Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-006/",
             "branches": {
@@ -6841,7 +6841,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-23-1.": {
+        "2016-02-23-1": {
             "title": "XML External Entity (XXE) Processing in TYPO3 Core",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-005/",
             "branches": {
@@ -6862,7 +6862,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-02-28-2.": {
+        "2017-02-28-2": {
             "title": "Cross-Site Scripting in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-003/",
             "branches": {
@@ -6925,7 +6925,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-16-3.": {
+        "2016-02-16-3": {
             "title": "Cross-Site Scripting in legacy form component",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-003/",
             "branches": {
@@ -6939,7 +6939,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-1.": {
+        "2016-07-19-1": {
             "title": "Cross-Site Scripting in TYPO3 Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-014/",
             "branches": {
@@ -6981,7 +6981,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2018-07-12-2.": {
+        "2018-07-12-2": {
             "title": "Insecure Deserialization & Arbitrary Code Execution in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-002/",
             "branches": {
@@ -7009,7 +7009,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "CVE-2014-3946.": {
+        "CVE-2014-3946": {
             "title": "Information disclosure in the Extbase framework",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
             "cve": "CVE-2014-3946",
@@ -7024,7 +7024,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-12-15-2.": {
+        "2015-12-15-2": {
             "title": "Cross-Site Scripting vulnerability in typolinks",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-012/",
             "branches": {
@@ -7087,7 +7087,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2018-07-12-3.": {
+        "2018-07-12-3": {
             "title": "Privilege Escalation & SQL Injection in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-003/",
             "branches": {
@@ -7108,7 +7108,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-11-22-1.": {
+        "2016-11-22-1": {
             "title": "Insecure Unserialize in TYPO3 Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-023/",
             "branches": {
@@ -7164,7 +7164,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-6.": {
+        "2016-07-19-6": {
             "title": "Environment Variable Injection",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-019",
             "branches": {
@@ -7192,7 +7192,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-23-3.": {
+        "2016-02-23-3": {
             "title": "Cross-Site Scripting in TYPO3 component CSS styled content",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-007/",
             "branches": {
@@ -7213,7 +7213,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-09-05-1.": {
+        "2017-09-05-1": {
             "title": "Cross-Site Scripting in TYPO3 CMS Backend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-004/",
             "branches": {
@@ -7276,7 +7276,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2014-10-22-1.": {
+        "2014-10-22-1": {
             "title": "Denial of Service in OpenID System Extension",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-002/",
             "branches": {
@@ -7290,7 +7290,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-09-08-1.": {
+        "2015-09-08-1": {
             "title": "Frontend: Unauthenticated Path Disclosure",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-008/",
             "branches": {
@@ -7332,7 +7332,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-05-24-1.": {
+        "2016-05-24-1": {
             "title": "Missing Access Check in TYPO3 CMS",
             "link": "https://typo3.org/teamssecuritysecurity-bulletins/security-bulletins-single-view/article/missing-access-check-in-typo3-cms/",
             "branches": {
@@ -7367,7 +7367,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2018-07-12-1.": {
+        "2018-07-12-1": {
             "title": "Authentication Bypass in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-001/",
             "branches": {
@@ -7395,7 +7395,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2014-12-09-2.": {
+        "2014-12-09-2": {
             "title": "Possible cache poisining on the homepage when anchors are used",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-003/",
             "branches": {
@@ -7416,7 +7416,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-12-15-3.": {
+        "2015-12-15-3": {
             "title": "Multiple Cross-Site Scripting vulnerabilities in frontend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-013/",
             "branches": {
@@ -7479,7 +7479,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "CVE-2015-5956.": {
+        "CVE-2015-5956": {
             "title": "Backend: Non-Persistent Cross-Site Scripting",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-009/",
             "cve": "CVE-2015-5956",
@@ -7522,7 +7522,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2014-05-22-1.": {
+        "2014-05-22-1": {
             "title": "The ExtJS JavaScript framework that is shipped with TYPO3 is susceptible to XSS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
             "branches": {
@@ -7536,7 +7536,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-16-2.": {
+        "2016-02-16-2": {
             "title": "Cross-Site Scripting in link validator component",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-002/",
             "branches": {
@@ -7557,7 +7557,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2018-07-12-4.": {
+        "2018-07-12-4": {
             "title": "Insecure Deserialization in TYPO3 CMS",
             "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-004/",
             "branches": {
@@ -7578,7 +7578,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-16-1.": {
+        "2016-02-16-1": {
             "title": "SQL Injection in dbal",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-016/",
             "branches": {
@@ -7592,7 +7592,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-3.": {
+        "2016-07-19-3": {
             "title": "SQL Injection in TYPO3 Frontend Login",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-016",
             "branches": {
@@ -7613,7 +7613,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-09-14-2.": {
+        "2016-09-14-2": {
             "title": "Cache Flooding in TYPO3 Frontend",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-022",
             "branches": {
@@ -7662,7 +7662,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-04-12-2.": {
+        "2016-04-12-2": {
             "title": "Arbitrary File Disclosure in Form Component",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-010/",
             "branches": {
@@ -7676,7 +7676,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-07-19-5.": {
+        "2016-07-19-5": {
             "title": "Cross-Site Scripting vulnerability in typolinks",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-018",
             "branches": {
@@ -7718,7 +7718,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-6.": {
+        "2015-07-01-6": {
             "title": "Cross-Site Scripting in 3rd party library Flowplayer",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-007/",
             "branches": {
@@ -7760,7 +7760,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "CVE-2014-3941.": {
+        "CVE-2014-3941": {
             "title": "Possible Host Spoofing through SERVER_NAME",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
             "cve": "CVE-2014-3941",
@@ -7775,7 +7775,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "CVE-2014-3943.": {
+        "CVE-2014-3943": {
             "title": "Failing to properly encode user input, several backend components are susceptible to XSS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
             "cve": "CVE-2014-3943",
@@ -7790,7 +7790,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2016-02-16-4.": {
+        "2016-02-16-4": {
             "title": "Cross-Site Scripting in form component",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-004/",
             "branches": {
@@ -7804,7 +7804,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2014-12-09-1.": {
+        "2014-12-09-1": {
             "title": "Possible link spoofing on the homepage when anchors are used",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-003/",
             "branches": {
@@ -7825,7 +7825,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2017-09-05-2.": {
+        "2017-09-05-2": {
             "title": "Information Disclosure in TYPO3 CMS",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-005/",
             "branches": {
@@ -7895,7 +7895,7 @@
             },
             "reference": "composer://typo3/cms"
         },
-        "2015-07-01-3.": {
+        "2015-07-01-3": {
             "title": "Cross-Site Scripting exploitable by Editors",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-004/",
             "branches": {
@@ -7939,7 +7939,7 @@
         }
     },
     "zendframework/zendxml": {
-        "ZF2015-06.": {
+        "ZF2015-06": {
             "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
             "link": "https://framework.zend.com/security/advisory/ZF2015-06",
             "cve": "CVE-2015-5161",
@@ -7956,7 +7956,7 @@
         }
     },
     "zendframework/zend-crypt": {
-        "2015-11-23.": {
+        "2015-11-23": {
             "title": "Potential Information Disclosure in Zend\\Crypt\\PublicKey\\Rsa\\PublicKey",
             "link": "https://framework.zend.com/security/advisory/ZF2015-10",
             "cve": "CVE-2015-7503",
@@ -7980,7 +7980,7 @@
         }
     },
     "zendframework/zend-xmlrpc": {
-        "ZF2014-01.": {
+        "ZF2014-01": {
             "title": "Potential XXE/XEE attacks using PHP functions: simplexml_load_*, DOMDocument::loadXML, and xml_parse",
             "link": "https://framework.zend.com/security/advisory/ZF2014-01",
             "cve": null,
@@ -8004,7 +8004,7 @@
         }
     },
     "zendframework/zend-db": {
-        "ZF2014-06.": {
+        "ZF2014-06": {
             "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-06",
             "cve": "CVE-2014-8089",
@@ -8040,7 +8040,7 @@
             },
             "reference": "composer://zendframework/zend-db"
         },
-        "ZF2015-02.": {
+        "ZF2015-02": {
             "title": "Potential SQL injection in PostgreSQL Zend\\Db adapter",
             "link": "https://framework.zend.com/security/advisory/ZF2015-02",
             "cve": "CVE-2015-0270",
@@ -8078,7 +8078,7 @@
         }
     },
     "zendframework/zend-http": {
-        "ZF2015-04.": {
+        "ZF2015-04": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -8114,7 +8114,7 @@
             },
             "reference": "composer://zendframework/zend-http"
         },
-        "ZF2018-01.": {
+        "ZF2018-01": {
             "title": "URL Rewrite vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2018-01",
             "branches": {
@@ -8130,7 +8130,7 @@
         }
     },
     "zendframework/zend-session": {
-        "ZF2015-01.": {
+        "ZF2015-01": {
             "title": "Session validation vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2015-01",
             "cve": null,
@@ -8168,7 +8168,7 @@
         }
     },
     "zendframework/zend-view": {
-        "ZF2014-03.": {
+        "ZF2014-03": {
             "title": "Potential XSS vector in multiple view helpers",
             "link": "https://framework.zend.com/security/advisory/ZF2014-03",
             "cve": null,
@@ -8192,7 +8192,7 @@
         }
     },
     "zendframework/zendopenid": {
-        "ZF2014-02.": {
+        "ZF2014-02": {
             "title": "Potential security issue in login mechanism of ZendOpenId and Zend_OpenId consumer",
             "link": "https://framework.zend.com/security/advisory/ZF2014-02",
             "cve": null,
@@ -8209,7 +8209,7 @@
         }
     },
     "zendframework/zend-cache": {
-        "ZF2015-07.": {
+        "ZF2015-07": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
@@ -8233,7 +8233,7 @@
         }
     },
     "zendframework/zendframework": {
-        "ZF2014-06.": {
+        "ZF2014-06": {
             "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-06",
             "cve": "CVE-2014-8089",
@@ -8269,7 +8269,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-02.": {
+        "ZF2015-02": {
             "title": "Potential SQL injection in PostgreSQL Zend\\Db adapter",
             "link": "https://framework.zend.com/security/advisory/ZF2015-02",
             "cve": "CVE-2015-0270",
@@ -8305,7 +8305,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2013-01.": {
+        "ZF2013-01": {
             "title": "Route Parameter Injection Via Query String in Zend\\Mvc",
             "link": "https://framework.zend.com/security/advisory/ZF2013-01",
             "cve": null,
@@ -8327,7 +8327,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2014-03.": {
+        "ZF2014-03": {
             "title": "Potential XSS vector in multiple view helpers",
             "link": "https://framework.zend.com/security/advisory/ZF2014-03",
             "cve": null,
@@ -8349,7 +8349,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2012-04.": {
+        "ZF2012-04": {
             "title": "Potential Proxy Injection Vulnerabilities in Multiple Zend Framework 2 Components",
             "link": "https://framework.zend.com/security/advisory/ZF2012-04",
             "cve": null,
@@ -8364,7 +8364,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-09.": {
+        "ZF2015-09": {
             "title": "Potential Information Disclosure and Insufficient Entropy vulnerability in Zend\\Captcha\\Word",
             "link": "https://framework.zend.com/security/advisory/ZF2015-09",
             "branches": {
@@ -8378,7 +8378,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-07.": {
+        "ZF2015-07": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
@@ -8393,7 +8393,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-10.": {
+        "ZF2015-10": {
             "title": "Potential Information Disclosure in Zend\\Crypt\\PublicKey\\Rsa\\PublicKey",
             "link": "https://framework.zend.com/security/advisory/ZF2015-10",
             "cve": "CVE-2015-7503",
@@ -8408,7 +8408,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2016-04.": {
+        "ZF2016-04": {
             "title": "Potential remote code execution in zend-mail via Sendmail adapter",
             "link": "https://framework.zend.com/security/advisory/ZF2016-04",
             "branches": {
@@ -8450,7 +8450,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-04.": {
+        "ZF2015-04": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -8486,7 +8486,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2013-02.": {
+        "ZF2013-02": {
             "title": "Potential Information Disclosure and Insufficient Entropy vulnerabilities in Zend\\Math\\Rand and Zend\\Validate\\Csrf Components",
             "link": "https://framework.zend.com/security/advisory/ZF2013-02",
             "cve": null,
@@ -8508,7 +8508,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2018-01.": {
+        "ZF2018-01": {
             "title": "URL Rewrite vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2018-01",
             "branches": {
@@ -8521,7 +8521,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-06.": {
+        "ZF2015-06": {
             "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
             "link": "https://framework.zend.com/security/advisory/ZF2015-06",
             "cve": "CVE-2015-5161",
@@ -8571,7 +8571,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2014-05.": {
+        "ZF2014-05": {
             "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-05",
             "cve": "CVE-2014-8088",
@@ -8607,7 +8607,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-03.": {
+        "ZF2015-03": {
             "title": "Invalid CSRF validation of null or incorrectly formatted token identifiers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-03",
             "cve": "CVE-2015-1786",
@@ -8622,7 +8622,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2013-03.": {
+        "ZF2013-03": {
             "title": "Potential SQL injection due to execution of platform-specific SQL containing interpolations",
             "link": "https://framework.zend.com/security/advisory/ZF2013-03",
             "cve": null,
@@ -8644,7 +8644,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2013-04.": {
+        "ZF2013-04": {
             "title": "Potential Remote Address Spoofing Vector in Zend\\Http\\PhpEnvironment\\RemoteAddress",
             "link": "https://framework.zend.com/security/advisory/ZF2013-04",
             "cve": null,
@@ -8659,7 +8659,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2012-03.": {
+        "ZF2012-03": {
             "title": "Potential XSS Vectors in Multiple Zend Framework 2 Components",
             "link": "https://framework.zend.com/security/advisory/ZF2012-03",
             "cve": null,
@@ -8674,7 +8674,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-01.": {
+        "ZF2015-01": {
             "title": "Session validation vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2015-01",
             "cve": null,
@@ -8710,7 +8710,7 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2014-01.": {
+        "ZF2014-01": {
             "title": "Potential XXE/XEE attacks using PHP functions: simplexml_load_*, DOMDocument::loadXML, and xml_parse",
             "link": "https://framework.zend.com/security/advisory/ZF2014-01",
             "cve": null,
@@ -8734,7 +8734,7 @@
         }
     },
     "zendframework/zend-diactoros": {
-        "ZF2018-01.": {
+        "ZF2018-01": {
             "title": "URL Rewrite vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2018-01",
             "branches": {
@@ -8748,7 +8748,7 @@
             },
             "reference": "composer://zendframework/zend-diactoros"
         },
-        "ZF2015-05.": {
+        "ZF2015-05": {
             "title": "Potential XSS and Open Redirect vectors in zend-diactoros",
             "link": "https://framework.zend.com/security/advisory/ZF2015-05",
             "cve": "CVE-2015-3257",
@@ -8765,7 +8765,7 @@
         }
     },
     "zendframework/zend-form": {
-        "ZF2014-03.": {
+        "ZF2014-03": {
             "title": "Potential XSS vector in multiple view helpers",
             "link": "https://framework.zend.com/security/advisory/ZF2014-03",
             "cve": null,
@@ -8789,7 +8789,7 @@
         }
     },
     "zendframework/zend-navigation": {
-        "ZF2014-03.": {
+        "ZF2014-03": {
             "title": "Potential XSS vector in multiple view helpers",
             "link": "https://framework.zend.com/security/advisory/ZF2014-03",
             "cve": null,
@@ -8813,7 +8813,7 @@
         }
     },
     "zendframework/zend-feed": {
-        "ZF2018-01.": {
+        "ZF2018-01": {
             "title": "URL Rewrite vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2018-01",
             "branches": {
@@ -8829,7 +8829,7 @@
         }
     },
     "zendframework/zend-mail": {
-        "ZF2016-04.": {
+        "ZF2016-04": {
             "title": "Potential remote code execution in zend-mail via Sendmail adapter",
             "link": "https://framework.zend.com/security/advisory/ZF2016-04",
             "branches": {
@@ -8892,7 +8892,7 @@
             },
             "reference": "composer://zendframework/zend-mail"
         },
-        "ZF2015-04.": {
+        "ZF2015-04": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -8930,7 +8930,7 @@
         }
     },
     "zendframework/zendframework1": {
-        "ZF2014-06.": {
+        "ZF2014-06": {
             "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-06",
             "cve": "CVE-2014-8089",
@@ -8945,7 +8945,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2016-03.": {
+        "ZF2016-03": {
             "title": "Potential SQL injection in ORDER and GROUP functions of ZF1",
             "link": "https://framework.zend.com/security/advisory/ZF2016-03",
             "branches": {
@@ -8958,7 +8958,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2009-01.": {
+        "ZF2009-01": {
             "title": "LFI vector in Zend_View::setScriptPath() and render()",
             "link": "https://framework.zend.com/security/advisory/ZF2009-01",
             "cve": null,
@@ -8973,7 +8973,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-03.": {
+        "ZF2010-03": {
             "title": "Potential XSS vector in Zend_Filter_StripTags when comments allowed",
             "link": "https://framework.zend.com/security/advisory/ZF2010-03",
             "cve": null,
@@ -9002,7 +9002,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2016-02.": {
+        "ZF2016-02": {
             "title": "Potential SQL injection in ORDER and GROUP statements of Zend_Db_Select",
             "link": "https://framework.zend.com/security/advisory/ZF2016-02",
             "cve": "CVE-2016-6233",
@@ -9016,7 +9016,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2009-02.": {
+        "ZF2009-02": {
             "title": "XSS vector in Zend_Filter_StripTags",
             "link": "https://framework.zend.com/security/advisory/ZF2009-02",
             "cve": null,
@@ -9031,7 +9031,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2015-09.": {
+        "ZF2015-09": {
             "title": "Potential Information Disclosure and Insufficient Entropy vulnerability in Zend\\Captcha\\Word",
             "link": "https://framework.zend.com/security/advisory/ZF2015-09",
             "branches": {
@@ -9045,7 +9045,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2016-01.": {
+        "ZF2016-01": {
             "title": "Potential Insufficient Entropy Vulnerability in ZF1",
             "link": "https://framework.zend.com/security/advisory/ZF2016-01",
             "branches": {
@@ -9059,7 +9059,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2012-01.": {
+        "ZF2012-01": {
             "title": "Local file disclosure via XXE injection in Zend_XmlRpc",
             "link": "https://framework.zend.com/security/advisory/ZF2012-01",
             "cve": null,
@@ -9074,7 +9074,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2015-07.": {
+        "ZF2015-07": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
@@ -9089,7 +9089,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2014-02.": {
+        "ZF2014-02": {
             "title": "Potential security issue in login mechanism of ZendOpenId and Zend_OpenId consumer",
             "link": "https://framework.zend.com/security/advisory/ZF2014-02",
             "cve": null,
@@ -9104,7 +9104,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2014-04.": {
+        "ZF2014-04": {
             "title": "Potential SQL injection in the ORDER implementation of Zend_Db_Select",
             "link": "https://framework.zend.com/security/advisory/ZF2014-04",
             "cve": null,
@@ -9119,7 +9119,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-02.": {
+        "ZF2010-02": {
             "title": "Potential XSS vector in Zend_Dojo_View_Helper_Editor",
             "link": "https://framework.zend.com/security/advisory/ZF2010-02",
             "cve": null,
@@ -9148,7 +9148,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2015-04.": {
+        "ZF2015-04": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -9163,7 +9163,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-05.": {
+        "ZF2010-05": {
             "title": "Potential XSS vector in Zend_Service_ReCaptcha_MailHide",
             "link": "https://framework.zend.com/security/advisory/ZF2010-05",
             "cve": null,
@@ -9192,7 +9192,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-01.": {
+        "ZF2010-01": {
             "title": "Potential XSS vectors due to inconsistent encodings",
             "link": "https://framework.zend.com/security/advisory/ZF2010-01",
             "cve": null,
@@ -9207,7 +9207,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2012-02.": {
+        "ZF2012-02": {
             "title": "Denial of Service vector via XEE injection",
             "link": "https://framework.zend.com/security/advisory/ZF2012-02",
             "cve": null,
@@ -9222,7 +9222,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2015-06.": {
+        "ZF2015-06": {
             "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
             "link": "https://framework.zend.com/security/advisory/ZF2015-06",
             "cve": "CVE-2015-5161",
@@ -9237,7 +9237,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2014-05.": {
+        "ZF2014-05": {
             "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-05",
             "cve": "CVE-2014-8088",
@@ -9252,7 +9252,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2011-02.": {
+        "ZF2011-02": {
             "title": "Potential SQL Injection Vector When Using PDO_MySql",
             "link": "https://framework.zend.com/security/advisory/ZF2011-02",
             "cve": null,
@@ -9274,7 +9274,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-06.": {
+        "ZF2010-06": {
             "title": "Potential Security Issues in Bundled Dojo Library",
             "link": "https://framework.zend.com/security/advisory/ZF2010-06",
             "cve": null,
@@ -9303,7 +9303,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2015-08.": {
+        "ZF2015-08": {
             "title": "Potential SQL injection vector using null byte for PDO (MsSql, SQLite)",
             "link": "https://framework.zend.com/security/advisory/ZF2015-08",
             "branches": {
@@ -9317,7 +9317,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2011-01.": {
+        "ZF2011-01": {
             "title": "Potential XSS in Development Environment Error View Script",
             "link": "https://framework.zend.com/security/advisory/ZF2011-01",
             "cve": null,
@@ -9332,7 +9332,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2010-07.": {
+        "ZF2010-07": {
             "title": "Potential Security Issues in Bundled Dojo Library",
             "link": "https://framework.zend.com/security/advisory/ZF2010-07",
             "cve": null,
@@ -9354,7 +9354,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2012-05.": {
+        "ZF2012-05": {
             "title": "Potential XML eXternal Entity injection vectors in Zend Framework 1 Zend_Feed component",
             "link": "https://framework.zend.com/security/advisory/ZF2012-05",
             "cve": null,
@@ -9376,7 +9376,7 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2014-01.": {
+        "ZF2014-01": {
             "title": "Potential XXE/XEE attacks using PHP functions: simplexml_load_*, DOMDocument::loadXML, and xml_parse",
             "link": "https://framework.zend.com/security/advisory/ZF2014-01",
             "cve": null,
@@ -9393,7 +9393,7 @@
         }
     },
     "zendframework/zend-captcha": {
-        "ZF2015-09.": {
+        "ZF2015-09": {
             "title": "Potential Information Disclosure and Insufficient Entropy vulnerability in Zend\\Captcha\\Word",
             "link": "https://framework.zend.com/security/advisory/ZF2015-09",
             "branches": {
@@ -9416,7 +9416,7 @@
         }
     },
     "zendframework/zend-ldap": {
-        "ZF2014-05.": {
+        "ZF2014-05": {
             "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-05",
             "cve": "CVE-2014-8088",
@@ -9454,7 +9454,7 @@
         }
     },
     "zendframework/zend-json": {
-        "ZF2014-01.": {
+        "ZF2014-01": {
             "title": "Potential XXE/XEE attacks using PHP functions: simplexml_load_*, DOMDocument::loadXML, and xml_parse",
             "link": "https://framework.zend.com/security/advisory/ZF2014-01",
             "cve": null,
@@ -9478,7 +9478,7 @@
         }
     },
     "zendframework/zend-validator": {
-        "ZF2015-03.": {
+        "ZF2015-03": {
             "title": "Invalid CSRF validation of null or incorrectly formatted token identifiers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-03",
             "cve": "CVE-2015-1786",
@@ -9495,7 +9495,7 @@
         }
     },
     "titon/framework": {
-        "2017-11-20.": {
+        "2017-11-20": {
             "title": "Remote Code Execution via Chosen-Ciphertext Attack",
             "link": "https://github.com/titon/framework/issues/93",
             "cve": null,
@@ -9512,7 +9512,7 @@
         }
     },
     "symfony/validator": {
-        "2012-08-28.": {
+        "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-17-released",
             "cve": null,
@@ -9527,7 +9527,7 @@
             },
             "reference": "composer://symfony/validator"
         },
-        "CVE-2013-4751.": {
+        "CVE-2013-4751": {
             "title": "Validation metadata serialization and loss of information",
             "link": "https://symfony.com/blog/security-releases-symfony-2-0-24-2-1-12-2-2-5-and-2-3-3-released",
             "cve": "CVE-2013-4751",
@@ -9565,7 +9565,7 @@
         }
     },
     "symfony/security": {
-        "CVE-2013-5958.": {
+        "CVE-2013-5958": {
             "title": "Possible DOS attack with long user-submitted passwords",
             "link": "https://symfony.com/blog/security-releases-cve-2013-5958-symfony-2-0-25-2-1-13-2-2-9-and-2-3-6-released",
             "cve": "CVE-2013-5958",
@@ -9601,7 +9601,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2012-6431.": {
+        "CVE-2012-6431": {
             "title": "Routes behind a firewall are accessible even when not logged in",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released",
             "cve": "CVE-2012-6431",
@@ -9616,7 +9616,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2018-11385.": {
+        "CVE-2018-11385": {
             "title": "CVE-2018-11385: Session Fixation Issue for Guard Authentication",
             "link": "https://symfony.com/cve-2018-11385",
             "cve": "CVE-2018-11385",
@@ -9729,7 +9729,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2016-1902.": {
+        "CVE-2016-1902": {
             "title": "CVE-2016-1902: SecureRandom's fallback not secure when OpenSSL fails ",
             "link": "https://symfony.com/cve-2016-1902",
             "cve": "CVE-2016-1902",
@@ -9772,7 +9772,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2015-8124.": {
+        "CVE-2015-8124": {
             "title": "CVE-2015-8124: Session Fixation in the \"Remember Me\" Login Feature",
             "link": "https://symfony.com/cve-2015-8124",
             "cve": "CVE-2015-8124",
@@ -9815,7 +9815,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2017-11365.": {
+        "CVE-2017-11365": {
             "title": "CVE-2017-11365: Empty passwords validation issue",
             "link": "https://symfony.com/cve-2017-11365",
             "cve": "CVE-2017-11365",
@@ -9851,7 +9851,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2018-11406.": {
+        "CVE-2018-11406": {
             "title": "CVE-2018-11406: CSRF Token Fixation",
             "link": "https://symfony.com/cve-2018-11406",
             "cve": "CVE-2018-11406",
@@ -9964,7 +9964,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2018-11407.": {
+        "CVE-2018-11407": {
             "title": "CVE-2018-11407: Unauthorized access on a misconfigured LDAP server when using an empty password",
             "link": "https://symfony.com/cve-2018-11407",
             "cve": "CVE-2018-11407",
@@ -10021,7 +10021,7 @@
             },
             "reference": "composer://symfony/security"
         },
-        "CVE-2015-8125.": {
+        "CVE-2015-8125": {
             "title": "CVE-2015-8125: Potential Remote Timing Attack Vulnerability in Security Remember-Me Service",
             "link": "https://symfony.com/cve-2015-8125",
             "cve": "CVE-2015-8125",
@@ -10066,7 +10066,7 @@
         }
     },
     "symfony/framework-bundle": {
-        "CVE-2014-4931.": {
+        "CVE-2014-4931": {
             "title": "Code injection in the way Symfony implements translation caching in FrameworkBundle",
             "link": "https://symfony.com/blog/security-releases-cve-2014-4931-symfony-2-3-18-2-4-8-and-2-5-2-released",
             "cve": "CVE-2014-4931",
@@ -10118,7 +10118,7 @@
         }
     },
     "symfony/yaml": {
-        "CVE-2013-1348.": {
+        "CVE-2013-1348": {
             "title": "Ability to enable/disable PHP parsing in Yaml::parse()",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-22-and-2-1-7-released",
             "cve": "CVE-2013-1348",
@@ -10133,7 +10133,7 @@
             },
             "reference": "composer://symfony/yaml"
         },
-        "CVE-2013-1397.": {
+        "CVE-2013-1397": {
             "title": "Ability to enable/disable object support in YAML parsing and dumping",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-22-and-2-1-7-released",
             "cve": "CVE-2013-1397",
@@ -10157,7 +10157,7 @@
         }
     },
     "symfony/web-profiler-bundle": {
-        "CVE-2014-6072.": {
+        "CVE-2014-6072": {
             "title": "CSRF vulnerability in the Web Profiler",
             "link": "https://symfony.com/cve-2014-6072",
             "cve": "CVE-2014-6072",
@@ -10209,7 +10209,7 @@
         }
     },
     "symfony/form": {
-        "CVE-2015-8125.": {
+        "CVE-2015-8125": {
             "title": "CVE-2015-8125: Potential Remote Timing Attack Vulnerability in Security Remember-Me Service",
             "link": "https://symfony.com/cve-2015-8125",
             "cve": "CVE-2015-8125",
@@ -10252,7 +10252,7 @@
             },
             "reference": "composer://symfony/form"
         },
-        "CVE-2017-16790.": {
+        "CVE-2017-16790": {
             "title": "CVE-2017-16790: Ensure that submitted data are uploaded files",
             "link": "https://symfony.com/cve-2017-16790",
             "cve": "CVE-2017-16790",
@@ -10304,7 +10304,7 @@
         }
     },
     "symfony/intl": {
-        "CVE-2017-16654.": {
+        "CVE-2017-16654": {
             "title": "CVE-2017-16654: Intl bundle readers breaking out of paths",
             "link": "https://symfony.com/cve-2017-16654",
             "cve": "CVE-2017-16654",
@@ -10356,7 +10356,7 @@
         }
     },
     "symfony/dependency-injection": {
-        "2012-08-28.": {
+        "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-17-released",
             "cve": null,
@@ -10373,7 +10373,7 @@
         }
     },
     "symfony/translation": {
-        "2012-08-28.": {
+        "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-17-released",
             "cve": null,
@@ -10390,7 +10390,7 @@
         }
     },
     "symfony/security-core": {
-        "CVE-2016-1902.": {
+        "CVE-2016-1902": {
             "title": "CVE-2016-1902: SecureRandom's fallback not secure when OpenSSL fails ",
             "link": "https://symfony.com/cve-2016-1902",
             "cve": "CVE-2016-1902",
@@ -10426,7 +10426,7 @@
             },
             "reference": "composer://symfony/security-core"
         },
-        "CVE-2017-11365.": {
+        "CVE-2017-11365": {
             "title": "CVE-2017-11365: Empty passwords validation issue",
             "link": "https://symfony.com/cve-2017-11365",
             "cve": "CVE-2017-11365",
@@ -10462,7 +10462,7 @@
             },
             "reference": "composer://symfony/security-core"
         },
-        "CVE-2018-11407.": {
+        "CVE-2018-11407": {
             "title": "CVE-2018-11407: Unauthorized access on a misconfigured LDAP server when using an empty password",
             "link": "https://symfony.com/cve-2018-11407",
             "cve": "CVE-2018-11407",
@@ -10519,7 +10519,7 @@
             },
             "reference": "composer://symfony/security-core"
         },
-        "CVE-2016-2403.": {
+        "CVE-2016-2403": {
             "title": "CVE-2016-2403: Unauthorized access on a misconfigured Ldap server when using an empty password",
             "link": "https://symfony.com/cve-2016-2403",
             "cve": "CVE-2016-2403",
@@ -10543,7 +10543,7 @@
         }
     },
     "symfony/security-guard": {
-        "CVE-2018-11385.": {
+        "CVE-2018-11385": {
             "title": "CVE-2018-11385: Session Fixation Issue for Guard Authentication",
             "link": "https://symfony.com/cve-2018-11385",
             "cve": "CVE-2018-11385",
@@ -10602,7 +10602,7 @@
         }
     },
     "symfony/security-csrf": {
-        "CVE-2017-16653.": {
+        "CVE-2017-16653": {
             "title": "CVE-2017-16653: CSRF protection does not use different tokens for HTTP and HTTPS",
             "link": "https://symfony.com/cve-2017-16653",
             "cve": "CVE-2017-16653",
@@ -10652,7 +10652,7 @@
             },
             "reference": "composer://symfony/security-csrf"
         },
-        "CVE-2018-11406.": {
+        "CVE-2018-11406": {
             "title": "CVE-2018-11406: CSRF Token Fixation",
             "link": "https://symfony.com/cve-2018-11406",
             "cve": "CVE-2018-11406",
@@ -10739,7 +10739,7 @@
         }
     },
     "symfony/symfony": {
-        "2012-08-28.": {
+        "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-17-released",
             "cve": null,
@@ -10754,7 +10754,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2013-5958.": {
+        "CVE-2013-5958": {
             "title": "Possible DOS attack with long user-submitted passwords",
             "link": "https://symfony.com/blog/security-releases-cve-2013-5958-symfony-2-0-25-2-1-13-2-2-9-and-2-3-6-released",
             "cve": "CVE-2013-5958",
@@ -10790,7 +10790,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2016-4423.": {
+        "CVE-2016-4423": {
             "title": "CVE-2016-4423: Large username storage in session",
             "link": "https://symfony.com/cve-2016-4423",
             "cve": "CVE-2016-4423",
@@ -10847,7 +10847,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2013-4752.": {
+        "CVE-2013-4752": {
             "title": "Request::getHost() poisoning",
             "link": "https://symfony.com/blog/security-releases-symfony-2-0-24-2-1-12-2-2-5-and-2-3-3-released",
             "cve": "CVE-2013-4752",
@@ -10883,7 +10883,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "2012-11-29.": {
+        "2012-11-29": {
             "title": "Request::getClientIp() when the trust proxy mode is enabled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-19-and-2-1-4",
             "cve": null,
@@ -10905,7 +10905,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2017-16654.": {
+        "CVE-2017-16654": {
             "title": "CVE-2017-16654: Intl bundle readers breaking out of paths",
             "link": "https://symfony.com/cve-2017-16654",
             "cve": "CVE-2017-16654",
@@ -10955,7 +10955,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "2011-11-16.": {
+        "2011-11-16": {
             "title": "Vulnerability in the EntityUserProvider as provided in the Doctrine bridge",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-6",
             "cve": null,
@@ -10970,7 +10970,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2012-6431.": {
+        "CVE-2012-6431": {
             "title": "Routes behind a firewall are accessible even when not logged in",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released",
             "cve": "CVE-2012-6431",
@@ -10985,7 +10985,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2017-16652.": {
+        "CVE-2017-16652": {
             "title": "CVE-2017-16652: Open redirect vulnerability on security handlers",
             "link": "https://symfony.com/cve-2017-16652",
             "cve": "CVE-2017-16652",
@@ -11035,7 +11035,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2014-6061.": {
+        "CVE-2014-6061": {
             "title": "Security issue when parsing the Authorization header",
             "link": "https://symfony.com/cve-2014-6061",
             "cve": "CVE-2014-6061",
@@ -11085,7 +11085,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2015-4050.": {
+        "CVE-2015-4050": {
             "title": "CVE-2015-4050: ESI unauthorized access",
             "link": "https://symfony.com/cve-2015-4050",
             "cve": "CVE-2015-4050",
@@ -11121,7 +11121,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2012-6432.": {
+        "CVE-2012-6432": {
             "title": "Code execution vulnerability via the \"internal\" routes",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released",
             "cve": "CVE-2012-6432",
@@ -11143,7 +11143,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-11408.": {
+        "CVE-2018-11408": {
             "title": "CVE-2018-11408: Open redirect vulnerability on security handlers",
             "link": "https://symfony.com/cve-2018-11408",
             "cve": "CVE-2018-11408",
@@ -11207,7 +11207,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-11385.": {
+        "CVE-2018-11385": {
             "title": "CVE-2018-11385: Session Fixation Issue for Guard Authentication",
             "link": "https://symfony.com/cve-2018-11385",
             "cve": "CVE-2018-11385",
@@ -11320,7 +11320,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2014-4931.": {
+        "CVE-2014-4931": {
             "title": "Code injection in the way Symfony implements translation caching in FrameworkBundle",
             "link": "https://symfony.com/blog/security-releases-cve-2014-4931-symfony-2-3-18-2-4-8-and-2-5-2-released",
             "cve": "CVE-2014-4931",
@@ -11370,7 +11370,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2013-4751.": {
+        "CVE-2013-4751": {
             "title": "Validation metadata serialization and loss of information",
             "link": "https://symfony.com/blog/security-releases-symfony-2-0-24-2-1-12-2-2-5-and-2-3-3-released",
             "cve": "CVE-2013-4751",
@@ -11406,7 +11406,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2016-1902.": {
+        "CVE-2016-1902": {
             "title": "CVE-2016-1902: SecureRandom's fallback not secure when OpenSSL fails ",
             "link": "https://symfony.com/cve-2016-1902",
             "cve": "CVE-2016-1902",
@@ -11449,7 +11449,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-14773.": {
+        "CVE-2018-14773": {
             "title": "CVE-2018-14773: Remove support for legacy and risky HTTP headers",
             "link": "https://symfony.com/blog/cve-2018-14773-remove-support-for-legacy-and-risky-http-headers",
             "cve": "CVE-2018-14773",
@@ -11569,7 +11569,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2013-1348.": {
+        "CVE-2013-1348": {
             "title": "Ability to enable/disable PHP parsing in Yaml::parse()",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-22-and-2-1-7-released",
             "cve": "CVE-2013-1348",
@@ -11584,7 +11584,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2015-8124.": {
+        "CVE-2015-8124": {
             "title": "CVE-2015-8124: Session Fixation in the \"Remember Me\" Login Feature",
             "link": "https://symfony.com/cve-2015-8124",
             "cve": "CVE-2015-8124",
@@ -11627,7 +11627,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2015-2309.": {
+        "CVE-2015-2309": {
             "title": "Unsafe methods in the Request class",
             "link": "https://symfony.com/cve-2015-2309",
             "cve": "CVE-2015-2309",
@@ -11684,7 +11684,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2017-16653.": {
+        "CVE-2017-16653": {
             "title": "CVE-2017-16653: CSRF protection does not use different tokens for HTTP and HTTPS",
             "link": "https://symfony.com/cve-2017-16653",
             "cve": "CVE-2017-16653",
@@ -11734,7 +11734,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2017-11365.": {
+        "CVE-2017-11365": {
             "title": "CVE-2017-11365: Empty passwords validation issue",
             "link": "https://symfony.com/cve-2017-11365",
             "cve": "CVE-2017-11365",
@@ -11770,7 +11770,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-11386.": {
+        "CVE-2018-11386": {
             "title": "CVE-2018-11386: Denial of service when using PDOSessionHandler",
             "link": "https://symfony.com/cve-2018-11386",
             "cve": "CVE-2018-11386",
@@ -11883,7 +11883,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "2012-02-24.": {
+        "2012-02-24": {
             "title": "XML decoding attack vector through external entities",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-11-released",
             "cve": null,
@@ -11898,7 +11898,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-11406.": {
+        "CVE-2018-11406": {
             "title": "CVE-2018-11406: CSRF Token Fixation",
             "link": "https://symfony.com/cve-2018-11406",
             "cve": "CVE-2018-11406",
@@ -12011,7 +12011,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2014-6072.": {
+        "CVE-2014-6072": {
             "title": "CSRF vulnerability in the Web Profiler",
             "link": "https://symfony.com/cve-2014-6072",
             "cve": "CVE-2014-6072",
@@ -12061,7 +12061,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2018-11407.": {
+        "CVE-2018-11407": {
             "title": "CVE-2018-11407: Unauthorized access on a misconfigured LDAP server when using an empty password",
             "link": "https://symfony.com/cve-2018-11407",
             "cve": "CVE-2018-11407",
@@ -12118,7 +12118,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2013-1397.": {
+        "CVE-2013-1397": {
             "title": "Ability to enable/disable object support in YAML parsing and dumping",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-22-and-2-1-7-released",
             "cve": "CVE-2013-1397",
@@ -12140,7 +12140,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2015-8125.": {
+        "CVE-2015-8125": {
             "title": "CVE-2015-8125: Potential Remote Timing Attack Vulnerability in Security Remember-Me Service",
             "link": "https://symfony.com/cve-2015-8125",
             "cve": "CVE-2015-8125",
@@ -12183,7 +12183,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2015-2308.": {
+        "CVE-2015-2308": {
             "title": "Esi Code Injection",
             "link": "https://symfony.com/cve-2015-2308",
             "cve": "CVE-2015-2308",
@@ -12240,7 +12240,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2016-2403.": {
+        "CVE-2016-2403": {
             "title": "CVE-2016-2403: Unauthorized access on a misconfigured Ldap server when using an empty password",
             "link": "https://symfony.com/cve-2016-2403",
             "cve": "CVE-2016-2403",
@@ -12262,7 +12262,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2014-5244.": {
+        "CVE-2014-5244": {
             "title": "Denial of service with a malicious HTTP Host header",
             "link": "https://symfony.com/cve-2014-5244",
             "cve": "CVE-2014-5244",
@@ -12312,7 +12312,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2014-5245.": {
+        "CVE-2014-5245": {
             "title": "Direct access of ESI URLs behind a trusted proxy",
             "link": "https://symfony.com/cve-2014-5245",
             "cve": "CVE-2014-5245",
@@ -12362,7 +12362,7 @@
             },
             "reference": "composer://symfony/symfony"
         },
-        "CVE-2017-16790.": {
+        "CVE-2017-16790": {
             "title": "CVE-2017-16790: Ensure that submitted data are uploaded files",
             "link": "https://symfony.com/cve-2017-16790",
             "cve": "CVE-2017-16790",
@@ -12414,7 +12414,7 @@
         }
     },
     "symfony/security-bundle": {
-        "CVE-2018-11408.": {
+        "CVE-2018-11408": {
             "title": "CVE-2018-11408: Open redirect vulnerability on security handlers",
             "link": "https://symfony.com/cve-2018-11408",
             "cve": "CVE-2018-11408",
@@ -12478,7 +12478,7 @@
             },
             "reference": "composer://symfony/security-bundle"
         },
-        "CVE-2018-11406.": {
+        "CVE-2018-11406": {
             "title": "CVE-2018-11406: CSRF Token Fixation",
             "link": "https://symfony.com/cve-2018-11406",
             "cve": "CVE-2018-11406",
@@ -12593,7 +12593,7 @@
         }
     },
     "symfony/serializer": {
-        "2012-02-24.": {
+        "2012-02-24": {
             "title": "XML decoding attack vector through external entities",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-11-released",
             "cve": null,
@@ -12610,7 +12610,7 @@
         }
     },
     "symfony/routing": {
-        "2012-08-28.": {
+        "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-17-released",
             "cve": null,
@@ -12625,7 +12625,7 @@
             },
             "reference": "composer://symfony/routing"
         },
-        "CVE-2012-6431.": {
+        "CVE-2012-6431": {
             "title": "Routes behind a firewall are accessible even when not logged in",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released",
             "cve": "CVE-2012-6431",
@@ -12642,7 +12642,7 @@
         }
     },
     "symfony/security-http": {
-        "CVE-2016-4423.": {
+        "CVE-2016-4423": {
             "title": "CVE-2016-4423: Large username storage in session",
             "link": "https://symfony.com/cve-2016-4423",
             "cve": "CVE-2016-4423",
@@ -12699,7 +12699,7 @@
             },
             "reference": "composer://symfony/security-http"
         },
-        "CVE-2017-16652.": {
+        "CVE-2017-16652": {
             "title": "CVE-2017-16652: Open redirect vulnerability on security handlers",
             "link": "https://symfony.com/cve-2017-16652",
             "cve": "CVE-2017-16652",
@@ -12749,7 +12749,7 @@
             },
             "reference": "composer://symfony/security-http"
         },
-        "CVE-2018-11385.": {
+        "CVE-2018-11385": {
             "title": "CVE-2018-11385: Session Fixation Issue for Guard Authentication",
             "link": "https://symfony.com/cve-2018-11385",
             "cve": "CVE-2018-11385",
@@ -12834,7 +12834,7 @@
             },
             "reference": "composer://symfony/security-http"
         },
-        "CVE-2015-8124.": {
+        "CVE-2015-8124": {
             "title": "CVE-2015-8124: Session Fixation in the \"Remember Me\" Login Feature",
             "link": "https://symfony.com/cve-2015-8124",
             "cve": "CVE-2015-8124",
@@ -12870,7 +12870,7 @@
             },
             "reference": "composer://symfony/security-http"
         },
-        "CVE-2018-11406.": {
+        "CVE-2018-11406": {
             "title": "CVE-2018-11406: CSRF Token Fixation",
             "link": "https://symfony.com/cve-2018-11406",
             "cve": "CVE-2018-11406",
@@ -12955,7 +12955,7 @@
             },
             "reference": "composer://symfony/security-http"
         },
-        "CVE-2015-8125.": {
+        "CVE-2015-8125": {
             "title": "CVE-2015-8125: Potential Remote Timing Attack Vulnerability in Security Remember-Me Service",
             "link": "https://symfony.com/cve-2015-8125",
             "cve": "CVE-2015-8125",
@@ -12993,7 +12993,7 @@
         }
     },
     "symfony/http-kernel": {
-        "CVE-2015-4050.": {
+        "CVE-2015-4050": {
             "title": "CVE-2015-4050: ESI unauthorized access",
             "link": "https://symfony.com/cve-2015-4050",
             "cve": "CVE-2015-4050",
@@ -13029,7 +13029,7 @@
             },
             "reference": "composer://symfony/http-kernel"
         },
-        "CVE-2015-2308.": {
+        "CVE-2015-2308": {
             "title": "Esi Code Injection",
             "link": "https://symfony.com/cve-2015-2308",
             "cve": "CVE-2015-2308",
@@ -13086,7 +13086,7 @@
             },
             "reference": "composer://symfony/http-kernel"
         },
-        "CVE-2014-5245.": {
+        "CVE-2014-5245": {
             "title": "Direct access of ESI URLs behind a trusted proxy",
             "link": "https://symfony.com/cve-2014-5245",
             "cve": "CVE-2014-5245",
@@ -13138,7 +13138,7 @@
         }
     },
     "symfony/http-foundation": {
-        "CVE-2013-4752.": {
+        "CVE-2013-4752": {
             "title": "Request::getHost() poisoning",
             "link": "https://symfony.com/blog/security-releases-symfony-2-0-24-2-1-12-2-2-5-and-2-3-3-released",
             "cve": "CVE-2013-4752",
@@ -13174,7 +13174,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "2012-11-29.": {
+        "2012-11-29": {
             "title": "Request::getClientIp() when the trust proxy mode is enabled",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-19-and-2-1-4",
             "cve": null,
@@ -13196,7 +13196,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2012-6431.": {
+        "CVE-2012-6431": {
             "title": "Routes behind a firewall are accessible even when not logged in",
             "link": "https://symfony.com/blog/security-release-symfony-2-0-20-and-2-1-5-released",
             "cve": "CVE-2012-6431",
@@ -13211,7 +13211,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2014-6061.": {
+        "CVE-2014-6061": {
             "title": "Security issue when parsing the Authorization header",
             "link": "https://symfony.com/cve-2014-6061",
             "cve": "CVE-2014-6061",
@@ -13261,7 +13261,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2018-14773.": {
+        "CVE-2018-14773": {
             "title": "CVE-2018-14773: Remove support for legacy and risky HTTP headers",
             "link": "https://symfony.com/blog/cve-2018-14773-remove-support-for-legacy-and-risky-http-headers",
             "cve": "CVE-2018-14773",
@@ -13381,7 +13381,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2015-2309.": {
+        "CVE-2015-2309": {
             "title": "Unsafe methods in the Request class",
             "link": "https://symfony.com/cve-2015-2309",
             "cve": "CVE-2015-2309",
@@ -13438,7 +13438,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2018-11386.": {
+        "CVE-2018-11386": {
             "title": "CVE-2018-11386: Denial of service when using PDOSessionHandler",
             "link": "https://symfony.com/cve-2018-11386",
             "cve": "CVE-2018-11386",
@@ -13551,7 +13551,7 @@
             },
             "reference": "composer://symfony/http-foundation"
         },
-        "CVE-2014-5244.": {
+        "CVE-2014-5244": {
             "title": "Denial of service with a malicious HTTP Host header",
             "link": "https://symfony.com/cve-2014-5244",
             "cve": "CVE-2014-5244",
@@ -13603,7 +13603,7 @@
         }
     },
     "sabre/dav": {
-        "CVE-2014-2055.": {
+        "CVE-2014-2055": {
             "title": "XEE issue that could expose local files or easily trigger a DOS attack.",
             "link": "https://github.com/fruux/sabre-dav/releases/tag/1.7.11",
             "cve": "CVE-2014-2055",
@@ -13632,7 +13632,7 @@
             },
             "reference": "composer://sabre/dav"
         },
-        "CVE-2013-1939.": {
+        "CVE-2013-1939": {
             "title": "Local file exposure on Windows installations",
             "link": "https://groups.google.com/forum/?fromgroups=#!topic/sabredav-discuss/ehOUu7wTSGQ",
             "cve": "CVE-2013-1939",
@@ -13663,7 +13663,7 @@
         }
     },
     "contao/core": {
-        "CVE-2016-4567.": {
+        "CVE-2016-4567": {
             "title": "Cross-site scripting (XSS) vulnerability in flashmediaelement.swf in MediaElement.js before 2.11.2 (see CVE-2013-1967)",
             "link": "https://contao.org/en/news/contao-3_5_15.html",
             "cve": "CVE-2016-4567",
@@ -13678,7 +13678,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "2014-04-07.": {
+        "2014-04-07": {
             "title": "Insufficient input validation allows for code injection and remote execution",
             "link": "https://contao.org/en/news/new-security-hole-found-in-contao.html",
             "cve": null,
@@ -13700,7 +13700,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "CVE-2017-10993.": {
+        "CVE-2017-10993": {
             "title": "A logged in back end user can include arbitrary existing PHP files by manipulating an URL parameter",
             "link": "https://contao.org/en/news/contao-3_5_28.html",
             "cve": "CVE-2017-10993",
@@ -13715,7 +13715,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "2014-02-13.": {
+        "2014-02-13": {
             "title": "PHP object injection vulnerability allows for arbitrary code execution",
             "link": "https://contao.org/en/news/major-security-hole-found-in-contao.html",
             "cve": null,
@@ -13737,7 +13737,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "CVE-2018-10125.": {
+        "CVE-2018-10125": {
             "title": "Cross-site scripting (XSS) vulnerability in the system log of the back end",
             "link": "https://contao.org/en/news/contao-3_5_35.html",
             "cve": "CVE-2018-10125",
@@ -13752,7 +13752,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "CVE-2015-0269.": {
+        "CVE-2015-0269": {
             "title": "A directory traversal vulnerability allows back end users to view files outside their document root",
             "link": "https://contao.org/en/news/directory-traversal-vulnerability-cve-2015-0269.html",
             "cve": "CVE-2015-0269",
@@ -13774,7 +13774,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "CVE-2018-5478.": {
+        "CVE-2018-5478": {
             "title": "XSS vulnerabililty in the front end \"unsubscribe\" module of the newsletter extension",
             "link": "https://contao.org/en/news/contao-3_5_32.html",
             "cve": "CVE-2018-5478",
@@ -13789,7 +13789,7 @@
             },
             "reference": "composer://contao/core"
         },
-        "CVE-2017-16558.": {
+        "CVE-2017-16558": {
             "title": "SQL injection vulnerabililty in the back end search filter and the front end listing module",
             "link": "https://contao.org/en/news/contao-3_5_31.html",
             "cve": "CVE-2017-16558",
@@ -13806,7 +13806,7 @@
         }
     },
     "contao/newsletter-bundle": {
-        "CVE-2018-5478.": {
+        "CVE-2018-5478": {
             "title": "XSS vulnerabililty in the front end \"unsubscribe\" module",
             "link": "https://contao.org/en/news/contao-3_5_32.html",
             "cve": "CVE-2018-5478",
@@ -13823,7 +13823,7 @@
         }
     },
     "contao/core-bundle": {
-        "CVE-2017-10993.": {
+        "CVE-2017-10993": {
             "title": "A logged in back end user can include arbitrary existing PHP files by manipulating an URL parameter",
             "link": "https://contao.org/en/news/contao-4_4_1.html",
             "cve": "CVE-2017-10993",
@@ -13838,7 +13838,7 @@
             },
             "reference": "composer://contao/core-bundle"
         },
-        "CVE-2018-10125.": {
+        "CVE-2018-10125": {
             "title": "Cross-site scripting (XSS) vulnerability in the system log of the back end",
             "link": "https://contao.org/en/news/contao-4_4_18.html",
             "cve": "CVE-2018-10125",
@@ -13860,7 +13860,7 @@
             },
             "reference": "composer://contao/core-bundle"
         },
-        "CVE-2017-16558.": {
+        "CVE-2017-16558": {
             "title": "SQL injection vulnerabililty in the back end search filter",
             "link": "https://contao.org/en/news/contao-4_4_8.html",
             "cve": "CVE-2017-16558",
@@ -13877,7 +13877,7 @@
         }
     },
     "contao/listing-bundle": {
-        "CVE-2017-16558.": {
+        "CVE-2017-16558": {
             "title": "SQL injection vulnerabililty in the front end listing module",
             "link": "https://contao.org/en/news/contao-4_4_8.html",
             "cve": "CVE-2017-16558",
@@ -13894,7 +13894,7 @@
         }
     },
     "kreait/firebase-php": {
-        "CVE-2018-1000025.": {
+        "CVE-2018-1000025": {
             "title": "Incorrect Access Control vulnerability in src/Firebase/Auth/IdTokenVerifier.php does not verify for token signature that can result in JWT with any email address and user ID could be forged from an actual token, or from thin air.",
             "link": "https://github.com/kreait/firebase-php/releases/tag/3.8.1",
             "cve": "CVE-2018-1000025",
@@ -13911,7 +13911,7 @@
         }
     },
     "monolog/monolog": {
-        "2014-12-29-1.": {
+        "2014-12-29-1": {
             "title": "Header injection in NativeMailerHandler",
             "link": "https://github.com/Seldaek/monolog/pull/448#issuecomment-68208704",
             "cve": null,
@@ -13928,7 +13928,7 @@
         }
     },
     "paragonie/random_compat": {
-        "2016-03-16.": {
+        "2016-03-16": {
             "title": "Uses insecure CSPRNG (openssl_random_pseudo_bytes())",
             "link": "https://github.com/paragonie/random_compat/issues/96",
             "cve": null,
@@ -13944,7 +13944,7 @@
         }
     },
     "thelia/thelia": {
-        "2015-02-24-1.": {
+        "2015-02-24-1": {
             "title": "XSS injection in backoffice",
             "link": "https://thelia.net/version-2-1-2-with-security-fix",
             "cve": null,
@@ -13959,7 +13959,7 @@
             },
             "reference": "composer://thelia/thelia"
         },
-        "2015-04-13-1.": {
+        "2015-04-13-1": {
             "title": "User authentication bypass",
             "link": "https://thelia.net/version-2-1-3-with-security-fix",
             "cve": null,
@@ -13976,7 +13976,7 @@
         }
     },
     "thelia/backoffice-default-template": {
-        "2015-02-24-1.": {
+        "2015-02-24-1": {
             "title": "XSS injection in backoffice",
             "link": "https://thelia.net/version-2-1-2-with-security-fix",
             "cve": null,
@@ -13993,7 +13993,7 @@
         }
     },
     "friendsofsymfony/user-bundle": {
-        "2012-07-10-2.": {
+        "2012-07-10-2": {
             "title": "Fixes a security issue where the session could be hijacked",
             "link": "https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Changelog.md",
             "cve": null,
@@ -14008,7 +14008,7 @@
             },
             "reference": "composer://friendsofsymfony/user-bundle"
         },
-        "2014-09-04-1.": {
+        "2014-09-04-1": {
             "title": "Entropy is lost in the TokenGenerator",
             "link": "https://symfony.com/blog/fosuserbundle-entropy-of-generated-tokens-is-lost",
             "cve": null,
@@ -14030,7 +14030,7 @@
             },
             "reference": "composer://friendsofsymfony/user-bundle"
         },
-        "2012-07-10-1.": {
+        "2012-07-10-1": {
             "title": "Fixed the user refreshing to check the identity by primary key instead of username",
             "link": "https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Changelog.md",
             "cve": null,
@@ -14045,7 +14045,7 @@
             },
             "reference": "composer://friendsofsymfony/user-bundle"
         },
-        "CVE-2013-5750.": {
+        "CVE-2013-5750": {
             "title": "DOS attack in FOSUserBundle login form",
             "link": "https://symfony.com/cve-2013-5750",
             "cve": "CVE-2013-5750",
@@ -14069,7 +14069,7 @@
         }
     },
     "friendsofsymfony/rest-bundle": {
-        "2014-01-22-1.": {
+        "2014-01-22-1": {
             "title": "Fixed issue with broken validation of JSONP callbacks",
             "link": "https://symfony.com/blog/fosrestbundle-security-issue-with-jsonp-handler",
             "cve": null,
@@ -14086,7 +14086,7 @@
         }
     },
     "swiftmailer/swiftmailer": {
-        "2014-06-13.": {
+        "2014-06-13": {
             "title": "Sendmail transport arbitrary shell execution",
             "link": "http://blog.swiftmailer.org/post/88660759928/security-fix-swiftmailer-5-2-1-released",
             "cve": null,
@@ -14108,7 +14108,7 @@
             },
             "reference": "composer://swiftmailer/swiftmailer"
         },
-        "CVE-2016-10074.": {
+        "CVE-2016-10074": {
             "title": "Remote Code Execution when using the mail transport",
             "link": "https://legalhackers.com/advisories/SwiftMailer-Exploit-Remote-Code-Exec-CVE-2016-10074-Vuln.html",
             "cve": "CVE-2016-10074",
@@ -14132,7 +14132,7 @@
         }
     },
     "twig/twig": {
-        "2015-08-12.": {
+        "2015-08-12": {
             "title": "Remote code execution in templates",
             "link": "https://symfony.com/blog/security-release-twig-1-20-0",
             "cve": null,
@@ -14146,7 +14146,7 @@
             },
             "reference": "composer://twig/twig"
         },
-        "2013-04-08.": {
+        "2013-04-08": {
             "title": "Vulnerability in the filesystem loader",
             "link": "http://blog.twig.sensiolabs.org/post/47461911874/security-release-twig-1-12-3-released",
             "cve": null,
@@ -14163,7 +14163,7 @@
         }
     },
     "squizlabs/php_codesniffer": {
-        "2017-03-01.": {
+        "2017-03-01": {
             "title": "Arbitrary shell execution",
             "link": "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/2.8.1",
             "cve": null,
@@ -14185,7 +14185,7 @@
             },
             "reference": "composer://squizlabs/php_codesniffer"
         },
-        "2017-05-18.": {
+        "2017-05-18": {
             "title": "Arbitrary shell execution",
             "link": "https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.0.1",
             "cve": null,
@@ -14202,7 +14202,7 @@
         }
     },
     "socalnick/scn-social-auth": {
-        "2015-01-15.": {
+        "2015-01-15": {
             "title": "XSS vulnerability in login redirect param",
             "link": "https://github.com/socalnick/scnsocialauth/issues/184",
             "branches": {
@@ -14217,7 +14217,7 @@
         }
     },
     "gregwar/rst": {
-        "2016-10-31.": {
+        "2016-10-31": {
             "title": "Local File Inclusion Vulnerability",
             "link": "https://hackerone.com/reports/179034",
             "cve": null,
@@ -14233,7 +14233,7 @@
         }
     },
     "dompdf/dompdf": {
-        "CVE-2014-5012.": {
+        "CVE-2014-5012": {
             "title": "Denial Of Service Vector",
             "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
             "cve": "CVE-2014-5012",
@@ -14248,7 +14248,7 @@
             },
             "reference": "composer://dompdf/dompdf"
         },
-        "CVE-2014-5013.": {
+        "CVE-2014-5013": {
             "title": "Remote Code Execution (complement of CVE-2014-2383)",
             "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
             "cve": "CVE-2014-5013",
@@ -14263,7 +14263,7 @@
             },
             "reference": "composer://dompdf/dompdf"
         },
-        "CVE-2010-4879.": {
+        "CVE-2010-4879": {
             "title": "PHP remote file inclusion vulnerability in dompdf.php",
             "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
             "cve": "CVE-2010-4879",
@@ -14278,7 +14278,7 @@
             },
             "reference": "composer://dompdf/dompdf"
         },
-        "CVE-2014-2383.": {
+        "CVE-2014-2383": {
             "title": "Arbitrary file read in dompdf",
             "link": "https://www.portcullis-security.com/security-research-and-downloads/security-advisories/cve-2014-2383/",
             "cve": "CVE-2014-2383",
@@ -14293,7 +14293,7 @@
             },
             "reference": "composer://dompdf/dompdf"
         },
-        "CVE-2014-5011.": {
+        "CVE-2014-5011": {
             "title": "Information Disclosure",
             "link": "https://github.com/dompdf/dompdf/releases/tag/v0.6.2",
             "cve": "CVE-2014-5011",
@@ -14310,7 +14310,7 @@
         }
     },
     "phpmailer/phpmailer": {
-        "CVE-2017-11503.": {
+        "CVE-2017-11503": {
             "title": "XSS vulnerability in code example",
             "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.24",
             "cve": "CVE-2017-11503",
@@ -14325,7 +14325,7 @@
             },
             "reference": "composer://phpmailer/phpmailer"
         },
-        "CVE-2017-5223.": {
+        "CVE-2017-5223": {
             "title": "Local File Disclosure",
             "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.22",
             "cve": "CVE-2017-5223",
@@ -14340,7 +14340,7 @@
             },
             "reference": "composer://phpmailer/phpmailer"
         },
-        "CVE-2016-10033.": {
+        "CVE-2016-10033": {
             "title": "Remote Code Execution",
             "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.18",
             "cve": "CVE-2016-10033",
@@ -14355,7 +14355,7 @@
             },
             "reference": "composer://phpmailer/phpmailer"
         },
-        "CVE-2016-10045.": {
+        "CVE-2016-10045": {
             "title": "Remote Code Execution",
             "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.20",
             "cve": "CVE-2016-10045",
@@ -14370,7 +14370,7 @@
             },
             "reference": "composer://phpmailer/phpmailer"
         },
-        "CVE-2015-8476.": {
+        "CVE-2015-8476": {
             "title": "Multiple CRLF injection vulnerabilities",
             "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.14",
             "cve": "CVE-2015-8476",
@@ -14387,7 +14387,7 @@
         }
     },
     "composer/composer": {
-        "CVE-2015-8371.": {
+        "CVE-2015-8371": {
             "title": "Composer Cache Injection vulnerability",
             "link": "http://flyingmana.de/blog_en/2016/02/14/composer_cache_injection_vulnerability_cve_2015_8371.html",
             "cve": "CVE-2015-8371",

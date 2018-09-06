@@ -132,7 +132,7 @@ class BuildCommand extends AbstractCommand
 
             try {
                 $packageName = \str_replace($securityAdvisoriesDir . \DIRECTORY_SEPARATOR, '', (string) $file->getPath());
-                $fileName    = \str_replace($file->getExtension(), '', (string) $file->getFilename());
+                $fileName    = \str_replace('.' . $file->getExtension(), '', (string) $file->getFilename());
 
                 $data[$packageName][$fileName] = $this->yamlParser->parse((string) \file_get_contents($file->__toString()));
             } catch (ParseException $exception) {
