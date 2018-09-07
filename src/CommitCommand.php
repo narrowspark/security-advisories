@@ -28,10 +28,26 @@ class CommitCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $gitDiffProcess = new Process('git diff --exit-code');
-        $gitDiffProcess->run();
+        $mainDir                = \dirname(__DIR__);
+        $securityAdvisoriesSha  = $mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $gitDir                 = $mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
 
-        if ($gitDiffProcess->isSuccessful()) {
+        $gitShaProcess = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
+        $gitShaProcess->run();
+
+        if (! $gitShaProcess->isSuccessful()) {
+            $this->error((new ProcessFailedException($gitShaProcess))->getMessage());
+
+            return 1;
+        }
+
+        $update = true;
+
+        if (\file_exists($securityAdvisoriesSha)) {
+            $update = $gitShaProcess->getOutput() !== \file_get_contents($securityAdvisoriesSha);
+        }
+
+        if ($update === false) {
             $this->info('Nothing to update.');
 
             return 0;
@@ -47,6 +63,8 @@ class CommitCommand extends AbstractCommand
 
             return 1;
         }
+
+        $this->info($gitCommitProcess->getOutput());
 
         return 0;
     }
