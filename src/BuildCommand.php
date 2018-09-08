@@ -69,6 +69,10 @@ class BuildCommand extends AbstractCommand
         $securityAdvisoriesSha  = $mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
         $gitDir                 = $mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
 
+        if (\is_dir($gitDir)) {
+            $this->filesystem->remove($gitDir);
+        }
+
         $this->info('Cloning FriendsOfPHP/security-advisories.');
         $this->getOutput()->writeln('');
 
@@ -99,7 +103,6 @@ class BuildCommand extends AbstractCommand
 
         if ($update === false) {
             $this->info('security-advisories.json is up to date.');
-            $this->filesystem->remove($gitDir);
 
             return 0;
         }
@@ -161,7 +164,6 @@ class BuildCommand extends AbstractCommand
 
         $this->filesystem->dumpFile($mainDir . \DIRECTORY_SEPARATOR . 'security-advisories.json', $this->jsonDumper->dump($data));
         $this->filesystem->dumpFile($securityAdvisoriesSha, $commitSha1);
-        $this->filesystem->remove($gitDir);
 
         return 0;
     }
