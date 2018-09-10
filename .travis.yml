@@ -62,7 +62,7 @@ jobs:
       script:
         - php cerebro build
         - php cerebro commit
-        - rm .fr ./build/git/
+        - rm -fr ./build/git/*
 
 notifications:
   email:
