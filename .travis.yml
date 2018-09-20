@@ -25,6 +25,8 @@ install:
   - $COMPOSER_UP
 
 before_script:
+  - chmod a+x ./build/travis/set_up_ssh.sh
+  - ./build/travis/set_up_ssh.sh
   - wget https://cdn.rawgit.com/prisis/43a2a7b137998ac92e24ee4daaa8e296/raw/681b89b8e156750de46558ead661509c468fb9a2/try_catch.sh -P ./build/travis
   - wget https://cdn.rawgit.com/prisis/e050c4da44c6ee7fa1519912eac19563/raw/7a72a7df7718af30e703c1ef0379cdf7ff24ce10/tfold.sh -P ./build/travis
 
