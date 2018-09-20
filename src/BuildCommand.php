@@ -107,8 +107,7 @@ class BuildCommand extends AbstractCommand
             return 0;
         }
 
-        $securityAdvisoriesDir = $mainDir . \DIRECTORY_SEPARATOR . 'vendor' . \DIRECTORY_SEPARATOR . 'sensiolabs' . \DIRECTORY_SEPARATOR . 'security-advisories';
-        $dir                   = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($securityAdvisoriesDir));
+        $dir = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($gitDir));
 
         $this->info('Start collection security advisories.');
 
@@ -134,7 +133,7 @@ class BuildCommand extends AbstractCommand
             }
 
             try {
-                $packageName = \str_replace($securityAdvisoriesDir . \DIRECTORY_SEPARATOR, '', (string) $file->getPath());
+                $packageName = \str_replace($gitDir . \DIRECTORY_SEPARATOR, '', (string) $file->getPath());
                 $fileName    = \str_replace('.' . $file->getExtension(), '', (string) $file->getFilename());
 
                 $data[$packageName][$fileName] = $this->yamlParser->parse((string) \file_get_contents($file->__toString()));

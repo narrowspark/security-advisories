@@ -333,6 +333,22 @@
             "reference": "composer://laravel/framework"
         }
     },
+    "brightlocal/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.2.5"
+                    ]
+                }
+            },
+            "reference": "composer://brightlocal/phpwhois"
+        }
+    },
     "contao-components/mediaelement": {
         "CVE-2016-4567": {
             "title": "Cross-site scripting (XSS) vulnerability in flashmediaelement.swf in MediaElement.js before 2.11.2 (see CVE-2013-1967)",
@@ -820,6 +836,36 @@
             "reference": "composer://silverstripe/cms"
         }
     },
+    "ezyang/htmlpurifier": {
+        "CVE-2010-4183": {
+            "title": "Multiple XSS vulnerabilities exploitable on Internet Explorer",
+            "link": "http://htmlpurifier.org/security/2010/css-quoting",
+            "cve": "CVE-2010-4183",
+            "branches": {
+                "4.x": {
+                    "time": 1272297966,
+                    "versions": [
+                        "<4.1.0"
+                    ]
+                }
+            },
+            "reference": "composer://ezyang/htmlpurifier"
+        },
+        "CVE-2010-2479": {
+            "title": "XSS vulnerability exploitable on Internet Explorer",
+            "link": "http://htmlpurifier.org/news/2010/0531-4.1.1-released",
+            "cve": "CVE-2010-2479",
+            "branches": {
+                "4.x": {
+                    "time": 1275350400,
+                    "versions": [
+                        "<4.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://ezyang/htmlpurifier"
+        }
+    },
     "namshi/jose": {
         "2015-03-10": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
@@ -917,6 +963,22 @@
                     ]
                 }
             }
+        }
+    },
+    "phpwhois/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.2.5"
+                    ]
+                }
+            },
+            "reference": "composer://phpwhois/phpwhois"
         }
     },
     "onelogin/php-saml": {
@@ -1024,6 +1086,38 @@
                 }
             },
             "reference": "composer://amphp/http"
+        }
+    },
+    "openid/php-openid": {
+        "CVE-2013-4701": {
+            "title": "XML External Entity (XXE) issue",
+            "link": "https://github.com/openid/php-openid/commit/625c16bb28bb120d262b3f19f89c2c06cb9b0da9",
+            "cve": "CVE-2013-4701",
+            "branches": {
+                "2.x": {
+                    "time": 1376271688,
+                    "versions": [
+                        "<2.3.0"
+                    ]
+                }
+            },
+            "reference": "composer://openid/php-openid"
+        }
+    },
+    "truckersmp/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.3.1"
+                    ]
+                }
+            },
+            "reference": "composer://truckersmp/phpwhois"
         }
     },
     "guzzlehttp/guzzle": {
@@ -1346,6 +1440,22 @@
             "composer-repository": false
         }
     },
+    "kazist/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.2.6"
+                    ]
+                }
+            },
+            "reference": "composer://kazist/phpwhois"
+        }
+    },
     "asymmetricrypt/asymmetricrypt": {
         "2017-11-20": {
             "title": "Padding Oracle Vulnerability in RSA Encryption",
@@ -1377,6 +1487,22 @@
                 }
             },
             "reference": "composer://cartalyst/sentry"
+        }
+    },
+    "jsmitty12/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": 1527617575,
+                    "versions": [
+                        "<5.1.0"
+                    ]
+                }
+            },
+            "reference": "composer://jsmitty12/phpwhois"
         }
     },
     "willdurand/js-translation-bundle": {
@@ -2075,6 +2201,22 @@
                 }
             },
             "reference": "composer://yiisoft/yii2-jui"
+        }
+    },
+    "theonedemon/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.2.5"
+                    ]
+                }
+            },
+            "reference": "composer://theonedemon/phpwhois"
         }
     },
     "oro/crm": {
@@ -4866,6 +5008,22 @@
             "reference": "composer://phpunit/phpunit"
         }
     },
+    "smarty/smarty": {
+        "CVE-2018-13982": {
+            "title": "Trusted-Directory Bypass via Path Traversal",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180420-01_Smarty_Path_Traversal",
+            "cve": "CVE-2018-13982",
+            "branches": {
+                "master": {
+                    "time": 1524771488,
+                    "versions": [
+                        "<3.1.33"
+                    ]
+                }
+            },
+            "reference": "composer://smarty/smarty"
+        }
+    },
     "propel/propel": {
         "2018-02-14": {
             "title": "SQL injection possible with limit() on MySQL",
@@ -5294,6 +5452,22 @@
                 }
             },
             "reference": "composer://simplesamlphp/simplesamlphp-module-infocard"
+        }
+    },
+    "david-garcia/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.3.1"
+                    ]
+                }
+            },
+            "reference": "composer://david-garcia/phpwhois"
         }
     },
     "zfcampus/zf-apigility-doctrine": {
@@ -13662,6 +13836,22 @@
             "reference": "composer://sabre/dav"
         }
     },
+    "simple-updates/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=1.0.0"
+                    ]
+                }
+            },
+            "reference": "composer://simple-updates/phpwhois"
+        }
+    },
     "contao/core": {
         "CVE-2016-4567": {
             "title": "Cross-site scripting (XSS) vulnerability in flashmediaelement.swf in MediaElement.js before 2.11.2 (see CVE-2013-1967)",
@@ -13891,6 +14081,22 @@
                 }
             },
             "reference": "composer://contao/listing-bundle"
+        }
+    },
+    "serluck/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.2.6"
+                    ]
+                }
+            },
+            "reference": "composer://serluck/phpwhois"
         }
     },
     "kreait/firebase-php": {
@@ -14201,6 +14407,22 @@
             "reference": "composer://squizlabs/php_codesniffer"
         }
     },
+    "james-heinrich/getid3": {
+        "CVE-2014-2053": {
+            "title": "Potential XXE security issue",
+            "link": "https://github.com/JamesHeinrich/getID3/commit/afbdaa044a9a0a9dff2f800bd670e231b3ec99b2",
+            "cve": "CVE-2014-2053",
+            "branches": {
+                "1.x": {
+                    "time": 1410718410,
+                    "versions": [
+                        "<1.9.9"
+                    ]
+                }
+            },
+            "reference": "composer://james-heinrich/getid3"
+        }
+    },
     "socalnick/scn-social-auth": {
         "2015-01-15": {
             "title": "XSS vulnerability in login redirect param",
@@ -14400,6 +14622,22 @@
                 }
             },
             "reference": "composer://composer/composer"
+        }
+    },
+    "ivankristianto/phpwhois": {
+        "CVE-2015-5243": {
+            "title": "PHP Code Injection",
+            "link": "https://github.com/sbaresearch/advisories/tree/public/2018/SBA-ADV-20180425-01_phpWhois_Code_Execution",
+            "cve": "CVE-2015-5243",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<=4.3.0"
+                    ]
+                }
+            },
+            "reference": "composer://ivankristianto/phpwhois"
         }
     }
 }
