@@ -4,6 +4,7 @@ namespace Narrowspark\SecurityAdvisories;
 
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Finder\Finder;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Viserio\Component\Console\Command\AbstractCommand;
@@ -29,6 +30,13 @@ class BuildCommand extends AbstractCommand
     protected $description = 'Builds the security-advisories.json';
 
     /**
+     * Path to dir.
+     *
+     * @var string
+     */
+    protected $mainDir;
+
+    /**
      * A YamlParser instance.
      *
      * @var \Viserio\Component\Parser\Parser\YamlParser
@@ -43,12 +51,14 @@ class BuildCommand extends AbstractCommand
     private $jsonDumper;
 
     /**
-     * @var Filesystem
+     * A Filesystem instance.
+     *
+     * @var \Symfony\Component\Filesystem\Filesystem
      */
     private $filesystem;
 
     /**
-     * Create a new Builder Instance.
+     * Create a new Builder Command Instance.
      */
     public function __construct()
     {
@@ -65,9 +75,8 @@ class BuildCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $mainDir                = \dirname(__DIR__);
-        $securityAdvisoriesSha  = $mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
-        $gitDir                 = $mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
+        $securityAdvisoriesSha  = $this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $gitDir                 = $this->mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
 
         if (\is_dir($gitDir)) {
             $this->filesystem->remove($gitDir);
@@ -107,34 +116,23 @@ class BuildCommand extends AbstractCommand
             return 0;
         }
 
-        $dir = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($gitDir));
+        $finder = Finder::create()->files()->name('/(\.yaml|.\yml)$/')->in($gitDir)->sortByName()->ignoreDotFiles(true);
 
         $this->info('Start collection security advisories.');
 
-        $progress = new ProgressBar($this->getOutput(), \count(\iterator_to_array($dir)));
+        $progress = new ProgressBar($this->getOutput(), $finder->count());
         $progress->start();
 
         $data     = [];
         $messages = [];
 
-        foreach ($dir as $file) {
-            if (! $file->isFile()) {
-                $progress->advance();
-
-                continue;
-            }
-
-            $path = \str_replace($mainDir, '', (string) \realpath($file->getPathname()));
-
-            if ($file->getExtension() !== 'yaml') {
-                $messages[$path][] = 'The file extension should be ".yaml".';
-
-                continue;
-            }
+        /** @var \SplFileInfo $file */
+        foreach ($finder as $file) {
+            $path = \str_replace($this->mainDir, '', (string) \realpath($file->getPathname()));
 
             try {
-                $packageName = \str_replace($gitDir . \DIRECTORY_SEPARATOR, '', (string) $file->getPath());
-                $fileName    = \str_replace('.' . $file->getExtension(), '', (string) $file->getFilename());
+                $packageName = \str_replace($gitDir . \DIRECTORY_SEPARATOR, '', $file->getPath());
+                $fileName    = \str_replace('.' . $file->getExtension(), '', $file->getFilename());
 
                 $data[$packageName][$fileName] = $this->yamlParser->parse((string) \file_get_contents($file->__toString()));
             } catch (ParseException $exception) {
@@ -158,12 +156,19 @@ class BuildCommand extends AbstractCommand
         }
 
         $this->getOutput()->writeln('');
-        $this->getOutput()->writeln('');
         $this->info('Start writing security-advisories.json.');
 
-        $this->filesystem->dumpFile($mainDir . \DIRECTORY_SEPARATOR . 'security-advisories.json', $this->jsonDumper->dump($data));
+        $this->filesystem->dumpFile($this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories.json', $this->jsonDumper->dump($data));
         $this->filesystem->dumpFile($securityAdvisoriesSha, $commitSha1);
 
         return 0;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function configure(): void
+    {
+        $this->mainDir = \dirname(__DIR__);
     }
 }

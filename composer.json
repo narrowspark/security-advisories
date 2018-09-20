@@ -12,8 +12,9 @@
             "role": "Developer"
         }
     ],
+    "require": {
+    },
     "require-dev": {
-        "php": "^7.2",
         "ext-mbstring": "*",
         "viserio/console": "^1.0@dev",
         "viserio/parser": "^1.0@dev",
@@ -21,7 +22,8 @@
         "symfony/yaml": "^4.1.0",
         "narrowspark/coding-standard": "^1.2.1",
         "phpunit/phpunit": "^7.3.0",
-        "symfony/filesystem": "^4.1.0"
+        "symfony/filesystem": "^4.1.0",
+        "symfony/finder": "^4.1"
     },
     "autoload": {
         "psr-4": {

@@ -24,13 +24,19 @@ class CommitCommand extends AbstractCommand
     protected $description = 'Commit changes to narrowspark/security-advisories';
 
     /**
+     * Path to dir.
+     *
+     * @var string
+     */
+    protected $mainDir;
+
+    /**
      * {@inheritdoc}
      */
     public function handle(): int
     {
-        $mainDir                = \dirname(__DIR__);
-        $securityAdvisoriesSha  = $mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
-        $gitDir                 = $mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
+        $securityAdvisoriesSha  = $this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $gitDir                 = $this->mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
 
         $gitShaProcess = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
         $gitShaProcess->run();
@@ -67,5 +73,13 @@ class CommitCommand extends AbstractCommand
         $this->info($gitCommitProcess->getOutput());
 
         return 0;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function configure(): void
+    {
+        $this->mainDir = \dirname(__DIR__);
     }
 }
