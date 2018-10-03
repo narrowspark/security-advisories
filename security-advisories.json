@@ -44,6 +44,30 @@
             "reference": "composer://adodb/adodb-php"
         }
     },
+    "alterphp/easyadmin-extension-bundle": {
+        "2018-10-02": {
+            "title": "Action case insensitivity",
+            "link": "https://github.com/alterphp/EasyAdminExtensionBundle/releases/tag/v1.3.1",
+            "cve": null,
+            "branches": {
+                "1.3.x": {
+                    "time": 1538438460,
+                    "versions": [
+                        ">=1.3.0",
+                        "<1.3.1"
+                    ]
+                },
+                "1.2.x": {
+                    "time": 1538438460,
+                    "versions": [
+                        ">=1.2.0",
+                        "<1.2.11"
+                    ]
+                }
+            },
+            "reference": "composer://alterphp/easyadmin-extension-bundle"
+        }
+    },
     "amphp/artax": {
         "2017-05-09": {
             "title": "Cookie leakage to wrong origins and non-restricted cookie acceptance",

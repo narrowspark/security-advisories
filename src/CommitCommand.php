@@ -35,33 +35,30 @@ class CommitCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $securityAdvisoriesSha  = $this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
-        $gitDir                 = $this->mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
+        $filePath = __DIR__ . \DIRECTORY_SEPARATOR . 'update';
 
-        $gitShaProcess = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
-        $gitShaProcess->run();
-
-        if (! $gitShaProcess->isSuccessful()) {
-            $this->error((new ProcessFailedException($gitShaProcess))->getMessage());
-
-            return 1;
-        }
-
-        $update = true;
-
-        if (\file_exists($securityAdvisoriesSha)) {
-            $update = $gitShaProcess->getOutput() !== \file_get_contents($securityAdvisoriesSha);
-        }
-
-        if ($update === false) {
+        if (! \file_exists($filePath)) {
             $this->info('Nothing to update.');
 
             return 0;
         }
 
+        \unlink($filePath);
+
         $this->info('Making a commit to narrowspark/security-advisories.');
 
         $gitCommitProcess = new Process('git commit -a -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"');
+        $gitCommitProcess->run();
+
+        if (! $gitCommitProcess->isSuccessful()) {
+            $this->error((new ProcessFailedException($gitCommitProcess))->getMessage());
+
+            return 1;
+        }
+
+        $this->info($gitCommitProcess->getOutput());
+
+        $gitCommitProcess = new Process('git push');
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {

@@ -161,6 +161,10 @@ class BuildCommand extends AbstractCommand
         $this->filesystem->dumpFile($this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories.json', $this->jsonDumper->dump($data));
         $this->filesystem->dumpFile($securityAdvisoriesSha, $commitSha1);
 
+        $this->filesystem->remove($gitDir);
+
+        $this->filesystem->dumpFile(__DIR__ . \DIRECTORY_SEPARATOR . 'update', '');
+
         return 0;
     }
 
