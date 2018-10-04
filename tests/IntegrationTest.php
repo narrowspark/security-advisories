@@ -3,7 +3,6 @@ declare(strict_types=1);
 namespace Narrowspark\SecurityAdvisories\Test;
 
 use Narrowspark\SecurityAdvisories\BuildCommand;
-use Narrowspark\SecurityAdvisories\CommitCommand;
 use Symfony\Component\Filesystem\Filesystem;
 use Viserio\Component\Console\Tester\CommandTestCase;
 
