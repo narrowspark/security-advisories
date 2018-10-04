@@ -18,11 +18,6 @@ final class IntegrationTest extends CommandTestCase
     private $buildCommand;
 
     /**
-     * @var \Narrowspark\SecurityAdvisories\CommitCommand
-     */
-    private $commitCommand;
-
-    /**
      * {@inheritdoc}
      */
     public static function tearDownAfterClass(): void
@@ -52,16 +47,6 @@ final class IntegrationTest extends CommandTestCase
                 $this->mainDir = __DIR__;
             }
         };
-
-        $this->commitCommand = new class() extends CommitCommand {
-            /**
-             * {@inheritdoc}
-             */
-            protected function configure(): void
-            {
-                $this->mainDir = __DIR__;
-            }
-        };
     }
 
     public function testBuild(): void
@@ -73,17 +58,5 @@ final class IntegrationTest extends CommandTestCase
         static::assertContains('Cloning FriendsOfPHP/security-advisories.', $output);
         static::assertContains('Start collection security advisories.', $output);
         static::assertContains('Start writing security-advisories.json.', $output);
-    }
-
-    /**
-     * @depends testBuild
-     */
-    public function testCommit(): void
-    {
-        $tester = $this->executeCommand($this->commitCommand);
-
-        $output = $tester->getDisplay(true);
-
-        static::assertContains('Nothing to update.', $output);
     }
 }
