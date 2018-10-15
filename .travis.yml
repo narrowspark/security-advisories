@@ -9,7 +9,7 @@ env:
   global:
     - TEST="./vendor/bin/phpunit --verbose"
     - COMPOSER_UP="composer update --no-interaction --prefer-dist --no-progress --profile --no-suggest"
-    - secure: "C/01TYJgWGEYO2SqhfuOvIDiAe2Qr28kFxUliFxCcsBjdZ/W7sMpIX36OblAyRXC7wfmutjGNkxufAXfnXUZxXGlwgObWOlp+St8wrPioHMImh/Po8mO//TLxSoGK894gNb4pq5EiY+fKhxMjcWqGqZ0rSb2sqYd5DbkV9U3TweKZnYiCCoaGUQJehIqfjIXjWW8WWQR8/ZebyDvvDEUo8WLC0GzUBthfubsuklWSMGCrNQEP8FL7d9eop/un1SFrIKWO1tKiP5TTfk7XhlB0ND3224VY0cpwqYT2y7iEeKbUYAwgZlaW4KuS4i6zxZdpqfYj7dvb5R8YuAfn07ZlGuTsjUkqZS25CWJIxU1ih3nu4O4wGEpqUTk6hHUNt1og7iYblo4maY4TrMJ9rt0URWUpS28nxAfLj/B6IEuj9ajTh8kOWBT6MjdUnrdjqZjsMbA6REqONcAG9ZFAN4qgDbudoYMPZNsqDd8D45VYtqE6pmj4vmG/OCmCZGwTuNZ1Pio2CEKZrQW0hB0TgtE5cqD50DEHVxTO0DAjekSQl33SYqF6X3Camsesr6fcZExMNrW9T52pZ9VTpstHvQco+rHm8QkLisJug5CqYnGLWN8Nzxn2IA1ClMoMAKJ+rhpM65j+A4XAr8lxnaGfptuuMdoR70rdetr8/5L5d3vSwQ="
+    - secure: "hmeMvb/32bjqu10h4bDE6k80j9Izggok4PXTJkQMUEt1BOlc93empSd9rF7QhbjVtPhgnY2fOd9ZUZoDWPNiW2r0+lXfYiCXO9zBKjzxEVa3jzCO1kkGGw1zfYej6tHn8aHmFhltpBl4/VhzIbON0k4JaPFjMAha2DIFlYs5sG3tspIHxllPusSnEvMBXg6F93fvl9fnW3VhpT2It8jE/oAGEHYV3O7mGY4RKnYFw1LMcpWSRLM3O/QFlI/Y8eEsoZSTbhYdmq/DBLQBbQk5exIu/waOVOK4y0MkeMlLWcpnHLC4JRZ+4ws97qtGMp4JcrOKmjuXsRSkwvlUZP/kfmXwY8kC3j2ZK7xLxsqH2CE1aRsV87J7bujQaIF4R+Ihf2FUP1oY7fTuYjW1WMx6hyr3cDbBbEdtIxKZj2dPnwbxr1ap7zz63ZEFuw4tt5Lwol8i88bwFqgTpgVBA2EQTo04+GLTa894+DB7+/8a5utB+2xW8sT+ZCCDgKbVQwtLh1k2WVWH8BIo3N6yyy3T/cSDyPCHEZQl2j72HcKmZXOOsnZUk/J8idM20/wxN4IC1n9fb2QaLR/8PCXbExV1X81kCMJ7ZnoknlvI5xm2QA588y7UWHQvM1WvdfX0ZF+CLVeLpIZmn9GKYJiVa2afKdvcW/SX6AkaoHhTG/d1Npc="
 
 cache:
   directories:
@@ -62,8 +62,12 @@ jobs:
       php: 7.2
       env: REMOVE_XDEBUG=true
       before_script:
-        - chmod a+x ./build/travis/set_up_ssh.sh
-        - ./build/travis/set_up_ssh.sh
+        - |
+          chmod a+x ./build/travis/set_up_ssh.sh
+          ./build/travis/set_up_ssh.sh
+        - |
+          git config --global user.email "$GH_USER_EMAIL"
+          git config --global user.name "$GH_USER_NAME"
       script:
         - php cerebro build
         - php cerebro commit
