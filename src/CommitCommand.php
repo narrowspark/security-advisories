@@ -63,7 +63,7 @@ class CommitCommand extends AbstractCommand
 
         $this->info($gitCommitProcess->getOutput());
 
-        $gitCommitProcess = new Process('git push origin HEAD:master');
+        $gitCommitProcess = new Process('git push origin HEAD:master --quiet > /dev/null 2>&1');
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {
