@@ -62,12 +62,13 @@ jobs:
       php: 7.2
       env: REMOVE_XDEBUG=true
       before_script:
-        - |
-          chmod a+x ./build/travis/set_up_ssh.sh
-          ./build/travis/set_up_ssh.sh
+        - stty cols 120
         - |
           git config --global user.email "$GH_USER_EMAIL"
           git config --global user.name "$GH_USER_NAME"
+        - |
+          chmod a+x ./build/travis/set_up_ssh.sh
+          ./build/travis/set_up_ssh.sh
       script:
         - php cerebro build
         - php cerebro commit
