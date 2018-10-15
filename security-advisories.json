@@ -3546,6 +3546,38 @@
             "reference": "composer://firebase/php-jwt"
         }
     },
+    "fooman/tcpdf": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": 1537421083,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://fooman/tcpdf"
+        }
+    },
+    "fossar/tcpdf-parser": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://fossar/tcpdf-parser"
+        }
+    },
     "friendsofsymfony/rest-bundle": {
         "2014-01-22-1": {
             "title": "Fixed issue with broken validation of JSONP callbacks",
@@ -4123,6 +4155,22 @@
             "reference": "composer://kreait/firebase-php"
         }
     },
+    "la-haute-societe/tcpdf": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://la-haute-societe/tcpdf"
+        }
+    },
     "laravel/framework": {
         "2014-04-15": {
             "title": "Hijacked authentication cookies vulnerability",
@@ -4532,7 +4580,7 @@
                     "time": 1530108720,
                     "versions": [
                         ">=2.2",
-                        "<2.2.5"
+                        "<2.2.6"
                     ]
                 }
             },
@@ -4556,6 +4604,29 @@
                     "versions": [
                         ">=2.2",
                         "<2.2.5"
+                    ]
+                }
+            },
+            "reference": "composer://magento/product-community-edition",
+            "composer-repository": false
+        },
+        "2018-09-10": {
+            "title": "Magento 2.2.6 and 2.1.15 Security update",
+            "link": "https://magento.com/security/patches/magento-2.2.6-and-2.1.15-security-update",
+            "cve": null,
+            "branches": {
+                "2.1": {
+                    "time": 1536537600,
+                    "versions": [
+                        ">=2.1",
+                        "<2.1.15"
+                    ]
+                },
+                "2.2": {
+                    "time": 1536537600,
+                    "versions": [
+                        ">=2.2",
+                        "<2.2.6"
                     ]
                 }
             },
@@ -4964,6 +5035,36 @@
                 }
             },
             "reference": "composer://pusher/pusher-php-server"
+        }
+    },
+    "robrichards/xmlseclibs": {
+        "2018-09-27": {
+            "title": "Filter input to avoid XPath injection",
+            "link": "https://github.com/robrichards/xmlseclibs/commit/649032643f7aac493e91ca318da0339aec72aa4a",
+            "branches": {
+                "1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.0.0",
+                        "<2.0.0"
+                    ]
+                },
+                "2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.0.0",
+                        "<3.0.0"
+                    ]
+                },
+                "3.x": {
+                    "time": 1518682260,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.2"
+                    ]
+                }
+            },
+            "reference": "composer://robrichards/xmlseclibs"
         }
     },
     "sabre/dav": {
@@ -6164,6 +6265,22 @@
             "reference": "composer://socalnick/scn-social-auth"
         }
     },
+    "spoonity/tcpdf": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://spoonity/tcpdf"
+        }
+    },
     "squizlabs/php_codesniffer": {
         "2017-03-01": {
             "title": "Arbitrary shell execution",
@@ -6732,49 +6849,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -7196,49 +7313,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -8291,49 +8408,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -8404,49 +8521,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -9686,49 +9803,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -9799,49 +9916,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -9912,49 +10029,49 @@
                     "time": 1527248782,
                     "versions": [
                         ">=2.0.0",
-                        "<2.7.48"
+                        "<2.1.0"
                     ]
                 },
                 "2.1.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.1.0",
-                        "<2.7.48"
+                        "<2.2.0"
                     ]
                 },
                 "2.2.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.2.0",
-                        "<2.7.48"
+                        "<2.3.0"
                     ]
                 },
                 "2.3.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.3.0",
-                        "<2.7.48"
+                        "<2.4.0"
                     ]
                 },
                 "2.4.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.4.0",
-                        "<2.7.48"
+                        "<2.5.0"
                     ]
                 },
                 "2.5.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.5.0",
-                        "<2.7.48"
+                        "<2.6.0"
                     ]
                 },
                 "2.6.x": {
                     "time": 1527248782,
                     "versions": [
                         ">=2.6.0",
-                        "<2.7.48"
+                        "<2.7.0"
                     ]
                 },
                 "2.7.x": {
@@ -10417,6 +10534,22 @@
                 }
             },
             "reference": "composer://symfony/yaml"
+        }
+    },
+    "tecnickcom/tcpdf": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": 1536938789,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://tecnickcom/tcpdf"
         }
     },
     "thelia/backoffice-default-template": {
@@ -12756,6 +12889,22 @@
                 }
             },
             "reference": "composer://typo3/neos"
+        }
+    },
+    "wallabag/tcpdf": {
+        "CVE-2018-17057": {
+            "title": "Attackers can trigger deserialization of arbitrary data via the phar:// wrapper.",
+            "link": "https://github.com/tecnickcom/TCPDF/commit/1861e33fe05f653b67d070f7c106463e7a5c26ed",
+            "cve": "CVE-2018-17057",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<6.2.22"
+                    ]
+                }
+            },
+            "reference": "composer://wallabag/tcpdf"
         }
     },
     "willdurand/js-translation-bundle": {
