@@ -2,6 +2,9 @@ dist: trusty
 sudo: required
 language: php
 
+git:
+  depth: 1
+
 env:
   global:
     - TEST="./vendor/bin/phpunit --verbose"

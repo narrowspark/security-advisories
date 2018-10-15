@@ -47,7 +47,12 @@ class CommitCommand extends AbstractCommand
 
         $this->info('Making a commit to narrowspark/security-advisories.');
 
-        $gitCommitProcess = new Process('git commit -a -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"');
+        $rootPath      = \dirname(__DIR__, 1);
+        $filesToCommit = ' -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+
+        $gitCommitProcess = new Process(
+            'git commit -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"' . $filesToCommit
+        );
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {
@@ -58,7 +63,7 @@ class CommitCommand extends AbstractCommand
 
         $this->info($gitCommitProcess->getOutput());
 
-        $gitCommitProcess = new Process('git push');
+        $gitCommitProcess = new Process('git push origin master --quiet > /dev/null 2>&1');
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {

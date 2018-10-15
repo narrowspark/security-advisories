@@ -27,6 +27,7 @@ final class IntegrationTest extends CommandTestCase
             __DIR__ . \DIRECTORY_SEPARATOR . 'build',
             __DIR__ . \DIRECTORY_SEPARATOR . 'security-advisories-sha',
             __DIR__ . \DIRECTORY_SEPARATOR . 'security-advisories.json',
+            \dirname(__DIR__, 1) . \DIRECTORY_SEPARATOR . 'src' . \DIRECTORY_SEPARATOR . 'update',
         ]);
     }
 
