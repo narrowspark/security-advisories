@@ -1148,6 +1148,300 @@
             },
             "reference": "composer://drupal/core"
         },
+        "2018-10-17-1": {
+            "title": "Content moderation - Moderately critical - Access bypass",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2018-10-17-2": {
+            "title": "External URL injection through URL aliases - Moderately Critical - Open Redirect",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "7.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=7.0",
+                        "<7.60"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2018-10-17-3": {
+            "title": "Anonymous Open Redirect - Moderately Critical - Open Redirect",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2018-10-17-4": {
+            "title": "Injection in DefaultMailSystem::mail() - Critical - Remote Code Execution",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "7.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=7.0",
+                        "<7.60"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2018-10-17-5": {
+            "title": "Contextual Links validation - Critical - Remote Code Execution",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
         "CVE-2016-3162": {
             "title": "File upload access bypass and denial of service",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
@@ -2296,6 +2590,300 @@
                     "versions": [
                         ">=8.5",
                         "<8.5.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2018-10-17-1": {
+            "title": "Content moderation - Moderately critical - Access bypass",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2018-10-17-2": {
+            "title": "External URL injection through URL aliases - Moderately Critical - Open Redirect",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "7.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=7.0",
+                        "<7.60"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2018-10-17-3": {
+            "title": "Anonymous Open Redirect - Moderately Critical - Open Redirect",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2018-10-17-4": {
+            "title": "Injection in DefaultMailSystem::mail() - Critical - Remote Code Execution",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "7.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=7.0",
+                        "<7.60"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2018-10-17-5": {
+            "title": "Contextual Links validation - Critical - Remote Code Execution",
+            "link": "https://www.drupal.org/sa-core-2018-006",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.8"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1539814740,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.2"
                     ]
                 }
             },
