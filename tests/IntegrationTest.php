@@ -55,8 +55,8 @@ final class IntegrationTest extends CommandTestCase
 
         $output = $tester->getDisplay(true);
 
-        static::assertContains('Cloning FriendsOfPHP/security-advisories.', $output);
-        static::assertContains('Start collection security advisories.', $output);
-        static::assertContains('Start writing security-advisories.json.', $output);
+        $this->assertContains('Cloning FriendsOfPHP/security-advisories.', $output);
+        $this->assertContains('Start collection security advisories.', $output);
+        $this->assertContains('Start writing security-advisories.json.', $output);
     }
 }

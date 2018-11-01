@@ -11,6 +11,6 @@ final class JsonTest extends TestCase
 {
     public function testJson(): void
     {
-        static::assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
+        $this->assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
     }
 }
