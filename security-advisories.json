@@ -5601,6 +5601,28 @@
                 }
             },
             "reference": "composer://phpmailer/phpmailer"
+        },
+        "CVE-2018-19296": {
+            "title": "Object injection",
+            "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v6.0.6",
+            "cve": "CVE-2018-19296",
+            "branches": {
+                "5.x": {
+                    "time": 1542407551,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.2.27"
+                    ]
+                },
+                "6.x": {
+                    "time": 1501029692,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://phpmailer/phpmailer"
         }
     },
     "phpunit/phpunit": {
