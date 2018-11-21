@@ -5625,6 +5625,22 @@
             "reference": "composer://phpmailer/phpmailer"
         }
     },
+    "phpoffice/phpspreadsheet": {
+        "CVE-2018-19277": {
+            "title": "XXE Vulnerability",
+            "link": "https://github.com/PHPOffice/PhpSpreadsheet/issues/771",
+            "cve": "CVE-2018-19277",
+            "branches": {
+                "master": {
+                    "time": 1542743400,
+                    "versions": [
+                        "<=1.5.0"
+                    ]
+                }
+            },
+            "reference": "composer://phpoffice/phpspreadsheet"
+        }
+    },
     "phpunit/phpunit": {
         "CVE-2017-9841": {
             "title": "RCE vulnerability in phpunit",
