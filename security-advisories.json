@@ -9424,6 +9424,85 @@
             },
             "reference": "composer://symfony/security"
         },
+        "CVE-2016-2403": {
+            "title": "CVE-2016-2403: Unauthorized access on a misconfigured Ldap server when using an empty password",
+            "link": "https://symfony.com/cve-2016-2403",
+            "cve": "CVE-2016-2403",
+            "branches": {
+                "2.8.x": {
+                    "time": 1462829687,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.6"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1462829723,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
+        "CVE-2016-4423": {
+            "title": "CVE-2016-4423: Large username storage in session",
+            "link": "https://symfony.com/cve-2016-4423",
+            "cve": "CVE-2016-4423",
+            "branches": {
+                "2.3.x": {
+                    "time": 1462828390,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.41"
+                    ]
+                },
+                "2.4.x": {
+                    "time": 1462828390,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.5.0"
+                    ]
+                },
+                "2.5.x": {
+                    "time": 1462828390,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.6.0"
+                    ]
+                },
+                "2.6.x": {
+                    "time": 1462828390,
+                    "versions": [
+                        ">=2.6.0",
+                        "<2.7.0"
+                    ]
+                },
+                "2.7.x": {
+                    "time": 1462828890,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.13"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1462829040,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.6"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1462829462,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
         "CVE-2017-11365": {
             "title": "CVE-2017-11365: Empty passwords validation issue",
             "link": "https://symfony.com/cve-2017-11365",
@@ -9455,6 +9534,106 @@
                     "versions": [
                         ">=3.3.3",
                         "<3.3.5"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
+        "CVE-2017-16652": {
+            "title": "CVE-2017-16652: Open redirect vulnerability on security handlers",
+            "link": "https://symfony.com/cve-2017-16652",
+            "cve": "CVE-2017-16652",
+            "branches": {
+                "2.7.x": {
+                    "time": 1510845416,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.38"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1510845619,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.31"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1510845284,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1510845284,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1510845452,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.14"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1510845872,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.13"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
+        "CVE-2017-16653": {
+            "title": "CVE-2017-16653: CSRF protection does not use different tokens for HTTP and HTTPS",
+            "link": "https://symfony.com/cve-2017-16653",
+            "cve": "CVE-2017-16653",
+            "branches": {
+                "2.7.x": {
+                    "time": 1510845127,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.38"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1510845619,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.31"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1510845284,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1510845284,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1510845452,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.14"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1510845872,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.13"
                     ]
                 }
             },
@@ -9738,6 +9917,84 @@
                     "versions": [
                         ">=4.0.0",
                         "<4.0.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
+        "CVE-2018-19790": {
+            "title": "CVE-2018-19790: Open Redirect Vulnerability on login",
+            "link": "https://symfony.com/cve-2018-19790",
+            "cve": "CVE-2018-19790",
+            "branches": {
+                "2.7.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=2.7.38",
+                        "<2.7.50"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.49"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.19"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.15"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.9"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1541505120,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.1"
                     ]
                 }
             },
