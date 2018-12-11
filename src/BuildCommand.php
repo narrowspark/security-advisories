@@ -85,7 +85,7 @@ class BuildCommand extends AbstractCommand
         $this->info('Cloning FriendsOfPHP/security-advisories.');
         $this->getOutput()->writeln('');
 
-        $gitCloneProcess = new Process('git clone git@github.com:FriendsOfPHP/security-advisories.git ' . $gitDir);
+        $gitCloneProcess = Process::fromShellCommandline('git clone git@github.com:FriendsOfPHP/security-advisories.git ' . $gitDir);
         $gitCloneProcess->run();
 
         if (! $gitCloneProcess->isSuccessful()) {
@@ -94,7 +94,7 @@ class BuildCommand extends AbstractCommand
             return 1;
         }
 
-        $gitShaProcess = new Process('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
+        $gitShaProcess = Process::fromShellCommandline('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
         $gitShaProcess->run();
 
         if (! $gitShaProcess->isSuccessful()) {

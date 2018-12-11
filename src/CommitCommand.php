@@ -50,7 +50,7 @@ class CommitCommand extends AbstractCommand
         $rootPath      = \dirname(__DIR__, 1);
         $filesToCommit = ' -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
 
-        $gitCommitProcess = new Process(
+        $gitCommitProcess = Process::fromShellCommandline(
             'git commit -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"' . $filesToCommit
         );
         $gitCommitProcess->run();
@@ -63,7 +63,7 @@ class CommitCommand extends AbstractCommand
 
         $this->info($gitCommitProcess->getOutput());
 
-        $gitCommitProcess = new Process('git push origin HEAD:master --quiet > /dev/null 2>&1');
+        $gitCommitProcess = Process::fromShellCommandline('git push origin HEAD:master --quiet > /dev/null 2>&1');
         $gitCommitProcess->run();
 
         if (! $gitCommitProcess->isSuccessful()) {
