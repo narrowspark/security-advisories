@@ -6927,6 +6927,19 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
+        "2018-12-20": {
+            "title": "Credentials exposure in session storage",
+            "link": "https://simplesamlphp.org/security/201812-01",
+            "branches": {
+                "1.16.x": {
+                    "time": 1545322560,
+                    "versions": [
+                        "<1.16.3"
+                    ]
+                }
+            },
+            "reference": "composer://simplesamlphp/simplesamlphp"
+        },
         "CVE-2016-3124": {
             "title": "Information leakage issue in the sanitycheck module",
             "link": "https://simplesamlphp.org/security/201603-01",
