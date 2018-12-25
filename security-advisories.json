@@ -147,7 +147,7 @@
         }
     },
     "aws/aws-sdk-php": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in the AWS SDK for PHP",
             "link": "https://github.com/aws/aws-sdk-php/releases/tag/3.2.1",
             "cve": "CVE-2015-5723",
@@ -822,7 +822,7 @@
         }
     },
     "doctrine/annotations": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -839,7 +839,7 @@
         }
     },
     "doctrine/cache": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -863,7 +863,7 @@
         }
     },
     "doctrine/common": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -911,7 +911,7 @@
         }
     },
     "doctrine/doctrine-bundle": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -949,7 +949,7 @@
         }
     },
     "doctrine/mongodb-odm-bundle": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -966,7 +966,7 @@
         }
     },
     "doctrine/mongodb-odm": {
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -998,7 +998,7 @@
             },
             "reference": "composer://doctrine/orm"
         },
-        "2015-08-31": {
+        "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
             "link": "https://www.doctrine-project.org/2015/08/31/security_misconfiguration_vulnerability_in_various_doctrine_projects.html",
             "cve": "CVE-2015-5723",
@@ -3993,7 +3993,7 @@
         }
     },
     "erusev/parsedown": {
-        "2017-05-01": {
+        "CVE-2018-1000162": {
             "title": "Cross-Site Scripting",
             "link": "https://github.com/erusev/parsedown/pull/495",
             "cve": "CVE-2018-1000162",
@@ -4096,28 +4096,6 @@
         }
     },
     "ezsystems/ezpublish-legacy": {
-        "2017-08-22-1": {
-            "title": "EZSA-2017-005 XSS issue in search",
-            "link": "http://share.ez.no/community-project/security-advisories/ezsa-2017-005-xss-issue-in-search",
-            "cve": "CVE-2017-1000431",
-            "branches": {
-                "5.4.x": {
-                    "time": 1495812180,
-                    "versions": [
-                        ">=5.4.0",
-                        "<5.4.10"
-                    ]
-                },
-                "5.3.x": {
-                    "time": 1503059220,
-                    "versions": [
-                        ">=5.3.0",
-                        "<5.3.12.1"
-                    ]
-                }
-            },
-            "reference": "composer://ezsystems/ezpublish-legacy"
-        },
         "2017-09-11-1": {
             "title": "EZSA-2017-006 Information disclosure in backend content tree menu",
             "link": "http://share.ez.no/community-project/security-advisories/ezsa-2017-006-information-disclosure-in-backend-content-tree-menu",
@@ -4299,6 +4277,28 @@
                     ]
                 }
             }
+        },
+        "CVE-2017-1000431": {
+            "title": "EZSA-2017-005 XSS issue in search",
+            "link": "http://share.ez.no/community-project/security-advisories/ezsa-2017-005-xss-issue-in-search",
+            "cve": "CVE-2017-1000431",
+            "branches": {
+                "5.4.x": {
+                    "time": 1495812180,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.10"
+                    ]
+                },
+                "5.3.x": {
+                    "time": 1503059220,
+                    "versions": [
+                        ">=5.3.0",
+                        "<5.3.12.1"
+                    ]
+                }
+            },
+            "reference": "composer://ezsystems/ezpublish-legacy"
         }
     },
     "ezsystems/repository-forms": {
@@ -5406,36 +5406,6 @@
         }
     },
     "magento/product-community-edition": {
-        "2016-07-19": {
-            "title": "Unauthenticated crypto and weak IV in Magento\\Framework\\Encryption",
-            "link": "http://www.openwall.com/lists/oss-security/2016/07/19/3",
-            "cve": "CVE-2016-6485",
-            "branches": {
-                "2.0": {
-                    "time": null,
-                    "versions": [
-                        ">=2.0",
-                        "<2.1"
-                    ]
-                },
-                "2.1": {
-                    "time": null,
-                    "versions": [
-                        ">=2.1",
-                        "<2.2"
-                    ]
-                },
-                "2.2": {
-                    "time": 1530108720,
-                    "versions": [
-                        ">=2.2",
-                        "<2.2.6"
-                    ]
-                }
-            },
-            "reference": "composer://magento/product-community-edition",
-            "composer-repository": false
-        },
         "2018-06-27": {
             "title": "Magento 2.2.5 and 2.1.14 Security update",
             "link": "https://magento.com/security/patches/magento-2.2.5-and-2.1.14-security-update",
@@ -5499,6 +5469,36 @@
                     "versions": [
                         ">=2.2",
                         "<2.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://magento/product-community-edition",
+            "composer-repository": false
+        },
+        "CVE-2016-6485": {
+            "title": "Unauthenticated crypto and weak IV in Magento\\Framework\\Encryption",
+            "link": "http://www.openwall.com/lists/oss-security/2016/07/19/3",
+            "cve": "CVE-2016-6485",
+            "branches": {
+                "2.0": {
+                    "time": null,
+                    "versions": [
+                        ">=2.0",
+                        "<2.1"
+                    ]
+                },
+                "2.1": {
+                    "time": null,
+                    "versions": [
+                        ">=2.1",
+                        "<2.2"
+                    ]
+                },
+                "2.2": {
+                    "time": 1530108720,
+                    "versions": [
+                        ">=2.2",
+                        "<2.2.6"
                     ]
                 }
             },
@@ -5575,20 +5575,6 @@
         }
     },
     "onelogin/php-saml": {
-        "2016-10-04": {
-            "title": "Vulnerability to Response Wrapping attacks resulting in a malicious user gaining unauthorized access to a system.",
-            "link": "https://github.com/onelogin/php-saml/commit/9d31baa97a57b0989020f62d24307c29e325dac3",
-            "cve": "CVE-2016-1000253",
-            "branches": {
-                "2.x": {
-                    "time": 1475595540,
-                    "versions": [
-                        "<2.10.0"
-                    ]
-                }
-            },
-            "reference": "composer://onelogin/php-saml"
-        },
         "2017-02-28": {
             "title": "An error during signature verification can be treated as a successful verification.",
             "link": "https://github.com/onelogin/php-saml/commit/949359f5cad5e1d085c4e5447d9aa8f49a6e82a1",
@@ -5598,6 +5584,20 @@
                     "time": 1488296220,
                     "versions": [
                         "<2.10.4"
+                    ]
+                }
+            },
+            "reference": "composer://onelogin/php-saml"
+        },
+        "CVE-2016-1000253": {
+            "title": "Vulnerability to Response Wrapping attacks resulting in a malicious user gaining unauthorized access to a system.",
+            "link": "https://github.com/onelogin/php-saml/commit/9d31baa97a57b0989020f62d24307c29e325dac3",
+            "cve": "CVE-2016-1000253",
+            "branches": {
+                "2.x": {
+                    "time": 1475595540,
+                    "versions": [
+                        "<2.10.0"
                     ]
                 }
             },
@@ -8289,7 +8289,7 @@
         }
     },
     "symfony/polyfill-php55": {
-        "2018-10-31": {
+        "CVE-2013-5958": {
             "title": "Possible DOS attack with long user-submitted passwords (correct fix for CVE-2013-5958)",
             "link": "https://github.com/symfony/polyfill/pull/155",
             "cve": "CVE-2013-5958",
@@ -8306,7 +8306,7 @@
         }
     },
     "symfony/polyfill": {
-        "2018-10-31": {
+        "CVE-2013-5958": {
             "title": "Possible DOS attack with long user-submitted passwords (correct fix for CVE-2013-5958)",
             "link": "https://github.com/symfony/polyfill/pull/155",
             "cve": "CVE-2013-5958",
@@ -15122,7 +15122,7 @@
         }
     },
     "zendframework/zend-cache": {
-        "ZF2015-07": {
+        "CVE-2015-5723": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
@@ -15169,7 +15169,7 @@
         }
     },
     "zendframework/zend-crypt": {
-        "2015-11-23": {
+        "CVE-2015-7503": {
             "title": "Potential Information Disclosure in Zend\\Crypt\\PublicKey\\Rsa\\PublicKey",
             "link": "https://framework.zend.com/security/advisory/ZF2015-10",
             "cve": "CVE-2015-7503",
@@ -15193,7 +15193,7 @@
         }
     },
     "zendframework/zend-db": {
-        "ZF2014-06": {
+        "CVE-2014-8089": {
             "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-06",
             "cve": "CVE-2014-8089",
@@ -15229,7 +15229,7 @@
             },
             "reference": "composer://zendframework/zend-db"
         },
-        "ZF2015-02": {
+        "CVE-2015-0270": {
             "title": "Potential SQL injection in PostgreSQL Zend\\Db adapter",
             "link": "https://framework.zend.com/security/advisory/ZF2015-02",
             "cve": "CVE-2015-0270",
@@ -15267,7 +15267,7 @@
         }
     },
     "zendframework/zend-diactoros": {
-        "ZF2015-05": {
+        "CVE-2015-3257": {
             "title": "Potential XSS and Open Redirect vectors in zend-diactoros",
             "link": "https://framework.zend.com/security/advisory/ZF2015-05",
             "cve": "CVE-2015-3257",
@@ -15338,7 +15338,7 @@
         }
     },
     "zendframework/zend-http": {
-        "ZF2015-04": {
+        "CVE-2015-3154": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -15414,7 +15414,7 @@
         }
     },
     "zendframework/zend-ldap": {
-        "ZF2014-05": {
+        "CVE-2014-8088": {
             "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
             "link": "https://framework.zend.com/security/advisory/ZF2014-05",
             "cve": "CVE-2014-8088",
@@ -15452,7 +15452,7 @@
         }
     },
     "zendframework/zend-mail": {
-        "ZF2015-04": {
+        "CVE-2015-3154": {
             "title": "Potential CRLF injection attacks in mail and HTTP headers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-04",
             "cve": "CVE-2015-3154",
@@ -15615,7 +15615,7 @@
         }
     },
     "zendframework/zend-validator": {
-        "ZF2015-03": {
+        "CVE-2015-1786": {
             "title": "Invalid CSRF validation of null or incorrectly formatted token identifiers",
             "link": "https://framework.zend.com/security/advisory/ZF2015-03",
             "cve": "CVE-2015-1786",
@@ -15680,6 +15680,245 @@
         }
     },
     "zendframework/zendframework": {
+        "CVE-2014-8088": {
+            "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
+            "link": "https://framework.zend.com/security/advisory/ZF2014-05",
+            "cve": "CVE-2014-8088",
+            "branches": {
+                "2.0.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.99"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.99"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.8"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.3"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2014-8089": {
+            "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
+            "link": "https://framework.zend.com/security/advisory/ZF2014-06",
+            "cve": "CVE-2014-8089",
+            "branches": {
+                "2.0.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.99"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.99"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.8"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.3"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-0270": {
+            "title": "Potential SQL injection in PostgreSQL Zend\\Db adapter",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-02",
+            "cve": "CVE-2015-0270",
+            "branches": {
+                "2.0.x": {
+                    "time": 1424286909,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.99"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1424286909,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.99"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1424286909,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.10"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1424286909,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.5"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-1786": {
+            "title": "Invalid CSRF validation of null or incorrectly formatted token identifiers",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-03",
+            "cve": "CVE-2015-1786",
+            "branches": {
+                "2.3.x": {
+                    "time": 1426168727,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-3154": {
+            "title": "Potential CRLF injection attacks in mail and HTTP headers",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-04",
+            "cve": "CVE-2015-3154",
+            "branches": {
+                "2.0.x": {
+                    "time": 1430988822,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.99"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1430988822,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.99"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1430986594,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.8"
+                    ]
+                },
+                "2.4.x": {
+                    "time": 1430988822,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.4.1"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-5161": {
+            "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-06",
+            "cve": "CVE-2015-5161",
+            "branches": {
+                "2.0.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.99"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.99"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.99"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.8"
+                    ]
+                },
+                "2.4.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.4.6"
+                    ]
+                },
+                "2.5.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.5.1"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-5723": {
+            "title": "Filesystem Permissions Issues in Multiple Components",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-07",
+            "cve": "CVE-2015-5723",
+            "branches": {
+                "2.4.x": {
+                    "time": 1442337306,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.4.8"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
+        "CVE-2015-7503": {
+            "title": "Potential Information Disclosure in Zend\\Crypt\\PublicKey\\Rsa\\PublicKey",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-10",
+            "cve": "CVE-2015-7503",
+            "branches": {
+                "2.4.x": {
+                    "time": 1448289000,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.4.9"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework"
+        },
         "ZF2012-03": {
             "title": "Potential XSS Vectors in Multiple Zend Framework 2 Components",
             "link": "https://framework.zend.com/security/advisory/ZF2012-03",
@@ -15835,78 +16074,6 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2014-05": {
-            "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
-            "link": "https://framework.zend.com/security/advisory/ZF2014-05",
-            "cve": "CVE-2014-8088",
-            "branches": {
-                "2.0.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.0.99"
-                    ]
-                },
-                "2.1.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.1.0",
-                        "<2.1.99"
-                    ]
-                },
-                "2.2.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.2.0",
-                        "<2.2.8"
-                    ]
-                },
-                "2.3.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.3"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2014-06": {
-            "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
-            "link": "https://framework.zend.com/security/advisory/ZF2014-06",
-            "cve": "CVE-2014-8089",
-            "branches": {
-                "2.0.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.0.99"
-                    ]
-                },
-                "2.1.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.1.0",
-                        "<2.1.99"
-                    ]
-                },
-                "2.2.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.2.0",
-                        "<2.2.8"
-                    ]
-                },
-                "2.3.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.3"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
         "ZF2015-01": {
             "title": "Session validation vulnerability",
             "link": "https://framework.zend.com/security/advisory/ZF2015-01",
@@ -15943,176 +16110,9 @@
             },
             "reference": "composer://zendframework/zendframework"
         },
-        "ZF2015-02": {
-            "title": "Potential SQL injection in PostgreSQL Zend\\Db adapter",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-02",
-            "cve": "CVE-2015-0270",
-            "branches": {
-                "2.0.x": {
-                    "time": 1424286909,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.0.99"
-                    ]
-                },
-                "2.1.x": {
-                    "time": 1424286909,
-                    "versions": [
-                        ">=2.1.0",
-                        "<2.1.99"
-                    ]
-                },
-                "2.2.x": {
-                    "time": 1424286909,
-                    "versions": [
-                        ">=2.2.0",
-                        "<2.2.10"
-                    ]
-                },
-                "2.3.x": {
-                    "time": 1424286909,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.5"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2015-03": {
-            "title": "Invalid CSRF validation of null or incorrectly formatted token identifiers",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-03",
-            "cve": "CVE-2015-1786",
-            "branches": {
-                "2.3.x": {
-                    "time": 1426168727,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.6"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2015-04": {
-            "title": "Potential CRLF injection attacks in mail and HTTP headers",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-04",
-            "cve": "CVE-2015-3154",
-            "branches": {
-                "2.0.x": {
-                    "time": 1430988822,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.0.99"
-                    ]
-                },
-                "2.1.x": {
-                    "time": 1430988822,
-                    "versions": [
-                        ">=2.1.0",
-                        "<2.1.99"
-                    ]
-                },
-                "2.3.x": {
-                    "time": 1430986594,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.8"
-                    ]
-                },
-                "2.4.x": {
-                    "time": 1430988822,
-                    "versions": [
-                        ">=2.4.0",
-                        "<2.4.1"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2015-06": {
-            "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-06",
-            "cve": "CVE-2015-5161",
-            "branches": {
-                "2.0.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.0.99"
-                    ]
-                },
-                "2.1.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.1.0",
-                        "<2.1.99"
-                    ]
-                },
-                "2.2.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.2.0",
-                        "<2.2.99"
-                    ]
-                },
-                "2.3.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.3.0",
-                        "<2.3.8"
-                    ]
-                },
-                "2.4.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.4.0",
-                        "<2.4.6"
-                    ]
-                },
-                "2.5.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=2.5.0",
-                        "<2.5.1"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2015-07": {
-            "title": "Filesystem Permissions Issues in Multiple Components",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-07",
-            "cve": "CVE-2015-5723",
-            "branches": {
-                "2.4.x": {
-                    "time": 1442337306,
-                    "versions": [
-                        ">=2.4.0",
-                        "<2.4.8"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
         "ZF2015-09": {
             "title": "Potential Information Disclosure and Insufficient Entropy vulnerability in Zend\\Captcha\\Word",
             "link": "https://framework.zend.com/security/advisory/ZF2015-09",
-            "branches": {
-                "2.4.x": {
-                    "time": 1448289000,
-                    "versions": [
-                        ">=2.0.0",
-                        "<2.4.9"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework"
-        },
-        "ZF2015-10": {
-            "title": "Potential Information Disclosure in Zend\\Crypt\\PublicKey\\Rsa\\PublicKey",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-10",
-            "cve": "CVE-2015-7503",
             "branches": {
                 "2.4.x": {
                     "time": 1448289000,
@@ -16181,6 +16181,95 @@
         }
     },
     "zendframework/zendframework1": {
+        "CVE-2014-8088": {
+            "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
+            "link": "https://framework.zend.com/security/advisory/ZF2014-05",
+            "cve": "CVE-2014-8088",
+            "branches": {
+                "1.12.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.12.9"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
+        "CVE-2014-8089": {
+            "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
+            "link": "https://framework.zend.com/security/advisory/ZF2014-06",
+            "cve": "CVE-2014-8089",
+            "branches": {
+                "1.12.x": {
+                    "time": 1410904800,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.12.9"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
+        "CVE-2015-3154": {
+            "title": "Potential CRLF injection attacks in mail and HTTP headers",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-04",
+            "cve": "CVE-2015-3154",
+            "branches": {
+                "1.12.x": {
+                    "time": 1432057242,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.12.12"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
+        "CVE-2015-5161": {
+            "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-06",
+            "cve": "CVE-2015-5161",
+            "branches": {
+                "1.12.x": {
+                    "time": 1438614838,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.12.14"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
+        "CVE-2015-5723": {
+            "title": "Filesystem Permissions Issues in Multiple Components",
+            "link": "https://framework.zend.com/security/advisory/ZF2015-07",
+            "cve": "CVE-2015-5723",
+            "branches": {
+                "1.12.x": {
+                    "time": 1442332203,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.12.16"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
+        "CVE-2016-6233": {
+            "title": "Potential SQL injection in ORDER and GROUP statements of Zend_Db_Select",
+            "link": "https://framework.zend.com/security/advisory/ZF2016-02",
+            "cve": "CVE-2016-6233",
+            "branches": {
+                "1.12.x": {
+                    "time": 1467824518,
+                    "versions": [
+                        "<1.12.19"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zendframework1"
+        },
         "ZF2009-01": {
             "title": "LFI vector in Zend_View::setScriptPath() and render()",
             "link": "https://framework.zend.com/security/advisory/ZF2009-01",
@@ -16498,81 +16587,6 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2014-05": {
-            "title": "Anonymous authentication in ldap_bind() function of PHP, using null byte",
-            "link": "https://framework.zend.com/security/advisory/ZF2014-05",
-            "cve": "CVE-2014-8088",
-            "branches": {
-                "1.12.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=1.12.0",
-                        "<1.12.9"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
-        "ZF2014-06": {
-            "title": "SQL injection vector when manually quoting values for sqlsrv extension, using null byte",
-            "link": "https://framework.zend.com/security/advisory/ZF2014-06",
-            "cve": "CVE-2014-8089",
-            "branches": {
-                "1.12.x": {
-                    "time": 1410904800,
-                    "versions": [
-                        ">=1.12.0",
-                        "<1.12.9"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
-        "ZF2015-04": {
-            "title": "Potential CRLF injection attacks in mail and HTTP headers",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-04",
-            "cve": "CVE-2015-3154",
-            "branches": {
-                "1.12.x": {
-                    "time": 1432057242,
-                    "versions": [
-                        ">=1.12.0",
-                        "<1.12.12"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
-        "ZF2015-06": {
-            "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-06",
-            "cve": "CVE-2015-5161",
-            "branches": {
-                "1.12.x": {
-                    "time": 1438614838,
-                    "versions": [
-                        ">=1.12.0",
-                        "<1.12.14"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
-        "ZF2015-07": {
-            "title": "Filesystem Permissions Issues in Multiple Components",
-            "link": "https://framework.zend.com/security/advisory/ZF2015-07",
-            "cve": "CVE-2015-5723",
-            "branches": {
-                "1.12.x": {
-                    "time": 1442332203,
-                    "versions": [
-                        ">=1.12.0",
-                        "<1.12.16"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
         "ZF2015-08": {
             "title": "Potential SQL injection vector using null byte for PDO (MsSql, SQLite)",
             "link": "https://framework.zend.com/security/advisory/ZF2015-08",
@@ -16615,20 +16629,6 @@
             },
             "reference": "composer://zendframework/zendframework1"
         },
-        "ZF2016-02": {
-            "title": "Potential SQL injection in ORDER and GROUP statements of Zend_Db_Select",
-            "link": "https://framework.zend.com/security/advisory/ZF2016-02",
-            "cve": "CVE-2016-6233",
-            "branches": {
-                "1.12.x": {
-                    "time": 1467824518,
-                    "versions": [
-                        "<1.12.19"
-                    ]
-                }
-            },
-            "reference": "composer://zendframework/zendframework1"
-        },
         "ZF2016-03": {
             "title": "Potential SQL injection in ORDER and GROUP functions of ZF1",
             "link": "https://framework.zend.com/security/advisory/ZF2016-03",
@@ -16661,7 +16661,7 @@
         }
     },
     "zendframework/zendxml": {
-        "ZF2015-06": {
+        "CVE-2015-5161": {
             "title": "XXE/XEE vector when using ZendXml on multibyte payloads",
             "link": "https://framework.zend.com/security/advisory/ZF2015-06",
             "cve": "CVE-2015-5161",
@@ -16678,7 +16678,7 @@
         }
     },
     "zetacomponents/mail": {
-        "2017-11-15-1": {
+        "CVE-2017-15806": {
             "title": "Arbitrary code execution via a crafted email address",
             "link": "https://github.com/zetacomponents/Mail/issues/58",
             "reference": "composer://zetacomponents/mail",
@@ -16694,7 +16694,7 @@
         }
     },
     "zf-commons/zfc-user": {
-        "2015-01-08": {
+        "CVE-2015-1039": {
             "title": "XSS vulnerability in login redirect param",
             "link": "https://github.com/ZF-Commons/ZfcUser/issues/550",
             "cve": "CVE-2015-1039",
@@ -16710,7 +16710,7 @@
         }
     },
     "zfcampus/zf-apigility-doctrine": {
-        "ZF2015-07": {
+        "CVE-2015-5723": {
             "title": "Filesystem Permissions Issues in Multiple Components",
             "link": "https://framework.zend.com/security/advisory/ZF2015-07",
             "cve": "CVE-2015-5723",
