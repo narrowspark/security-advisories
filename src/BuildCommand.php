@@ -67,7 +67,7 @@ class BuildCommand extends AbstractCommand
         $this->filesystem   = new Filesystem();
         $this->yamlParser   = new YamlParser();
         $this->jsonDumper   = new JsonDumper();
-        $this->jsonDumper->setOptions(JSON_PRETTY_PRINT | \JSON_UNESCAPED_SLASHES);
+        $this->jsonDumper->setOptions(\JSON_PRETTY_PRINT | \JSON_UNESCAPED_SLASHES);
     }
 
     /**
