@@ -129,6 +129,29 @@
             "reference": "composer://amphp/http"
         }
     },
+    "api-platform/core": {
+        "2019-01-15": {
+            "title": "Access control bypass in GraphQL mutations",
+            "link": "https://github.com/api-platform/core/pull/2441",
+            "branches": {
+                "2.2.x": {
+                    "time": 1547573400,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.10"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1547573400,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://api-platform/core"
+        }
+    },
     "asymmetricrypt/asymmetricrypt": {
         "2017-11-20": {
             "title": "Padding Oracle Vulnerability in RSA Encryption",
@@ -5705,6 +5728,22 @@
                 }
             },
             "reference": "composer://paypal/merchant-sdk-php"
+        }
+    },
+    "pear/archive_tar": {
+        "CVE-2018-1000888": {
+            "title": "Potential RCE if filename starts with phar://",
+            "link": "https://pear.php.net/bugs/bug.php?id=23782",
+            "cve": "CVE-2018-1000888",
+            "branches": {
+                "1.x": {
+                    "time": 1545333097,
+                    "versions": [
+                        "<1.4.4"
+                    ]
+                }
+            },
+            "reference": "composer://pear/archive_tar"
         }
     },
     "phpmailer/phpmailer": {
