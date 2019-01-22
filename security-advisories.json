@@ -12488,6 +12488,160 @@
                 }
             },
             "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-1": {
+            "title": "Information Disclosure of Installed Extensions",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-001/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:04",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:41:55",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-2": {
+            "title": "Security Misconfiguration for Backend User Accounts",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-002/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:12",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:01",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-3": {
+            "title": "Broken Access Control in Localization Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-003/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:19",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-4": {
+            "title": "Cross-Site Scripting in Fluid ViewHelpers",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-005/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:26",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:16",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-5": {
+            "title": "Cross-Site Scripting in Bootstrap CSS toolkit",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-006/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:33",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:25",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-6": {
+            "title": "Cross-Site Scripting in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-007/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:41",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:34",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-7": {
+            "title": "Arbitrary Code Execution via File List Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-008/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:47",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-01-22-8": {
+            "title": "Cross-Site Scripting in Language Pack Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-004/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-01-22 08:42:09",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
         }
     },
     "typo3/cms": {
@@ -14565,6 +14719,160 @@
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-1": {
+            "title": "Information Disclosure of Installed Extensions",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-001/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:04",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:41:55",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-2": {
+            "title": "Security Misconfiguration for Backend User Accounts",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-002/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:12",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:01",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-3": {
+            "title": "Broken Access Control in Localization Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-003/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:19",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-4": {
+            "title": "Cross-Site Scripting in Fluid ViewHelpers",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-005/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:26",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:16",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-5": {
+            "title": "Cross-Site Scripting in Bootstrap CSS toolkit",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-006/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:33",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:25",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-6": {
+            "title": "Cross-Site Scripting in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-007/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:41",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:34",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-7": {
+            "title": "Arbitrary Code Execution via File List Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-008/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-01-22 08:41:47",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.23"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-01-22 08:42:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-01-22-8": {
+            "title": "Cross-Site Scripting in Language Pack Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-004/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-01-22 08:42:09",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.4"
                     ]
                 }
             },
