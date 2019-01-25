@@ -12329,18 +12329,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-1": {
-            "title": "Cross-Site Scripting in CKEditor",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-005/",
+            "title": "Cross-Site Scripting in Online Media Asset Rendering",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-006/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:06",
                     "versions": [
-                        ">=8.5.0",
+                        ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:00",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12350,18 +12350,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-2": {
-            "title": "Cross-Site Scripting in Online Media Asset Rendering",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-006/",
+            "title": "Cross-Site Scripting in Backend Modal Component",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-007/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:12",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:07",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12371,18 +12371,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-3": {
-            "title": "Cross-Site Scripting in Backend Modal Component",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-007/",
+            "title": "Cross-Site Scripting in Frontend User Login",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-008/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:19",
                     "versions": [
-                        ">=8.5.0",
+                        ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:13",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12392,18 +12392,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-4": {
-            "title": "Cross-Site Scripting in Frontend User Login",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-008/",
+            "title": "Security Misconfiguration in Install Tool Cookie",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-009/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:26",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:20",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12413,18 +12413,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-5": {
-            "title": "Security Misconfiguration in Install Tool Cookie",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-009/",
+            "title": "Information Disclosure in Install Tool",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-010/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:32",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:26",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12434,18 +12434,18 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-6": {
-            "title": "Information Disclosure in Install Tool",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-010/",
+            "title": "Denial of Service in Online Media Asset Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-011/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:38",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:33",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -12455,35 +12455,35 @@
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-7": {
-            "title": "Denial of Service in Online Media Asset Handling",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-011/",
+            "title": "Denial of Service in Frontend Record Registration",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-012/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:45",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
-                    ]
-                },
-                "9.x": {
-                    "time": 1531404780,
-                    "versions": [
-                        ">=9.0.0",
-                        "<9.5.2"
                     ]
                 }
             },
             "reference": "composer://typo3/cms-core"
         },
         "2018-12-11-8": {
-            "title": "Denial of Service in Frontend Record Registration",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-012/",
+            "title": "Cross-Site Scripting in CKEditor",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-005/",
             "branches": {
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:56",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
+                    ]
+                },
+                "9.x": {
+                    "time": "2018-12-11 09:56:53",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.2"
                     ]
                 }
             },
@@ -14515,18 +14515,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-1": {
-            "title": "Cross-Site Scripting in CKEditor",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-005/",
+            "title": "Cross-Site Scripting in Online Media Asset Rendering",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-006/",
             "branches": {
-                "8.x": {
-                    "time": 1544537580,
+                "7.x": {
+                    "time": "2018-12-11 09:55:06",
                     "versions": [
-                        ">=8.5.0",
+                        ">=7.0.0",
+                        "<7.6.32"
+                    ]
+                },
+                "8.x": {
+                    "time": "2018-12-11 09:56:06",
+                    "versions": [
+                        ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:00",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14536,25 +14543,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-2": {
-            "title": "Cross-Site Scripting in Online Media Asset Rendering",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-006/",
+            "title": "Cross-Site Scripting in Backend Modal Component",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-007/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:12",
                     "versions": [
-                        ">=7.5.0",
+                        ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:12",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:07",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14564,25 +14571,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-3": {
-            "title": "Cross-Site Scripting in Backend Modal Component",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-007/",
+            "title": "Cross-Site Scripting in Frontend User Login",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-008/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:19",
                     "versions": [
-                        ">=7.1.0",
+                        ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:19",
                     "versions": [
-                        ">=8.5.0",
+                        ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:13",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14592,25 +14599,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-4": {
-            "title": "Cross-Site Scripting in Frontend User Login",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-008/",
+            "title": "Security Misconfiguration in Install Tool Cookie",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-009/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:25",
                     "versions": [
                         ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:26",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:20",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14620,25 +14627,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-5": {
-            "title": "Security Misconfiguration in Install Tool Cookie",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-009/",
+            "title": "Information Disclosure in Install Tool",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-010/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:31",
                     "versions": [
                         ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:32",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:26",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14648,25 +14655,25 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-6": {
-            "title": "Information Disclosure in Install Tool",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-010/",
+            "title": "Denial of Service in Online Media Asset Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-011/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:37",
                     "versions": [
                         ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:38",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
                     ]
                 },
                 "9.x": {
-                    "time": 1531404780,
+                    "time": "2018-12-11 09:57:33",
                     "versions": [
                         ">=9.0.0",
                         "<9.5.2"
@@ -14676,49 +14683,42 @@
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-7": {
-            "title": "Denial of Service in Online Media Asset Handling",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-011/",
+            "title": "Denial of Service in Frontend Record Registration",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-012/",
             "branches": {
                 "7.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:44",
                     "versions": [
                         ">=7.0.0",
                         "<7.6.32"
                     ]
                 },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:56:45",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
-                    ]
-                },
-                "9.x": {
-                    "time": 1531404780,
-                    "versions": [
-                        ">=9.0.0",
-                        "<9.5.2"
                     ]
                 }
             },
             "reference": "composer://typo3/cms"
         },
         "2018-12-11-8": {
-            "title": "Denial of Service in Frontend Record Registration",
-            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-012/",
+            "title": "Cross-Site Scripting in CKEditor",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2018-005/",
             "branches": {
-                "7.x": {
-                    "time": 1544537580,
-                    "versions": [
-                        ">=7.0.0",
-                        "<7.6.32"
-                    ]
-                },
                 "8.x": {
-                    "time": 1544537580,
+                    "time": "2018-12-11 09:55:56",
                     "versions": [
                         ">=8.0.0",
                         "<8.7.21"
+                    ]
+                },
+                "9.x": {
+                    "time": "2018-12-11 09:56:53",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.2"
                     ]
                 }
             },
