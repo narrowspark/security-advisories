@@ -2566,6 +2566,134 @@
                 }
             },
             "reference": "composer://drupal/core"
+        },
+        "CVE-2019-6338": {
+            "title": "Critical - Third Party Libraries",
+            "link": "https://www.drupal.org/sa-core-2019-001",
+            "cve": "CVE-2019-6338",
+            "branches": {
+                "7.x": {
+                    "time": 1516038120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.62.0"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.9"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "CVE-2019-6339": {
+            "title": "Critical - Arbitrary PHP code execution",
+            "link": "https://www.drupal.org/sa-core-2019-002",
+            "cve": "CVE-2019-6339",
+            "branches": {
+                "7.x": {
+                    "time": 1516038120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.62.0"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.9"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
         }
     },
     "drupal/drupal": {
@@ -4009,6 +4137,134 @@
                     "versions": [
                         ">=8.5",
                         "<8.5.3"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2019-6338": {
+            "title": "Critical - Third Party Libraries",
+            "link": "https://www.drupal.org/sa-core-2019-001",
+            "cve": "CVE-2019-6338",
+            "branches": {
+                "7.x": {
+                    "time": 1516038120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.62.0"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.9"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2019-6339": {
+            "title": "Critical - Arbitrary PHP code execution",
+            "link": "https://www.drupal.org/sa-core-2019-002",
+            "cve": "CVE-2019-6339",
+            "branches": {
+                "7.x": {
+                    "time": 1516038120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.62.0"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.9"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1516038060,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.6"
                     ]
                 }
             },
