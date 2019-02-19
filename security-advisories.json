@@ -6617,6 +6617,56 @@
         }
     },
     "silverstripe/framework": {
+        "CVE-2019-5715": {
+            "title": "CVE-2019-5715: Reflected SQL Injection through Form and DataObject",
+            "link": "https://www.silverstripe.org/download/security-releases/ss-2018-021",
+            "cve": "CVE-2019-5715",
+            "branches": {
+                "3.6.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=3.6.0",
+                        "<3.6.7"
+                    ]
+                },
+                "3.7.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=3.7.0",
+                        "<3.7.3"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.7"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.5"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.4"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1550577305,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.1"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/framework"
+        },
         "SS-2014-015-1": {
             "title": "SS-2014-015: IE requests not properly behaving with rewritehashlinks",
             "link": "https://www.silverstripe.org/software/download/security-releases/ss-2014-015-ie-requests-not-properly-behaving-with-rewritehashlinks/",
