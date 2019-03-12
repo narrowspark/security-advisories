@@ -12676,6 +12676,27 @@
                 }
             },
             "reference": "composer://twig/twig"
+        },
+        "2019-03-12": {
+            "title": "Sandbox Information Disclosure",
+            "link": "https://symfony.com/blog/twig-sandbox-information-disclosure",
+            "cve": null,
+            "branches": {
+                "1.x": {
+                    "time": 1552394101,
+                    "versions": [
+                        "<1.38.0"
+                    ]
+                },
+                "2.x": {
+                    "time": 1552394176,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.7.0"
+                    ]
+                }
+            },
+            "reference": "composer://twig/twig"
         }
     },
     "typo3/cms-core": {
