@@ -5821,6 +5821,20 @@
         }
     },
     "league/commonmark": {
+        "2019-03-21": {
+            "title": "XSS vulnerability with double-encoded entities",
+            "link": "https://github.com/thephpleague/commonmark/issues/353",
+            "cve": null,
+            "branches": {
+                "0.x": {
+                    "time": 1553208770,
+                    "versions": [
+                        "<0.18.3"
+                    ]
+                }
+            },
+            "reference": "composer://league/commonmark"
+        },
         "CVE-2018-20583": {
             "title": "XSS vulnerability with unsafe link protocols",
             "link": "https://github.com/thephpleague/commonmark/issues/337",
