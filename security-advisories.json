@@ -16190,6 +16190,22 @@
             "reference": "composer://zendframework/zend-db"
         }
     },
+    "zendframework/zend-developer-tools": {
+        "ZF2019-01": {
+            "title": "Information disclosure",
+            "link": "https://framework.zend.com/security/advisory/ZF2019-01",
+            "branches": {
+                "master": {
+                    "time": 1553780050,
+                    "versions": [
+                        ">=1.2.2",
+                        "<1.2.3"
+                    ]
+                }
+            },
+            "reference": "composer://zendframework/zend-developer-tools"
+        }
+    },
     "zendframework/zend-diactoros": {
         "CVE-2015-3257": {
             "title": "Potential XSS and Open Redirect vectors in zend-diactoros",
