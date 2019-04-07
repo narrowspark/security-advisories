@@ -4540,6 +4540,20 @@
                 }
             },
             "reference": "composer://erusev/parsedown"
+        },
+        "CVE-2019-10905": {
+            "title": "Class-Name Injection",
+            "link": "https://github.com/erusev/parsedown/issues/699",
+            "cve": "CVE-2019-10905",
+            "branches": {
+                "1.x": {
+                    "time": null,
+                    "versions": [
+                        "<1.7.2"
+                    ]
+                }
+            },
+            "reference": "composer://erusev/parsedown"
         }
     },
     "ezsystems/ezpublish-kernel": {
