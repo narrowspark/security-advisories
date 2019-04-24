@@ -492,6 +492,35 @@
                 }
             },
             "reference": "composer://cakephp/cakephp"
+        },
+        "CVE-2019-11458": {
+            "title": "Unsafe deserialization in SmtpTransport",
+            "link": "https://bakery.cakephp.org/2019/04/23/cakephp_377_3615_3518_released.html",
+            "cve": "CVE-2019-11458",
+            "branches": {
+                "3.5.x": {
+                    "time": 1556057280,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.5.18"
+                    ]
+                },
+                "3.6.x": {
+                    "time": 1555798080,
+                    "versions": [
+                        ">=3.6.0",
+                        "<3.6.15"
+                    ]
+                },
+                "3.7.x": {
+                    "time": 1555798080,
+                    "versions": [
+                        ">=3.7.0",
+                        "<3.7.7"
+                    ]
+                }
+            },
+            "reference": "composer://cakephp/cakephp"
         }
     },
     "cart2quote/module-quotation": {
@@ -8265,6 +8294,65 @@
             "reference": "composer://sylius/sylius"
         }
     },
+    "symfony/cache": {
+        "CVE-2019-10912": {
+            "title": "CVE-2019-10912: Prevent destructors with side-effects from being unserialized",
+            "link": "https://symfony.com/cve-2019-10912",
+            "cve": "CVE-2019-10912",
+            "branches": {
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/cache"
+        }
+    },
     "symfony/dependency-injection": {
         "2012-08-28": {
             "title": "Security fixes related to the way XML is handled",
@@ -8276,6 +8364,84 @@
                     "versions": [
                         ">=2.0.0",
                         "<2.0.17"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/dependency-injection"
+        },
+        "CVE-2019-10910": {
+            "title": "CVE-2019-10910: Check service IDs are valid",
+            "link": "https://symfony.com/cve-2019-10910",
+            "cve": "CVE-2019-10910",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
                     ]
                 }
             },
@@ -8501,6 +8667,84 @@
                     "versions": [
                         ">=2.5.0",
                         "<2.5.2"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/framework-bundle"
+        },
+        "CVE-2019-10909": {
+            "title": "CVE-2019-10909: Escape validation messages in the PHP templating engine",
+            "link": "https://symfony.com/cve-2019-10909",
+            "cve": "CVE-2019-10909",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
                     ]
                 }
             },
@@ -8970,6 +9214,84 @@
                 }
             },
             "reference": "composer://symfony/http-foundation"
+        },
+        "CVE-2019-10913": {
+            "title": "CVE-2019-10913: Reject invalid HTTP method overrides",
+            "link": "https://symfony.com/cve-2019-10913",
+            "cve": "CVE-2019-10913",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/http-foundation"
         }
     },
     "symfony/http-kernel": {
@@ -9169,6 +9491,79 @@
             "reference": "composer://symfony/intl"
         }
     },
+    "symfony/phpunit-bridge": {
+        "CVE-2019-10912": {
+            "title": "CVE-2019-10912: Prevent destructors with side-effects from being unserialized",
+            "link": "https://symfony.com/cve-2019-10912",
+            "cve": "CVE-2019-10912",
+            "branches": {
+                "2.8.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/phpunit-bridge"
+        }
+    },
     "symfony/polyfill-php55": {
         "CVE-2013-5958": {
             "title": "Possible DOS attack with long user-submitted passwords (correct fix for CVE-2013-5958)",
@@ -9201,6 +9596,86 @@
                 }
             },
             "reference": "composer://symfony/polyfill"
+        }
+    },
+    "symfony/proxy-manager-bridge": {
+        "CVE-2019-10910": {
+            "title": "CVE-2019-10910: Check service IDs are valid",
+            "link": "https://symfony.com/cve-2019-10910",
+            "cve": "CVE-2019-10910",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/proxy-manager-bridge"
         }
     },
     "symfony/routing": {
@@ -10190,6 +10665,84 @@
                 }
             },
             "reference": "composer://symfony/security-http"
+        },
+        "CVE-2019-10911": {
+            "title": "CVE-2019-10911: Add a separator in the remember me cookie hash",
+            "link": "https://symfony.com/cve-2019-10911",
+            "cve": "CVE-2019-10911",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security-http"
         }
     },
     "symfony/security": {
@@ -10944,6 +11497,84 @@
                     "versions": [
                         ">=4.2.0",
                         "<4.2.1"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
+        },
+        "CVE-2019-10911": {
+            "title": "CVE-2019-10911: Add a separator in the remember me cookie hash",
+            "link": "https://symfony.com/cve-2019-10911",
+            "cve": "CVE-2019-10911",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
                     ]
                 }
             },
@@ -12792,6 +13423,389 @@
                     "versions": [
                         ">=4.2.0",
                         "<4.2.1"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2019-10909": {
+            "title": "CVE-2019-10909: Escape validation messages in the PHP templating engine",
+            "link": "https://symfony.com/cve-2019-10909",
+            "cve": "CVE-2019-10909",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555414842,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2019-10910": {
+            "title": "CVE-2019-10910: Check service IDs are valid",
+            "link": "https://symfony.com/cve-2019-10910",
+            "cve": "CVE-2019-10910",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555418907,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2019-10911": {
+            "title": "CVE-2019-10911: Add a separator in the remember me cookie hash",
+            "link": "https://symfony.com/cve-2019-10911",
+            "cve": "CVE-2019-10911",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412075,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2019-10912": {
+            "title": "CVE-2019-10912: Prevent destructors with side-effects from being unserialized",
+            "link": "https://symfony.com/cve-2019-10912",
+            "cve": "CVE-2019-10912",
+            "branches": {
+                "2.8.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555412484,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2019-10913": {
+            "title": "CVE-2019-10913: Reject invalid HTTP method overrides",
+            "link": "https://symfony.com/cve-2019-10913",
+            "cve": "CVE-2019-10913",
+            "branches": {
+                "2.7.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.7.51"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.50"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.26"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.12"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1555411511,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.7"
                     ]
                 }
             },
