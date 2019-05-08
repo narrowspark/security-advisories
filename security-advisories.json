@@ -17308,6 +17308,78 @@
             "reference": "composer://typo3/neos"
         }
     },
+    "typo3/phar-stream-wrapper": {
+        "2018-10-18-1": {
+            "title": "By-passing Protection of PharStreamWrapper Interceptor",
+            "link": "https://typo3.org/security/advisory/typo3-psa-2018-001/",
+            "branches": {
+                "1.x": {
+                    "time": 1539871140,
+                    "versions": [
+                        ">=1.0.0",
+                        "<2.0.0"
+                    ]
+                },
+                "2.x": {
+                    "time": 1539871140,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.1"
+                    ]
+                },
+                "3.x": {
+                    "time": 1539871080,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/phar-stream-wrapper"
+        },
+        "2019-05-08-1": {
+            "title": "By-passing Protection of PharStreamWrapper Interceptor",
+            "link": "https://typo3.org/security/advisory/typo3-psa-2019-007/",
+            "branches": {
+                "2.x": {
+                    "time": 1557153600,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.1.1"
+                    ]
+                },
+                "3.x": {
+                    "time": 1557153660,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/phar-stream-wrapper"
+        },
+        "2019-05-08-2": {
+            "title": "By-passing Protection of PharStreamWrapper Interceptor",
+            "link": "https://typo3.org/security/advisory/typo3-psa-2019-008/",
+            "branches": {
+                "2.x": {
+                    "time": 1557153600,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.1.1"
+                    ]
+                },
+                "3.x": {
+                    "time": 1557153660,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/phar-stream-wrapper"
+        }
+    },
     "ua-parser/uap-php": {
         "2018-12-14": {
             "title": "Denial of service",
