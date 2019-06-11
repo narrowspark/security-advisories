@@ -7439,6 +7439,42 @@
         }
     },
     "silverstripe/framework": {
+        "CVE-2019-12246": {
+            "title": "CVE-2019-12246: Denial of Service on flush and development URL tools",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2019-12246",
+            "cve": "CVE-2019-12246",
+            "branches": {
+                "4.0.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/framework"
+        },
         "CVE-2019-5715": {
             "title": "CVE-2019-5715: Reflected SQL Injection through Form and DataObject",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2018-021",
@@ -7863,6 +7899,85 @@
                 }
             },
             "reference": "composer://silverstripe/framework"
+        }
+    },
+    "silverstripe/graphql": {
+        "CVE-2019-12437": {
+            "title": "CVE-2019-12437: Cross Site Request Forgery (CSRF) Protection Bypass in GraphQL",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2019-12437",
+            "cve": "CVE-2019-12437",
+            "branches": {
+                "2.0.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.5"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.2"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.2"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/graphql"
+        }
+    },
+    "silverstripe/registry": {
+        "CVE-2019-12149": {
+            "title": "CVE-2019-12149: Potential SQL injection in restfulserver and registry modules",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2019-12149",
+            "cve": "CVE-2019-12149",
+            "branches": {
+                "2.1.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.1.2"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.1"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/registry"
+        }
+    },
+    "silverstripe/restfulserver": {
+        "CVE-2019-12149": {
+            "title": "CVE-2019-12149: Potential SQL injection in restfulserver and registry modules",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2019-12149",
+            "cve": "CVE-2019-12149",
+            "branches": {
+                "1.0.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.0.9"
+                    ]
+                },
+                "2.0.x": {
+                    "time": 1560270840,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.4"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/restfulserver"
         }
     },
     "silverstripe/userforms": {
