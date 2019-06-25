@@ -5034,6 +5034,29 @@
             "reference": "composer://erusev/parsedown"
         }
     },
+    "ezsystems/ezplatform-admin-ui": {
+        "CVE-2019-12139": {
+            "title": "EZSA-2019-001 XSS in Admin UI",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-001-xss-in-admin-ui",
+            "reference": "composer://ezsystems/ezplatform-admin-ui",
+            "branches": {
+                "1.3.x": {
+                    "time": 1552348800,
+                    "versions": [
+                        ">=1.3.0",
+                        "<1.3.5"
+                    ]
+                },
+                "1.4.x": {
+                    "time": 1552348800,
+                    "versions": [
+                        ">=1.4.0",
+                        "<1.4.4"
+                    ]
+                }
+            }
+        }
+    },
     "ezsystems/ezpublish-kernel": {
         "2018-11-21-1": {
             "title": "EZSA-2018-008 REST API returns list of all SiteAccesses",
@@ -15131,6 +15154,139 @@
                 }
             },
             "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-1": {
+            "title": "Information Disclosure in Backend User Interface",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-014/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:38:40",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:39:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-2": {
+            "title": "Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-015/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:38:52",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:39:54",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-3": {
+            "title": "Security Misconfiguration in Frontend Session Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-018/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:05",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:30",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-4": {
+            "title": "Arbitrary Code Execution and Cross-Site Scripting in Backend API",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-019/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:18",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:43",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-5": {
+            "title": "Insecure Deserialization in TYPO3 CMS",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-020/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:30",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:56",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-6": {
+            "title": "Possible deserialization side-effects in symfony/cache",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-016/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-06-25 06:40:06",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-06-25-7": {
+            "title": "Broken Access Control in Import Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-017/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-06-25 06:40:18",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
         }
     },
     "typo3/cms": {
@@ -17453,6 +17609,139 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.5.6"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-1": {
+            "title": "Information Disclosure in Backend User Interface",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-014/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:38:40",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:39:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-2": {
+            "title": "Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-015/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:38:52",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:39:54",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-3": {
+            "title": "Security Misconfiguration in Frontend Session Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-018/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:05",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:30",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-4": {
+            "title": "Arbitrary Code Execution and Cross-Site Scripting in Backend API",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-019/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:18",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:43",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-5": {
+            "title": "Insecure Deserialization in TYPO3 CMS",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-020/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-06-25 06:39:30",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.27"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-06-25 06:40:56",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-6": {
+            "title": "Possible deserialization side-effects in symfony/cache",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-016/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-06-25 06:40:06",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-06-25-7": {
+            "title": "Broken Access Control in Import Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-017/",
+            "branches": {
+                "9.x": {
+                    "time": "2019-06-25 06:40:18",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.8"
                     ]
                 }
             },
