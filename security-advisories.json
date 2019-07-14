@@ -8228,6 +8228,55 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
+        "2019-07-10": {
+            "title": "Reflected Cross-Site-Scripting",
+            "link": "https://simplesamlphp.org/security/201907-01",
+            "branches": {
+                "1.12.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.12.0",
+                        "<1.13.0"
+                    ]
+                },
+                "1.13.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.13.0",
+                        "<1.14.0"
+                    ]
+                },
+                "1.14.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.14.0",
+                        "<1.15.0"
+                    ]
+                },
+                "1.15.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.15.0",
+                        "<1.16.0"
+                    ]
+                },
+                "1.16.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.16.0",
+                        "<1.17.0"
+                    ]
+                },
+                "1.17.x": {
+                    "time": 1562665560,
+                    "versions": [
+                        ">=1.17.0",
+                        "<1.17.3"
+                    ]
+                }
+            },
+            "reference": "composer://simplesamlphp/simplesamlphp"
+        },
         "CVE-2016-3124": {
             "title": "Information leakage issue in the sanitycheck module",
             "link": "https://simplesamlphp.org/security/201603-01",
