@@ -3166,6 +3166,21 @@
                 }
             },
             "reference": "composer://drupal/core"
+        },
+        "CVE-2019-6342": {
+            "title": "Critical - Access bypass",
+            "link": "https://www.drupal.org/sa-core-2019-008",
+            "cve": "CVE-2019-6342",
+            "branches": {
+                "8.7.x": {
+                    "time": 1563294240,
+                    "versions": [
+                        ">8.7.3",
+                        "<8.7.5"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
         }
     },
     "drupal/drupal": {
@@ -4998,6 +5013,21 @@
                     "versions": [
                         ">=8.6.0",
                         "<8.6.10"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2019-6342": {
+            "title": "Critical - Access bypass",
+            "link": "https://www.drupal.org/sa-core-2019-008",
+            "cve": "CVE-2019-6342",
+            "branches": {
+                "8.7.x": {
+                    "time": 1563294240,
+                    "versions": [
+                        ">8.7.3",
+                        "<8.7.5"
                     ]
                 }
             },
