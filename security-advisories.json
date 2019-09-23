@@ -8643,6 +8643,22 @@
             "reference": "composer://stormpath/sdk"
         }
     },
+    "studio-42/elfinder": {
+        "CVE-2019-9194": {
+            "title": "elFinder before 2.1.48 has a command injection vulnerability in the PHP connector.",
+            "link": "https://github.com/Studio-42/elFinder/releases/tag/2.1.48",
+            "cve": "CVE-2019-9194",
+            "branches": {
+                "2.1.x": {
+                    "time": 1551183032,
+                    "versions": [
+                        "<2.1.48"
+                    ]
+                }
+            },
+            "reference": "composer://studio-42/elfinder"
+        }
+    },
     "swiftmailer/swiftmailer": {
         "2014-06-13": {
             "title": "Sendmail transport arbitrary shell execution",
