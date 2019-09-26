@@ -975,6 +975,23 @@
             "reference": "composer://contao/newsletter-bundle"
         }
     },
+    "datadog/dd-trace": {
+        "2019-09-26-1": {
+            "title": "Circumvents open_basedir INI directive",
+            "link": "https://github.com/DataDog/dd-trace-php/releases/tag/0.30.0",
+            "cve": null,
+            "branches": {
+                "0.30.x": {
+                    "time": 1568858450,
+                    "versions": [
+                        ">=0.30.0",
+                        "<0.30.2"
+                    ]
+                }
+            },
+            "reference": "composer://datadog/dd-trace"
+        }
+    },
     "david-garcia/phpwhois": {
         "CVE-2015-5243": {
             "title": "PHP Code Injection",
