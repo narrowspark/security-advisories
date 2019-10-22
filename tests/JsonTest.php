@@ -1,16 +1,29 @@
 <?php
+
 declare(strict_types=1);
+
+/**
+ * This file is part of Narrowspark Framework.
+ *
+ * (c) Daniel Bannert <d.bannert@anolilab.de>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Narrowspark\SecurityAdvisories\Test;
 
 use PHPUnit\Framework\TestCase;
 
 /**
  * @internal
+ *
+ * @small
  */
 final class JsonTest extends TestCase
 {
     public function testJson(): void
     {
-        $this->assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
+        self::assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
     }
 }

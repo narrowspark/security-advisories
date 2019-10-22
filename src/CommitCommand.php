@@ -1,16 +1,26 @@
 <?php
+
 declare(strict_types=1);
+
+/**
+ * This file is part of Narrowspark Framework.
+ *
+ * (c) Daniel Bannert <d.bannert@anolilab.de>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Narrowspark\SecurityAdvisories;
 
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Viserio\Component\Console\Command\AbstractCommand;
 
 class CommitCommand extends AbstractCommand
 {
-    /**
-     * @var string
-     */
+    /** @var string */
     protected static $defaultName = 'commit';
 
     /**
@@ -31,23 +41,40 @@ class CommitCommand extends AbstractCommand
     protected $mainDir;
 
     /**
+     * A Filesystem instance.
+     *
+     * @var \Symfony\Component\Filesystem\Filesystem
+     */
+    private $filesystem;
+
+    /**
+     * Create a new Builder Command Instance.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->filesystem = new Filesystem();
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function handle(): int
     {
         $filePath = __DIR__ . \DIRECTORY_SEPARATOR . 'update';
 
-        if (! \file_exists($filePath)) {
+        if (! $this->filesystem->exists($filePath)) {
             $this->info('Nothing to update.');
 
             return 0;
         }
 
-        \unlink($filePath);
+        $this->filesystem->remove($filePath);
 
         $this->info('Making a commit to narrowspark/security-advisories.');
 
-        $rootPath      = \dirname(__DIR__, 1);
+        $rootPath = \dirname(__DIR__, 1);
         $filesToCommit = ' -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
 
         $gitCommitProcess = Process::fromShellCommandline(

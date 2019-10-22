@@ -1,5 +1,16 @@
 <?php
+
 declare(strict_types=1);
+
+/**
+ * This file is part of Narrowspark Framework.
+ *
+ * (c) Daniel Bannert <d.bannert@anolilab.de>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Narrowspark\SecurityAdvisories;
 
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -8,15 +19,13 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Viserio\Component\Console\Command\AbstractCommand;
-use Viserio\Component\Contract\Parser\Exception\ParseException;
 use Viserio\Component\Parser\Dumper\JsonDumper;
 use Viserio\Component\Parser\Parser\YamlParser;
+use Viserio\Contract\Parser\Exception\ParseException;
 
 class BuildCommand extends AbstractCommand
 {
-    /**
-     * @var string
-     */
+    /** @var string */
     protected static $defaultName = 'build';
 
     /**
@@ -64,10 +73,10 @@ class BuildCommand extends AbstractCommand
     {
         parent::__construct();
 
-        $this->filesystem   = new Filesystem();
-        $this->yamlParser   = new YamlParser();
-        $this->jsonDumper   = new JsonDumper();
-        $this->jsonDumper->setOptions(JSON_PRETTY_PRINT | \JSON_UNESCAPED_SLASHES);
+        $this->filesystem = new Filesystem();
+        $this->yamlParser = new YamlParser();
+        $this->jsonDumper = new JsonDumper();
+        $this->jsonDumper->setOptions(\JSON_PRETTY_PRINT | \JSON_UNESCAPED_SLASHES);
     }
 
     /**
@@ -75,8 +84,8 @@ class BuildCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $securityAdvisoriesSha  = $this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
-        $gitDir                 = $this->mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
+        $securityAdvisoriesSha = $this->mainDir . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $gitDir = $this->mainDir . \DIRECTORY_SEPARATOR . 'build' . \DIRECTORY_SEPARATOR . 'git';
 
         if (\is_dir($gitDir)) {
             $this->filesystem->remove($gitDir);
@@ -104,9 +113,9 @@ class BuildCommand extends AbstractCommand
         }
 
         $commitSha1 = $gitShaProcess->getOutput();
-        $update     = true;
+        $update = true;
 
-        if (\file_exists($securityAdvisoriesSha)) {
+        if ($this->filesystem->exists($securityAdvisoriesSha)) {
             $update = $commitSha1 !== \file_get_contents($securityAdvisoriesSha);
         }
 
@@ -123,7 +132,7 @@ class BuildCommand extends AbstractCommand
         $progress = new ProgressBar($this->getOutput(), $finder->count());
         $progress->start();
 
-        $data     = [];
+        $data = [];
         $messages = [];
 
         /** @var \SplFileInfo $file */
@@ -132,7 +141,7 @@ class BuildCommand extends AbstractCommand
 
             try {
                 $packageName = \str_replace($gitDir . \DIRECTORY_SEPARATOR, '', $file->getPath());
-                $fileName    = \str_replace('.' . $file->getExtension(), '', $file->getFilename());
+                $fileName = \str_replace('.' . $file->getExtension(), '', $file->getFilename());
 
                 $data[$packageName][$fileName] = $this->yamlParser->parse((string) \file_get_contents($file->__toString()));
             } catch (ParseException $exception) {
@@ -144,7 +153,7 @@ class BuildCommand extends AbstractCommand
 
         $progress->finish();
 
-        if (\count(\array_filter($messages)) !==0) {
+        if (\count(\array_filter($messages)) !== 0) {
             $this->getOutput()->writeln('');
             $this->getOutput()->writeln('');
 
