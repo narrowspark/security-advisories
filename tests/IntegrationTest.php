@@ -1,5 +1,16 @@
 <?php
+
 declare(strict_types=1);
+
+/**
+ * This file is part of Narrowspark Framework.
+ *
+ * (c) Daniel Bannert <d.bannert@anolilab.de>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Narrowspark\SecurityAdvisories\Test;
 
 use Narrowspark\SecurityAdvisories\BuildCommand;
@@ -8,12 +19,12 @@ use Viserio\Component\Console\Tester\CommandTestCase;
 
 /**
  * @internal
+ *
+ * @small
  */
 final class IntegrationTest extends CommandTestCase
 {
-    /**
-     * @var \Narrowspark\SecurityAdvisories\BuildCommand
-     */
+    /** @var \Narrowspark\SecurityAdvisories\BuildCommand */
     private $buildCommand;
 
     /**
@@ -55,8 +66,8 @@ final class IntegrationTest extends CommandTestCase
 
         $output = $tester->getDisplay(true);
 
-        $this->assertContains('Cloning FriendsOfPHP/security-advisories.', $output);
-        $this->assertContains('Start collection security advisories.', $output);
-        $this->assertContains('Start writing security-advisories.json.', $output);
+        self::assertStringContainsString('Cloning FriendsOfPHP/security-advisories.', $output);
+        self::assertStringContainsString('Start collection security advisories.', $output);
+        self::assertStringContainsString('Start writing security-advisories.json.', $output);
     }
 }
