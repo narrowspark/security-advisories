@@ -48,7 +48,7 @@ class CommitCommand extends AbstractCommand
     private $filesystem;
 
     /**
-     * Create a new Builder Command Instance.
+     * Create a new Commit Command Instance.
      */
     public function __construct()
     {
