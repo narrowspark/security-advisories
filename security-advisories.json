@@ -13090,6 +13090,70 @@
                 }
             },
             "reference": "composer://symfony/cache"
+        },
+        "CVE-2019-18889": {
+            "title": "CVE-2019-18889: Forbid serializing AbstractAdapter and TagAwareAdapter instances",
+            "link": "https://symfony.com/cve-2019-18889",
+            "cve": "CVE-2019-18889",
+            "branches": {
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.35"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/cache"
         }
     },
     "symfony/dependency-injection": {
@@ -14031,6 +14095,140 @@
                 }
             },
             "reference": "composer://symfony/http-foundation"
+        },
+        "CVE-2019-18888": {
+            "title": "CVE-2019-18888: Prevent argument injection in a MimeTypeGuesser",
+            "link": "https://symfony.com/cve-2019-18888",
+            "cve": "CVE-2019-18888",
+            "branches": {
+                "2.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.1.0"
+                    ]
+                },
+                "2.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.2.0"
+                    ]
+                },
+                "2.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.3.0"
+                    ]
+                },
+                "2.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.4.0"
+                    ]
+                },
+                "2.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.5.0"
+                    ]
+                },
+                "2.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.6.0"
+                    ]
+                },
+                "2.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.6.0",
+                        "<2.7.0"
+                    ]
+                },
+                "2.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.8.0"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.52"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.35"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/http-foundation"
         }
     },
     "symfony/http-kernel": {
@@ -14176,6 +14374,126 @@
                 }
             },
             "reference": "composer://symfony/http-kernel"
+        },
+        "CVE-2019-18887": {
+            "title": "CVE-2019-18887: Use constant time comparison in UriSigner",
+            "link": "https://symfony.com/cve-2019-18887",
+            "cve": "CVE-2019-18887",
+            "branches": {
+                "2.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.3.0"
+                    ]
+                },
+                "2.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.4.0"
+                    ]
+                },
+                "2.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.5.0"
+                    ]
+                },
+                "2.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.6.0"
+                    ]
+                },
+                "2.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.6.0",
+                        "<2.7.0"
+                    ]
+                },
+                "2.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.8.0"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.8.52"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.35"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/http-kernel"
         }
     },
     "symfony/intl": {
@@ -14228,6 +14546,23 @@
                 }
             },
             "reference": "composer://symfony/intl"
+        }
+    },
+    "symfony/mime": {
+        "CVE-2019-18888": {
+            "title": "CVE-2019-18888: Prevent argument injection in a MimeTypeGuesser",
+            "link": "https://symfony.com/cve-2019-18888",
+            "cve": "CVE-2019-18888",
+            "branches": {
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/mime"
         }
     },
     "symfony/phpunit-bridge": {
@@ -15478,6 +15813,35 @@
                     "versions": [
                         ">=4.2.0",
                         "<4.2.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security-http"
+        },
+        "CVE-2019-18886": {
+            "title": "CVE-2019-18886: Prevent user enumeration using switch user functionality",
+            "link": "https://symfony.com/cve-2019-18886",
+            "cve": "CVE-2019-18886",
+            "branches": {
+                "4.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
                     ]
                 }
             },
@@ -18619,6 +18983,30 @@
                 }
             },
             "reference": "composer://symfony/validator"
+        }
+    },
+    "symfony/var-exporter": {
+        "CVE-2019-11325": {
+            "title": "CVE-2019-11325: Fix escaping of strings in VarExporter",
+            "link": "https://symfony.com/cve-2019-11325",
+            "cve": "CVE-2019-11325",
+            "branches": {
+                "4.2.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1573632000,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/var-exporter"
         }
     },
     "symfony/web-profiler-bundle": {
