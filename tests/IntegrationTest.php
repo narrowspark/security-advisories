@@ -16,6 +16,8 @@ namespace Narrowspark\SecurityAdvisories\Test;
 use Narrowspark\SecurityAdvisories\BuildCommand;
 use Symfony\Component\Filesystem\Filesystem;
 use Viserio\Component\Console\Tester\CommandTestCase;
+use const DIRECTORY_SEPARATOR;
+use function dirname;
 
 /**
  * @internal
@@ -35,10 +37,10 @@ final class IntegrationTest extends CommandTestCase
         parent::tearDownAfterClass();
 
         (new Filesystem())->remove([
-            __DIR__ . \DIRECTORY_SEPARATOR . 'build',
-            __DIR__ . \DIRECTORY_SEPARATOR . 'security-advisories-sha',
-            __DIR__ . \DIRECTORY_SEPARATOR . 'security-advisories.json',
-            \dirname(__DIR__, 1) . \DIRECTORY_SEPARATOR . 'src' . \DIRECTORY_SEPARATOR . 'update',
+            __DIR__ . DIRECTORY_SEPARATOR . 'build',
+            __DIR__ . DIRECTORY_SEPARATOR . 'security-advisories-sha',
+            __DIR__ . DIRECTORY_SEPARATOR . 'security-advisories.json',
+            dirname(__DIR__, 1) . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'update',
         ]);
     }
 

@@ -13,10 +13,13 @@ declare(strict_types=1);
 
 namespace Narrowspark\SecurityAdvisories;
 
+use DateTimeImmutable;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Viserio\Component\Console\Command\AbstractCommand;
+use const DIRECTORY_SEPARATOR;
+use function dirname;
 
 class CommitCommand extends AbstractCommand
 {
@@ -62,7 +65,7 @@ class CommitCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $filePath = __DIR__ . \DIRECTORY_SEPARATOR . 'update';
+        $filePath = __DIR__ . DIRECTORY_SEPARATOR . 'update';
 
         if (! $this->filesystem->exists($filePath)) {
             $this->info('Nothing to update.');
@@ -74,11 +77,11 @@ class CommitCommand extends AbstractCommand
 
         $this->info('Making a commit to narrowspark/security-advisories.');
 
-        $rootPath = \dirname(__DIR__, 1);
-        $filesToCommit = ' -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . \DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $rootPath = dirname(__DIR__, 1);
+        $filesToCommit = ' -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories-sha';
 
         $gitCommitProcess = Process::fromShellCommandline(
-            'git commit -m "Automatically updated on ' . (new \DateTimeImmutable('now'))->format(\DateTimeImmutable::RFC7231) . '"' . $filesToCommit
+            'git commit -m "Automatically updated on ' . (new DateTimeImmutable('now'))->format(DateTimeImmutable::RFC7231) . '"' . $filesToCommit
         );
         $gitCommitProcess->run();
 
@@ -109,6 +112,6 @@ class CommitCommand extends AbstractCommand
      */
     protected function configure(): void
     {
-        $this->mainDir = \dirname(__DIR__);
+        $this->mainDir = dirname(__DIR__);
     }
 }
