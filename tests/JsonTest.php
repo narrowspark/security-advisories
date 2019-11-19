@@ -14,6 +14,9 @@ declare(strict_types=1);
 namespace Narrowspark\SecurityAdvisories\Test;
 
 use PHPUnit\Framework\TestCase;
+use const DIRECTORY_SEPARATOR;
+use function dirname;
+use function file_get_contents;
 
 /**
  * @internal
@@ -24,6 +27,6 @@ final class JsonTest extends TestCase
 {
     public function testJson(): void
     {
-        self::assertJson(\file_get_contents(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'security-advisories.json'));
+        self::assertJson(file_get_contents(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'security-advisories.json'));
     }
 }

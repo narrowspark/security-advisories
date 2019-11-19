@@ -21,7 +21,7 @@
         "viserio/parser": "^1.0@dev",
         "symfony/process": "^4.3.4",
         "symfony/yaml": "^4.3.4",
-        "narrowspark/coding-standard": "^3.1.0",
+        "narrowspark/coding-standard": "^3.2.0",
         "phpunit/phpunit": "^8.4.0",
         "symfony/filesystem": "^4.3.4",
         "symfony/finder": "^4.3.4",
