@@ -19,7 +19,7 @@
         "ext-mbstring": "*",
         "viserio/console": "^1.0@dev",
         "viserio/parser": "^1.0@dev",
-        "symfony/process": "^4.3.4",
+        "symfony/process": "^4.3.4 || ^5.0.0",
         "symfony/yaml": "^4.3.4 || ^5.0.0",
         "narrowspark/coding-standard": "^3.2.0",
         "phpunit/phpunit": "^8.4.0",
