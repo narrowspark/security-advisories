@@ -12426,6 +12426,20 @@
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
         },
+        "2019-11-19": {
+            "title": "Information disclosure",
+            "link": "https://simplesamlphp.org/security/201911-02",
+            "branches": {
+                "1.17.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.17.0",
+                        "<1.18.0"
+                    ]
+                }
+            },
+            "reference": "composer://simplesamlphp/simplesamlphp"
+        },
         "CVE-2016-3124": {
             "title": "Information leakage issue in the sanitycheck module",
             "link": "https://simplesamlphp.org/security/201603-01",
