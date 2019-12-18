@@ -781,6 +781,107 @@
                 }
             },
             "reference": "composer://contao/core-bundle"
+        },
+        "CVE-2019-19712": {
+            "title": "Information disclosure in the back end",
+            "link": "https://contao.org/en/security-advisories/information-disclosure-in-the-back-end.html",
+            "cve": "CVE-2019-19712",
+            "branches": {
+                "4.x": {
+                    "time": 1576578720,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.4.46"
+                    ]
+                },
+                "4.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.5.0",
+                        "<4.6.0"
+                    ]
+                },
+                "4.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.6.0",
+                        "<4.7.0"
+                    ]
+                },
+                "4.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.7.0",
+                        "<4.8.0"
+                    ]
+                },
+                "4.8.x": {
+                    "time": 1576582980,
+                    "versions": [
+                        ">=4.8.0",
+                        "<4.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://contao/core-bundle"
+        },
+        "CVE-2019-19714": {
+            "title": "Insert tag injection in the login module",
+            "link": "https://contao.org/en/security-advisories/insert-tag-injection-in-the-login-module.html",
+            "cve": "CVE-2019-19714",
+            "branches": {
+                "4.8.x": {
+                    "time": 1576582980,
+                    "versions": [
+                        ">=4.8.4",
+                        "<4.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://contao/core-bundle"
+        },
+        "CVE-2019-19745": {
+            "title": "Unrestricted file uploads",
+            "link": "https://contao.org/en/security-advisories/unrestricted-file-uploads.html",
+            "cve": "CVE-2019-19745",
+            "branches": {
+                "4.x": {
+                    "time": 1576578720,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.4.46"
+                    ]
+                },
+                "4.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.5.0",
+                        "<4.6.0"
+                    ]
+                },
+                "4.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.6.0",
+                        "<4.7.0"
+                    ]
+                },
+                "4.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.7.0",
+                        "<4.8.0"
+                    ]
+                },
+                "4.8.x": {
+                    "time": 1576582980,
+                    "versions": [
+                        ">=4.8.0",
+                        "<4.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://contao/core-bundle"
         }
     },
     "contao/core": {
@@ -20272,6 +20373,195 @@
                 }
             },
             "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-1": {
+            "title": "Cross-Site Scripting in Form Framework validation handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-021/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:04",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:26",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:24",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-2": {
+            "title": "Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-022/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:11",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:32",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:32",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-3": {
+            "title": "Cross-Site Scripting in Filelist Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-023/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:17",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:39",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:38",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-4": {
+            "title": "Directory Traversal on ZIP extraction",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-024/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:24",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:57",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:45",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-5": {
+            "title": "SQL Injection in low-level Query Generator",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-025/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:30",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:51:06",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:51",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-6": {
+            "title": "Insecure Deserialization in Query Generator &amp; Query View",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-026/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:37",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:51:12",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:58",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2019-12-17-7": {
+            "title": "Possible Insecure Deserialization in Extbase Request Handling",
+            "link": "https://typo3.org/security/advisory/typo3-psa-2019-011/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-12-17 09:50:20",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:18",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
         }
     },
     "typo3/cms": {
@@ -22727,6 +23017,195 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.5.8"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-1": {
+            "title": "Cross-Site Scripting in Form Framework validation handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-021/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:04",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:26",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:24",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-2": {
+            "title": "Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-022/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:11",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:32",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:32",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-3": {
+            "title": "Cross-Site Scripting in Filelist Module",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-023/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:17",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:39",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:38",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-4": {
+            "title": "Directory Traversal on ZIP extraction",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-024/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:24",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:50:57",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:45",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-5": {
+            "title": "SQL Injection in low-level Query Generator",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-025/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:30",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:51:06",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:51",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-6": {
+            "title": "Insecure Deserialization in Query Generator &amp; Query View",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2019-026/",
+            "branches": {
+                "10.x": {
+                    "time": "2019-12-17 09:52:37",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.2.1"
+                    ]
+                },
+                "8.x": {
+                    "time": "2019-12-17 09:51:12",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:58",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2019-12-17-7": {
+            "title": "Possible Insecure Deserialization in Extbase Request Handling",
+            "link": "https://typo3.org/security/advisory/typo3-psa-2019-011/",
+            "branches": {
+                "8.x": {
+                    "time": "2019-12-17 09:50:20",
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.7.30"
+                    ]
+                },
+                "9.x": {
+                    "time": "2019-12-17 09:51:18",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.12"
                     ]
                 }
             },
