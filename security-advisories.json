@@ -11425,6 +11425,51 @@
             "reference": "composer://sabre/dav"
         }
     },
+    "scheb/two-factor-bundle": {
+        "2018-07-08": {
+            "title": "Vulnerability to bypass two-factor authentication with unverified JWT trusted device token",
+            "link": "https://github.com/scheb/two-factor-bundle/issues/143",
+            "cve": null,
+            "branches": {
+                "master": {
+                    "time": 1562588822,
+                    "versions": [
+                        "<3.7.0"
+                    ]
+                }
+            },
+            "reference": "composer://scheb/two-factor-bundle"
+        },
+        "2019-12-19": {
+            "title": "Vulnerability to bypass two-factor authentication with remember-me option",
+            "link": "https://github.com/scheb/two-factor-bundle/issues/253",
+            "cve": null,
+            "branches": {
+                "master": {
+                    "time": 1576757262,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.11.0"
+                    ]
+                },
+                "3.x": {
+                    "time": 1576757089,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.26.0"
+                    ]
+                },
+                "2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=0.0.0",
+                        "<3.0.0"
+                    ]
+                }
+            },
+            "reference": "composer://scheb/two-factor-bundle"
+        }
+    },
     "sensiolabs/connect": {
         "2018-06-08-1": {
             "title": "Missing state parameter in OAuth requests leading to CSRF vulnerability",
