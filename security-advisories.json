@@ -5723,6 +5723,21 @@
             "reference": "composer://drupal/drupal"
         }
     },
+    "endroid/qr-code-bundle": {
+        "2019-12-22": {
+            "title": "Disclosure of files via logo_path query parameter",
+            "link": "https://github.com/endroid/qr-code-bundle/releases/tag/3.4.2",
+            "branches": {
+                "master": {
+                    "time": 1577895300,
+                    "versions": [
+                        "<3.4.2"
+                    ]
+                }
+            },
+            "reference": "composer://endroid/qr-code-bundle"
+        }
+    },
     "erusev/parsedown": {
         "CVE-2018-1000162": {
             "title": "Cross-Site Scripting",
