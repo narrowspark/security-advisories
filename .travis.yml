@@ -37,7 +37,7 @@ jobs:
   include:
     - stage: Test
       if: NOT type = cron
-      php: 7.3
+      php: 7.4
       env: REMOVE_XDEBUG=true
       script:
         - chmod a+x ./build/travis/script.sh
@@ -45,21 +45,21 @@ jobs:
 
     - stage: Coding standard
       if: NOT type = cron
-      php: 7.3
+      php: 7.4
       env: REMOVE_XDEBUG=true
       script:
         - ./vendor/bin/php-cs-fixer fix --verbose --diff --dry-run
 
     - stage: Static Analysis
       if: NOT type = cron
-      php: 7.3
+      php: 7.4
       env: REMOVE_XDEBUG=false
       script:
         - ./vendor/bin/phpstan analyse -c phpstan.neon -l 7 src
 
     - stage: Build
       if: type = cron
-      php: 7.3
+      php: 7.4
       env: REMOVE_XDEBUG=true
       before_script:
         - stty cols 120
