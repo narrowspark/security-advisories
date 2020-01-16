@@ -12,20 +12,27 @@
             "role": "Developer"
         }
     ],
-    "require": {
-    },
+    "require": {},
     "require-dev": {
-        "php": "^7.3.0",
+        "php": "^7.4.0",
+        "ext-curl": "*",
         "ext-mbstring": "*",
-        "viserio/console": "^1.0@dev",
-        "viserio/parser": "^1.0@dev",
-        "symfony/process": "^4.3.4 || ^5.0.0",
-        "symfony/yaml": "^4.3.4 || ^5.0.0",
-        "narrowspark/coding-standard": "^3.2.0",
+        "narrowspark/coding-standard": "^3.4.0",
+        "php-http/curl-client": "^2.1.0",
         "phpunit/phpunit": "^8.4.0",
-        "symfony/filesystem": "^4.3.4 || ^5.0.0",
-        "symfony/finder": "^4.3.4",
-        "slam/phpstan-extensions": "^3.6 || ^4.0"
+        "symfony/process": "^5.0.0",
+        "symfony/yaml": "^5.0.0",
+        "viserio/console": "^1.0@dev",
+        "viserio/filesystem": "^1.0@dev",
+        "viserio/finder": "^1.0@dev",
+        "viserio/http": "^1.0@dev",
+        "viserio/parser": "^1.0@dev",
+        "thecodingmachine/safe": "^1.0",
+        "thecodingmachine/phpstan-safe-rule": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
     },
     "autoload": {
         "psr-4": {
@@ -40,16 +47,12 @@
             "Narrowspark\\SecurityAdvisories\\Test\\": "tests/"
         }
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "changelog": "changelog-generator generate --config=\".changelog\" --file --prepend",
         "coverage": "phpunit --coverage-html=\"build/logs\"",
-        "cs": "php-cs-fixer fix",
+        "cs": "php-cs-fixer fix -v",
         "phpstan": "phpstan analyse -c phpstan.neon src --memory-limit=-1",
         "test": "phpunit"
     },

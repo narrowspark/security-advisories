@@ -18,6 +18,7 @@ use Symfony\Component\Filesystem\Filesystem;
 use Viserio\Component\Console\Tester\CommandTestCase;
 use const DIRECTORY_SEPARATOR;
 use function dirname;
+use function getenv;
 
 /**
  * @internal
@@ -57,19 +58,21 @@ final class IntegrationTest extends CommandTestCase
              */
             protected function configure(): void
             {
-                $this->mainDir = __DIR__;
+                $this->rootDir = __DIR__;
+                $this->securityAdvisoriesSha = $this->rootDir . DIRECTORY_SEPARATOR . 'security-advisories-sha';
+                $this->downloadDir = $this->rootDir . DIRECTORY_SEPARATOR . 'build' . DIRECTORY_SEPARATOR . 'security-advisories';
             }
         };
     }
 
     public function testBuild(): void
     {
-        $tester = $this->executeCommand($this->buildCommand);
+        $tester = $this->executeCommand($this->buildCommand, ['--token' => getenv('GITHUB_TOKEN')]);
 
         $output = $tester->getDisplay(true);
 
-        self::assertStringContainsString('Cloning FriendsOfPHP/security-advisories.', $output);
-        self::assertStringContainsString('Start collection security advisories.', $output);
+        self::assertStringContainsString('Fetching FriendsOfPHP/security-advisories.', $output);
+        self::assertStringContainsString('Fetching Github security-advisories.', $output);
         self::assertStringContainsString('Start writing security-advisories.json.', $output);
     }
 }

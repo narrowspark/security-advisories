@@ -13,26 +13,25 @@ declare(strict_types=1);
 
 namespace Narrowspark\SecurityAdvisories;
 
-use SplFileInfo;
-use Symfony\Component\Console\Helper\ProgressBar;
-use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Finder\Finder;
+use Http\Client\Curl\Client;
+use Narrowspark\SecurityAdvisories\Provider\FriendsOfPhpProvider;
+use Narrowspark\SecurityAdvisories\Provider\GithubProvider;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use Viserio\Component\Console\Command\AbstractCommand;
+use Viserio\Component\Filesystem\Filesystem;
 use Viserio\Component\Parser\Dumper\JsonDumper;
-use Viserio\Component\Parser\Parser\YamlParser;
-use Viserio\Contract\Parser\Exception\ParseException;
+use Viserio\Contract\Console\Exception\InvalidArgumentException;
 use const DIRECTORY_SEPARATOR;
 use const JSON_PRETTY_PRINT;
 use const JSON_UNESCAPED_SLASHES;
-use function array_filter;
+use function array_merge;
 use function count;
 use function dirname;
-use function file_get_contents;
+use function getenv;
 use function is_dir;
-use function realpath;
-use function str_replace;
+use function is_string;
+use function ksort;
 
 class BuildCommand extends AbstractCommand
 {
@@ -42,7 +41,9 @@ class BuildCommand extends AbstractCommand
     /**
      * {@inheritdoc}
      */
-    protected $signature = 'build';
+    protected $signature = 'build
+        [--token= : Github token]
+    ';
 
     /**
      * {@inheritdoc}
@@ -54,14 +55,13 @@ class BuildCommand extends AbstractCommand
      *
      * @var string
      */
-    protected $mainDir;
+    protected $rootDir;
 
-    /**
-     * A YamlParser instance.
-     *
-     * @var \Viserio\Component\Parser\Parser\YamlParser
-     */
-    private $yamlParser;
+    /** @var string */
+    protected $securityAdvisoriesSha;
+
+    /** @var string */
+    protected $downloadDir;
 
     /**
      * A JsonDumper instance.
@@ -73,7 +73,7 @@ class BuildCommand extends AbstractCommand
     /**
      * A Filesystem instance.
      *
-     * @var \Symfony\Component\Filesystem\Filesystem
+     * @var \Viserio\Component\Filesystem\Filesystem
      */
     private $filesystem;
 
@@ -85,7 +85,6 @@ class BuildCommand extends AbstractCommand
         parent::__construct();
 
         $this->filesystem = new Filesystem();
-        $this->yamlParser = new YamlParser();
         $this->jsonDumper = new JsonDumper();
         $this->jsonDumper->setOptions(JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
     }
@@ -95,26 +94,25 @@ class BuildCommand extends AbstractCommand
      */
     public function handle(): int
     {
-        $securityAdvisoriesSha = $this->mainDir . DIRECTORY_SEPARATOR . 'security-advisories-sha';
-        $gitDir = $this->mainDir . DIRECTORY_SEPARATOR . 'build' . DIRECTORY_SEPARATOR . 'git';
-
-        if (is_dir($gitDir)) {
-            $this->filesystem->remove($gitDir);
+        if (is_dir($this->downloadDir)) {
+            $this->filesystem->deleteDirectory($this->downloadDir);
         }
 
-        $this->info('Cloning FriendsOfPHP/security-advisories.');
-        $this->getOutput()->writeln('');
+        $this->info('Fetching FriendsOfPHP/security-advisories.');
 
-        $gitCloneProcess = Process::fromShellCommandline('git clone git@github.com:FriendsOfPHP/security-advisories.git ' . $gitDir);
-        $gitCloneProcess->run();
+        $friendsOfPHPSecurityAdvisories = (new FriendsOfPhpProvider($this->downloadDir))->fetch();
 
-        if (! $gitCloneProcess->isSuccessful()) {
-            $this->error((new ProcessFailedException($gitCloneProcess))->getMessage());
+        $this->info('Fetching Github security-advisories.');
 
-            return 1;
+        $token = $this->option('token') ?? getenv('GITHUB_TOKEN');
+
+        if (! is_string($token) || $token === '') {
+            throw new InvalidArgumentException('Please provide a github token.');
         }
 
-        $gitShaProcess = Process::fromShellCommandline('cd ' . $gitDir . ' && git rev-parse --verify HEAD');
+        $githubSecurityAdvisories = (new GithubProvider(new Client(), $token))->fetch();
+
+        $gitShaProcess = Process::fromShellCommandline('cd ' . $this->downloadDir . ' && git rev-parse --verify HEAD');
         $gitShaProcess->run();
 
         if (! $gitShaProcess->isSuccessful()) {
@@ -123,11 +121,11 @@ class BuildCommand extends AbstractCommand
             return 1;
         }
 
-        $commitSha1 = $gitShaProcess->getOutput();
+        $commitSha1 = count($githubSecurityAdvisories) . $gitShaProcess->getOutput();
         $update = true;
 
-        if ($this->filesystem->exists($securityAdvisoriesSha)) {
-            $update = $commitSha1 !== file_get_contents($securityAdvisoriesSha);
+        if ($this->filesystem->has($this->securityAdvisoriesSha)) {
+            $update = $commitSha1 !== \Safe\file_get_contents($this->securityAdvisoriesSha);
         }
 
         if ($update === false) {
@@ -136,54 +134,22 @@ class BuildCommand extends AbstractCommand
             return 0;
         }
 
-        $finder = Finder::create()->files()->name('/(\.yaml|.\yml)$/')->in($gitDir)->sortByName()->ignoreDotFiles(true);
+        $data = array_merge($githubSecurityAdvisories, $friendsOfPHPSecurityAdvisories);
 
-        $this->info('Start collection security advisories.');
+        ksort($data);
 
-        $progress = new ProgressBar($this->getOutput(), $finder->count());
-        $progress->start();
-
-        $data = [];
-        $messages = [];
-
-        /** @var SplFileInfo $file */
-        foreach ($finder as $file) {
-            $path = str_replace($this->mainDir, '', (string) realpath($file->getPathname()));
-
-            try {
-                $packageName = str_replace($gitDir . DIRECTORY_SEPARATOR, '', $file->getPath());
-                $fileName = str_replace('.' . $file->getExtension(), '', $file->getFilename());
-
-                $data[$packageName][$fileName] = $this->yamlParser->parse((string) file_get_contents($file->__toString()));
-            } catch (ParseException $exception) {
-                $messages[$path][] = $exception->getMessage();
-            }
-
-            $progress->advance();
-        }
-
-        $progress->finish();
-
-        if (count(array_filter($messages)) !== 0) {
-            $this->getOutput()->writeln('');
-            $this->getOutput()->writeln('');
-
-            foreach ($messages as $path => $message) {
-                foreach ($message as $m) {
-                    $this->warn($path . ': ' . $m);
-                }
-            }
-        }
-
-        $this->getOutput()->writeln('');
         $this->info('Start writing security-advisories.json.');
 
-        $this->filesystem->dumpFile($this->mainDir . DIRECTORY_SEPARATOR . 'security-advisories.json', $this->jsonDumper->dump($data));
-        $this->filesystem->dumpFile($securityAdvisoriesSha, $commitSha1);
+        $jsonPath = $this->rootDir . DIRECTORY_SEPARATOR . 'security-advisories.json';
 
-        $this->filesystem->remove($gitDir);
+        $this->filesystem->delete($jsonPath);
+        $this->filesystem->delete($this->securityAdvisoriesSha);
 
-        $this->filesystem->dumpFile(__DIR__ . DIRECTORY_SEPARATOR . 'update', '');
+        $this->filesystem->write($jsonPath, $this->jsonDumper->dump($data));
+        $this->filesystem->write($this->securityAdvisoriesSha, $commitSha1);
+
+        $this->filesystem->deleteDirectory($this->downloadDir);
+        $this->filesystem->write(__DIR__ . DIRECTORY_SEPARATOR . 'update', '');
 
         return 0;
     }
@@ -193,6 +159,8 @@ class BuildCommand extends AbstractCommand
      */
     protected function configure(): void
     {
-        $this->mainDir = dirname(__DIR__);
+        $this->rootDir = dirname(__DIR__);
+        $this->securityAdvisoriesSha = $this->rootDir . DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $this->downloadDir = $this->rootDir . DIRECTORY_SEPARATOR . 'build' . DIRECTORY_SEPARATOR . 'security-advisories';
     }
 }
