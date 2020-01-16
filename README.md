@@ -4,7 +4,7 @@
     <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
 </p>
 
-This project is responsible for generating the [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories) as a JSON file.
+This project is responsible for generating a PHP Security Advisories Database as a JSON file.
 
 ## Stability
 
@@ -21,4 +21,4 @@ the [FriendsOfPHP/security-advisories](https://github.com/FriendsOfPHP/security-
 
 > NOTE: Travis cron is configured to run once a day, to check if [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories) was updated.
 
-> NOTE: The sha in `security-advisories-sha` file is always the last commit sha of [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories).
+> NOTE: The sha in `security-advisories-sha` file is always the last commit sha of a count of merged [Github security advisories db](https://developer.github.com/v4/object/securityvulnerability/) securityvulnerabilities and git rev-parse --verify HEAD of [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories).
