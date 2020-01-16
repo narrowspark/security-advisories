@@ -17,7 +17,7 @@ This package is therefore only suited for installation in the root of your deplo
 ## Sources
 
 This package extracts information about existing security issues in various composer projects from 
-the [FriendsOfPHP/security-advisories](https://github.com/FriendsOfPHP/security-advisories) repository.
+the [FriendsOfPHP/security-advisories](https://github.com/FriendsOfPHP/security-advisories) repository and the [Github security advisories db](https://developer.github.com/v4/object/securityvulnerability/).
 
 > NOTE: Travis cron is configured to run once a day, to check if [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories) was updated.
 
