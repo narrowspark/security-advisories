@@ -14038,6 +14038,20 @@
         }
     },
     "studio-42/elfinder": {
+        "CVE-2019-6257": {
+            "title": "Fixed being bypassable of CVE-2019-6257 SSRF.",
+            "link": "https://github.com/Studio-42/elFinder/releases/tag/2.1.49",
+            "cve": "CVE-2019-6257",
+            "branches": {
+                "2.1.x": {
+                    "time": 1555427954,
+                    "versions": [
+                        "<2.1.49"
+                    ]
+                }
+            },
+            "reference": "composer://studio-42/elfinder"
+        },
         "CVE-2019-9194": {
             "title": "elFinder before 2.1.48 has a command injection vulnerability in the PHP connector.",
             "link": "https://github.com/Studio-42/elFinder/releases/tag/2.1.48",
