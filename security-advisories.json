@@ -1341,6 +1341,20 @@
         }
     },
     "dolibarr/dolibarr": {
+        "CVE-2020-7996": {
+            "title": "htdocs/user/passwordforgotten.php in Dolibarr 10.0.6 allows XSS via the Referer HTTP header.",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7996",
+            "cve": "CVE-2020-7996",
+            "branches": {
+                "10.0.x": {
+                    "time": 1580250376,
+                    "versions": [
+                        "<= 10.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://dolibarr/dolibarr"
+        },
         "CVE-2019-16197": {
             "title": "In htdocs/societe/card.php in Dolibarr 10.0.1, the value of the User-Agent HTTP header is copied into the HTML document as plain text between tags, leading to XSS.",
             "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16197",
@@ -14293,7 +14307,7 @@
                     "time": 1580133240,
                     "versions": [
                         ">=1.5.0",
-                        "<1.5.0"
+                        "<1.5.1"
                     ]
                 },
                 "1.6.x": {
