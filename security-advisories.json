@@ -11914,6 +11914,30 @@
             "reference": "composer://onelogin/php-saml"
         }
     },
+    "oneup/uploader-bundle": {
+        "CVE-2020-5237": {
+            "title": "Relative Path Traversal (CWE-23) in chunked uploads",
+            "link": "https://github.com/1up-lab/OneupUploaderBundle/security/advisories/GHSA-x8wj-6m73-gfqp",
+            "cve": "CVE-2020-5237",
+            "branches": {
+                "1.x": {
+                    "time": 1580816460,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.9.3"
+                    ]
+                },
+                "2.x": {
+                    "time": 1580816400,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.1.5"
+                    ]
+                }
+            },
+            "reference": "composer://oneup/uploader-bundle"
+        }
+    },
     "openid/php-openid": {
         "CVE-2013-4701": {
             "title": "XML External Entity (XXE) issue",
