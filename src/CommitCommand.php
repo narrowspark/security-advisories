@@ -78,10 +78,14 @@ class CommitCommand extends AbstractCommand
         $this->info('Making a commit to narrowspark/security-advisories.');
 
         $rootPath = dirname(__DIR__, 1);
+        $datetime = (new DateTimeImmutable('now'))->format(DateTimeImmutable::RFC7231);
+
+        $this->createHeadersFile($rootPath, $datetime);
+
         $filesToCommit = ' -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories-sha';
 
         $gitCommitProcess = Process::fromShellCommandline(
-            'git commit -m "Automatically updated on ' . (new DateTimeImmutable('now'))->format(DateTimeImmutable::RFC7231) . '"' . $filesToCommit
+            'git commit -m "Automatically updated on ' . $datetime . '"' . $filesToCommit
         );
         $gitCommitProcess->run();
 
@@ -113,5 +117,20 @@ class CommitCommand extends AbstractCommand
     protected function configure(): void
     {
         $this->mainDir = dirname(__DIR__);
+    }
+
+    /**
+     * @param string $rootPath
+     * @param string $datetime
+     *
+     * @return void
+     */
+    private function createHeadersFile(string $rootPath, string $datetime): void
+    {
+        $headersFilePath = $rootPath . DIRECTORY_SEPARATOR . '_site' . DIRECTORY_SEPARATOR . '_headers';
+
+        $this->filesystem->remove($headersFilePath);
+
+        $this->filesystem->dumpFile($headersFilePath, "/*\n  Last-Modified: {$datetime}\n");
     }
 }
