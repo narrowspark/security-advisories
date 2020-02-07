@@ -5848,7 +5848,123 @@
             "reference": "composer://erusev/parsedown"
         }
     },
+    "ezsystems/ezfind-ls": {
+        "2019-05-23-1": {
+            "title": "EZSA-2019-003 XSS in eZFind spellcheck",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-003-xss-in-ezfind-spellcheck",
+            "reference": "composer://ezsystems/ezfind-ls",
+            "branches": {
+                "2017.12.x": {
+                    "time": 1558569600,
+                    "versions": [
+                        ">=2017.12.0",
+                        "<2017.12.0.1"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1558569600,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.11.1"
+                    ]
+                },
+                "5.3.x": {
+                    "time": 1558569600,
+                    "versions": [
+                        ">=5.3.0",
+                        "<5.3.6.1"
+                    ]
+                }
+            }
+        }
+    },
+    "ezsystems/ezplatform": {
+        "2019-06-27-1": {
+            "title": "EZSA-2019-004 CSRF token in login form is disabled by default",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-004-csrf-token-in-login-form-is-disabled-by-default",
+            "reference": "composer://ezsystems/ezplatform",
+            "branches": {
+                "2.5.x": {
+                    "time": 1561593600,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.5.4"
+                    ]
+                }
+            }
+        },
+        "2019-09-03-1": {
+            "title": "EZSA-2019-006 Rules to disable executable access are ignored on Platform.sh (eZ Cloud)",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-006-rules-to-disable-executable-access-are-ignored-on-platform.sh-ez-cloud",
+            "reference": "composer://ezsystems/ezplatform",
+            "branches": {
+                "2.5.x": {
+                    "time": 1567463100,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.5.4"
+                    ]
+                },
+                "1.13.x": {
+                    "time": 1567504500,
+                    "versions": [
+                        ">=1.13.0",
+                        "<1.13.5.1"
+                    ]
+                },
+                "1.7.x": {
+                    "time": 1567508700,
+                    "versions": [
+                        ">=1.7.0",
+                        "<1.7.9.1"
+                    ]
+                }
+            }
+        },
+        "2019-09-03-2": {
+            "title": "EZSA-2019-007 Prevent accepting app.php in URL in Platform.sh",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-007-prevent-accepting-app.php-in-url-in-platform.sh",
+            "reference": "composer://ezsystems/ezplatform",
+            "branches": {
+                "2.5.x": {
+                    "time": 1567463100,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.5.4"
+                    ]
+                },
+                "1.13.x": {
+                    "time": 1567504500,
+                    "versions": [
+                        ">=1.13.0",
+                        "<1.13.5.1"
+                    ]
+                },
+                "1.7.x": {
+                    "time": 1567508700,
+                    "versions": [
+                        ">=1.7.0",
+                        "<1.7.9.1"
+                    ]
+                }
+            }
+        }
+    },
     "ezsystems/ezplatform-admin-ui": {
+        "2019-04-03-1": {
+            "title": "EZSA-2019-002 Password reset vulnerability",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-002-password-reset-vulnerability",
+            "reference": "composer://ezsystems/ezplatform-admin-ui",
+            "branches": {
+                "1.4.x": {
+                    "time": 1554249600,
+                    "versions": [
+                        ">=1.4.0",
+                        "<1.4.6"
+                    ]
+                }
+            }
+        },
         "CVE-2019-12139": {
             "title": "EZSA-2019-001 XSS in Admin UI",
             "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-001-xss-in-admin-ui",
@@ -5866,6 +5982,38 @@
                     "versions": [
                         ">=1.4.0",
                         "<1.4.4"
+                    ]
+                }
+            }
+        }
+    },
+    "ezsystems/ezplatform-admin-ui-assets": {
+        "2019-07-04-1": {
+            "title": "EZSA-2019-005 Bundled jQuery affected by CVE-2019-11358",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-005-bundled-jquery-affected-by-cve-2019-11358",
+            "reference": "composer://ezsystems/ezplatform-admin-ui-assets",
+            "branches": {
+                "4.2.x": {
+                    "time": 1562243280,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.2.0"
+                    ]
+                }
+            }
+        }
+    },
+    "ezsystems/ezplatform-user": {
+        "2019-04-03-1": {
+            "title": "EZSA-2019-002 Password reset vulnerability",
+            "link": "https://share.ez.no/community-project/security-advisories/ezsa-2019-002-password-reset-vulnerability",
+            "reference": "composer://ezsystems/ezplatform-user",
+            "branches": {
+                "1.0.x": {
+                    "time": 1554249600,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.0.1"
                     ]
                 }
             }
