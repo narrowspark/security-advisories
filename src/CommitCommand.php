@@ -82,7 +82,9 @@ class CommitCommand extends AbstractCommand
 
         $this->createHeadersFile($rootPath, $datetime);
 
-        $filesToCommit = ' -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories.json  -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $filesToCommit = ' -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories.json';
+        $filesToCommit .= ' -o ' . $rootPath . DIRECTORY_SEPARATOR . 'security-advisories-sha';
+        $filesToCommit .= ' -o ' . $rootPath . DIRECTORY_SEPARATOR . '_site' . DIRECTORY_SEPARATOR . '_headers';
 
         $gitCommitProcess = Process::fromShellCommandline(
             'git commit -m "Automatically updated on ' . $datetime . '"' . $filesToCommit
