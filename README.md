@@ -21,4 +21,4 @@ the [FriendsOfPHP/security-advisories](https://github.com/FriendsOfPHP/security-
 
 > NOTE: Travis cron is configured to run once a day, to check if [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories) was updated.
 
-> NOTE: The sha in `security-advisories-sha` file is always the last commit sha of a count of merged [Github security advisories db](https://developer.github.com/v4/object/securityvulnerability/) securityvulnerabilities and git rev-parse --verify HEAD of [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories).
+> NOTE: The sha in `security-advisories-sha` file is always the last commit sha of a count of merged security vulnerabilities and git rev-parse --verify HEAD of [PHP Security Advisories Database](https://github.com/FriendsOfPHP/security-advisories) and [Github security advisories db](https://developer.github.com/v4/object/securityvulnerability/).
