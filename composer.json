@@ -19,7 +19,7 @@
         "ext-mbstring": "*",
         "narrowspark/coding-standard": "^3.4.0",
         "php-http/curl-client": "^2.1.0",
-        "phpunit/phpunit": "^9.0.0",
+        "phpunit/phpunit": "^9.0.1",
         "symfony/process": "^5.0.4",
         "symfony/yaml": "^5.0.4",
         "viserio/console": "^1.0@dev",
