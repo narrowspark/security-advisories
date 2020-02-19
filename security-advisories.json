@@ -13356,6 +13356,28 @@
             },
             "reference": "composer://silverstripe/framework"
         },
+        "CVE-2019-19325": {
+            "title": "CVE-2019-19325: XSS through non-scalar FormField attributes",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2019-19325/",
+            "cve": "CVE-2019-19325",
+            "branches": {
+                "4.0.x": {
+                    "time": 1581897280,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.4.5"
+                    ]
+                },
+                "4.5.x": {
+                    "time": 1581897280,
+                    "versions": [
+                        ">=4.5.0",
+                        "<4.5.2"
+                    ]
+                }
+            },
+            "reference": "composer://silverstripe/framework"
+        },
         "CVE-2019-5715": {
             "title": "CVE-2019-5715: Reflected SQL Injection through Form and DataObject",
             "link": "https://www.silverstripe.org/download/security-releases/ss-2018-021",
