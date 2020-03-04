@@ -6129,6 +6129,34 @@
                     ]
                 }
             }
+        },
+        "2020-03-03-1": {
+            "title": "EZSA-2020-001 Remote code execution in file uploads",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-001-remote-code-execution-in-file-uploads",
+            "reference": "composer://ezsystems/ezpublish-kernel",
+            "branches": {
+                "7.5.x": {
+                    "time": 1583257200,
+                    "versions": [
+                        ">=7.5.0",
+                        "<7.5.6.2"
+                    ]
+                },
+                "6.13.x": {
+                    "time": 1583257200,
+                    "versions": [
+                        ">=6.13.0",
+                        "<6.13.6.2"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1582214100,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.14.1"
+                    ]
+                }
+            }
         }
     },
     "ezsystems/ezpublish-legacy": {
@@ -6310,6 +6338,34 @@
                     "versions": [
                         ">=5.3.0",
                         "<5.3.12.6"
+                    ]
+                }
+            }
+        },
+        "2020-03-03-1": {
+            "title": "EZSA-2020-001 Remote code execution in file uploads",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-001-remote-code-execution-in-file-uploads",
+            "reference": "composer://ezsystems/ezpublish-legacy",
+            "branches": {
+                "2019.03.x": {
+                    "time": 1583257200,
+                    "versions": [
+                        ">=2019.3.0",
+                        "<2019.3.4.2"
+                    ]
+                },
+                "2017.12.x": {
+                    "time": 1583257200,
+                    "versions": [
+                        ">=2017.12.0",
+                        "<2017.12.7.2"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1582214100,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.14.1"
                     ]
                 }
             }
