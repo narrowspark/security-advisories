@@ -190,7 +190,7 @@
     "bagisto/bagisto": {
         "CVE-2019-16403": {
             "title": "In Webkul Bagisto before 0.1.5, the functionalities for customers to change their own values (such as address, review, orders, etc.) can also be manipulated by other customers.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16403",
+            "link": "https://github.com/advisories/GHSA-pwrf-q7h8-jjr7",
             "cve": "CVE-2019-16403",
             "branches": {
                 "0.1.x": {
@@ -206,7 +206,7 @@
     "bolt/bolt": {
         "CVE-2019-15485": {
             "title": "Bolt before 3.6.10 has XSS via createFolder or createFile in Controller/Async/FilesystemManager.php.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-15485",
+            "link": "https://github.com/advisories/GHSA-cj8p-53v9-2c26",
             "cve": "CVE-2019-15485",
             "branches": {
                 "3.6.x": {
@@ -238,7 +238,7 @@
     "buddypress/buddypress": {
         "CVE-2020-5244": {
             "title": "In BuddyPress before 5.1.2, requests to a certain REST API endpoint can result in private user data getting exposed. Authentication is not needed.\n\nThis has been patched in version 5.1.2.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-5244",
+            "link": "https://github.com/advisories/GHSA-3j78-7m59-r7gv",
             "cve": "CVE-2020-5244",
             "branches": {
                 "5.1.x": {
@@ -615,7 +615,7 @@
     "centreon/centreon": {
         "CVE-2019-16194": {
             "title": "SQL injection vulnerabilities in Centreon through 19.04 allow attacks via the svc_id parameter in include/monitoring/status/Services/xml/makeXMLForOneService.php.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16194",
+            "link": "https://github.com/advisories/GHSA-wgjx-hm34-qgf7",
             "cve": "CVE-2019-16194",
             "branches": {
                 "19.04.x": {
@@ -630,7 +630,7 @@
         },
         "CVE-2019-16194-6": {
             "title": "SQL injection vulnerabilities in Centreon through 19.04 allow attacks via the svc_id parameter in include/monitoring/status/Services/xml/makeXMLForOneService.php.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16194",
+            "link": "https://github.com/advisories/GHSA-wgjx-hm34-qgf7",
             "cve": "CVE-2019-16194",
             "branches": {
                 "18.10.x": {
@@ -646,7 +646,7 @@
     "cesnet/simplesamlphp-module-proxystatistics": {
         "CVE-2019-15537": {
             "title": "The proxystatistics module before 3.1.0 for SimpleSAMLphp allows SQL Injection in lib/Auth/Process/DatabaseCommand.php.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-15537",
+            "link": "https://github.com/advisories/GHSA-852q-xxj4-x2rx",
             "cve": "CVE-2019-15537",
             "branches": {
                 "3.1.x": {
@@ -1390,7 +1390,7 @@
     "dolibarr/dolibarr": {
         "CVE-2020-7996": {
             "title": "htdocs/user/passwordforgotten.php in Dolibarr 10.0.6 allows XSS via the Referer HTTP header.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7996",
+            "link": "https://github.com/advisories/GHSA-v384-jqmq-fc74",
             "cve": "CVE-2020-7996",
             "branches": {
                 "10.0.x": {
@@ -1404,7 +1404,7 @@
         },
         "CVE-2019-16197": {
             "title": "In htdocs/societe/card.php in Dolibarr 10.0.1, the value of the User-Agent HTTP header is copied into the HTML document as plain text between tags, leading to XSS.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16197",
+            "link": "https://github.com/advisories/GHSA-m553-9wmx-533h",
             "cve": "CVE-2019-16197",
             "branches": {
                 "10.0.x": {
@@ -5852,7 +5852,7 @@
     "enshrined/svg-sanitize": {
         "CVE-2019-10772": {
             "title": "It is possible to bypass enshrined/svg-sanitize before 0.13.1 using the \"xlink:href\" attribute due to mishandling of the xlink namespace by the sanitizer.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10772",
+            "link": "https://github.com/advisories/GHSA-8rc5-hx3v-2jg7",
             "cve": "CVE-2019-10772",
             "branches": {
                 "0.13.x": {
@@ -5866,7 +5866,7 @@
         },
         "CVE-2019-18857": {
             "title": "enshrined/svg-sanitize before 0.12.0 mishandles script and data values in attributes, as demonstrated by unexpected whitespace such as in the javascript&#9;:alert substring.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-18857",
+            "link": "https://github.com/advisories/GHSA-gf8j-v8x5-h9qp",
             "cve": "CVE-2019-18857",
             "branches": {
                 "0.12.x": {
@@ -6613,7 +6613,7 @@
     "getgrav/grav": {
         "CVE-2019-16126": {
             "title": "Grav through 1.6.15 allows (Stored) Cross-Site Scripting due to JavaScript execution in SVG images.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16126",
+            "link": "https://github.com/advisories/GHSA-6268-v434-45m5",
             "cve": "CVE-2019-16126",
             "branches": {
                 "1.7.0.x": {
@@ -7464,7 +7464,7 @@
     "librenms/librenms": {
         "CVE-2019-10671": {
             "title": "An issue was discovered in LibreNMS through 1.47. It does not parameterize all user supplied input within database queries, resulting in SQL injection. An authenticated attacker can subvert these database queries to extract or manipulate data, as demonstrated by the graph.php sort parameter.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10671",
+            "link": "https://github.com/advisories/GHSA-g9xh-3w5g-229r",
             "cve": "CVE-2019-10671",
             "branches": {
                 "1.50.x": {
@@ -7478,7 +7478,7 @@
         },
         "CVE-2019-12465": {
             "title": "An issue was discovered in LibreNMS 1.50.1. A SQL injection flaw was identified in the ajax_rulesuggest.php file where the term parameter is used insecurely in a database query for showing columns of a table, as demonstrated by an ajax_rulesuggest.php?debug=1&term= request.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-12465",
+            "link": "https://github.com/advisories/GHSA-878x-85hc-gc4g",
             "cve": "CVE-2019-12465",
             "branches": {
                 "1.x": {
@@ -7492,7 +7492,7 @@
         },
         "CVE-2019-12464": {
             "title": "An issue was discovered in LibreNMS 1.50.1. An authenticated user can perform a directory traversal attack against the /pdf.php file with a partial filename in the report parameter, to cause local file inclusion resulting in code execution.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-12464",
+            "link": "https://github.com/advisories/GHSA-r336-jxfr-4c3c",
             "cve": "CVE-2019-12464",
             "branches": {
                 "1.x": {
@@ -7506,7 +7506,7 @@
         },
         "CVE-2019-10667": {
             "title": "An issue was discovered in LibreNMS through 1.47. Information disclosure can occur: an attacker can fingerprint the exact code version installed and disclose local file paths.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10667",
+            "link": "https://github.com/advisories/GHSA-f4hh-xxqh-wgpq",
             "cve": "CVE-2019-10667",
             "branches": {
                 "1.50.x": {
@@ -7520,7 +7520,7 @@
         },
         "CVE-2019-12463": {
             "title": "An issue was discovered in LibreNMS 1.50.1. The scripts that handle graphing options (includes/html/graphs/common.inc.php and includes/html/graphs/graphs.inc.php) do not sufficiently validate or encode several fields of user supplied input. Some parameters are filtered with mysqli_real_escape_string, which is only useful for preventing SQL injection attacks; other parameters are unfiltered. This allows an attacker to inject RRDtool syntax with newline characters via the html/graph.php and html/graph-realtime.php scripts. RRDtool syntax is quite versatile and an attacker could leverage this to perform a number of attacks, including disclosing directory structure and filenames, disclosing file content, denial of service, or writing arbitrary files. NOTE: relative to CVE-2019-10665, this requires authentication and the pathnames differ.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-12463",
+            "link": "https://github.com/advisories/GHSA-w5r2-gvgf-mpm8",
             "cve": "CVE-2019-12463",
             "branches": {
                 "1.x": {
@@ -7535,7 +7535,7 @@
         },
         "CVE-2019-10668": {
             "title": "An issue was discovered in LibreNMS through 1.47. A number of scripts import the Authentication libraries, but do not enforce an actual authentication check. Several of these scripts disclose information or expose functions that are of a sensitive nature and are not expected to be publicly accessible.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10668",
+            "link": "https://github.com/advisories/GHSA-277v-gwfr-hmpj",
             "cve": "CVE-2019-10668",
             "branches": {
                 "1.50.x": {
@@ -7551,7 +7551,7 @@
     "magento/community-edition": {
         "CVE-2016-6485": {
             "title": "The __construct function in Framework/Encryption/Crypt.php in Magento 2 uses the PHP rand function to generate a random number for the initialization vector, which makes it easier for remote attackers to defeat cryptographic protection mechanisms by guessing the value.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6485",
+            "link": "https://github.com/advisories/GHSA-h7qw-mxrm-c6h2",
             "cve": "CVE-2016-6485",
             "branches": {
                 "2.2.x": {
@@ -7566,7 +7566,7 @@
         },
         "CVE-2019-8126": {
             "title": "An XML entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated admin user can craft document type definition for an XML representing XML layout. The crafted document type definition and XML layout allow processing of external entities which can lead to information disclosure.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8126",
+            "link": "https://github.com/advisories/GHSA-427g-2r83-3ccm",
             "cve": "CVE-2019-8126",
             "branches": {
                 "2.3.x": {
@@ -7581,7 +7581,7 @@
         },
         "CVE-2019-8126-86": {
             "title": "An XML entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated admin user can craft document type definition for an XML representing XML layout. The crafted document type definition and XML layout allow processing of external entities which can lead to information disclosure.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8126",
+            "link": "https://github.com/advisories/GHSA-427g-2r83-3ccm",
             "cve": "CVE-2019-8126",
             "branches": {
                 "2.2.x": {
@@ -7596,7 +7596,7 @@
         },
         "CVE-2019-8121": {
             "title": "An insecure component vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. Magento 2 codebase leveraged outdated versions of JS libraries (Bootstrap, jquery, Knockout) with known security vulnerabilities.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8121",
+            "link": "https://github.com/advisories/GHSA-89ch-hqf9-rgp3",
             "cve": "CVE-2019-8121",
             "branches": {
                 "2.3.x": {
@@ -7611,7 +7611,7 @@
         },
         "CVE-2019-8121-87": {
             "title": "An insecure component vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. Magento 2 codebase leveraged outdated versions of JS libraries (Bootstrap, jquery, Knockout) with known security vulnerabilities.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8121",
+            "link": "https://github.com/advisories/GHSA-89ch-hqf9-rgp3",
             "cve": "CVE-2019-8121",
             "branches": {
                 "2.2.x": {
@@ -7626,7 +7626,7 @@
         },
         "CVE-2019-8135": {
             "title": "A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Dependency injection through Symphony framework allows service identifiers to be derived from user controlled data, which can lead to remote code execution.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8135",
+            "link": "https://github.com/advisories/GHSA-3q5x-7mxp-rp6j",
             "cve": "CVE-2019-8135",
             "branches": {
                 "2.3.x": {
@@ -7641,7 +7641,7 @@
         },
         "CVE-2019-8135-88": {
             "title": "A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Dependency injection through Symphony framework allows service identifiers to be derived from user controlled data, which can lead to remote code execution.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8135",
+            "link": "https://github.com/advisories/GHSA-3q5x-7mxp-rp6j",
             "cve": "CVE-2019-8135",
             "branches": {
                 "2.2.x": {
@@ -7656,7 +7656,7 @@
         },
         "CVE-2019-8133": {
             "title": "A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8133",
+            "link": "https://github.com/advisories/GHSA-62fx-3v4f-mwxm",
             "cve": "CVE-2019-8133",
             "branches": {
                 "2.3.x": {
@@ -7671,7 +7671,7 @@
         },
         "CVE-2019-8133-89": {
             "title": "A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8133",
+            "link": "https://github.com/advisories/GHSA-62fx-3v4f-mwxm",
             "cve": "CVE-2019-8133",
             "branches": {
                 "2.2.x": {
@@ -7686,7 +7686,7 @@
         },
         "CVE-2019-8145": {
             "title": "A stored cross-site scripting (XSS) vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user can inject arbitrary JavaScript code into the attribute set name when listing the products.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8145",
+            "link": "https://github.com/advisories/GHSA-xv69-f7x5-r4qw",
             "cve": "CVE-2019-8145",
             "branches": {
                 "2.3.x": {
@@ -7701,7 +7701,7 @@
         },
         "CVE-2019-8145-90": {
             "title": "A stored cross-site scripting (XSS) vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user can inject arbitrary JavaScript code into the attribute set name when listing the products.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8145",
+            "link": "https://github.com/advisories/GHSA-xv69-f7x5-r4qw",
             "cve": "CVE-2019-8145",
             "branches": {
                 "2.2.x": {
@@ -7716,7 +7716,7 @@
         },
         "CVE-2019-8233": {
             "title": "In Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an unauthenticated user can inject arbitrary JavaScript code as a result of the sanitization engine ignoring HTML comments.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8233",
+            "link": "https://github.com/advisories/GHSA-fm68-89m8-4gjj",
             "cve": "CVE-2019-8233",
             "branches": {
                 "2.3.x": {
@@ -7731,7 +7731,7 @@
         },
         "CVE-2019-8233-91": {
             "title": "In Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an unauthenticated user can inject arbitrary JavaScript code as a result of the sanitization engine ignoring HTML comments.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8233",
+            "link": "https://github.com/advisories/GHSA-fm68-89m8-4gjj",
             "cve": "CVE-2019-8233",
             "branches": {
                 "2.2.x": {
@@ -12344,7 +12344,7 @@
     "phpfastcache/phpfastcache": {
         "CVE-2019-16774": {
             "title": "## Object injection in cookie driver\r\n\r\n### Impact\r\nAn possible object injection has been discovered in cookie driver prior 5.0.13 versions (of 5.x releases).\r\n\r\n### Patches\r\nThe issue has been addressed by enforcing JSON conversion when deserializing\r\n\r\n### Workarounds\r\nIf you can't fix it, use another driver such as \"Files\" (Filesystem)\r\n\r\n### References\r\nFixing release: https://github.com/PHPSocialNetwork/phpfastcache/releases/tag/5.0.13\r\n\r\n### For more information\r\nIf you have any questions or comments about this advisory:\r\n* Open an issue in [the issue tracker](https://github.com/PHPSocialNetwork/phpfastcache/issues)\r\n* Email us at [security@geolim4.com](mailto:security@geolim4.com)\r\n\r\n",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16774",
+            "link": "https://github.com/advisories/GHSA-484f-743f-6jx2",
             "cve": "CVE-2019-16774",
             "branches": {
                 "5.0.x": {
@@ -12460,7 +12460,7 @@
     "phpmyadmin/phpmyadmin": {
         "CVE-2019-18622": {
             "title": "An issue was discovered in phpMyAdmin before 4.9.2. A crafted database/table name can be used to trigger a SQL injection attack through the designer feature.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-18622",
+            "link": "https://github.com/advisories/GHSA-jgjc-332c-8cmc",
             "cve": "CVE-2019-18622",
             "branches": {
                 "4.9.x": {
@@ -12564,7 +12564,7 @@
     "pimcore/pimcore": {
         "CVE-2019-10763": {
             "title": "pimcore/pimcore before 6.3.0 is vulnerable to SQL Injection. An attacker with limited privileges (classes permission) can achieve a SQL injection that can lead in data leakage. The vulnerability can be exploited via 'id', 'storeId', 'pageSize' and 'tables' parameters, using a payload for trigger a time based or error based sql injection.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10763",
+            "link": "https://github.com/advisories/GHSA-fpff-384j-vxq7",
             "cve": "CVE-2019-10763",
             "branches": {
                 "6.3.x": {
@@ -12580,7 +12580,7 @@
     "prestashop/autoupgrade": {
         "2020-01-08": {
             "title": "### Impact\n\nWe have identified that some autoupgrade module ZIP archives have been built with phpunit dev dependencies. PHPUnit contains a php script that would allow, on a webserver, an attacker to perform a RCE.\n\nThis vulnerability impacts\n- phpunit before 4.8.28 and 5.x before 5.6.3 as reported in [CVE-2017-9841](https://nvd.nist.gov/vuln/detail/CVE-2017-9841)\n- phpunit >= 5.63 before 7.5.19 and 8.5.1 (this is a newly found vulnerability that is currently being submitted as a CVE after disclosure was provided to phpunit maintainers)\n\nYou can read PrestaShop official statement about this vulnerability [here](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/).\n\n### Patches\n\nIn the [security patch](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.10.1), we look for the unwanted vendor/phpunit folder and remove it if we find it. This allows users to fix the security issue when upgrading.\n\n### Workarounds\nUsers can also simply remove the unwanted vendor/phpunit folder.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-9841\n\n### For more information\nIf you have any questions or comments about this advisory, email us at security@prestashop.com",
-            "link": "https://github.com/PrestaShop/autoupgrade/security/advisories/GHSA-wqq8-mqj9-697f",
+            "link": "https://github.com/advisories/GHSA-wqq8-mqj9-697f",
             "cve": null,
             "branches": {
                 "4.10.x": {
@@ -12597,7 +12597,7 @@
     "prestashop/gamification": {
         "2020-01-08": {
             "title": "### Impact\n\nWe have identified that some gamification module ZIP archives have been built with phpunit dev dependencies. PHPUnit contains a php script that would allow, on a webserver, an attacker to perform a RCE.\n\nThis vulnerability impacts\n- phpunit before 4.8.28 and 5.x before 5.6.3 as reported in [CVE-2017-9841](https://nvd.nist.gov/vuln/detail/CVE-2017-9841)\n- phpunit >= 5.63 before 7.5.19 and 8.5.1 (this is a newly found vulnerability that is currently being submitted as a CVE after disclosure was provided to phpunit maintainers)\n\nYou can read PrestaShop official statement about this vulnerability [here](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/).\n\n### Patches\n\nIn the [security patch](https://github.com/PrestaShop/gamification/releases/tag/v2.3.2), we look for the unwanted vendor/phpunit folder and remove it if we find it. This allows users to fix the security issue when upgrading.\n\n### Workarounds\nUsers can also simply remove the unwanted vendor/phpunit folder.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-9841\n\n### For more information\nIf you have any questions or comments about this advisory, email us at security@prestashop.com",
-            "link": "https://github.com/PrestaShop/gamification/security/advisories/GHSA-769f-539v-f5jg",
+            "link": "https://github.com/advisories/GHSA-769f-539v-f5jg",
             "cve": null,
             "branches": {
                 "2.3.x": {
@@ -12613,7 +12613,7 @@
     "prestashop/ps_facetedsearch": {
         "2020-01-07": {
             "title": "### Impact\n\nWe have identified that some ps_facetedsearch module ZIP archives have been built with phpunit dev dependencies. PHPUnit contains a php script that would allow, on a webserver, an attacker to perform a RCE.\n\nThis vulnerability impacts\n- phpunit before 4.8.28 and 5.x before 5.6.3 as reported in [CVE-2017-9841](https://nvd.nist.gov/vuln/detail/CVE-2017-9841)\n- phpunit >= 5.63 before 7.5.19 and 8.5.1 (this is a newly found vulnerability that is currently being submitted as a CVE after disclosure was provided to phpunit maintainers)\n\n### Patches\n\nIn the [security patch](https://github.com/PrestaShop/ps_facetedsearch/releases/tag/v3.4.1), we look for the unwanted vendor/phpunit folder and remove it if we find it. This allows users to fix the security issue when upgrading.\n\n### Workarounds\nUsers can also simply remove the unwanted vendor/phpunit folder.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-9841\n\n### For more information\nIf you have any questions or comments about this advisory, email us at security@prestashop.com",
-            "link": "https://github.com/PrestaShop/ps_facetedsearch/security/advisories/GHSA-f884-gm86-cg3q",
+            "link": "https://github.com/advisories/GHSA-f884-gm86-cg3q",
             "cve": null,
             "branches": {
                 "3.4.x": {
@@ -12629,7 +12629,7 @@
     "privatebin/privatebin": {
         "CVE-2020-5223": {
             "title": "On 24th of December 2019 one of the [property based unit tests](https://github.com/PrivateBin/PrivateBin/blob/master/tst/README.md#property-based-unit-testing) reported a [failure](https://travis-ci.org/PrivateBin/PrivateBin/jobs/629180605#L782). Upon investigation, [@elrido](https://github.com/elrido) discovered that the failure was due to unescaped HTML, which allowed the user provided attachment file name to inject HTML under certain conditions leading to a persistent [Cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability. After committing an [initial fix](https://github.com/PrivateBin/PrivateBin/commit/8d0ac336d23cd8c98e71d5f21cdadcae9c8a26e6) to the master branch, the [issue was reported](https://github.com/PrivateBin/PrivateBin/issues/554) on 25th of December. Vulnerability write-up done by [@rugk](https://github.com/rugk) and [@elrido](https://github.com/elrido).  \nThe vulnerability has been fixed in [PrivateBin v1.3.2 & v1.2.2](https://privatebin.info/news/v1.3.2-v1.2.2-release.html). Admins are urged to upgrade to these versions to protect the affected users.\n\n## Affected versions\n\nAny PrivateBin version since 1.2.\n\n## Conditions\n\n* The configuration setting `fileupload` has to be enabled, as 1.3 displays an error when trying to open a paste with attachment.\n* The CSP header rules don't get applied. For example:\n  * They are unsupported or disabled in the visitors browser.\n  * They are filtered out by a some proxy server at the server or client side.\n  * The header is disabled/commented in the PHP-logic.\n  * The rules have been relaxed in the `cspheader` configuration setting.\n* A paste with a malicious filename is created.\n* A visitor of that paste clicks on the \"Clone\" button.\n\n## Proof of concept\n\nThe following method is just one possibility to exploit this issue and is provided as a proof of concept with steps to reproduce the issue. To avoid having to create an actual file with a rogue filename, one could use the [Python CLI client for PrivateBin](https://github.com/r4sas/PBinCLI/) and [edit line 56 in `format.py`](https://github.com/r4sas/PBinCLI/blob/682b47fbd3e24a8a53c3b484ba896a5dbc85cda2/pbincli/format.py#L56) as follows:\n\n```diff\n-        self._attachment_name = path_leaf(path)\n+        self._attachment_name = '<script>alert(\"\u2639\ufe0f\");//<a'\n```\n\nThe paste then can be created on a vulnerable instance:\n\n```shell\n$ python pbincli/cli.py send -t \" \" -f /dev/null -s https://privatebin.net/\n```\n\nVisiting the created paste on a vulnerable instance, with `fileupload` enabled and the CSP header weakened or disabled, and clicking the clone button will insert the HTML unescaped. In the above example, a pop-up would appear, when the script is executed.\n\n## Impact\n\nOn a vulnerable site pastes with malicious filenames can be created and users visiting these could inadvertently trigger the code execution when they click the \"Clone\" button. They could be instigated to do so via social engineering, like a paste text suggesting to \"clone and share\" the paste in question.\n\nThe attached file itself doesn't have to be empty and could be an image or document that would still be displayed inline as usual. The execution of the script triggered by clicking on the \"Clone\" button may occur silently in the background without showing any noticeable signs in browser. It may for instance be used to track visitors, start drive-by-downloads or similar. While we focus on script injection here, as it is the easiest exploit vector, it has to be said that anything else can be injected like CSS, images, videos, although the default CSP will block inline CSS and images, e.g.\n\nOn first visit, the filename isn't visible and is properly escaped when inserted into the download attribute. Only when clicking the \"Download attachment\" link would open a file save dialog with an odd name pre-filled, although browsers will convert illegal characters into valid ones, so it may not be identical to the one provided. Only when the \"Clone\" button has been clicked and after the exploit has already been triggered, the filename gets displayed. Note that an attacker can of course prevent this indicator of compromise to be shown and e.g. change the displayed text or obfuscate the filename by starting it with something harmless, like `image.png`, before opening the HTML tag.\n\n### Impact restrictions\n\nThe impact is mitigated by the fact that the vulnerability is, as far as our investigation concluded, paste-specific, i.e. opening a vulnerable paste can only compromise this one paste and no other pastes.\n\nFurthermore, as stated before, the impact is mitigated by the fact that we deploy a strong [CSP](https://content-security-policy.com/) that, by default, does not allow inline JS or other potentially easy methods that would allow an easy exploitation of the vulnerability.  \nThat said, we have to make users aware, that there may always be tricks to bypass such a CSP and the simple injection of HTML tags, e.g. destroying, faking or somehow phishing an HTML page does always remain a possibility.\n\nAs such, we treat this as a security vulnerability with medium severity. It is critical on it's own, but we believe that the deployed security mechanisms should prevent an exploit in practice in most cases.\n\n## Real-life impact\n\nWe checked all instances listed in the [PrivateBin directory in the Wiki](https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Directory) and didn't find any 1.1, 1.2 or 1.3 instances that had the CSP headers disabled or in a state we know to be vulnerable. We used the following script, that may be adapted to check the CSP headers of any single instance:\n\n```shell\nfor URL in $(\n    curl -s https://raw.githubusercontent.com/wiki/PrivateBin/PrivateBin/PrivateBin-Directory.md | grep -Po '^http.*?(?= )'\n)\ndo\n    echo -n \"$URL: \"\n    curl -sLI $URL | grep -Poi 'content-security-policy.*script-src.?\\K.*?(?=;)' || echo 'No CSP detected!'\ndone\n```\n\nSome of the above sites do offer file uploads. On these instances, it is still possible that a visitor could have CSP support disabled in their browser, i.e. via a transparent proxy at their internet uplink or due to a browser plugin or some other locally installed, misguided security solution.\n\n**Important:** This scan is only a cursory check and _must not_ be taken as a security analysis of any means! You are always responsible for the security of your own instance. Please do check it manually!\n\n## Mitigation\n\nAs server administrators can't detect if a paste contains file attachments at all (apart from their size) in version 1.3 and due to the encrypted filename in older versions, as well as the risk for clients that don't apply the CSP settings, we urge them to upgrade to versions 1.3.2 or 1.2.2.\n\nIf you use v1.3, you could disable the `fileupload` setting to prevent pastes from getting displayed that may contain this vulnerability. Note that this will break all existing pastes with uploads, however, so we do _not_ recommend this, but advise you to upgrade to a fixed version instead.\n\n## Further information\n\nWe want to make potential third-party client authors aware of this vulnerability and urge them to double-check their implementations. If they develop a client that displays untrusted foreign data from a paste in a HTML site, please make sure to escape it to prevent XSS attacks. Such attacks can only be prevented when the paste is displayed, a mitigation when a paste is created is pointless, as a different client can be used during creation.\n\nWe do also acknowledge and want to highlight the benefit of the CSP, which has first been [introduced in PrivateBin v1.0](https://github.com/PrivateBin/PrivateBin/issues/10).\n\nHowever, we want to make you again aware that a whitelist-based CSP as we use, may [sometimes still be bypassed](https://csp.withgoogle.com/docs/faq.html#problems-with-whitelists), e.g. if you host a copy of the Angular library on the same domain as your PrivateBin instance.\nWe are aware of that and [do consider](https://github.com/PrivateBin/PrivateBin/issues/108) upgrading to a stronger CSP in the future.\n\n### Issue discovery\n\nWhile it is satisfying that our hard work on introducing unit tests has payed off in the discovery and mitigation of this vulnerability, it does also show a limitation of unit testing. A third party doing a code review would have certainly focused on how the project handles user provided input and may have discovered this much quicker.\n\nThe discovery wasn't due to the unit test checking for HTML input to get properly escaped, on the contrary, the test assumed input would not be changed. So other instances of HTML tags generated would have happily passed the test. Only when the test generated a fragment of a link (`<a`) it failed, because the DOM silently removed it when it inserted the string, as links within links aren't allowed. While the test was written to throw arbitrary strings at the `AttachmentViewer.moveAttachmentTo()` method, the test would only check that these got inserted into the DOM unchanged, oblivious of their potential significance when interpreted as HTML.\n\nThe [test had been introduced](https://github.com/PrivateBin/PrivateBin/commit/39860dfdc434c00d18342b4fb3bc6f5d0960030d) on December 3rd, 2017, 570 commits ago. Every commit on master and in PRs since introduction in that commit triggers these tests to run for every supported PHP version. Additional test cycles get run on developers local environments during working on commits. Hence the test suite must have run a few thousand times, testing 100 random strings each time. And only after more then 2 years a string containing `<a` got generated, triggered the error condition and 22 shrinks later the smallest failing test case was presented as:\n\n```\nFailed after 65 tests and 22 shrinks. rngState: 8b8f0d4ec2a67139b5; Counterexample: \"image/png\"; \"\"; \"\\u0000\"; \"<a\"; \"\";\n```\n\nDiscussion about a potential problem with that code, [did spark last September](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34943221), when the vulnerable code part was changed to the one before before the current fix, but was [incorrectly judged](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34944396) as not being a problem, because all of our translation strings are hardcoded. The fact that we do actually add some untrusted user-provided content, wasn't considered at that point.\n\nIt should also be mentioned, that the coverage report released for version 1.3.1 did highlight the line that caused this vulnerability as not being covered during testing:\n\n![Coverage report for version 1.3.1 showing missing test coverage for line causing vulnerability]({static}/img/vulnerability-2020-01-11/coverage.png)\n\nSo, in conclusion, it is great to have all of these tools at our disposal, but the code quality would benefit a lot more from having more eyeballs and brains on it.\n\n## Timeline\n\n* 2019-12-24 \u2013 Property based unit test fails in a commit pushed to a PR.\n* 2019-12-25 \u2013 Issue investigated, preliminary patch and issue description published.\n* 2019-12-30 \u2013 Further investigations, proof-of-concept exploit demonstrated on a vulnerable test instance.\n* 2020-01-03 \u2013 Discussed broader mitigation of user provided content injections, reviewed other possible cases.\n* 2020-01-04 \u2013 Published a second patch based on review, escapes HTML in translation.\n* 2020-01-05 \u2013 Started writing vulnerability report.\n* 2020-01-07 \u2013 Backported fix for 1.2.1.\n* 2020-01-11 \u2013 [Release published](https://github.com/PrivateBin/PrivateBin/releases/tag/1.3.2).\n* 2020-01-11 \u2013 Vulnerability details published.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-5223",
+            "link": "https://github.com/advisories/GHSA-8j72-p2wm-6738",
             "cve": "CVE-2020-5223",
             "branches": {
                 "1.3.x": {
@@ -12644,7 +12644,7 @@
         },
         "CVE-2020-5223-36": {
             "title": "On 24th of December 2019 one of the [property based unit tests](https://github.com/PrivateBin/PrivateBin/blob/master/tst/README.md#property-based-unit-testing) reported a [failure](https://travis-ci.org/PrivateBin/PrivateBin/jobs/629180605#L782). Upon investigation, [@elrido](https://github.com/elrido) discovered that the failure was due to unescaped HTML, which allowed the user provided attachment file name to inject HTML under certain conditions leading to a persistent [Cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability. After committing an [initial fix](https://github.com/PrivateBin/PrivateBin/commit/8d0ac336d23cd8c98e71d5f21cdadcae9c8a26e6) to the master branch, the [issue was reported](https://github.com/PrivateBin/PrivateBin/issues/554) on 25th of December. Vulnerability write-up done by [@rugk](https://github.com/rugk) and [@elrido](https://github.com/elrido).  \nThe vulnerability has been fixed in [PrivateBin v1.3.2 & v1.2.2](https://privatebin.info/news/v1.3.2-v1.2.2-release.html). Admins are urged to upgrade to these versions to protect the affected users.\n\n## Affected versions\n\nAny PrivateBin version since 1.2.\n\n## Conditions\n\n* The configuration setting `fileupload` has to be enabled, as 1.3 displays an error when trying to open a paste with attachment.\n* The CSP header rules don't get applied. For example:\n  * They are unsupported or disabled in the visitors browser.\n  * They are filtered out by a some proxy server at the server or client side.\n  * The header is disabled/commented in the PHP-logic.\n  * The rules have been relaxed in the `cspheader` configuration setting.\n* A paste with a malicious filename is created.\n* A visitor of that paste clicks on the \"Clone\" button.\n\n## Proof of concept\n\nThe following method is just one possibility to exploit this issue and is provided as a proof of concept with steps to reproduce the issue. To avoid having to create an actual file with a rogue filename, one could use the [Python CLI client for PrivateBin](https://github.com/r4sas/PBinCLI/) and [edit line 56 in `format.py`](https://github.com/r4sas/PBinCLI/blob/682b47fbd3e24a8a53c3b484ba896a5dbc85cda2/pbincli/format.py#L56) as follows:\n\n```diff\n-        self._attachment_name = path_leaf(path)\n+        self._attachment_name = '<script>alert(\"\u2639\ufe0f\");//<a'\n```\n\nThe paste then can be created on a vulnerable instance:\n\n```shell\n$ python pbincli/cli.py send -t \" \" -f /dev/null -s https://privatebin.net/\n```\n\nVisiting the created paste on a vulnerable instance, with `fileupload` enabled and the CSP header weakened or disabled, and clicking the clone button will insert the HTML unescaped. In the above example, a pop-up would appear, when the script is executed.\n\n## Impact\n\nOn a vulnerable site pastes with malicious filenames can be created and users visiting these could inadvertently trigger the code execution when they click the \"Clone\" button. They could be instigated to do so via social engineering, like a paste text suggesting to \"clone and share\" the paste in question.\n\nThe attached file itself doesn't have to be empty and could be an image or document that would still be displayed inline as usual. The execution of the script triggered by clicking on the \"Clone\" button may occur silently in the background without showing any noticeable signs in browser. It may for instance be used to track visitors, start drive-by-downloads or similar. While we focus on script injection here, as it is the easiest exploit vector, it has to be said that anything else can be injected like CSS, images, videos, although the default CSP will block inline CSS and images, e.g.\n\nOn first visit, the filename isn't visible and is properly escaped when inserted into the download attribute. Only when clicking the \"Download attachment\" link would open a file save dialog with an odd name pre-filled, although browsers will convert illegal characters into valid ones, so it may not be identical to the one provided. Only when the \"Clone\" button has been clicked and after the exploit has already been triggered, the filename gets displayed. Note that an attacker can of course prevent this indicator of compromise to be shown and e.g. change the displayed text or obfuscate the filename by starting it with something harmless, like `image.png`, before opening the HTML tag.\n\n### Impact restrictions\n\nThe impact is mitigated by the fact that the vulnerability is, as far as our investigation concluded, paste-specific, i.e. opening a vulnerable paste can only compromise this one paste and no other pastes.\n\nFurthermore, as stated before, the impact is mitigated by the fact that we deploy a strong [CSP](https://content-security-policy.com/) that, by default, does not allow inline JS or other potentially easy methods that would allow an easy exploitation of the vulnerability.  \nThat said, we have to make users aware, that there may always be tricks to bypass such a CSP and the simple injection of HTML tags, e.g. destroying, faking or somehow phishing an HTML page does always remain a possibility.\n\nAs such, we treat this as a security vulnerability with medium severity. It is critical on it's own, but we believe that the deployed security mechanisms should prevent an exploit in practice in most cases.\n\n## Real-life impact\n\nWe checked all instances listed in the [PrivateBin directory in the Wiki](https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Directory) and didn't find any 1.1, 1.2 or 1.3 instances that had the CSP headers disabled or in a state we know to be vulnerable. We used the following script, that may be adapted to check the CSP headers of any single instance:\n\n```shell\nfor URL in $(\n    curl -s https://raw.githubusercontent.com/wiki/PrivateBin/PrivateBin/PrivateBin-Directory.md | grep -Po '^http.*?(?= )'\n)\ndo\n    echo -n \"$URL: \"\n    curl -sLI $URL | grep -Poi 'content-security-policy.*script-src.?\\K.*?(?=;)' || echo 'No CSP detected!'\ndone\n```\n\nSome of the above sites do offer file uploads. On these instances, it is still possible that a visitor could have CSP support disabled in their browser, i.e. via a transparent proxy at their internet uplink or due to a browser plugin or some other locally installed, misguided security solution.\n\n**Important:** This scan is only a cursory check and _must not_ be taken as a security analysis of any means! You are always responsible for the security of your own instance. Please do check it manually!\n\n## Mitigation\n\nAs server administrators can't detect if a paste contains file attachments at all (apart from their size) in version 1.3 and due to the encrypted filename in older versions, as well as the risk for clients that don't apply the CSP settings, we urge them to upgrade to versions 1.3.2 or 1.2.2.\n\nIf you use v1.3, you could disable the `fileupload` setting to prevent pastes from getting displayed that may contain this vulnerability. Note that this will break all existing pastes with uploads, however, so we do _not_ recommend this, but advise you to upgrade to a fixed version instead.\n\n## Further information\n\nWe want to make potential third-party client authors aware of this vulnerability and urge them to double-check their implementations. If they develop a client that displays untrusted foreign data from a paste in a HTML site, please make sure to escape it to prevent XSS attacks. Such attacks can only be prevented when the paste is displayed, a mitigation when a paste is created is pointless, as a different client can be used during creation.\n\nWe do also acknowledge and want to highlight the benefit of the CSP, which has first been [introduced in PrivateBin v1.0](https://github.com/PrivateBin/PrivateBin/issues/10).\n\nHowever, we want to make you again aware that a whitelist-based CSP as we use, may [sometimes still be bypassed](https://csp.withgoogle.com/docs/faq.html#problems-with-whitelists), e.g. if you host a copy of the Angular library on the same domain as your PrivateBin instance.\nWe are aware of that and [do consider](https://github.com/PrivateBin/PrivateBin/issues/108) upgrading to a stronger CSP in the future.\n\n### Issue discovery\n\nWhile it is satisfying that our hard work on introducing unit tests has payed off in the discovery and mitigation of this vulnerability, it does also show a limitation of unit testing. A third party doing a code review would have certainly focused on how the project handles user provided input and may have discovered this much quicker.\n\nThe discovery wasn't due to the unit test checking for HTML input to get properly escaped, on the contrary, the test assumed input would not be changed. So other instances of HTML tags generated would have happily passed the test. Only when the test generated a fragment of a link (`<a`) it failed, because the DOM silently removed it when it inserted the string, as links within links aren't allowed. While the test was written to throw arbitrary strings at the `AttachmentViewer.moveAttachmentTo()` method, the test would only check that these got inserted into the DOM unchanged, oblivious of their potential significance when interpreted as HTML.\n\nThe [test had been introduced](https://github.com/PrivateBin/PrivateBin/commit/39860dfdc434c00d18342b4fb3bc6f5d0960030d) on December 3rd, 2017, 570 commits ago. Every commit on master and in PRs since introduction in that commit triggers these tests to run for every supported PHP version. Additional test cycles get run on developers local environments during working on commits. Hence the test suite must have run a few thousand times, testing 100 random strings each time. And only after more then 2 years a string containing `<a` got generated, triggered the error condition and 22 shrinks later the smallest failing test case was presented as:\n\n```\nFailed after 65 tests and 22 shrinks. rngState: 8b8f0d4ec2a67139b5; Counterexample: \"image/png\"; \"\"; \"\\u0000\"; \"<a\"; \"\";\n```\n\nDiscussion about a potential problem with that code, [did spark last September](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34943221), when the vulnerable code part was changed to the one before before the current fix, but was [incorrectly judged](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34944396) as not being a problem, because all of our translation strings are hardcoded. The fact that we do actually add some untrusted user-provided content, wasn't considered at that point.\n\nIt should also be mentioned, that the coverage report released for version 1.3.1 did highlight the line that caused this vulnerability as not being covered during testing:\n\n![Coverage report for version 1.3.1 showing missing test coverage for line causing vulnerability]({static}/img/vulnerability-2020-01-11/coverage.png)\n\nSo, in conclusion, it is great to have all of these tools at our disposal, but the code quality would benefit a lot more from having more eyeballs and brains on it.\n\n## Timeline\n\n* 2019-12-24 \u2013 Property based unit test fails in a commit pushed to a PR.\n* 2019-12-25 \u2013 Issue investigated, preliminary patch and issue description published.\n* 2019-12-30 \u2013 Further investigations, proof-of-concept exploit demonstrated on a vulnerable test instance.\n* 2020-01-03 \u2013 Discussed broader mitigation of user provided content injections, reviewed other possible cases.\n* 2020-01-04 \u2013 Published a second patch based on review, escapes HTML in translation.\n* 2020-01-05 \u2013 Started writing vulnerability report.\n* 2020-01-07 \u2013 Backported fix for 1.2.1.\n* 2020-01-11 \u2013 [Release published](https://github.com/PrivateBin/PrivateBin/releases/tag/1.3.2).\n* 2020-01-11 \u2013 Vulnerability details published.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-5223",
+            "link": "https://github.com/advisories/GHSA-8j72-p2wm-6738",
             "cve": "CVE-2020-5223",
             "branches": {
                 "1.2.x": {
@@ -15469,7 +15469,7 @@
     "simplito/elliptic-php": {
         "CVE-2019-10764": {
             "title": "In elliptic-php versions priot to 1.0.6, Timing attacks might be possible which can result in practical recovery of the long-term private key generated by the library under certain conditions. Leakage of a bit-length of the scalar during scalar multiplication is possible on an elliptic curve which might allow practical recovery of the long-term private key.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10764",
+            "link": "https://github.com/advisories/GHSA-mr6r-82x4-f4jj",
             "cve": "CVE-2019-10764",
             "branches": {
                 "1.0.x": {
@@ -15582,6 +15582,22 @@
                 }
             },
             "reference": "composer://squizlabs/php_codesniffer"
+        }
+    },
+    "ssddanbrown/bookstack": {
+        "CVE-2020-5256": {
+            "title": "### Impact\n\nA user could upload PHP files through image upload functions, which would allow them to execute code on the host system remotely. They would then have the permissions of the PHP process.\n\nThis most impacts scenarios where non-trusted users are given permission to upload images in any area of the application. \n\n### Patches\n\nThe issue was addressed in a series of patches: v0.25.3, v0.25.4 &amp;amp;amp; v0.25.5.\nUsers should upgrade to at least v0.25.5 to avoid this patch but ideally the latest BookStack version as previous versions are un-supported.\n\n### Workarounds\n\nDepending on BookStack version, you could use the [local_secure](https://www.bookstackapp.com/docs/admin/upload-config/#local-secure) image storage option, or use s3 or a similar compatible service.\n\nPreventing direct execution of any `php` files, apart from the `public/index.php` file, though web-server configuration would also prevent this.\n\n### References\n\n[BookStack Beta v0.25.3](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.3)\n[BookStack Beta v0.25.4](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.4)\n[BookStack Beta v0.25.5](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.5)\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [the BookStack GitHub repository](BookStackApp/BookStack/issues).\n* Ask on the [BookStack Discord chat](https://discord.gg/ztkBqR2).\n* Follow the [BookStack Security advise](https://github.com/BookStackApp/BookStack#-security) to contact someone privately.",
+            "link": "https://github.com/advisories/GHSA-g9rq-x4fj-f5hx",
+            "cve": "CVE-2020-5256",
+            "branches": {
+                "0.25.x": {
+                    "time": 1584130887,
+                    "versions": [
+                        "< 0.25.3"
+                    ]
+                }
+            },
+            "reference": "composer://ssddanbrown/bookstack"
         }
     },
     "stormpath/sdk": {
@@ -16008,7 +16024,7 @@
     "symbiote/silverstripe-versionedfiles": {
         "CVE-2019-16409": {
             "title": "In the Versioned Files module through 2.0.3 for SilverStripe 3.x, unpublished versions of files are publicly exposed to anyone who can guess their URL. This guess could be highly informed by a basic understanding of the symbiote/silverstripe-versionedfiles source code. (Users who upgrade from SilverStripe 3.x to 4.x and had Versioned Files installed have no further need for this module, because the 4.x release has built-in versioning. However, nothing in the upgrade process automates the destruction of these insecure artefacts, nor alerts the user to the criticality of destruction.)",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16409",
+            "link": "https://github.com/advisories/GHSA-xm6j-x342-gwq9",
             "cve": "CVE-2019-16409",
             "branches": {
                 "2.0.x": {
@@ -26429,7 +26445,7 @@
     "usmanhalalit/pixie": {
         "CVE-2019-10766": {
             "title": "Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10766",
+            "link": "https://github.com/advisories/GHSA-68wg-qv6r-j4vp",
             "cve": "CVE-2019-10766",
             "branches": {
                 "2.0.x": {
@@ -26444,7 +26460,7 @@
         },
         "CVE-2019-10766-74": {
             "title": "Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10766",
+            "link": "https://github.com/advisories/GHSA-68wg-qv6r-j4vp",
             "cve": "CVE-2019-10766",
             "branches": {
                 "1.0.x": {
@@ -26460,7 +26476,7 @@
     "verot/class.upload.php": {
         "CVE-2019-19634": {
             "title": "class.upload.php in verot.net class.upload through 1.0.3 and 2.x through 2.0.4, as used in the K2 extension for Joomla! and other products, omits .pht from the set of dangerous file extensions, a similar issue to CVE-2019-19576.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-19634",
+            "link": "https://github.com/advisories/GHSA-2gc7-w4hw-rr2m",
             "cve": "CVE-2019-19634",
             "branches": {
                 "2.0.x": {
@@ -26475,7 +26491,7 @@
         },
         "CVE-2019-19634-2": {
             "title": "class.upload.php in verot.net class.upload through 1.0.3 and 2.x through 2.0.4, as used in the K2 extension for Joomla! and other products, omits .pht from the set of dangerous file extensions, a similar issue to CVE-2019-19576.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-19634",
+            "link": "https://github.com/advisories/GHSA-2gc7-w4hw-rr2m",
             "cve": "CVE-2019-19634",
             "branches": {
                 "1.0.x": {
@@ -26489,7 +26505,7 @@
         },
         "CVE-2019-19576": {
             "title": "class.upload.php in verot.net class.upload before 1.0.3 and 2.x before 2.0.4, as used in the K2 extension for Joomla! and other products, omits .phar from the set of dangerous file extensions.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-19576",
+            "link": "https://github.com/advisories/GHSA-r5gm-4p5w-pq2p",
             "cve": "CVE-2019-19576",
             "branches": {
                 "2.0.x": {
@@ -26504,7 +26520,7 @@
         },
         "CVE-2019-19576-35": {
             "title": "class.upload.php in verot.net class.upload before 1.0.3 and 2.x before 2.0.4, as used in the K2 extension for Joomla! and other products, omits .phar from the set of dangerous file extensions.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-19576",
+            "link": "https://github.com/advisories/GHSA-r5gm-4p5w-pq2p",
             "cve": "CVE-2019-19576",
             "branches": {
                 "1.0.x": {
@@ -26552,7 +26568,7 @@
     "yii2mod/yii2-cms": {
         "CVE-2019-16130": {
             "title": "YII2-CMS v1.0 has XSS in protected\\core\\modules\\home\\models\\Contact.php via a name field to /contact.html.",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-16130",
+            "link": "https://github.com/advisories/GHSA-rfh8-25h9-mhgf",
             "cve": "CVE-2019-16130",
             "branches": {
                 "1.9.x": {
@@ -26837,7 +26853,7 @@
     "yourls/yourls": {
         "CVE-2019-14537": {
             "title": "## Type juggling vulnerability in the API\r\n\r\n### Impact\r\nYOURLS through 1.7.3 is affected by a type juggling vulnerability in the API component that can result in login bypass.\r\n\r\n### Patches\r\nhttps://github.com/YOURLS/YOURLS/releases/tag/1.7.4\r\nhttps://github.com/YOURLS/YOURLS/pull/2542\r\n\r\n### References\r\n* https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14537\r\n* https://github.com/Wocanilo/CVE-2019-14537\r\n\r\n### For more information\r\nIf you have any questions or comments about this advisory:\r\n* Open an issue in [YOURLS repository](https://github.com/YOURLS/YOURLS)\r\n",
-            "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14537",
+            "link": "https://github.com/advisories/GHSA-vf23-f26f-mjj9",
             "cve": "CVE-2019-14537",
             "branches": {
                 "1.7.x": {
