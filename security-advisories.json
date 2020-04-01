@@ -2251,6 +2251,76 @@
             },
             "reference": "composer://drupal/core"
         },
+        "2020-03-18": {
+            "title": "Drupal core - Moderately critical - Third-party library - SA-CORE-2020-001",
+            "link": "https://www.drupal.org/sa-core-2020-001",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": 1584538620,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.12"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1584538620,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.4"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
         "CVE-2016-3162": {
             "title": "File upload access bypass and denial of service",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
@@ -4448,6 +4518,76 @@
                     "versions": [
                         ">=8.8.0",
                         "<8.8.1"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-03-18": {
+            "title": "Drupal core - Moderately critical - Third-party library - SA-CORE-2020-001",
+            "link": "https://www.drupal.org/sa-core-2020-001",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": 1584538620,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.12"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1584538620,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.4"
                     ]
                 }
             },
@@ -16306,7 +16446,7 @@
     "symfony/error-handler": {
         "CVE-2020-5274": {
             "title": "CVE-2020-5274: Fix Exception message escaping rendered by ErrorHandler",
-            "link": "https://symfony.com/CVE-2020-5274",
+            "link": "https://symfony.com/cve-2020-5274",
             "cve": "CVE-2020-5274",
             "branches": {
                 "4.4.x": {
@@ -17308,7 +17448,7 @@
         },
         "CVE-2020-5255": {
             "title": "CVE-2020-5255: Prevent cache poisoning via a Response Content-Type header",
-            "link": "https://symfony.com/CVE-2020-5255",
+            "link": "https://symfony.com/cve-2020-5255",
             "cve": "CVE-2020-5255",
             "branches": {
                 "4.4.x": {
@@ -18719,7 +18859,7 @@
         },
         "CVE-2020-5275": {
             "title": "CVE-2020-5275: All rules set in \"access_control\" are required when the firewall is configured with the unanimous strategy",
-            "link": "https://symfony.com/CVE-2020-5275",
+            "link": "https://symfony.com/cve-2020-5275",
             "cve": "CVE-2020-5275",
             "branches": {
                 "4.4.x": {
@@ -19805,7 +19945,7 @@
         },
         "CVE-2020-5275": {
             "title": "CVE-2020-5275: All rules set in \"access_control\" are required when the firewall is configured with the unanimous strategy",
-            "link": "https://symfony.com/CVE-2020-5275",
+            "link": "https://symfony.com/cve-2020-5275",
             "cve": "CVE-2020-5275",
             "branches": {
                 "4.4.x": {
@@ -22427,7 +22567,7 @@
         },
         "CVE-2020-5255": {
             "title": "CVE-2020-5255: Prevent cache poisoning via a Response Content-Type header",
-            "link": "https://symfony.com/CVE-2020-5255",
+            "link": "https://symfony.com/cve-2020-5255",
             "cve": "CVE-2020-5255",
             "branches": {
                 "4.4.x": {
@@ -22449,7 +22589,7 @@
         },
         "CVE-2020-5274": {
             "title": "CVE-2020-5274: Fix Exception message escaping rendered by ErrorHandler",
-            "link": "https://symfony.com/CVE-2020-5274",
+            "link": "https://symfony.com/cve-2020-5274",
             "cve": "CVE-2020-5274",
             "branches": {
                 "4.4.x": {
@@ -22471,7 +22611,7 @@
         },
         "CVE-2020-5275": {
             "title": "CVE-2020-5275: All rules set in \"access_control\" are required when the firewall is configured with the unanimous strategy",
-            "link": "https://symfony.com/CVE-2020-5275",
+            "link": "https://symfony.com/cve-2020-5275",
             "cve": "CVE-2020-5275",
             "branches": {
                 "4.4.x": {
