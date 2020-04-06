@@ -12696,7 +12696,7 @@
     "phpunit/phpunit": {
         "CVE-2017-9841": {
             "title": "RCE vulnerability in phpunit",
-            "link": "http://phpunit.vulnbusters.com/",
+            "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-9841",
             "cve": "CVE-2017-9841",
             "branches": {
                 "5.x": {
