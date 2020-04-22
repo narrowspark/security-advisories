@@ -6049,6 +6049,38 @@
             "reference": "composer://erusev/parsedown"
         }
     },
+    "ezsystems/demobundle": {
+        "2020-04-21-1": {
+            "title": "EZSA-2020-003 XSS in DemoBundle/ezdemo bundled VideoJS",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-003-xss-in-demobundle-ezdemo-bundled-videojs",
+            "reference": "composer://ezsystems/demobundle",
+            "branches": {
+                "5.4.x": {
+                    "time": 1587470820,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.6.1"
+                    ]
+                }
+            }
+        }
+    },
+    "ezsystems/ezdemo-ls-extension": {
+        "2020-04-21-1": {
+            "title": "EZSA-2020-003 XSS in DemoBundle/ezdemo bundled VideoJS",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-003-xss-in-demobundle-ezdemo-bundled-videojs",
+            "reference": "composer://ezsystems/ezdemo-ls-extension",
+            "branches": {
+                "5.4.x": {
+                    "time": 1587471120,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.2.1"
+                    ]
+                }
+            }
+        }
+    },
     "ezsystems/ezfind-ls": {
         "2019-05-23-1": {
             "title": "EZSA-2019-003 XSS in eZFind spellcheck",
