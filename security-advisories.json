@@ -15690,6 +15690,20 @@
                 }
             },
             "reference": "composer://simplesamlphp/simplesamlphp"
+        },
+        "CVE-2020-5301": {
+            "title": "Information disclosure of source code",
+            "link": "https://simplesamlphp.org/security/202004-01",
+            "cve": "CVE-2020-5301",
+            "branches": {
+                "1.18.x": {
+                    "time": 1523949300,
+                    "versions": [
+                        "<1.18.6"
+                    ]
+                }
+            },
+            "reference": "composer://simplesamlphp/simplesamlphp"
         }
     },
     "simplesamlphp/simplesamlphp-module-infocard": {
