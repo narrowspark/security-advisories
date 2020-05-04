@@ -12369,6 +12369,22 @@
             "reference": "composer://namshi/jose"
         }
     },
+    "nzo/url-encryptor-bundle": {
+        "2020-05-03": {
+            "title": "Insecure default secret key and IV allowing anyone to decrypt values",
+            "link": "https://github.com/nayzo/NzoUrlEncryptorBundle/issues/41",
+            "cve": null,
+            "branches": {
+                "5.x": {
+                    "time": 1588524840,
+                    "versions": [
+                        "<5.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://nzo/url-encryptor-bundle"
+        }
+    },
     "onelogin/php-saml": {
         "2017-02-28": {
             "title": "An error during signature verification can be treated as a successful verification.",
