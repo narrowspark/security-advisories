@@ -203,6 +203,22 @@
             "reference": "composer://bagisto/bagisto"
         }
     },
+    "barrelstrength/sprout-base-email": {
+        "CVE-2020-11056": {
+            "title": "### Impact\n\nA potential Server-Side Template Injection vulnerability exists in Sprout Forms which could lead to the execution of Twig code.\n\n### Patches\n\nThe problem is fixed in`barrelstrength/sprout-forms:v3.9.0` which upgrades to `barrelstrength/sprout-base-email:v1.2.7`\n\n### Workarounds\n\nUsers unable to upgrade should update any Notification Emails to use the \"Basic Notification (Sprout Email)\" template and avoid using the \"Basic Notification (Sprout Forms)\" template or any custom templates that display Form Fields.\n\n### References\n\n- See the release notes in the [CHANGELOG](https://github.com/barrelstrength/craft-sprout-forms/blob/v3/CHANGELOG.md#390---2020-04-09-critical)",
+            "link": "https://github.com/advisories/GHSA-px8v-hxxx-2rgh",
+            "cve": "CVE-2020-11056",
+            "branches": {
+                "3.9.x": {
+                    "time": 1588971602,
+                    "versions": [
+                        "< 3.9.0"
+                    ]
+                }
+            },
+            "reference": "composer://barrelstrength/sprout-base-email"
+        }
+    },
     "bolt/bolt": {
         "CVE-2019-15485": {
             "title": "Bolt before 3.6.10 has XSS via createFolder or createFile in Controller/Async/FilesystemManager.php.",
@@ -15865,6 +15881,21 @@
         }
     },
     "ssddanbrown/bookstack": {
+        "CVE-2020-11055": {
+            "title": "### Impact\n\nA user with permission to create comments could POST HTML directly to the system to be saved in a comment, which would then be executed/displayed to others users viewing the comment. Through this vulnerability custom JavaScript code could be injected and therefore ran on other user machines.\n\nThis most impacts scenarios where not-trusted users are given permission to create comments.\n\n### Patches\n\nThe issue was addressed in BookStack v0.29.2.\n\nAfter upgrading, The command `php artisan bookstack:regenerate-comment-content` should be ran to remove any pre-existing dangerous content. \n\n### Workarounds\n\nComments can be disabled in the system settings to prevent them being shown to users. Alternatively, comment creation permissions can be altered as required to only those who are trusted but this will not address existing exploitation of this vulnerability. \n\n### References\n\n* [BookStack Beta v0.29.2](https://github.com/BookStackApp/BookStack/releases/tag/v0.29.2)\n* JVN#41035278\n* [BookStack Blog Post](https://bookstackapp.com/blog/beta-release-v0-29-2/)\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [the BookStack GitHub repository](BookStackApp/BookStack/issues).\n* Ask on the [BookStack Discord chat](https://discord.gg/ztkBqR2).\n* Follow the [BookStack Security Advice](https://github.com/BookStackApp/BookStack#-security) to contact someone privately.",
+            "link": "https://github.com/advisories/GHSA-5vf7-q87h-pg6w",
+            "cve": "CVE-2020-11055",
+            "branches": {
+                "0.29.x": {
+                    "time": 1588885826,
+                    "versions": [
+                        ">= 0.18.0",
+                        "< 0.29.2"
+                    ]
+                }
+            },
+            "reference": "composer://ssddanbrown/bookstack"
+        },
         "CVE-2020-5256": {
             "title": "### Impact\n\nA user could upload PHP files through image upload functions, which would allow them to execute code on the host system remotely. They would then have the permissions of the PHP process.\n\nThis most impacts scenarios where non-trusted users are given permission to upload images in any area of the application. \n\n### Patches\n\nThe issue was addressed in a series of patches: v0.25.3, v0.25.4 and v0.25.5.\nUsers should upgrade to at least v0.25.5 to avoid this patch but ideally the latest BookStack version as previous versions are un-supported.\n\n### Workarounds\n\nDepending on BookStack version, you could use the [local_secure](https://www.bookstackapp.com/docs/admin/upload-config/#local-secure) image storage option, or use s3 or a similar compatible service.\n\nPreventing direct execution of any `php` files, apart from the `public/index.php` file, though web-server configuration would also prevent this.\n\n### References\n\n[BookStack Beta v0.25.3](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.3)\n[BookStack Beta v0.25.4](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.4)\n[BookStack Beta v0.25.5](https://github.com/BookStackApp/BookStack/releases/tag/v0.25.5)\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [the BookStack GitHub repository](BookStackApp/BookStack/issues).\n* Ask on the [BookStack Discord chat](https://discord.gg/ztkBqR2).\n* Follow the [BookStack Security advise](https://github.com/BookStackApp/BookStack#-security) to contact someone privately.",
             "link": "https://github.com/advisories/GHSA-g9rq-x4fj-f5hx",
