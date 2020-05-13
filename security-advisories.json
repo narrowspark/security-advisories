@@ -25753,6 +25753,125 @@
             },
             "reference": "composer://typo3/cms"
         },
+        "2020-05-12-1": {
+            "title": "TYPO3-CORE-SA-2020-001: Information Disclosure in Password Reset",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-001/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:21:43",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-05-12-2": {
+            "title": "TYPO3-CORE-SA-2020-003: Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-003/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:21:59",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:13",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-05-12-3": {
+            "title": "TYPO3-CORE-SA-2020-004: Class destructors causing side-effects when being unserialized",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-004/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:06",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:19",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-05-12-4": {
+            "title": "TYPO3-CORE-SA-2020-005: Insecure Deserialization in Backend User Settings",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-005/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:12",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:27",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-05-12-5": {
+            "title": "TYPO3-CORE-SA-2020-006: Same-Site Request Forgery to Backend User Interface",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-006/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:19",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:34",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-05-12-6": {
+            "title": "TYPO3-CORE-SA-2020-002: Cross-Site Scripting in Form Engine",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-002/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:30:56",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:07",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
         "CVE-2014-3941": {
             "title": "Possible Host Spoofing through SERVER_NAME",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
@@ -26665,6 +26784,125 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.5.12"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-1": {
+            "title": "TYPO3-CORE-SA-2020-001: Information Disclosure in Password Reset",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-001/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:21:43",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-2": {
+            "title": "TYPO3-CORE-SA-2020-003: Cross-Site Scripting in Link Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-003/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:21:59",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:13",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-3": {
+            "title": "TYPO3-CORE-SA-2020-004: Class destructors causing side-effects when being unserialized",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-004/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:06",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:19",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-4": {
+            "title": "TYPO3-CORE-SA-2020-005: Insecure Deserialization in Backend User Settings",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-005/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:12",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:27",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-5": {
+            "title": "TYPO3-CORE-SA-2020-006: Same-Site Request Forgery to Backend User Interface",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-006/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:22:19",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:34",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-05-12-6": {
+            "title": "TYPO3-CORE-SA-2020-002: Cross-Site Scripting in Form Engine",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-002/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-05-12 09:30:56",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.2"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-05-12 09:21:07",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.17"
                     ]
                 }
             },
