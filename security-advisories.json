@@ -6464,6 +6464,22 @@
             }
         }
     },
+    "ezsystems/ezplatform-kernel": {
+        "2020-05-20-1": {
+            "title": "EZSA-2020-004 Object Injection in SiteAccessMatchListener",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-004-object-injection-in-siteaccessmatchlistener",
+            "reference": "composer://ezsystems/ezplatform-kernel",
+            "branches": {
+                "1.0.x": {
+                    "time": 1589993100,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.0.2.1"
+                    ]
+                }
+            }
+        }
+    },
     "ezsystems/ezplatform-user": {
         "2019-04-03-1": {
             "title": "EZSA-2019-002 Password reset vulnerability",
@@ -6554,6 +6570,34 @@
                     "versions": [
                         ">=5.4.0",
                         "<5.4.14.1"
+                    ]
+                }
+            }
+        },
+        "2020-05-20-1": {
+            "title": "EZSA-2020-004 Object Injection in SiteAccessMatchListener",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-004-object-injection-in-siteaccessmatchlistener",
+            "reference": "composer://ezsystems/ezpublish-kernel",
+            "branches": {
+                "7.5.x": {
+                    "time": 1589993100,
+                    "versions": [
+                        ">=7.5.0",
+                        "<7.5.7.1"
+                    ]
+                },
+                "6.13.x": {
+                    "time": 1589993100,
+                    "versions": [
+                        ">=6.13.0",
+                        "<6.13.6.3"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1589993100,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.14.2"
                     ]
                 }
             }
@@ -12621,6 +12665,83 @@
             "reference": "composer://nzo/url-encryptor-bundle"
         }
     },
+    "october/october": {
+        "CVE-2020-5299": {
+            "title": "### Impact\nAny users with the ability to modify any data that could eventually be exported as a CSV file from the `ImportExportController` could potentially introduce a CSV injection into the data to cause the generated CSV export file to be malicious. This requires attackers to achieve the following before a successful attack can be completed: \n\n1. Have found a vulnerability in the victim's spreadsheet software of choice.\n2. Control data that would potentially be exported through the `ImportExportController` by a theoretical victim.\n3. Convince the victim to export above data as a CSV and run it in vulnerable spreadsheet software while also bypassing any sanity checks by said software.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/c84bf03f506052c848f2fddc05f24be631427a1a & https://github.com/octobercms/october/commit/802d8c8e09a2b342649393edb6d3ceb958851484 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by @chrisvidal initially & [Sivanesh Ashok](https://stazot.com/) later.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\nGiven the number of hoops that a potential attacker would have to jump through, this vulnerability really boils down to the possibility of abusing the trust that a user may have in the export functionality of the project. Thus, this has been rated low severity as it requires vulnerabilities to also exist in other software used by any potential victims as well as successful social engineering attacks.",
+            "link": "https://github.com/advisories/GHSA-4rhm-m2fp-hx7q",
+            "cve": "CVE-2020-5299",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221515,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        },
+        "CVE-2020-5298": {
+            "title": "### Impact\nA user with the ability to use the import functionality of the `ImportExportController` behavior could be socially engineered by an attacker to upload a maliciously crafted CSV file which could result in a reflected XSS attack on the user in question\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/cd0b6a791f995d86071a024464c1702efc50f46c to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
+            "link": "https://github.com/advisories/GHSA-gg6x-xx78-448c",
+            "cve": "CVE-2020-5298",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221512,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        },
+        "CVE-2020-5297": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to upload jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml files to any directory of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/6711dae8ef70caf0e94cec434498012a2ccd86b8 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 21 10 PM\" src=\"https://user-images.githubusercontent.com/7253840/78061230-255f5400-734a-11ea-92b4-1120f6960505.png\">",
+            "link": "https://github.com/advisories/GHSA-9722-rr68-rfpg",
+            "cve": "CVE-2020-5297",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221507,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        },
+        "CVE-2020-5296": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to delete arbitrary local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 16 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78060872-89354d00-7349-11ea-8c2b-5881b0a50736.png\">",
+            "link": "https://github.com/advisories/GHSA-jv6v-fvvx-4932",
+            "cve": "CVE-2020-5296",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221501,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        },
+        "CVE-2020-5295": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-03-31 at 2 37 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78072989-44b3ac80-735d-11ea-8676-09c69f0409c4.png\">",
+            "link": "https://github.com/advisories/GHSA-r23f-c2j5-rx2f",
+            "cve": "CVE-2020-5295",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221496,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        }
+    },
     "onelogin/php-saml": {
         "2017-02-28": {
             "title": "An error during signature verification can be treated as a successful verification.",
@@ -13177,6 +13298,22 @@
                 }
             },
             "reference": "composer://pusher/pusher-php-server"
+        }
+    },
+    "rainlab/debugbar-plugin": {
+        "CVE-2020-11094": {
+            "title": "### Impact\nThe debugbar contains a perhaps little known feature where it will log all requests (and all information pertaining to each request including session data) whenever it is enabled. This presents a problem if the plugin is ever enabled on a system that is open to untrusted users as the potential exists for them to use this feature to view all requests being made to the application and obtain sensitive information from those requests. There even exists the potential for account takeovers of authenticated users by non-authenticated public users, which would then lead to a number of other potential issues as an attacker could theoretically get full access to the system if the required conditions existed.\n\n### Patches\nIssue has been patched in v3.1.0 by locking down access to the debugbar to all users; it now requires an authenticated backend user with a specifically enabled permission before it is even usable, and the feature that allows access to stored request information is restricted behind a different permission that's more restrictive.\n\n### Workarounds\nApply https://github.com/rainlab/debugbar-plugin/commit/86dd29f9866d712de7d98f5f9dc67751b82ecd18 to your installation manually if unable to upgrade to v3.1.0.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Acknowledgements\n\nThanks to [Freddie Poser](https://twitter.com/vogonjeltz101) for reporting the issue to the RainLab team.",
+            "link": "https://github.com/advisories/GHSA-c8wh-6jw4-2h79",
+            "cve": "CVE-2020-11094",
+            "branches": {
+                "3.1.x": {
+                    "time": 1591226352,
+                    "versions": [
+                        "< 3.1.0"
+                    ]
+                }
+            },
+            "reference": "composer://rainlab/debugbar-plugin"
         }
     },
     "robrichards/xmlseclibs": {
