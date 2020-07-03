@@ -13229,6 +13229,21 @@
         }
     },
     "october/october": {
+        "CVE-2020-4061": {
+            "title": "### Impact\nPasting content copied from malicious websites into the Froala richeditor could result in a successful self-XSS attack.\n\n### Patches\nIssue has been patched in Build 467 (v1.0.467).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/b384954a29b89117e1c0d6035b3ede4f46df67c5 to your installation manually if unable to upgrade to Build 467.\n\n### References\n- https://research.securitum.com/the-curious-case-of-copy-paste/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that by the nature of the attack it can only impact users that do it to themselves by copying and pasting from malicious websites.\n\n### Acknowledgements\n\nThanks to [Micha\u0142 Bentkowski of Securitum](https://research.securitum.com/authors/michal-bentkowski/) for finding the original issue in Froala and @tomaszstrojny for reporting the issue to the October CMS team.",
+            "link": "https://github.com/advisories/GHSA-3pc2-fm7p-q2vg",
+            "cve": "CVE-2020-4061",
+            "branches": {
+                "1.0.x": {
+                    "time": 1593708911,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.467"
+                    ]
+                }
+            },
+            "reference": "composer://october/october"
+        },
         "2020-06-05": {
             "title": "### Impact\nPassing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466) by applying the recommended patch from @jquery.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/5c7ba9fbe9f2b596b2f0e3436ee06b91b97e5892 to your installation manually if unable to upgrade to Build 466.\n\n### References\n- https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2\n- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11022\n- https://jquery.com/upgrade-guide/3.5/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Moderate by the @jquery team.\n\n### Acknowledgements\n\nThanks to @mrgswift for reporting the issue to the October CMS team.",
             "link": "https://github.com/advisories/GHSA-v73w-r9xg-7cr9",
@@ -13687,6 +13702,20 @@
                     "time": 1542743400,
                     "versions": [
                         "<=1.5.0"
+                    ]
+                }
+            },
+            "reference": "composer://phpoffice/phpspreadsheet"
+        },
+        "CVE-2019-12331": {
+            "title": "XXE Vulnerability",
+            "link": "https://github.com/PHPOffice/PhpSpreadsheet/pull/1041",
+            "cve": "CVE-2019-12331",
+            "branches": {
+                "master": {
+                    "time": 1561985700,
+                    "versions": [
+                        "<1.8.0"
                     ]
                 }
             },
