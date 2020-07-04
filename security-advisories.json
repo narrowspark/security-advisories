@@ -13204,6 +13204,21 @@
             "reference": "composer://namshi/jose"
         }
     },
+    "nystudio107/craft-seomatic": {
+        "2020-04-28-1": {
+            "title": "SSTI Vulnerability",
+            "link": "https://twitter.com/nystudio107/status/1268736336200171520?lang=en",
+            "branches": {
+                "3.x": {
+                    "time": 1588097280,
+                    "versions": [
+                        "<3.3.0"
+                    ]
+                }
+            },
+            "reference": "composer://nystudio107/craft-seomatic"
+        }
+    },
     "nzo/url-encryptor-bundle": {
         "2020-05-03": {
             "title": "Insecure default secret key and IV allowing anyone to decrypt values",
