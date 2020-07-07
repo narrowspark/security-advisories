@@ -7649,6 +7649,35 @@
             "reference": "composer://getgrav/grav"
         }
     },
+    "gos/web-socket-bundle": {
+        "2020-07-06-1": {
+            "title": "Potentially sensitive data exposure",
+            "link": "https://github.com/GeniusesOfSymfony/WebSocketBundle/security/advisories/GHSA-wwgf-3xp7-cxj4",
+            "branches": {
+                "1.x": {
+                    "time": 1594044515,
+                    "versions": [
+                        "<1.10.4"
+                    ]
+                },
+                "2.x": {
+                    "time": 1594044515,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.6.1"
+                    ]
+                },
+                "3.x": {
+                    "time": 1594044515,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.3.0"
+                    ]
+                }
+            },
+            "reference": "composer://gos/web-socket-bundle"
+        }
+    },
     "gree/jose": {
         "2016-08-30": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
