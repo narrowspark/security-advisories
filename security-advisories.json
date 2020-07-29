@@ -13272,7 +13272,22 @@
             "reference": "composer://nzo/url-encryptor-bundle"
         }
     },
-    "october/october": {
+    "october/backend": {
+        "CVE-2020-5299": {
+            "title": "### Impact\nAny users with the ability to modify any data that could eventually be exported as a CSV file from the `ImportExportController` could potentially introduce a CSV injection into the data to cause the generated CSV export file to be malicious. This requires attackers to achieve the following before a successful attack can be completed: \n\n1. Have found a vulnerability in the victim's spreadsheet software of choice.\n2. Control data that would potentially be exported through the `ImportExportController` by a theoretical victim.\n3. Convince the victim to export above data as a CSV and run it in vulnerable spreadsheet software while also bypassing any sanity checks by said software.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/c84bf03f506052c848f2fddc05f24be631427a1a & https://github.com/octobercms/october/commit/802d8c8e09a2b342649393edb6d3ceb958851484 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by @chrisvidal initially & [Sivanesh Ashok](https://stazot.com/) later.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\nGiven the number of hoops that a potential attacker would have to jump through, this vulnerability really boils down to the possibility of abusing the trust that a user may have in the export functionality of the project. Thus, this has been rated low severity as it requires vulnerabilities to also exist in other software used by any potential victims as well as successful social engineering attacks.",
+            "link": "https://github.com/advisories/GHSA-4rhm-m2fp-hx7q",
+            "cve": "CVE-2020-5299",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221515,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/backend"
+        },
         "CVE-2020-4061": {
             "title": "### Impact\nPasting content copied from malicious websites into the Froala richeditor could result in a successful self-XSS attack.\n\n### Patches\nIssue has been patched in Build 467 (v1.0.467).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/b384954a29b89117e1c0d6035b3ede4f46df67c5 to your installation manually if unable to upgrade to Build 467.\n\n### References\n- https://research.securitum.com/the-curious-case-of-copy-paste/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that by the nature of the attack it can only impact users that do it to themselves by copying and pasting from malicious websites.\n\n### Acknowledgements\n\nThanks to [Micha\u0142 Bentkowski of Securitum](https://research.securitum.com/authors/michal-bentkowski/) for finding the original issue in Froala and @tomaszstrojny for reporting the issue to the October CMS team.",
             "link": "https://github.com/advisories/GHSA-3pc2-fm7p-q2vg",
@@ -13286,8 +13301,57 @@
                     ]
                 }
             },
-            "reference": "composer://october/october"
+            "reference": "composer://october/backend"
+        }
+    },
+    "october/cms": {
+        "CVE-2020-5295": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-03-31 at 2 37 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78072989-44b3ac80-735d-11ea-8676-09c69f0409c4.png\">",
+            "link": "https://github.com/advisories/GHSA-r23f-c2j5-rx2f",
+            "cve": "CVE-2020-5295",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221496,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
         },
+        "CVE-2020-5296": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to delete arbitrary local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 16 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78060872-89354d00-7349-11ea-8c2b-5881b0a50736.png\">",
+            "link": "https://github.com/advisories/GHSA-jv6v-fvvx-4932",
+            "cve": "CVE-2020-5296",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221501,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
+        },
+        "CVE-2020-5297": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to upload jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml files to any directory of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/6711dae8ef70caf0e94cec434498012a2ccd86b8 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 21 10 PM\" src=\"https://user-images.githubusercontent.com/7253840/78061230-255f5400-734a-11ea-92b4-1120f6960505.png\">",
+            "link": "https://github.com/advisories/GHSA-9722-rr68-rfpg",
+            "cve": "CVE-2020-5297",
+            "branches": {
+                "1.0.x": {
+                    "time": 1591221507,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.466"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
+        }
+    },
+    "october/october": {
         "2020-06-05": {
             "title": "### Impact\nPassing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466) by applying the recommended patch from @jquery.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/5c7ba9fbe9f2b596b2f0e3436ee06b91b97e5892 to your installation manually if unable to upgrade to Build 466.\n\n### References\n- https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2\n- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11022\n- https://jquery.com/upgrade-guide/3.5/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Moderate by the @jquery team.\n\n### Acknowledgements\n\nThanks to @mrgswift for reporting the issue to the October CMS team.",
             "link": "https://github.com/advisories/GHSA-v73w-r9xg-7cr9",
@@ -13303,21 +13367,6 @@
             },
             "reference": "composer://october/october"
         },
-        "CVE-2020-5299": {
-            "title": "### Impact\nAny users with the ability to modify any data that could eventually be exported as a CSV file from the `ImportExportController` could potentially introduce a CSV injection into the data to cause the generated CSV export file to be malicious. This requires attackers to achieve the following before a successful attack can be completed: \n\n1. Have found a vulnerability in the victim's spreadsheet software of choice.\n2. Control data that would potentially be exported through the `ImportExportController` by a theoretical victim.\n3. Convince the victim to export above data as a CSV and run it in vulnerable spreadsheet software while also bypassing any sanity checks by said software.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/c84bf03f506052c848f2fddc05f24be631427a1a & https://github.com/octobercms/october/commit/802d8c8e09a2b342649393edb6d3ceb958851484 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by @chrisvidal initially & [Sivanesh Ashok](https://stazot.com/) later.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\nGiven the number of hoops that a potential attacker would have to jump through, this vulnerability really boils down to the possibility of abusing the trust that a user may have in the export functionality of the project. Thus, this has been rated low severity as it requires vulnerabilities to also exist in other software used by any potential victims as well as successful social engineering attacks.",
-            "link": "https://github.com/advisories/GHSA-4rhm-m2fp-hx7q",
-            "cve": "CVE-2020-5299",
-            "branches": {
-                "1.0.x": {
-                    "time": 1591221515,
-                    "versions": [
-                        ">= 1.0.319",
-                        "< 1.0.466"
-                    ]
-                }
-            },
-            "reference": "composer://october/october"
-        },
         "CVE-2020-5298": {
             "title": "### Impact\nA user with the ability to use the import functionality of the `ImportExportController` behavior could be socially engineered by an attacker to upload a maliciously crafted CSV file which could result in a reflected XSS attack on the user in question\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/cd0b6a791f995d86071a024464c1702efc50f46c to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
             "link": "https://github.com/advisories/GHSA-gg6x-xx78-448c",
@@ -13325,51 +13374,6 @@
             "branches": {
                 "1.0.x": {
                     "time": 1591221512,
-                    "versions": [
-                        ">= 1.0.319",
-                        "< 1.0.466"
-                    ]
-                }
-            },
-            "reference": "composer://october/october"
-        },
-        "CVE-2020-5297": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to upload jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml files to any directory of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/6711dae8ef70caf0e94cec434498012a2ccd86b8 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 21 10 PM\" src=\"https://user-images.githubusercontent.com/7253840/78061230-255f5400-734a-11ea-92b4-1120f6960505.png\">",
-            "link": "https://github.com/advisories/GHSA-9722-rr68-rfpg",
-            "cve": "CVE-2020-5297",
-            "branches": {
-                "1.0.x": {
-                    "time": 1591221507,
-                    "versions": [
-                        ">= 1.0.319",
-                        "< 1.0.466"
-                    ]
-                }
-            },
-            "reference": "composer://october/october"
-        },
-        "CVE-2020-5296": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to delete arbitrary local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 16 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78060872-89354d00-7349-11ea-8c2b-5881b0a50736.png\">",
-            "link": "https://github.com/advisories/GHSA-jv6v-fvvx-4932",
-            "cve": "CVE-2020-5296",
-            "branches": {
-                "1.0.x": {
-                    "time": 1591221501,
-                    "versions": [
-                        ">= 1.0.319",
-                        "< 1.0.466"
-                    ]
-                }
-            },
-            "reference": "composer://october/october"
-        },
-        "CVE-2020-5295": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-03-31 at 2 37 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78072989-44b3ac80-735d-11ea-8676-09c69f0409c4.png\">",
-            "link": "https://github.com/advisories/GHSA-r23f-c2j5-rx2f",
-            "cve": "CVE-2020-5295",
-            "branches": {
-                "1.0.x": {
-                    "time": 1591221496,
                     "versions": [
                         ">= 1.0.319",
                         "< 1.0.466"
@@ -26986,6 +26990,48 @@
             },
             "reference": "composer://typo3/cms"
         },
+        "2020-07-28-1": {
+            "title": "TYPO3-CORE-SA-2020-007: Potential Privilege Escalation",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-007/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-07-28 08:18:47",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.6"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-07-28 08:18:30",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.20"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-07-28-2": {
+            "title": "TYPO3-CORE-SA-2020-008: Sensitive Information Disclosure",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-008/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-07-28 08:19:06",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.6"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-07-28 08:18:38",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.20"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
         "CVE-2014-3941": {
             "title": "Possible Host Spoofing through SERVER_NAME",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
@@ -28017,6 +28063,48 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-07-28-1": {
+            "title": "TYPO3-CORE-SA-2020-007: Potential Privilege Escalation",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-007/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-07-28 08:18:47",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.6"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-07-28 08:18:30",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.20"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-07-28-2": {
+            "title": "TYPO3-CORE-SA-2020-008: Sensitive Information Disclosure",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-008/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-07-28 08:19:06",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.6"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-07-28 08:18:38",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.20"
                     ]
                 }
             },
