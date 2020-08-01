@@ -8149,6 +8149,22 @@
             "reference": "composer://kazist/phpwhois"
         }
     },
+    "kitodo/presentation": {
+        "CVE-2020-16095": {
+            "title": "### Impact\nKitodo.Presentation fails to properly encode URL parameters for output in HTML making it vulnerable to Cross Site Scripting (XSS). Only sites using the `ListView`, `Navigation` or `PageView` plugins are affected.\n\nIt also includes jQuery 3.4.1 which is known to be vulnerable against Cross Site Scripting, although there is currently no known way to exploit this in Kitodo.Presentation.\n\n### Patches\nAn updated version of Kitodo.Presentation is available on [GitHub](https://github.com/kitodo/kitodo-presentation/releases/tag/v3.1.2), [Packagist](https://packagist.org/packages/kitodo/presentation#v3.1.2) and in the [TYPO3 Extension Repository](https://extensions.typo3.org/extension/dlf/). Users are advised to update as soon as possible.\n\nThe issue was also fixed in release 2.3.1 of the 2.x branch, although it is generally not recommended to run this branch since it depends on an outdated TYPO3 version.\n\n### References\nTYPO3 Security Advisory [TYPO3-EXT-SA-2020-015](https://typo3.org/security/advisory/typo3-ext-sa-2020-015)\njQuery Security Advisory [GHSA-gxr4-xjj5-5px2](https://github.com/jquery/jquery/security/advisories/GHSA-gxr4-xjj5-5px2)\nOpen Bug Bounty Report [OBB-1219978](https://www.openbugbounty.org/reports/1219978/)\n\n### Contact\nIf you have any questions or comments about this advisory:\n* [Open an issue](https://github.com/kitodo/kitodo-presentation/issues/new/choose)\n* Email us at [security@kitodo.org](mailto:security@kitodo.org)",
+            "link": "https://github.com/advisories/GHSA-fpqv-x9hm-35j9",
+            "cve": "CVE-2020-16095",
+            "branches": {
+                "3.1.x": {
+                    "time": 1596217162,
+                    "versions": [
+                        "< 3.1.2"
+                    ]
+                }
+            },
+            "reference": "composer://kitodo/presentation"
+        }
+    },
     "kreait/firebase-php": {
         "CVE-2018-1000025": {
             "title": "Incorrect Access Control vulnerability in src/Firebase/Auth/IdTokenVerifier.php does not verify for token signature that can result in JWT with any email address and user ID could be forged from an actual token, or from thin air.",
