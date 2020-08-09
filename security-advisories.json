@@ -7946,6 +7946,35 @@
                 }
             },
             "reference": "composer://illuminate/cookie"
+        },
+        "2020-07-27-1": {
+            "title": "RCE vulnerability in \"cookie\" session driver",
+            "link": "https://blog.laravel.com/laravel-cookie-security-releases",
+            "cve": null,
+            "branches": {
+                "5.5": {
+                    "time": null,
+                    "versions": [
+                        ">=5.5.0",
+                        "<=5.5.44"
+                    ]
+                },
+                "6.x": {
+                    "time": 1595961240,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.18.31"
+                    ]
+                },
+                "7.x": {
+                    "time": 1595961060,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.22.4"
+                    ]
+                }
+            },
+            "reference": "composer://illuminate/cookie"
         }
     },
     "illuminate/database": {
@@ -7966,6 +7995,35 @@
                     "versions": [
                         ">=4.1.0",
                         "<4.1.29"
+                    ]
+                }
+            },
+            "reference": "composer://illuminate/database"
+        },
+        "2020-08-06": {
+            "title": "Guard bypass in Eloquent models",
+            "link": "https://blog.laravel.com/security-release-laravel-61834-7232",
+            "cve": null,
+            "branches": {
+                "5.5": {
+                    "time": null,
+                    "versions": [
+                        ">=5.5.0",
+                        "<=5.5.44"
+                    ]
+                },
+                "6.x": {
+                    "time": 1596725700,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.18.34"
+                    ]
+                },
+                "7.x": {
+                    "time": 1596725760,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.23.2"
                     ]
                 }
             },
@@ -8409,6 +8467,64 @@
                     "versions": [
                         ">=7.0.0",
                         "<7.1.2"
+                    ]
+                }
+            },
+            "reference": "composer://laravel/framework"
+        },
+        "2020-07-27-1": {
+            "title": "RCE vulnerability in \"cookie\" session driver",
+            "link": "https://blog.laravel.com/laravel-cookie-security-releases",
+            "cve": null,
+            "branches": {
+                "5.5": {
+                    "time": null,
+                    "versions": [
+                        ">=5.5.0",
+                        "<=5.5.49"
+                    ]
+                },
+                "6.x": {
+                    "time": 1595961240,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.18.31"
+                    ]
+                },
+                "7.x": {
+                    "time": 1595961060,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.22.4"
+                    ]
+                }
+            },
+            "reference": "composer://laravel/framework"
+        },
+        "2020-08-06-1": {
+            "title": "Guard bypass in Eloquent models",
+            "link": "https://blog.laravel.com/security-release-laravel-61834-7232",
+            "cve": null,
+            "branches": {
+                "5.5": {
+                    "time": null,
+                    "versions": [
+                        ">=5.5.0",
+                        "<=5.5.49"
+                    ]
+                },
+                "6.x": {
+                    "time": 1596725700,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.18.34"
+                    ]
+                },
+                "7.x": {
+                    "time": 1596725760,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.23.2"
                     ]
                 }
             },
