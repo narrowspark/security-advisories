@@ -252,6 +252,53 @@
             "reference": "composer://barrelstrength/sprout-forms"
         }
     },
+    "baserproject/basercms": {
+        "CVE-2020-15159": {
+            "title": "baserCMS 4.3.6 and earlier is affected by Cross Site Scripting (XSS) and Remote Code Execution (RCE).\n\n* Impact: XSS to RCE via Arbitrary file upload.\n* Attack vector is: Administrator must be logged in.\n* Components are: ThemeFilesController.php, UploaderFilesController.php.\n* Tested baserCMS Version : 4.3.6 (Latest)\n* Affected baserCMS Version : 4.2.0 ~ 4.3.6 (XSS), 3.0.10 ~ 4.3.6 (RCE)\n* Patches : https://basercms.net/security/20200827\n\nFound by Vulnerability Research team in [Flatt Security Inc.](https://flatt.tech/)",
+            "link": "https://github.com/advisories/GHSA-673x-f5wx-fxpw",
+            "cve": "CVE-2020-15159",
+            "branches": {
+                "4.3.x": {
+                    "time": 1598651115,
+                    "versions": [
+                        ">= 4.0.0",
+                        "<= 4.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        },
+        "CVE-2020-15155": {
+            "title": "baserCMS 4.3.6 and earlier is affected by Cross Site Scripting (XSS) via arbitrary script execution. Admin access is required to exploit this vulnerability. The affected components is toolbar.php. The issue is fixed in version 4.3.7.",
+            "link": "https://github.com/advisories/GHSA-4r3m-j6x5-48m3",
+            "cve": "CVE-2020-15155",
+            "branches": {
+                "4.3.x": {
+                    "time": 1598649642,
+                    "versions": [
+                        ">= 4.0.0",
+                        "<= 4.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        },
+        "CVE-2020-15154": {
+            "title": "baserCMS 4.3.6 and earlier is affected by Cross Site Scripting (XSS).\n\n* Impact: XSS via Arbitrary script execution.\n* Attack vector is: Administrator must be logged in.\n* Components are: content_fields.php, content_info.php, content_options.php, content_related.php, index_list_tree.php, jquery.bcTree.js\n* Tested baserCMS Version : 4.3.6 (Latest)\n* Affected baserCMS Version : 4.0.0 ~ 4.3.6\n* Patches : https://basercms.net/security/20200827\n\nFound by Aquilao Null",
+            "link": "https://github.com/advisories/GHSA-cpxc-67rc-c775",
+            "cve": "CVE-2020-15154",
+            "branches": {
+                "4.3.x": {
+                    "time": 1598647692,
+                    "versions": [
+                        ">= 4.0.0",
+                        "<= 4.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        }
+    },
     "bolt/bolt": {
         "CVE-2020-4041": {
             "title": "### Impact\n\nThe filename of uploaded files was vulnerable to stored XSS. It is not possible to inject javascript code in the file name when creating/uploading the file. But, once created/uploaded, it can be renamed to inject the payload in it. \n\nAdditionally, the measures to prevent renaming the file to disallowed filename extensions could be circumvented.\n\n### Patches\n\nThis is fixed in Bolt 3.7.1.\n\n### References\n\nRelated issue: https://github.com/bolt/bolt/pull/7853",
