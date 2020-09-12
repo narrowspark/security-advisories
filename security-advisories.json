@@ -7103,6 +7103,34 @@
                     ]
                 }
             }
+        },
+        "2020-08-07-1": {
+            "title": "EZSA-2020-005 Editor XSS and trashed drafts in review queue",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-005-editor-xss-and-trashed-drafts-in-review-queue",
+            "reference": "composer://ezsystems/ezplatform-admin-ui-assets",
+            "branches": {
+                "4.2.x": {
+                    "time": 1596792480,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.1"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1596792660,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.1"
+                    ]
+                },
+                "5.1.x": {
+                    "time": 1596792780,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.1.1"
+                    ]
+                }
+            }
         }
     },
     "ezsystems/ezplatform-kernel": {
@@ -7476,6 +7504,22 @@
                 }
             },
             "reference": "composer://ezsystems/ezpublish-legacy"
+        }
+    },
+    "ezsystems/platform-ui-assets-bundle": {
+        "2020-08-07-1": {
+            "title": "EZSA-2020-005 Editor XSS and trashed drafts in review queue",
+            "link": "https://ezplatform.com/security-advisories/ezsa-2020-005-editor-xss-and-trashed-drafts-in-review-queue",
+            "reference": "composer://ezsystems/platform-ui-assets-bundle",
+            "branches": {
+                "4.2.x": {
+                    "time": 1596791880,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.3"
+                    ]
+                }
+            }
         }
     },
     "ezsystems/repository-forms": {
@@ -14037,7 +14081,7 @@
             "reference": "composer://pear/archive_tar"
         }
     },
-    "personnummer": {
+    "personnummer/personnummer": {
         "2020-09-09": {
             "title": "Back in min June a security vulnerability was reported to the team, the reason for the slow response was due to ownership of some packages\nwas locked and we wanted to be sure to update all packages before any disclosure was released.\n\nThe issue is deemed being a Low severity vulnerability.\n\n### Impact\n\nThis vulnerability impacts users who rely on the for last digits of personnummer to be a _real_ personnummer.  \n\n### Patches\n\nThe issue have been patched in all repositories. The following versions should be updated to as soon as possible:\n\nC# 3.0.2  \nD 3.0.1  \nDart 3.0.3  \nElixir 3.0.0  \nGo 3.0.1  \nJava 3.3.0  \nJavaScript 3.1.0  \nKotlin 1.1.0  \nLua 3.0.1  \nPHP 3.0.2  \nPerl 3.0.0  \nPython 3.0.2  \nRuby 3.0.1  \nRust 3.0.0  \nScala 3.0.1  \nSwift 1.0.1  \n\nIf you are using any of the earlier packages, please update to latest.\n\n### Workarounds\n\nThe issue arrieses from the regular expression allowing the first three digits in the last four digits of the personnummer to be\n000, which is invalid. To mitigate this without upgrading, a check on the last four digits can be made to make sure it's not\n000x.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [Personnummer Meta](https://github.com/personnummer/meta/issues)\n* Email us at [Personnummer Email](mailto:security@personnummer.dev)\n\n### Credits\n\nNiklas Sk\u00f6ldmark (Medborgarskolan)",
             "link": "https://github.com/advisories/GHSA-2p6g-gjp8-ggg9",
@@ -14050,7 +14094,7 @@
                     ]
                 }
             },
-            "reference": "composer://personnummer"
+            "reference": "composer://personnummer/personnummer"
         }
     },
     "phpfastcache/phpfastcache": {
