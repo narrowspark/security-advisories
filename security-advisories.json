@@ -2840,6 +2840,433 @@
             },
             "reference": "composer://drupal/core"
         },
+        "2020-09-16-1": {
+            "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2020-007",
+            "link": "https://www.drupal.org/sa-core-2020-007",
+            "branches": {
+                "7.x": {
+                    "time": 1600264920,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.73"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2020-09-16-2": {
+            "title": "Drupal core - Moderately critical - Access bypass - SA-CORE-2020-008",
+            "link": "https://www.drupal.org/sa-core-2020-008",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2020-09-16-3": {
+            "title": "Drupal core - Critical - Cross-site scripting - SA-CORE-2020-009",
+            "link": "https://www.drupal.org/sa-core-2020-009",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2020-09-16-4": {
+            "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2020-010",
+            "link": "https://www.drupal.org/sa-core-2020-010",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2020-09-16-5": {
+            "title": "Drupal core - Moderately critical - Information disclosure - SA-CORE-2020-011",
+            "link": "https://www.drupal.org/sa-core-2020-011",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
         "CVE-2016-3162": {
             "title": "File upload access bypass and denial of service",
             "link": "https://www.drupal.org/SA-CORE-2016-001",
@@ -5457,6 +5884,433 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-09-16-1": {
+            "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2020-007",
+            "link": "https://www.drupal.org/sa-core-2020-007",
+            "branches": {
+                "7.x": {
+                    "time": 1600264920,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.73"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-09-16-2": {
+            "title": "Drupal core - Moderately critical - Access bypass - SA-CORE-2020-008",
+            "link": "https://www.drupal.org/sa-core-2020-008",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-09-16-3": {
+            "title": "Drupal core - Critical - Cross-site scripting - SA-CORE-2020-009",
+            "link": "https://www.drupal.org/sa-core-2020-009",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-09-16-4": {
+            "title": "Drupal core - Moderately critical - Cross-site scripting - SA-CORE-2020-010",
+            "link": "https://www.drupal.org/sa-core-2020-010",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-09-16-5": {
+            "title": "Drupal core - Moderately critical - Information disclosure - SA-CORE-2020-011",
+            "link": "https://www.drupal.org/sa-core-2020-011",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1600264740,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.10"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1600264620,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.6"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1600264560,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.6"
                     ]
                 }
             },
@@ -14584,6 +15438,107 @@
                 }
             },
             "reference": "composer://robrichards/xmlseclibs"
+        }
+    },
+    "sabberworm/php-css-parser": {
+        "CVE-2020-13756": {
+            "title": "Code injection vulnerability in allSelectors()",
+            "link": "https://packetstormsecurity.com/files/cve/CVE-2020-13756",
+            "cve": "CVE-2020-13756",
+            "branches": {
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.3.1"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.2.1"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.1.1"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.0.1"
+                    ]
+                },
+                "7.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.0.4"
+                    ]
+                },
+                "6.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.0.2"
+                    ]
+                },
+                "5.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.1"
+                    ]
+                },
+                "5.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.1.3"
+                    ]
+                },
+                "5.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.9"
+                    ]
+                },
+                "4.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.1"
+                    ]
+                },
+                "3.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.1"
+                    ]
+                },
+                "2.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.1"
+                    ]
+                },
+                "1.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://sabberworm/php-css-parser"
         }
     },
     "sabre/dav": {
@@ -29356,6 +30311,20 @@
                     "versions": [
                         ">=2.0.14",
                         "<2.0.15"
+                    ]
+                }
+            },
+            "reference": "composer://yiisoft/yii2"
+        },
+        "CVE-2020-15148": {
+            "title": "Possible remote code execution via unserialize() on user input containing specially crafted string",
+            "link": "https://www.yiiframework.com/news/303/yii-2-0-38",
+            "cve": "CVE-2020-15148",
+            "branches": {
+                "2.0.x": {
+                    "time": 1600118151,
+                    "versions": [
+                        "<2.0.38"
                     ]
                 }
             },
