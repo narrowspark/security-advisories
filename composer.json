@@ -20,7 +20,7 @@
         "narrowspark/coding-standard": "^5.1.0",
         "php-http/curl-client": "^2.1.0",
         "phpunit/phpunit": "^9.3.11",
-        "symfony/process": "^5.1.5",
+        "symfony/process": "^5.1.6",
         "symfony/yaml": "^5.1.6",
         "viserio/console": "^1.0@dev",
         "viserio/filesystem": "^1.0@dev",
