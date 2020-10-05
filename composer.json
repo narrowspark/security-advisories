@@ -21,7 +21,7 @@
         "php-http/curl-client": "^2.1.0",
         "phpunit/phpunit": "^9.4.0",
         "symfony/process": "^5.1.6",
-        "symfony/yaml": "^5.1.6",
+        "symfony/yaml": "^5.1.7",
         "viserio/console": "^1.0@dev",
         "viserio/filesystem": "^1.0@dev",
         "viserio/finder": "^1.0@dev",
