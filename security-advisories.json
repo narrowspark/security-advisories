@@ -752,7 +752,7 @@
             },
             "reference": "composer://centreon/centreon"
         },
-        "CVE-2019-16194-45": {
+        "CVE-2019-16194-52": {
             "title": "SQL injection vulnerabilities in Centreon through 19.04 allow attacks via the svc_id parameter in include/monitoring/status/Services/xml/makeXMLForOneService.php.",
             "link": "https://github.com/advisories/GHSA-wgjx-hm34-qgf7",
             "cve": "CVE-2019-16194",
@@ -1327,7 +1327,7 @@
             },
             "reference": "composer://derhansen/sf_event_mgt"
         },
-        "CVE-2020-25026-10": {
+        "CVE-2020-25026-17": {
             "title": "A missing access check in the backend module allows an authenticated backend user to export participant data for events which the user does not have access to, resulting in Information Disclosure. \n\nAnother missing access check in the backend module allows an authenticated backend user to send emails to event participants for events which the user does not have access to, resulting in Broken Access Control.\n\nExternal reference: [https://typo3.org/security/advisory/typo3-ext-sa-2020-017](https://typo3.org/security/advisory/typo3-ext-sa-2020-017)",
             "link": "https://github.com/advisories/GHSA-g8rg-7rpr-cwr2",
             "cve": "CVE-2020-25026",
@@ -9929,7 +9929,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8126-125": {
+        "CVE-2019-8126-132": {
             "title": "An XML entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated admin user can craft document type definition for an XML representing XML layout. The crafted document type definition and XML layout allow processing of external entities which can lead to information disclosure.",
             "link": "https://github.com/advisories/GHSA-427g-2r83-3ccm",
             "cve": "CVE-2019-8126",
@@ -9959,7 +9959,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8121-126": {
+        "CVE-2019-8121-133": {
             "title": "An insecure component vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. Magento 2 codebase leveraged outdated versions of JS libraries (Bootstrap, jquery, Knockout) with known security vulnerabilities.",
             "link": "https://github.com/advisories/GHSA-89ch-hqf9-rgp3",
             "cve": "CVE-2019-8121",
@@ -9989,7 +9989,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8135-127": {
+        "CVE-2019-8135-134": {
             "title": "A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Dependency injection through Symphony framework allows service identifiers to be derived from user controlled data, which can lead to remote code execution.",
             "link": "https://github.com/advisories/GHSA-3q5x-7mxp-rp6j",
             "cve": "CVE-2019-8135",
@@ -10019,7 +10019,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8133-128": {
+        "CVE-2019-8133-135": {
             "title": "A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.",
             "link": "https://github.com/advisories/GHSA-62fx-3v4f-mwxm",
             "cve": "CVE-2019-8133",
@@ -10049,7 +10049,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8145-129": {
+        "CVE-2019-8145-136": {
             "title": "A stored cross-site scripting (XSS) vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user can inject arbitrary JavaScript code into the attribute set name when listing the products.",
             "link": "https://github.com/advisories/GHSA-xv69-f7x5-r4qw",
             "cve": "CVE-2019-8145",
@@ -10079,7 +10079,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8233-130": {
+        "CVE-2019-8233-137": {
             "title": "In Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an unauthenticated user can inject arbitrary JavaScript code as a result of the sanitization engine ignoring HTML comments.",
             "link": "https://github.com/advisories/GHSA-fm68-89m8-4gjj",
             "cve": "CVE-2019-8233",
@@ -14861,7 +14861,7 @@
             },
             "reference": "composer://openmage/magento-lts"
         },
-        "CVE-2020-15151-19": {
+        "CVE-2020-15151-26": {
             "title": "### Impact\nThis vulnerability allows to circumvent the **formkey protection** in the Admin Interface and increases the attack surface for  **Cross Site Request Forgery** attacks \n\n### Patches\nThe latest OpenMage Versions up from 19.4.6 and 20.0.2 have this Issue solved\n\n\n### References\nRelated to Adobes CVE-2020-9690 ( https://helpx.adobe.com/security/products/magento/apsb20-47.html )\nfixed in Magento2 https://github.com/magento/magento2/commit/52d72b8010c9cecb5b8e3d98ec5edc1ddcc65fb4\nas part of 2.4.0/2.3.5-p2",
             "link": "https://github.com/advisories/GHSA-crf2-xm6x-46p6",
             "cve": "CVE-2020-15151",
@@ -15363,7 +15363,7 @@
             },
             "reference": "composer://privatebin/privatebin"
         },
-        "CVE-2020-5223-75": {
+        "CVE-2020-5223-82": {
             "title": "On 24th of December 2019 one of the [property based unit tests](https://github.com/PrivateBin/PrivateBin/blob/master/tst/README.md#property-based-unit-testing) reported a [failure](https://travis-ci.org/PrivateBin/PrivateBin/jobs/629180605#L782). Upon investigation, [@elrido](https://github.com/elrido) discovered that the failure was due to unescaped HTML, which allowed the user provided attachment file name to inject HTML under certain conditions leading to a persistent [Cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability. After committing an [initial fix](https://github.com/PrivateBin/PrivateBin/commit/8d0ac336d23cd8c98e71d5f21cdadcae9c8a26e6) to the master branch, the [issue was reported](https://github.com/PrivateBin/PrivateBin/issues/554) on 25th of December. Vulnerability write-up done by [@rugk](https://github.com/rugk) and [@elrido](https://github.com/elrido).  \nThe vulnerability has been fixed in [PrivateBin v1.3.2 & v1.2.2](https://privatebin.info/news/v1.3.2-v1.2.2-release.html). Admins are urged to upgrade to these versions to protect the affected users.\n\n## Affected versions\n\nAny PrivateBin version since 1.2.\n\n## Conditions\n\n* The configuration setting `fileupload` has to be enabled, as 1.3 displays an error when trying to open a paste with attachment.\n* The CSP header rules don't get applied. For example:\n  * They are unsupported or disabled in the visitors browser.\n  * They are filtered out by a some proxy server at the server or client side.\n  * The header is disabled/commented in the PHP-logic.\n  * The rules have been relaxed in the `cspheader` configuration setting.\n* A paste with a malicious filename is created.\n* A visitor of that paste clicks on the \"Clone\" button.\n\n## Proof of concept\n\nThe following method is just one possibility to exploit this issue and is provided as a proof of concept with steps to reproduce the issue. To avoid having to create an actual file with a rogue filename, one could use the [Python CLI client for PrivateBin](https://github.com/r4sas/PBinCLI/) and [edit line 56 in `format.py`](https://github.com/r4sas/PBinCLI/blob/682b47fbd3e24a8a53c3b484ba896a5dbc85cda2/pbincli/format.py#L56) as follows:\n\n```diff\n-        self._attachment_name = path_leaf(path)\n+        self._attachment_name = '<script>alert(\"\u2639\ufe0f\");//<a'\n```\n\nThe paste then can be created on a vulnerable instance:\n\n```shell\n$ python pbincli/cli.py send -t \" \" -f /dev/null -s https://privatebin.net/\n```\n\nVisiting the created paste on a vulnerable instance, with `fileupload` enabled and the CSP header weakened or disabled, and clicking the clone button will insert the HTML unescaped. In the above example, a pop-up would appear, when the script is executed.\n\n## Impact\n\nOn a vulnerable site pastes with malicious filenames can be created and users visiting these could inadvertently trigger the code execution when they click the \"Clone\" button. They could be instigated to do so via social engineering, like a paste text suggesting to \"clone and share\" the paste in question.\n\nThe attached file itself doesn't have to be empty and could be an image or document that would still be displayed inline as usual. The execution of the script triggered by clicking on the \"Clone\" button may occur silently in the background without showing any noticeable signs in browser. It may for instance be used to track visitors, start drive-by-downloads or similar. While we focus on script injection here, as it is the easiest exploit vector, it has to be said that anything else can be injected like CSS, images, videos, although the default CSP will block inline CSS and images, e.g.\n\nOn first visit, the filename isn't visible and is properly escaped when inserted into the download attribute. Only when clicking the \"Download attachment\" link would open a file save dialog with an odd name pre-filled, although browsers will convert illegal characters into valid ones, so it may not be identical to the one provided. Only when the \"Clone\" button has been clicked and after the exploit has already been triggered, the filename gets displayed. Note that an attacker can of course prevent this indicator of compromise to be shown and e.g. change the displayed text or obfuscate the filename by starting it with something harmless, like `image.png`, before opening the HTML tag.\n\n### Impact restrictions\n\nThe impact is mitigated by the fact that the vulnerability is, as far as our investigation concluded, paste-specific, i.e. opening a vulnerable paste can only compromise this one paste and no other pastes.\n\nFurthermore, as stated before, the impact is mitigated by the fact that we deploy a strong [CSP](https://content-security-policy.com/) that, by default, does not allow inline JS or other potentially easy methods that would allow an easy exploitation of the vulnerability.  \nThat said, we have to make users aware, that there may always be tricks to bypass such a CSP and the simple injection of HTML tags, e.g. destroying, faking or somehow phishing an HTML page does always remain a possibility.\n\nAs such, we treat this as a security vulnerability with medium severity. It is critical on it's own, but we believe that the deployed security mechanisms should prevent an exploit in practice in most cases.\n\n## Real-life impact\n\nWe checked all instances listed in the [PrivateBin directory in the Wiki](https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Directory) and didn't find any 1.1, 1.2 or 1.3 instances that had the CSP headers disabled or in a state we know to be vulnerable. We used the following script, that may be adapted to check the CSP headers of any single instance:\n\n```shell\nfor URL in $(\n    curl -s https://raw.githubusercontent.com/wiki/PrivateBin/PrivateBin/PrivateBin-Directory.md | grep -Po '^http.*?(?= )'\n)\ndo\n    echo -n \"$URL: \"\n    curl -sLI $URL | grep -Poi 'content-security-policy.*script-src.?\\K.*?(?=;)' || echo 'No CSP detected!'\ndone\n```\n\nSome of the above sites do offer file uploads. On these instances, it is still possible that a visitor could have CSP support disabled in their browser, i.e. via a transparent proxy at their internet uplink or due to a browser plugin or some other locally installed, misguided security solution.\n\n**Important:** This scan is only a cursory check and _must not_ be taken as a security analysis of any means! You are always responsible for the security of your own instance. Please do check it manually!\n\n## Mitigation\n\nAs server administrators can't detect if a paste contains file attachments at all (apart from their size) in version 1.3 and due to the encrypted filename in older versions, as well as the risk for clients that don't apply the CSP settings, we urge them to upgrade to versions 1.3.2 or 1.2.2.\n\nIf you use v1.3, you could disable the `fileupload` setting to prevent pastes from getting displayed that may contain this vulnerability. Note that this will break all existing pastes with uploads, however, so we do _not_ recommend this, but advise you to upgrade to a fixed version instead.\n\n## Further information\n\nWe want to make potential third-party client authors aware of this vulnerability and urge them to double-check their implementations. If they develop a client that displays untrusted foreign data from a paste in a HTML site, please make sure to escape it to prevent XSS attacks. Such attacks can only be prevented when the paste is displayed, a mitigation when a paste is created is pointless, as a different client can be used during creation.\n\nWe do also acknowledge and want to highlight the benefit of the CSP, which has first been [introduced in PrivateBin v1.0](https://github.com/PrivateBin/PrivateBin/issues/10).\n\nHowever, we want to make you again aware that a whitelist-based CSP as we use, may [sometimes still be bypassed](https://csp.withgoogle.com/docs/faq.html#problems-with-whitelists), e.g. if you host a copy of the Angular library on the same domain as your PrivateBin instance.\nWe are aware of that and [do consider](https://github.com/PrivateBin/PrivateBin/issues/108) upgrading to a stronger CSP in the future.\n\n### Issue discovery\n\nWhile it is satisfying that our hard work on introducing unit tests has payed off in the discovery and mitigation of this vulnerability, it does also show a limitation of unit testing. A third party doing a code review would have certainly focused on how the project handles user provided input and may have discovered this much quicker.\n\nThe discovery wasn't due to the unit test checking for HTML input to get properly escaped, on the contrary, the test assumed input would not be changed. So other instances of HTML tags generated would have happily passed the test. Only when the test generated a fragment of a link (`<a`) it failed, because the DOM silently removed it when it inserted the string, as links within links aren't allowed. While the test was written to throw arbitrary strings at the `AttachmentViewer.moveAttachmentTo()` method, the test would only check that these got inserted into the DOM unchanged, oblivious of their potential significance when interpreted as HTML.\n\nThe [test had been introduced](https://github.com/PrivateBin/PrivateBin/commit/39860dfdc434c00d18342b4fb3bc6f5d0960030d) on December 3rd, 2017, 570 commits ago. Every commit on master and in PRs since introduction in that commit triggers these tests to run for every supported PHP version. Additional test cycles get run on developers local environments during working on commits. Hence the test suite must have run a few thousand times, testing 100 random strings each time. And only after more then 2 years a string containing `<a` got generated, triggered the error condition and 22 shrinks later the smallest failing test case was presented as:\n\n```\nFailed after 65 tests and 22 shrinks. rngState: 8b8f0d4ec2a67139b5; Counterexample: \"image/png\"; \"\"; \"\\u0000\"; \"<a\"; \"\";\n```\n\nDiscussion about a potential problem with that code, [did spark last September](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34943221), when the vulnerable code part was changed to the one before before the current fix, but was [incorrectly judged](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34944396) as not being a problem, because all of our translation strings are hardcoded. The fact that we do actually add some untrusted user-provided content, wasn't considered at that point.\n\nIt should also be mentioned, that the coverage report released for version 1.3.1 did highlight the line that caused this vulnerability as not being covered during testing:\n\n![Coverage report for version 1.3.1 showing missing test coverage for line causing vulnerability]({static}/img/vulnerability-2020-01-11/coverage.png)\n\nSo, in conclusion, it is great to have all of these tools at our disposal, but the code quality would benefit a lot more from having more eyeballs and brains on it.\n\n## Timeline\n\n* 2019-12-24 \u2013 Property based unit test fails in a commit pushed to a PR.\n* 2019-12-25 \u2013 Issue investigated, preliminary patch and issue description published.\n* 2019-12-30 \u2013 Further investigations, proof-of-concept exploit demonstrated on a vulnerable test instance.\n* 2020-01-03 \u2013 Discussed broader mitigation of user provided content injections, reviewed other possible cases.\n* 2020-01-04 \u2013 Published a second patch based on review, escapes HTML in translation.\n* 2020-01-05 \u2013 Started writing vulnerability report.\n* 2020-01-07 \u2013 Backported fix for 1.2.1.\n* 2020-01-11 \u2013 [Release published](https://github.com/PrivateBin/PrivateBin/releases/tag/1.3.2).\n* 2020-01-11 \u2013 Vulnerability details published.",
             "link": "https://github.com/advisories/GHSA-8j72-p2wm-6738",
             "cve": "CVE-2020-5223",
@@ -15410,6 +15410,37 @@
                 }
             },
             "reference": "composer://propel/propel1"
+        }
+    },
+    "pterodactyl/panel": {
+        "2020-10-08": {
+            "title": "### Impact\nAn XSS vulnerability exists in versions of Pterodactyl Panel before 0.7.19. Affected versions do not properly sanitize account names before rendering them to the dropdown selector in the admin area when creating or modifying a server.\n\n### Patches\nThis XSS has been addressed in 0.7.19 and will be rolled forwards into the 1.0-rc.7 release.\n\n### Workarounds\nNo workaround exists without manual patching. See https://github.com/pterodactyl/panel/pull/2441/files for the files changed.\n\n### For more information\nIf you have any questions or comments about this advisory please reach out on Discord, or by emailing `dane` at `pterodactyl` dot `io`.\n\n_Thank you to Sergej for the responsible disclosure of this issue._",
+            "link": "https://github.com/advisories/GHSA-5822-pw57-vv37",
+            "cve": null,
+            "branches": {
+                "1.0.0.x": {
+                    "time": 1602187999,
+                    "versions": [
+                        ">= 1.0.0-rc.0",
+                        "<= 1.0.0-rc.6"
+                    ]
+                }
+            },
+            "reference": "composer://pterodactyl/panel"
+        },
+        "2020-10-08-1": {
+            "title": "### Impact\nAn XSS vulnerability exists in versions of Pterodactyl Panel before 0.7.19. Affected versions do not properly sanitize account names before rendering them to the dropdown selector in the admin area when creating or modifying a server.\n\n### Patches\nThis XSS has been addressed in 0.7.19 and will be rolled forwards into the 1.0-rc.7 release.\n\n### Workarounds\nNo workaround exists without manual patching. See https://github.com/pterodactyl/panel/pull/2441/files for the files changed.\n\n### For more information\nIf you have any questions or comments about this advisory please reach out on Discord, or by emailing `dane` at `pterodactyl` dot `io`.\n\n_Thank you to Sergej for the responsible disclosure of this issue._",
+            "link": "https://github.com/advisories/GHSA-5822-pw57-vv37",
+            "cve": null,
+            "branches": {
+                "0.7.x": {
+                    "time": 1602187999,
+                    "versions": [
+                        "< 0.7.19"
+                    ]
+                }
+            },
+            "reference": "composer://pterodactyl/panel"
         }
     },
     "pusher/pusher-php-server": {
@@ -15757,7 +15788,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-09-23-8": {
+        "2020-09-23-15": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -15787,7 +15818,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-09-23-9": {
+        "2020-09-23-16": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -18693,7 +18724,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-20": {
+        "CVE-2020-15132-27": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -18708,7 +18739,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-21": {
+        "CVE-2020-15132-28": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -30272,7 +30303,7 @@
             },
             "reference": "composer://usmanhalalit/pixie"
         },
-        "CVE-2019-10766-113": {
+        "CVE-2019-10766-120": {
             "title": "Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.",
             "link": "https://github.com/advisories/GHSA-68wg-qv6r-j4vp",
             "cve": "CVE-2019-10766",
@@ -30303,7 +30334,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19634-41": {
+        "CVE-2019-19634-48": {
             "title": "class.upload.php in verot.net class.upload through 1.0.3 and 2.x through 2.0.4, as used in the K2 extension for Joomla! and other products, omits .pht from the set of dangerous file extensions, a similar issue to CVE-2019-19576.",
             "link": "https://github.com/advisories/GHSA-2gc7-w4hw-rr2m",
             "cve": "CVE-2019-19634",
@@ -30332,7 +30363,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19576-74": {
+        "CVE-2019-19576-81": {
             "title": "class.upload.php in verot.net class.upload before 1.0.3 and 2.x before 2.0.4, as used in the K2 extension for Joomla! and other products, omits .phar from the set of dangerous file extensions.",
             "link": "https://github.com/advisories/GHSA-r5gm-4p5w-pq2p",
             "cve": "CVE-2019-19576",
