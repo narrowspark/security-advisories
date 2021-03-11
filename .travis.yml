@@ -23,7 +23,6 @@ before_install:
   - composer validate
 
 install:
-  - composer global require hirak/prestissimo
   - $COMPOSER_UP
 
 before_script:
