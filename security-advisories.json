@@ -15,6 +15,22 @@
             "reference": "composer://3f/pygmentize"
         }
     },
+    "adminer": {
+        "CVE-2020-35572": {
+            "title": "**Withdrawn:** Duplicate of GHSA-9pgx-gcph-mpqr.\n\nAdminer before 4.7.9 allows XSS via the history parameter to the default URI.",
+            "link": "https://github.com/advisories/GHSA-m56g-3g8v-2rxw",
+            "cve": "CVE-2020-35572",
+            "branches": {
+                "4.7.x": {
+                    "time": 1613076413,
+                    "versions": [
+                        "< 4.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://adminer"
+        }
+    },
     "adodb/adodb-php": {
         "2018-03-06": {
             "title": "Potential SQL injection vector",
@@ -253,6 +269,51 @@
         }
     },
     "baserproject/basercms": {
+        "CVE-2020-15273": {
+            "title": "baserCMS 4.4.0 and earlier is affected by Cross Site Scripting (XSS).\n\nImpact: XSS via Arbitrary script execution.\nAttack vector is: Administrator must be logged in.\nComponents are: Edit feed settings, Edit widget area, Sub site new registration, New category registration\nTested baserCMS Version : 4.4.0 (Latest)\nAffected baserCMS Version : 4.0.0 ~ 4.4.0\nPatches : https://basercms.net/security/20201029\nFound by Aquilao Null",
+            "link": "https://github.com/advisories/GHSA-wpww-4jf4-4hx8",
+            "cve": "CVE-2020-15273",
+            "branches": {
+                "4.4.x": {
+                    "time": 1604524118,
+                    "versions": [
+                        ">= 4.4.0",
+                        "< 4.4.1"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        },
+        "CVE-2020-15276": {
+            "title": "baserCMS 4.4.0 and earlier is affected by Cross Site Scripting (XSS).\n\nImpact: XSS via Arbitrary script execution.\nComponents are: Blog comment posting\nTested baserCMS Version : 4.4.0 (Latest)\nAffected baserCMS Version : 4.0.0 ~ 4.4.0\nPatches : https://basercms.net/security/20201029\nFound by yama",
+            "link": "https://github.com/advisories/GHSA-fw5q-j9p4-3vxg",
+            "cve": "CVE-2020-15276",
+            "branches": {
+                "4.4.x": {
+                    "time": 1604085020,
+                    "versions": [
+                        ">= 4.4.0",
+                        "< 4.4.1"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        },
+        "CVE-2020-15277": {
+            "title": "baserCMS 4.4.0 and earlier is affected by Remote Code Execution (RCE).\n\nImpact: XSS via Arbitrary script execution.\nAttack vector is: Administrator must be logged in.\nComponents are: Edit template.\nTested baserCMS Version : 4.4.0 (Latest)\nAffected baserCMS Version : 4.0.0 ~ 4.4.0\nPatches : https://basercms.net/security/20201029\nFound by Aquilao Null",
+            "link": "https://github.com/advisories/GHSA-6fmv-q269-55cw",
+            "cve": "CVE-2020-15277",
+            "branches": {
+                "4.4.x": {
+                    "time": 1604077559,
+                    "versions": [
+                        ">= 4.4.0",
+                        "< 4.4.1"
+                    ]
+                }
+            },
+            "reference": "composer://baserproject/basercms"
+        },
         "CVE-2020-15159": {
             "title": "baserCMS 4.3.6 and earlier is affected by Cross Site Scripting (XSS) and Remote Code Execution (RCE).\n\n* Impact: XSS to RCE via Arbitrary file upload.\n* Attack vector is: Administrator must be logged in.\n* Components are: ThemeFilesController.php, UploaderFilesController.php.\n* Tested baserCMS Version : 4.3.6 (Latest)\n* Affected baserCMS Version : 4.2.0 ~ 4.3.6 (XSS), 3.0.10 ~ 4.3.6 (RCE)\n* Patches : https://basercms.net/security/20200827\n\nFound by Vulnerability Research team in [Flatt Security Inc.](https://flatt.tech/)",
             "link": "https://github.com/advisories/GHSA-673x-f5wx-fxpw",
@@ -341,6 +402,22 @@
                 }
             },
             "reference": "composer://bolt/bolt"
+        }
+    },
+    "bolt/core": {
+        "CVE-2021-27367": {
+            "title": "Controller/Backend/FileEditController.php and Controller/Backend/FilemanagerController.php in Bolt before 4.1.13 allow Directory Traversal.",
+            "link": "https://github.com/advisories/GHSA-q88g-qx42-xfrh",
+            "cve": "CVE-2021-27367",
+            "branches": {
+                "4.1.x": {
+                    "time": 1613681516,
+                    "versions": [
+                        "< 4.1.13"
+                    ]
+                }
+            },
+            "reference": "composer://bolt/core"
         }
     },
     "brightlocal/phpwhois": {
@@ -752,7 +829,7 @@
             },
             "reference": "composer://centreon/centreon"
         },
-        "CVE-2019-16194-56": {
+        "CVE-2019-16194-85": {
             "title": "SQL injection vulnerabilities in Centreon through 19.04 allow attacks via the svc_id parameter in include/monitoring/status/Services/xml/makeXMLForOneService.php.",
             "link": "https://github.com/advisories/GHSA-wgjx-hm34-qgf7",
             "cve": "CVE-2019-16194",
@@ -1327,7 +1404,7 @@
             },
             "reference": "composer://derhansen/sf_event_mgt"
         },
-        "CVE-2020-25026-21": {
+        "CVE-2020-25026-50": {
             "title": "A missing access check in the backend module allows an authenticated backend user to export participant data for events which the user does not have access to, resulting in Information Disclosure. \n\nAnother missing access check in the backend module allows an authenticated backend user to send emails to event participants for events which the user does not have access to, resulting in Broken Access Control.\n\nExternal reference: [https://typo3.org/security/advisory/typo3-ext-sa-2020-017](https://typo3.org/security/advisory/typo3-ext-sa-2020-017)",
             "link": "https://github.com/advisories/GHSA-g8rg-7rpr-cwr2",
             "cve": "CVE-2020-25026",
@@ -1664,55 +1741,6 @@
         }
     },
     "drupal/core": {
-        "2018-04-18": {
-            "title": "Moderately critical - Cross Site Scripting",
-            "link": "https://www.drupal.org/sa-core-2018-003",
-            "branches": {
-                "8.0.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.0",
-                        "<8.1.0"
-                    ]
-                },
-                "8.1.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.1.0",
-                        "<8.2.0"
-                    ]
-                },
-                "8.2.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.2.0",
-                        "<8.3.0"
-                    ]
-                },
-                "8.3.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.3.0",
-                        "<8.4.0"
-                    ]
-                },
-                "8.4.x": {
-                    "time": 1524073980,
-                    "versions": [
-                        ">=8.4",
-                        "<8.4.7"
-                    ]
-                },
-                "8.5.x": {
-                    "time": 1524073980,
-                    "versions": [
-                        ">=8.5",
-                        "<8.5.2"
-                    ]
-                }
-            },
-            "reference": "composer://drupal/core"
-        },
         "2018-10-17-1": {
             "title": "Content moderation - Moderately critical - Access bypass",
             "link": "https://www.drupal.org/sa-core-2018-006",
@@ -2002,69 +2030,6 @@
                     "versions": [
                         ">=8.6.0",
                         "<8.6.2"
-                    ]
-                }
-            },
-            "reference": "composer://drupal/core"
-        },
-        "2019-04-17": {
-            "title": "Drupal core - Moderately critical - Multiple Vulnerabilities - SA-CORE-2019-005",
-            "link": "https://www.drupal.org/sa-core-2019-005",
-            "branches": {
-                "7.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=7.0",
-                        "<7.65"
-                    ]
-                },
-                "8.0.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.0.0",
-                        "<8.1.0"
-                    ]
-                },
-                "8.1.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.1.0",
-                        "<8.2.0"
-                    ]
-                },
-                "8.2.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.2.0",
-                        "<8.3.0"
-                    ]
-                },
-                "8.3.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.3.0",
-                        "<8.4.0"
-                    ]
-                },
-                "8.4.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.4.0",
-                        "<8.5.0"
-                    ]
-                },
-                "8.5.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=8.5.0",
-                        "<8.5.14"
-                    ]
-                },
-                "8.6.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=8.6.0",
-                        "<8.6.14"
                     ]
                 }
             },
@@ -2436,6 +2401,97 @@
                     "versions": [
                         ">=7.0.0",
                         "<7.70"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "2020-11-25": {
+            "title": "Drupal core - Critical - Arbitrary PHP code execution - SA-CORE-2020-013",
+            "link": "https://www.drupal.org/sa-core-2020-013",
+            "branches": {
+                "7.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.74"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.11"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.9"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.8"
                     ]
                 }
             },
@@ -3538,6 +3594,120 @@
                     "versions": [
                         ">=8.5",
                         "<8.5.3"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "CVE-2018-9861": {
+            "title": "Moderately critical - Cross Site Scripting",
+            "link": "https://www.drupal.org/sa-core-2018-003",
+            "cve": "CVE-2018-9861",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": 1524073980,
+                    "versions": [
+                        ">=8.4",
+                        "<8.4.7"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1524073980,
+                    "versions": [
+                        ">=8.5",
+                        "<8.5.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "CVE-2019-10909": {
+            "title": "Drupal core - Moderately critical - Multiple Vulnerabilities - SA-CORE-2019-005",
+            "link": "https://www.drupal.org/sa-core-2019-005",
+            "cve": "CVE-2019-10909",
+            "branches": {
+                "7.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=7.0",
+                        "<7.65"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.14"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.14"
                     ]
                 }
             },
@@ -4652,6 +4822,98 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
+        },
+        "CVE-2020-13671": {
+            "title": "Drupal core - Critical - Remote code execution - SA-CORE-2020-012",
+            "link": "https://www.drupal.org/sa-core-2020-012",
+            "cve": "CVE-2020-13671",
+            "branches": {
+                "7.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.74"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.11"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.9"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.8"
                     ]
                 }
             },
@@ -4659,55 +4921,6 @@
         }
     },
     "drupal/drupal": {
-        "2018-04-18": {
-            "title": "Moderately critical - Cross Site Scripting",
-            "link": "https://www.drupal.org/sa-core-2018-003",
-            "branches": {
-                "8.0.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.0",
-                        "<8.1.0"
-                    ]
-                },
-                "8.1.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.1.0",
-                        "<8.2.0"
-                    ]
-                },
-                "8.2.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.2.0",
-                        "<8.3.0"
-                    ]
-                },
-                "8.3.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.3.0",
-                        "<8.4.0"
-                    ]
-                },
-                "8.4.x": {
-                    "time": 1524073980,
-                    "versions": [
-                        ">=8.4",
-                        "<8.4.7"
-                    ]
-                },
-                "8.5.x": {
-                    "time": 1524073980,
-                    "versions": [
-                        ">=8.5",
-                        "<8.5.2"
-                    ]
-                }
-            },
-            "reference": "composer://drupal/drupal"
-        },
         "2018-10-17-1": {
             "title": "Content moderation - Moderately critical - Access bypass",
             "link": "https://www.drupal.org/sa-core-2018-006",
@@ -4997,69 +5210,6 @@
                     "versions": [
                         ">=8.6.0",
                         "<8.6.2"
-                    ]
-                }
-            },
-            "reference": "composer://drupal/drupal"
-        },
-        "2019-04-17": {
-            "title": "Drupal core - Moderately critical - Multiple Vulnerabilities - SA-CORE-2019-005",
-            "link": "https://www.drupal.org/sa-core-2019-005",
-            "branches": {
-                "7.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=7.0",
-                        "<7.65"
-                    ]
-                },
-                "8.0.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.0.0",
-                        "<8.1.0"
-                    ]
-                },
-                "8.1.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.1.0",
-                        "<8.2.0"
-                    ]
-                },
-                "8.2.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.2.0",
-                        "<8.3.0"
-                    ]
-                },
-                "8.3.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.3.0",
-                        "<8.4.0"
-                    ]
-                },
-                "8.4.x": {
-                    "time": null,
-                    "versions": [
-                        ">=8.4.0",
-                        "<8.5.0"
-                    ]
-                },
-                "8.5.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=8.5.0",
-                        "<8.5.14"
-                    ]
-                },
-                "8.6.x": {
-                    "time": 1555540260,
-                    "versions": [
-                        ">=8.6.0",
-                        "<8.6.14"
                     ]
                 }
             },
@@ -5431,6 +5581,97 @@
                     "versions": [
                         ">=7.0.0",
                         "<7.70"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "2020-11-25": {
+            "title": "Drupal core - Critical - Arbitrary PHP code execution - SA-CORE-2020-013",
+            "link": "https://www.drupal.org/sa-core-2020-013",
+            "branches": {
+                "7.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.74"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.11"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.9"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.8"
                     ]
                 }
             },
@@ -6533,6 +6774,120 @@
                     "versions": [
                         ">=8.5",
                         "<8.5.3"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2018-9861": {
+            "title": "Moderately critical - Cross Site Scripting",
+            "link": "https://www.drupal.org/sa-core-2018-003",
+            "cve": "CVE-2018-9861",
+            "branches": {
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": 1524073980,
+                    "versions": [
+                        ">=8.4",
+                        "<8.4.7"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1524073980,
+                    "versions": [
+                        ">=8.5",
+                        "<8.5.2"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2019-10909": {
+            "title": "Drupal core - Moderately critical - Multiple Vulnerabilities - SA-CORE-2019-005",
+            "link": "https://www.drupal.org/sa-core-2019-005",
+            "cve": "CVE-2019-10909",
+            "branches": {
+                "7.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=7.0",
+                        "<7.65"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.5.14"
+                    ]
+                },
+                "8.6.x": {
+                    "time": 1555540260,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.6.14"
                     ]
                 }
             },
@@ -7647,6 +8002,98 @@
                     "versions": [
                         ">=9.0.0",
                         "<9.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
+        },
+        "CVE-2020-13671": {
+            "title": "Drupal core - Critical - Remote code execution - SA-CORE-2020-012",
+            "link": "https://www.drupal.org/sa-core-2020-012",
+            "cve": "CVE-2020-13671",
+            "branches": {
+                "7.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.74"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.8.11"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.9"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1605722520,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.8"
                     ]
                 }
             },
@@ -7739,6 +8186,22 @@
                     "versions": [
                         ">=5.4.0",
                         "<5.4.6.1"
+                    ]
+                }
+            }
+        }
+    },
+    "ezsystems/ez-support-tools": {
+        "2020-12-01-1": {
+            "title": "IBEXA-SA-2020-007 Failing access control in system info view",
+            "link": "https://developers.ibexa.co/security-advisories/ibexa-sa-2020-007-failing-access-control-in-system-info-view",
+            "reference": "composer://ezsystems/ez-support-tools",
+            "branches": {
+                "2.2.x": {
+                    "time": 1606829760,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.2.3"
                     ]
                 }
             }
@@ -7957,6 +8420,38 @@
                     ]
                 }
             }
+        }
+    },
+    "ezsystems/ezplatform-rest": {
+        "2021-03-11": {
+            "title": "This Security Advisory is about a vulnerability in eZ Platform v1.13, v2.5, and v3.2, and in Ibexa DXP and Ibexa Open Source v3.3. The /user/sessions endpoint can let an attacker detect if a given username or email refers to a valid account. This can be detected through differences in the response data or response time of certain requests. The fix ensures neither attack is possible. The fix is distributed via Composer.\n\nIf you come across a security issue in our products, here is how you can report it to us: https://doc.ibexa.co/en/latest/guide/reporting_issues/#toc",
+            "link": "https://github.com/advisories/GHSA-7vwg-39h8-8qp8",
+            "cve": null,
+            "branches": {
+                "1.3.1.x": {
+                    "time": 1615484521,
+                    "versions": [
+                        ">= 1.3.0",
+                        "<= 1.3.1.0"
+                    ]
+                }
+            },
+            "reference": "composer://ezsystems/ezplatform-rest"
+        },
+        "2021-03-11-2": {
+            "title": "This Security Advisory is about a vulnerability in eZ Platform v1.13, v2.5, and v3.2, and in Ibexa DXP and Ibexa Open Source v3.3. The /user/sessions endpoint can let an attacker detect if a given username or email refers to a valid account. This can be detected through differences in the response data or response time of certain requests. The fix ensures neither attack is possible. The fix is distributed via Composer.\n\nIf you come across a security issue in our products, here is how you can report it to us: https://doc.ibexa.co/en/latest/guide/reporting_issues/#toc",
+            "link": "https://github.com/advisories/GHSA-7vwg-39h8-8qp8",
+            "cve": null,
+            "branches": {
+                "1.2.2.x": {
+                    "time": 1615484521,
+                    "versions": [
+                        ">= 1.2.0",
+                        "<= 1.2.2.0"
+                    ]
+                }
+            },
+            "reference": "composer://ezsystems/ezplatform-rest"
         }
     },
     "ezsystems/ezplatform-user": {
@@ -8406,6 +8901,29 @@
             "reference": "composer://ezyang/htmlpurifier"
         }
     },
+    "facade/ignition": {
+        "CVE-2021-3129": {
+            "title": "Remote code execution",
+            "link": "https://github.com/facade/ignition/pull/334",
+            "cve": "CVE-2021-3129",
+            "branches": {
+                "master": {
+                    "time": 1605604680,
+                    "versions": [
+                        "<=2.5.1",
+                        ">=2.0"
+                    ]
+                },
+                "1.x": {
+                    "time": 1613213223,
+                    "versions": [
+                        "<=1.16.13"
+                    ]
+                }
+            },
+            "reference": "composer://facade/ignition"
+        }
+    },
     "firebase/php-jwt": {
         "2015-04-02": {
             "title": "Critical vulnerabilities in JSON Web Token libraries",
@@ -8420,6 +8938,39 @@
                 }
             },
             "reference": "composer://firebase/php-jwt"
+        }
+    },
+    "flarum/sticky": {
+        "CVE-2021-21283": {
+            "title": "### Impact\nA change in release beta 14 of the Sticky extension caused the plain text content of the first post of a pinned discussion to be injected as HTML on the discussion list. The issue was discovered following an internal audit.\n\nAny HTML would be injected through Mithril's `m.trust()` helper. This resulted in an HTML injection where `<script>` tags would not be executed. However it was possible to run javascript from other HTML attributes, enabling a cross-site scripting (XSS) attack to be performed.\n\nSince the exploit only happens with the first post of a pinned discussion, an attacker would need the ability to pin their own discussion, or be able to edit a discussion that was previously pinned.\n\nOn forums where all pinned posts are authored by your staff, you can be relatively certain the vulnerability has not been exploited.\n\nForums where some user-created discussions were pinned can look at the first post edit date to find whether the vulnerability might have been exploited. Because Flarum doesn't store the post content history, you cannot be certain if a malicious edit was reverted.\n\n### Patches\nThe fix will be available in version v0.1.0-beta.16 with Flarum beta 16. The fix has already been back-ported to Flarum beta 15 as version v0.1.0-beta.15.1 of the Sticky extension.\n\n### Workarounds\nForum administrators can disable the Sticky extension until they are able to apply the update. The vulnerability cannot be exploited while the extension is disabled.\n\n### References\n\n- [Release announcement](https://discuss.flarum.org/d/26042-security-update-to-flarum-sticky-010-beta151)\n- [Pull Request](https://github.com/flarum/sticky/pull/24)\n\n### For more information\nIf you have any questions or comments about this advisory, please start a new discussion on our [support forum](https://discuss.flarum.org/t/support).\n\nIf you discover a security vulnerability within Flarum, please send an e-mail to [security@flarum.org](mailto:security@flarum.org). All security vulnerabilities will be promptly addressed. More details can be found in our [security policy](https://github.com/flarum/core/security/policy).",
+            "link": "https://github.com/advisories/GHSA-h3gg-7wx2-cq3h",
+            "cve": "CVE-2021-21283",
+            "branches": {
+                "0.1.0.x": {
+                    "time": 1611944021,
+                    "versions": [
+                        ">= 0.1.0-beta.14",
+                        "<= 0.1.0-beta.15"
+                    ]
+                }
+            },
+            "reference": "composer://flarum/sticky"
+        }
+    },
+    "flarum/tags": {
+        "2021-01-29": {
+            "title": "This advisory concerns a vulnerability which was patched and publicly released on October 5, 2020.\n\n### Impact\nThis vulnerability allowed any registered user to edit the tags of any discussion for which they have READ access using the REST API.\n\nUsers were able to remove any existing tag, and add any tag in which they are allowed to create discussions. The chosen tags still had to match the configured Tags minimums and maximums.\n\nBy moving the discussion to new tags, users were able to go around permissions applied to restricted tags. Depending on the setup, this can include publicly exposing content that was only visible to certain groups, or gain the ability to interact with content where such interaction was limited.\n\nThe full impact varies depending on the configuration of permissions and restricted tags, and which community extensions are being used. All tag-scoped permissions offered by extensions are impacted by this ability to go around them.\n\nForums that don't use restricted tags and don't use any extension that relies on tags for access control should not see any security impact. An update is still required to stop users from being able to change any discussion's tags.\n\nForums that don't use the Tags extension are unaffected.\n\n### Patches\nThe fix will be available in version v0.1.0-beta.14 with Flarum beta 14. The fix has already been back-ported to Flarum beta 13 as version v0.1.0-beta.13.2 of the Tags extension.\n\n### Workarounds\nVersion v0.1.0-beta.13.2 of the Tags extension allows existing Flarum beta 13 forums to fix the issue without the need to update to beta 14.\n\nForums that have not yet updated to Flarum beta 13 are encouraged to update as soon as possible.\n\n### References\n\n- [Release announcement](https://discuss.flarum.org/d/25059-security-update-to-flarum-tags-010-beta132)\n- [GitHub issue](https://github.com/flarum/core/issues/2355)\n\n### For more information\nIf you have any questions or comments about this advisory, please start a new discussion on our [support forum](https://discuss.flarum.org/t/support).\n\nIf you discover a security vulnerability within Flarum, please send an e-mail to [security@flarum.org](mailto:security@flarum.org). All security vulnerabilities will be promptly addressed. More details can be found in our [security policy](https://github.com/flarum/core/security/policy).",
+            "link": "https://github.com/advisories/GHSA-32wx-4gxx-h48f",
+            "cve": null,
+            "branches": {
+                "0.1.0.x": {
+                    "time": 1611944012,
+                    "versions": [
+                        "<= 0.1.0-beta.13"
+                    ]
+                }
+            },
+            "reference": "composer://flarum/tags"
         }
     },
     "fooman/tcpdf": {
@@ -8611,6 +9162,20 @@
         }
     },
     "getgrav/grav": {
+        "2020-12-10": {
+            "title": "### Impact\nPrivileged users (with the ability to edit pages) have a mechanism to perform remote code execution via XSS. At a minimum, the vulnerability represents a bypass of security controls put in place to mitigate this form of attack.\n\nThe remote code execution can be performed because XSS would allow an attacker to execute functionality on behalf of a stolen administrative account - the facility to install custom plugins would then allow said attacker to install a plugin containing a web shell and thus garner access to the underlying system.\n\n### References\nhttps://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS)\nhttps://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html\nhttps://cwe.mitre.org/data/definitions/79.html\n\n### For more information\nPlease contact contact@pentest.co.uk",
+            "link": "https://github.com/advisories/GHSA-cvmr-6428-87w9",
+            "cve": null,
+            "branches": {
+                "1.6.x": {
+                    "time": 1607641988,
+                    "versions": [
+                        "< 1.6.30"
+                    ]
+                }
+            },
+            "reference": "composer://getgrav/grav"
+        },
         "CVE-2019-16126": {
             "title": "Grav through 1.6.15 allows (Stored) Cross-Site Scripting due to JavaScript execution in SVG images.",
             "link": "https://github.com/advisories/GHSA-6268-v434-45m5",
@@ -8624,6 +9189,68 @@
                 }
             },
             "reference": "composer://getgrav/grav"
+        }
+    },
+    "getkirby/cms": {
+        "CVE-2020-26253": {
+            "title": "### Impact\n\n#### About our registration block\n\nIn order to protect new installations on public servers that don't have an admin account for the Panel yet, we block account registration there by default. This is a security feature, which we implemented years ago in Kirby 2. It helps to avoid that you forget registering your first admin account on a public server. \n\nIn this case \u2013 without our security block \u2013 someone else might theoretically be able to find your site, find out it's running on Kirby, find the Panel and then register the account first. It's an unlikely situation, but it's still a certain risk.\n\nTo be able to register the first Panel account on a public server, you have to enforce the installer via a config setting. This helps to push all users to the best practice of registering your first Panel account on your local machine and upload it together with the rest of the site. \n\n#### The issue\n\nAs noted by [Jukka Rautanen](https://github.com/jukra), this installation block implementation in Kirby versions before 3.3.6 still assumed that .dev domains are local domains, which is no longer true. In the meantime, those domains became publicly available. This means that our installation block is no longer working as expected if you use a .dev domain for your Kirby site.\n\nIn fixing this issue, we've also found out that the local installation check may also fail if your site is behind a reverse proxy. \n\n#### Am I affected?\n\nYou are only affected if:\n\n1. you use a .dev domain or your site is behind a reverse proxy &\n2. you have not yet registered your first Panel account on the public server & \n3. someone finds your site and tries to login at `yourdomain.dev/panel` before you register your first account.\n\nYou are not affected if you have already created one or multiple Panel accounts (no matter if on a .dev domain or behind a reverse proxy).\n\n### Patches\n\nThe problem has been patched in [Kirby 2.5.14](https://github.com/getkirby-v2/panel/releases/tag/2.5.14) and [Kirby 3.3.6](https://github.com/getkirby/kirby/releases/tag/3.3.6). Please update to one of these or a [later version](https://github.com/getkirby/kirby/releases) to fix the vulnerability.\n\nNote Kirby 2 reaches end of life on December 31, 2020. We therefore recommend to upgrade your Kirby 2 sites to Kirby 3. If you cannot upgrade, we still recommend to update to Kirby 2.5.14.\n\n### Workarounds\n\nKirby 2 sites on older releases can also be patched by applying the [changes from this commit](https://github.com/getkirby-v2/panel/commit/7f9ac1876bacb89fd8f142f5e561a02ebb725baa).",
+            "link": "https://github.com/advisories/GHSA-2ccx-2gf3-8xvv",
+            "cve": "CVE-2020-26253",
+            "branches": {
+                "3.3.x": {
+                    "time": 1610651719,
+                    "versions": [
+                        ">= 3.0.0",
+                        "< 3.3.6"
+                    ]
+                }
+            },
+            "reference": "composer://getkirby/cms"
+        },
+        "CVE-2020-26255": {
+            "title": "### Impact\n\nAn editor with full access to the Kirby Panel can upload a PHP `.phar` file and execute it on the server. This vulnerability is critical if you might have potential attackers in your group of authenticated Panel users, as they can gain access to the server with such a Phar file.\n\nVisitors without Panel access *cannot* use this attack vector.\n\n### Patches\n\nThe problem has been patched in [Kirby 2.5.14](https://github.com/getkirby-v2/panel/releases/tag/2.5.14) and [Kirby 3.4.5](https://github.com/getkirby/kirby/releases/tag/3.4.5). Please update to one of these or a [later version](https://github.com/getkirby/kirby/releases/) to fix the vulnerability.\n\n**Note:** Kirby 2 reaches end of life on December 31, 2020. We therefore recommend to upgrade your Kirby 2 sites to Kirby 3. If you cannot upgrade, we still recommend to update to Kirby 2.5.14.\n\n### Workarounds\n\nKirby 2 sites on older releases can also be patched by applying the [changes from this commit](https://github.com/getkirby-v2/panel/commit/5a569d4e3ddaea2b6628d7ec1472a3e8bc410881).\n\n### Credits\n\nThanks to Thore Imhof of Accenture for reporting the problem.",
+            "link": "https://github.com/advisories/GHSA-g3h8-cg9x-47qw",
+            "cve": "CVE-2020-26255",
+            "branches": {
+                "3.4.x": {
+                    "time": 1607438528,
+                    "versions": [
+                        ">= 3.0.0",
+                        "< 3.4.5"
+                    ]
+                }
+            },
+            "reference": "composer://getkirby/cms"
+        }
+    },
+    "getkirby/panel": {
+        "CVE-2020-26253": {
+            "title": "### Impact\n\n#### About our registration block\n\nIn order to protect new installations on public servers that don't have an admin account for the Panel yet, we block account registration there by default. This is a security feature, which we implemented years ago in Kirby 2. It helps to avoid that you forget registering your first admin account on a public server. \n\nIn this case \u2013 without our security block \u2013 someone else might theoretically be able to find your site, find out it's running on Kirby, find the Panel and then register the account first. It's an unlikely situation, but it's still a certain risk.\n\nTo be able to register the first Panel account on a public server, you have to enforce the installer via a config setting. This helps to push all users to the best practice of registering your first Panel account on your local machine and upload it together with the rest of the site. \n\n#### The issue\n\nAs noted by [Jukka Rautanen](https://github.com/jukra), this installation block implementation in Kirby versions before 3.3.6 still assumed that .dev domains are local domains, which is no longer true. In the meantime, those domains became publicly available. This means that our installation block is no longer working as expected if you use a .dev domain for your Kirby site.\n\nIn fixing this issue, we've also found out that the local installation check may also fail if your site is behind a reverse proxy. \n\n#### Am I affected?\n\nYou are only affected if:\n\n1. you use a .dev domain or your site is behind a reverse proxy &\n2. you have not yet registered your first Panel account on the public server & \n3. someone finds your site and tries to login at `yourdomain.dev/panel` before you register your first account.\n\nYou are not affected if you have already created one or multiple Panel accounts (no matter if on a .dev domain or behind a reverse proxy).\n\n### Patches\n\nThe problem has been patched in [Kirby 2.5.14](https://github.com/getkirby-v2/panel/releases/tag/2.5.14) and [Kirby 3.3.6](https://github.com/getkirby/kirby/releases/tag/3.3.6). Please update to one of these or a [later version](https://github.com/getkirby/kirby/releases) to fix the vulnerability.\n\nNote Kirby 2 reaches end of life on December 31, 2020. We therefore recommend to upgrade your Kirby 2 sites to Kirby 3. If you cannot upgrade, we still recommend to update to Kirby 2.5.14.\n\n### Workarounds\n\nKirby 2 sites on older releases can also be patched by applying the [changes from this commit](https://github.com/getkirby-v2/panel/commit/7f9ac1876bacb89fd8f142f5e561a02ebb725baa).",
+            "link": "https://github.com/advisories/GHSA-2ccx-2gf3-8xvv",
+            "cve": "CVE-2020-26253",
+            "branches": {
+                "2.5.x": {
+                    "time": 1610651719,
+                    "versions": [
+                        "< 2.5.14"
+                    ]
+                }
+            },
+            "reference": "composer://getkirby/panel"
+        },
+        "CVE-2020-26255": {
+            "title": "### Impact\n\nAn editor with full access to the Kirby Panel can upload a PHP `.phar` file and execute it on the server. This vulnerability is critical if you might have potential attackers in your group of authenticated Panel users, as they can gain access to the server with such a Phar file.\n\nVisitors without Panel access *cannot* use this attack vector.\n\n### Patches\n\nThe problem has been patched in [Kirby 2.5.14](https://github.com/getkirby-v2/panel/releases/tag/2.5.14) and [Kirby 3.4.5](https://github.com/getkirby/kirby/releases/tag/3.4.5). Please update to one of these or a [later version](https://github.com/getkirby/kirby/releases/) to fix the vulnerability.\n\n**Note:** Kirby 2 reaches end of life on December 31, 2020. We therefore recommend to upgrade your Kirby 2 sites to Kirby 3. If you cannot upgrade, we still recommend to update to Kirby 2.5.14.\n\n### Workarounds\n\nKirby 2 sites on older releases can also be patched by applying the [changes from this commit](https://github.com/getkirby-v2/panel/commit/5a569d4e3ddaea2b6628d7ec1472a3e8bc410881).\n\n### Credits\n\nThanks to Thore Imhof of Accenture for reporting the problem.",
+            "link": "https://github.com/advisories/GHSA-g3h8-cg9x-47qw",
+            "cve": "CVE-2020-26255",
+            "branches": {
+                "2.5.x": {
+                    "time": 1607438528,
+                    "versions": [
+                        "< 2.5.14"
+                    ]
+                }
+            },
+            "reference": "composer://getkirby/panel"
         }
     },
     "gos/web-socket-bundle": {
@@ -9058,6 +9685,64 @@
                 }
             },
             "reference": "composer://illuminate/database"
+        },
+        "2021-01-21": {
+            "title": "Unexpected bindings in QueryBuilder",
+            "link": "https://github.com/laravel/framework/security/advisories/GHSA-x7p5-p2c9-phvg",
+            "cve": null,
+            "branches": {
+                "6.x": {
+                    "time": 1579619400,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.14"
+                    ]
+                },
+                "7.x": {
+                    "time": 1579619400,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.30.4"
+                    ]
+                },
+                "8.x": {
+                    "time": 1579619940,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.24.0"
+                    ]
+                }
+            },
+            "reference": "composer://illuminate/database"
+        },
+        "CVE-2021-21263": {
+            "title": "Unexpected bindings in QueryBuilder",
+            "link": "https://blog.laravel.com/security-laravel-62011-7302-8221-released https://blog.laravel.com/security-laravel-62012-7303-released",
+            "cve": "CVE-2021-21263",
+            "branches": {
+                "6.x": {
+                    "time": 1578926100,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.12"
+                    ]
+                },
+                "7.x": {
+                    "time": 1578926220,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.30.3"
+                    ]
+                },
+                "8.x": {
+                    "time": 1578926220,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.22.1"
+                    ]
+                }
+            },
+            "reference": "composer://illuminate/database"
         }
     },
     "illuminate/encryption": {
@@ -9189,11 +9874,27 @@
             "reference": "composer://james-heinrich/getid3"
         }
     },
+    "joomla/archive": {
+        "CVE-2021-26028": {
+            "title": "Path Traversal within joomla/archive zip class",
+            "link": "https://developer.joomla.org/security-centre/848-20210308-core-path-traversal-within-joomla-archive-zip-class.html",
+            "cve": "CVE-2021-26028",
+            "branches": {
+                "master": {
+                    "time": 1615037820,
+                    "versions": [
+                        "<1.1.10"
+                    ]
+                }
+            },
+            "reference": "composer://joomla/archive"
+        }
+    },
     "joomla/session": {
-        "2015-12-14": {
+        "CVE-2015-8566": {
             "title": "Remote Code Execution Vulnerability",
             "link": "https://developer.joomla.org/security-centre/637-20151205-session-remote-code-execution-vulnerability.html",
-            "cve": null,
+            "cve": "CVE-2015-8566",
             "branches": {
                 "master": {
                     "time": 1450117345,
@@ -9630,6 +10331,35 @@
             },
             "reference": "composer://laravel/framework"
         },
+        "2021-01-21": {
+            "title": "Unexpected bindings in QueryBuilder",
+            "link": "https://github.com/laravel/framework/security/advisories/GHSA-x7p5-p2c9-phvg",
+            "cve": null,
+            "branches": {
+                "6.x": {
+                    "time": 1579619400,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.14"
+                    ]
+                },
+                "7.x": {
+                    "time": 1579619400,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.30.4"
+                    ]
+                },
+                "8.x": {
+                    "time": 1579619940,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.24.0"
+                    ]
+                }
+            },
+            "reference": "composer://laravel/framework"
+        },
         "CVE-2017-14775": {
             "title": "Timing attack vector for remember me token",
             "link": "https://github.com/laravel/framework/pull/21320",
@@ -9711,6 +10441,35 @@
                     "versions": [
                         ">=5.4.0",
                         "<5.4.22"
+                    ]
+                }
+            },
+            "reference": "composer://laravel/framework"
+        },
+        "CVE-2021-21263": {
+            "title": "Unexpected bindings in QueryBuilder",
+            "link": "https://blog.laravel.com/security-laravel-62011-7302-8221-released",
+            "cve": "CVE-2021-21263",
+            "branches": {
+                "6.x": {
+                    "time": 1578926100,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.11"
+                    ]
+                },
+                "7.x": {
+                    "time": 1578926220,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.30.2"
+                    ]
+                },
+                "8.x": {
+                    "time": 1578926220,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.22.1"
                     ]
                 }
             },
@@ -9929,7 +10688,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8126-136": {
+        "CVE-2019-8126-165": {
             "title": "An XML entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated admin user can craft document type definition for an XML representing XML layout. The crafted document type definition and XML layout allow processing of external entities which can lead to information disclosure.",
             "link": "https://github.com/advisories/GHSA-427g-2r83-3ccm",
             "cve": "CVE-2019-8126",
@@ -9959,7 +10718,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8121-137": {
+        "CVE-2019-8121-166": {
             "title": "An insecure component vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. Magento 2 codebase leveraged outdated versions of JS libraries (Bootstrap, jquery, Knockout) with known security vulnerabilities.",
             "link": "https://github.com/advisories/GHSA-89ch-hqf9-rgp3",
             "cve": "CVE-2019-8121",
@@ -9989,7 +10748,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8135-138": {
+        "CVE-2019-8135-167": {
             "title": "A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Dependency injection through Symphony framework allows service identifiers to be derived from user controlled data, which can lead to remote code execution.",
             "link": "https://github.com/advisories/GHSA-3q5x-7mxp-rp6j",
             "cve": "CVE-2019-8135",
@@ -10019,7 +10778,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8133-139": {
+        "CVE-2019-8133-168": {
             "title": "A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.",
             "link": "https://github.com/advisories/GHSA-62fx-3v4f-mwxm",
             "cve": "CVE-2019-8133",
@@ -10049,7 +10808,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8145-140": {
+        "CVE-2019-8145-169": {
             "title": "A stored cross-site scripting (XSS) vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user can inject arbitrary JavaScript code into the attribute set name when listing the products.",
             "link": "https://github.com/advisories/GHSA-xv69-f7x5-r4qw",
             "cve": "CVE-2019-8145",
@@ -10079,7 +10838,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8233-141": {
+        "CVE-2019-8233-170": {
             "title": "In Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an unauthenticated user can inject arbitrary JavaScript code as a result of the sanitization engine ignoring HTML comments.",
             "link": "https://github.com/advisories/GHSA-fm68-89m8-4gjj",
             "cve": "CVE-2019-8233",
@@ -14447,7 +15206,557 @@
             "reference": "composer://marcwillmann/turn"
         }
     },
+    "mautic/core": {
+        "CVE-2020-35124": {
+            "title": "Mautic core - Highly Critical - XSS vulnerability leveraged through referrers could allow un-authorized admin access",
+            "link": "https://www.mautic.org/blog/community/security-release-all-versions-mautic-prior-2-16-5-and-3-2-4",
+            "cve": "CVE-2020-35124",
+            "branches": {
+                "3.2": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.4"
+                    ]
+                },
+                "3.1": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.0": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "2.16": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.16.5"
+                    ]
+                }
+            },
+            "reference": "composer://mautic/core"
+        },
+        "CVE-2020-35125": {
+            "title": "Mautic core - Highly Critical - XSS vulnerability leveraged through referrers could allow un-authorized admin access",
+            "link": "https://www.mautic.org/blog/community/security-release-all-versions-mautic-prior-2-16-5-and-3-2-4",
+            "cve": "CVE-2020-35125",
+            "branches": {
+                "3.2": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.4"
+                    ]
+                },
+                "3.1": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.0": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "2.16": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.16.5"
+                    ]
+                }
+            },
+            "reference": "composer://mautic/core"
+        },
+        "CVE-2021-3142": {
+            "title": "Mautic core - Moderately Critical - XSS vulnerability when creating/editing a company",
+            "link": "https://www.mautic.org/blog/community/security-release-all-versions-mautic-prior-2-16-5-and-3-2-4",
+            "cve": "CVE-2021-3142",
+            "branches": {
+                "3.2": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.4"
+                    ]
+                },
+                "3.1": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.0": {
+                    "time": null,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "2.16": {
+                    "time": 1610644020,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.16.5"
+                    ]
+                }
+            },
+            "reference": "composer://mautic/core"
+        }
+    },
     "mediawiki/core": {
+        "CVE-2018-0503": {
+            "title": "$wgRateLimits (rate limit / ping limiter) entry for 'user' overrides that for 'newbie'",
+            "link": "https://phabricator.wikimedia.org/T169545",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2018-0503",
+            "branches": {
+                "1.27.x": {
+                    "time": 1537469973,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.5"
+                    ]
+                },
+                "1.29.x": {
+                    "time": 1537471494,
+                    "versions": [
+                        ">=1.29.0",
+                        "<1.29.3"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1537472597,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.1"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1537473568,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.1"
+                    ]
+                }
+            }
+        },
+        "CVE-2018-0504": {
+            "title": "When a log event is (partially) hidden Special:Redirect/logid can link to the incorrect log and reveal hidden information",
+            "link": "https://phabricator.wikimedia.org/T187638",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2018-0504",
+            "branches": {
+                "1.27.x": {
+                    "time": 1530963382,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.5"
+                    ]
+                },
+                "1.29.x": {
+                    "time": 1530963350,
+                    "versions": [
+                        ">=1.29.0",
+                        "<1.29.3"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1530963326,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.1"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1530963298,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.1"
+                    ]
+                }
+            }
+        },
+        "CVE-2018-0505": {
+            "title": "BotPassword can bypass CentralAuth's account lock",
+            "link": "https://phabricator.wikimedia.org/T194605",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2018-0505",
+            "branches": {
+                "1.27.x": {
+                    "time": 1537469973,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.5"
+                    ]
+                },
+                "1.29.x": {
+                    "time": 1537471494,
+                    "versions": [
+                        ">=1.29.0",
+                        "<1.29.3"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1537472597,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.1"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1537473568,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.1"
+                    ]
+                }
+            }
+        },
+        "CVE-2018-13258": {
+            "title": "1.31.0 tarball is missing .htaccess files",
+            "link": "https://phabricator.wikimedia.org/T199029",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2018-13258",
+            "branches": {
+                "1.31.x": {
+                    "time": 1537473568,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.1"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12466": {
+            "title": "Use token when logging out",
+            "link": "https://phabricator.wikimedia.org/T25227",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12466",
+            "branches": {
+                "1.27.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                },
+                "1.33.x": {
+                    "time": null,
+                    "versions": [
+                        ">=1.32.99",
+                        "<1.33.0"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12467": {
+            "title": "Need to make a limit of count of attempts to change email address",
+            "link": "https://phabricator.wikimedia.org/T209794",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12467",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249713,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559842247,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559842378,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12468": {
+            "title": "Direct POST to Special:ChangeEmail will bypass reauth check",
+            "link": "https://phabricator.wikimedia.org/T197279",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12468",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249713,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559842241,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559842376,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12469": {
+            "title": "Exposed suppressed username or log in Special:EditTags",
+            "link": "https://phabricator.wikimedia.org/T222036",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12469",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249713,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559856301,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559856488,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12470": {
+            "title": "Exposed suppressed log in RevisionDelete page",
+            "link": "https://phabricator.wikimedia.org/T222038",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12470",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249714,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559856312,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559856499,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12471": {
+            "title": "Loading JS from user space where the username is not a registered account is dangerous and should be banned",
+            "link": "https://phabricator.wikimedia.org/T207603",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12471",
+            "branches": {
+                "1.27.x": {
+                    "time": 1540145855,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1540145157,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1540148971,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12472": {
+            "title": "Forbid blocking IP ranges as big as /1 and /2, as done on ruwikiquote using the API",
+            "link": "https://phabricator.wikimedia.org/T199540",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12472",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249713,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559856005,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559856021,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12473": {
+            "title": "Potential enwiki DOS due to slow WatchedItemStore::countVisitingWatchersMultiple",
+            "link": "https://phabricator.wikimedia.org/T204729",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12473",
+            "branches": {
+                "1.27.x": {
+                    "time": 1537481164,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1537481145,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1537481118,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-12474": {
+            "title": "API responses for unpatrolled or (not) autopatrolled recent changes require privileges but may be cached publicly",
+            "link": "https://phabricator.wikimedia.org/T212118",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-12474",
+            "branches": {
+                "1.27.x": {
+                    "time": 1559249713,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.27.6"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1559249757,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.30.2"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1559856272,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.2"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1559856473,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.2"
+                    ]
+                }
+            }
+        },
         "CVE-2019-16738": {
             "title": "Exposed suppressed username via Special:Redirect",
             "link": "https://phabricator.wikimedia.org/T230402",
@@ -14473,6 +15782,42 @@
                     "versions": [
                         ">=1.33.0",
                         "<1.33.1"
+                    ]
+                }
+            }
+        },
+        "CVE-2019-19709": {
+            "title": "Possible to circumvent title-blacklist",
+            "link": "https://phabricator.wikimedia.org/T239466",
+            "reference": "composer://mediawiki/core",
+            "cve": "CVE-2019-19709",
+            "branches": {
+                "1.31.x": {
+                    "time": 1575997882,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.6"
+                    ]
+                },
+                "1.32.x": {
+                    "time": 1575997551,
+                    "versions": [
+                        ">=1.32.0",
+                        "<1.32.6"
+                    ]
+                },
+                "1.33.x": {
+                    "time": 1575997330,
+                    "versions": [
+                        ">=1.33.0",
+                        "<1.33.2"
+                    ]
+                },
+                "1.34.x": {
+                    "time": 1575561767,
+                    "versions": [
+                        ">=1.33.99",
+                        "<1.34.0"
                     ]
                 }
             }
@@ -14854,8 +16199,52 @@
         }
     },
     "october/backend": {
+        "CVE-2021-21265": {
+            "title": "### Impact\nWhen running on servers that are configured to accept a wildcard as a hostname (i.e. the server routes any request, regardless of the HOST header to an October CMS instance) the potential exists for Host Header Poisoning attacks to succeed. See the following resources for more information on Host Header Poisoning:\n- https://portswigger.net/web-security/host-header\n- https://dzone.com/articles/what-is-a-host-header-attack\n\n### Patches\n\nA feature has been added in v1.1.2 to allow a set of trusted hosts to be specified in the application.\n\n### Workarounds\n\n- Apply https://github.com/octobercms/library/commit/f86fcbcd066d6f8b939e8fe897409d152b11c3c6 & https://github.com/octobercms/october/commit/f638d3f78cfe91d7f6658820f9d5e424306a3db0 to your installation manually if unable to upgrade to v1.1.2.\n\n- Check that the configuration setting `cms.linkPolicy` is set to `force`.\n\n### Alternative Workaround\n\nCheck to make sure that your web server does not accept any hostname when serving your web application.\n\n1. Add an entry called `testing.tld` to your computer's host file and direct it to your server's IP address\n2. Open the address `testing.tld` in your web browser\n3. Make sure an October CMS website is not available at this address\n\nIf an October CMS website is returned, configure your webserver to only allow known hostnames. If you require assistance with this, please contact your server administrator.\n\n### References\n\nReported by [Abdullah Hussam](https://github.com/ahussam)\n\n### For More Information\n\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\n<img width=\"1108\" alt=\"Screen Shot 2021-01-15 at 4 12 57 PM\" src=\"https://user-images.githubusercontent.com/7253840/104783859-92fb3600-574c-11eb-9e21-c0dc05d230a9.png\">",
+            "link": "https://github.com/advisories/GHSA-xhfx-hgmf-v6vp",
+            "cve": "CVE-2021-21265",
+            "branches": {
+                "1.1.x": {
+                    "time": 1615410445,
+                    "versions": [
+                        "< 1.1.2"
+                    ]
+                }
+            },
+            "reference": "composer://october/backend"
+        },
+        "CVE-2020-15249": {
+            "title": "### Impact\nBackend users with access to upload files were permitted to upload SVG files without any sanitization applied to the uploaded files. Since SVG files support being parsed as HTML by browsers, this means that they could theoretically upload Javascript that would be executed on a path under the website's domain (i.e. /storage/app/media/evil.svg), but they would have to convince their target to visit that location directly in the target's browser as the backend does not display SVGs inline anywhere, SVGs are only displayed as image resources in the backend and are thus unable to be executed.\n\n### Patches\nIssue has been patched in Build 469 (v1.0.469) & v1.1.0.\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/80aab47f044a2660aa352450f55137598f362aa4 to your installation manually if unable to upgrade to Build 469 or v1.1.0.\n\n### References\nReported by [Hoan Hoang](https://github.com/hoanhp)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1107\" alt=\"Screen Shot 2020-10-10 at 1 47 49 PM\" src=\"https://user-images.githubusercontent.com/7253840/95663787-378f2b80-0aff-11eb-8dfc-b97d162939da.png\">",
+            "link": "https://github.com/advisories/GHSA-fx3v-553x-3c4q",
+            "cve": "CVE-2020-15249",
+            "branches": {
+                "1.0.x": {
+                    "time": 1606160879,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.469"
+                    ]
+                }
+            },
+            "reference": "composer://october/backend"
+        },
+        "CVE-2020-15248": {
+            "title": "### Impact\nBackend users with the default \"Publisher\" system role have access to create & manage users where they can choose which role the new user has. This means that a user with \"Publisher\" access has the ability to escalate their access to \"Developer\" access. \n\n### Patches\nIssue has been patched in Build 470 (v1.0.470) & v1.1.1.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/78a37298a4ed4602b383522344a31e311402d829 to your installation manually if unable to upgrade to Build 470 or v1.1.1.\n\n### References\nReported by [Hoan Hoang](https://github.com/hoanhp)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1098\" alt=\"Screen Shot 2020-10-10 at 1 37 25 PM\" src=\"https://user-images.githubusercontent.com/7253840/95663611-e6326c80-0afd-11eb-8a1e-8b767a7202fb.png\">",
+            "link": "https://github.com/advisories/GHSA-rfjc-xrmf-5vvw",
+            "cve": "CVE-2020-15248",
+            "branches": {
+                "1.0.x": {
+                    "time": 1606160847,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.470"
+                    ]
+                }
+            },
+            "reference": "composer://october/backend"
+        },
         "CVE-2020-5298": {
-            "title": "### Impact\nA user with the ability to use the import functionality of the `ImportExportController` behavior could be socially engineered by an attacker to upload a maliciously crafted CSV file which could result in a reflected XSS attack on the user in question\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/cd0b6a791f995d86071a024464c1702efc50f46c to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
+            "title": "### Impact\nA user with the ability to use the import functionality of the `ImportExportController` behavior could be socially engineered by an attacker to upload a maliciously crafted CSV file which could result in a reflected XSS attack on the user in question\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/cd0b6a791f995d86071a024464c1702efc50f46c to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
             "link": "https://github.com/advisories/GHSA-gg6x-xx78-448c",
             "cve": "CVE-2020-5298",
             "branches": {
@@ -14870,7 +16259,7 @@
             "reference": "composer://october/backend"
         },
         "CVE-2020-11083": {
-            "title": "### Impact\nA user with access to a markdown FormWidget that stores data persistently could create a stored XSS attack against themselves and any other users with access to the generated HTML from the field.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466) & RainLab.Blog v1.4.1 by restricting the ability to store JS in markdown to only users that have been explicitly granted the `backend.allow_unsafe_markdown` permission.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/9ecfb4867baae14a0d3f99f5b5c1e8a979ae8746 & https://github.com/rainlab/blog-plugin/commit/6ae19a6e16ef3ba730692bc899851342c858bb94 to your installation manually if unable to upgrade to Build 466 or v1.4.1 of RainLab.Blog (if using that plugin).\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
+            "title": "### Impact\nA user with access to a markdown FormWidget that stores data persistently could create a stored XSS attack against themselves and any other users with access to the generated HTML from the field.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466) & RainLab.Blog v1.4.1 by restricting the ability to store JS in markdown to only users that have been explicitly granted the `backend.allow_unsafe_markdown` permission.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/9ecfb4867baae14a0d3f99f5b5c1e8a979ae8746 & https://github.com/rainlab/blog-plugin/commit/6ae19a6e16ef3ba730692bc899851342c858bb94 to your installation manually if unable to upgrade to Build 466 or v1.4.1 of RainLab.Blog (if using that plugin).\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1100\" alt=\"Screen Shot 2020-03-31 at 2 01 52 PM\" src=\"https://user-images.githubusercontent.com/7253840/78070158-8f7ef580-7358-11ea-950c-226533f6a0a3.png\">",
             "link": "https://github.com/advisories/GHSA-w4pj-7p68-3vgv",
             "cve": "CVE-2020-11083",
             "branches": {
@@ -14885,7 +16274,7 @@
             "reference": "composer://october/backend"
         },
         "CVE-2020-5299": {
-            "title": "### Impact\nAny users with the ability to modify any data that could eventually be exported as a CSV file from the `ImportExportController` could potentially introduce a CSV injection into the data to cause the generated CSV export file to be malicious. This requires attackers to achieve the following before a successful attack can be completed: \n\n1. Have found a vulnerability in the victim's spreadsheet software of choice.\n2. Control data that would potentially be exported through the `ImportExportController` by a theoretical victim.\n3. Convince the victim to export above data as a CSV and run it in vulnerable spreadsheet software while also bypassing any sanity checks by said software.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/c84bf03f506052c848f2fddc05f24be631427a1a & https://github.com/octobercms/october/commit/802d8c8e09a2b342649393edb6d3ceb958851484 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by @chrisvidal initially & [Sivanesh Ashok](https://stazot.com/) later.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\nGiven the number of hoops that a potential attacker would have to jump through, this vulnerability really boils down to the possibility of abusing the trust that a user may have in the export functionality of the project. Thus, this has been rated low severity as it requires vulnerabilities to also exist in other software used by any potential victims as well as successful social engineering attacks.",
+            "title": "### Impact\nAny users with the ability to modify any data that could eventually be exported as a CSV file from the `ImportExportController` could potentially introduce a CSV injection into the data to cause the generated CSV export file to be malicious. This requires attackers to achieve the following before a successful attack can be completed: \n\n1. Have found a vulnerability in the victim's spreadsheet software of choice.\n2. Control data that would potentially be exported through the `ImportExportController` by a theoretical victim.\n3. Convince the victim to export above data as a CSV and run it in vulnerable spreadsheet software while also bypassing any sanity checks by said software.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/c84bf03f506052c848f2fddc05f24be631427a1a & https://github.com/octobercms/october/commit/802d8c8e09a2b342649393edb6d3ceb958851484 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by @chrisvidal initially & [Sivanesh Ashok](https://stazot.com/) later.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\nGiven the number of hoops that a potential attacker would have to jump through, this vulnerability really boils down to the possibility of abusing the trust that a user may have in the export functionality of the project. Thus, this has been rated low severity as it requires vulnerabilities to also exist in other software used by any potential victims as well as successful social engineering attacks.",
             "link": "https://github.com/advisories/GHSA-4rhm-m2fp-hx7q",
             "cve": "CVE-2020-5299",
             "branches": {
@@ -14900,7 +16289,7 @@
             "reference": "composer://october/backend"
         },
         "CVE-2020-4061": {
-            "title": "### Impact\nPasting content copied from malicious websites into the Froala richeditor could result in a successful self-XSS attack.\n\n### Patches\nIssue has been patched in Build 467 (v1.0.467).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/b384954a29b89117e1c0d6035b3ede4f46df67c5 to your installation manually if unable to upgrade to Build 467.\n\n### References\n- https://research.securitum.com/the-curious-case-of-copy-paste/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that by the nature of the attack it can only impact users that do it to themselves by copying and pasting from malicious websites.\n\n### Acknowledgements\n\nThanks to [Micha\u0142 Bentkowski of Securitum](https://research.securitum.com/authors/michal-bentkowski/) for finding the original issue in Froala and @tomaszstrojny for reporting the issue to the October CMS team.",
+            "title": "### Impact\nPasting content copied from malicious websites into the Froala richeditor could result in a successful self-XSS attack.\n\n### Patches\nIssue has been patched in Build 467 (v1.0.467).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/b384954a29b89117e1c0d6035b3ede4f46df67c5 to your installation manually if unable to upgrade to Build 467.\n\n### References\n- https://research.securitum.com/the-curious-case-of-copy-paste/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that by the nature of the attack it can only impact users that do it to themselves by copying and pasting from malicious websites.\n\n### Acknowledgements\n\nThanks to [Micha\u0142 Bentkowski of Securitum](https://research.securitum.com/authors/michal-bentkowski/) for finding the original issue in Froala and @tomaszstrojny for reporting the issue to the October CMS team.",
             "link": "https://github.com/advisories/GHSA-3pc2-fm7p-q2vg",
             "cve": "CVE-2020-4061",
             "branches": {
@@ -14916,8 +16305,52 @@
         }
     },
     "october/cms": {
+        "CVE-2020-26231": {
+            "title": "### Impact\nA bypass of CVE-2020-15247 (fixed in 1.0.469 and 1.1.0) was discovered that has the same impact as CVE-2020-15247:\n\nAn authenticated backend user with the `cms.manage_pages`, `cms.manage_layouts`, or `cms.manage_partials` permissions who would **normally** not be permitted to provide PHP code to be executed by the CMS due to `cms.enableSafeMode` being enabled is able to write specific Twig code to escape the Twig sandbox and execute arbitrary PHP.\n\nThis is not a problem for anyone that trusts their users with those permissions to normally write & manage PHP within the CMS by not having `cms.enableSafeMode` enabled, but would be a problem for anyone relying on `cms.enableSafeMode` to ensure that users with those permissions in production do not have access to write & execute arbitrary PHP.\n\n### Patches\nIssue has been patched in Build 470 (v1.0.470) and v1.1.1.\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/d34fb8ab51108495a9a651b841202d935f4e12f7 to your installation manually if unable to upgrade to Build 470 or v1.1.1.\n\n### References\nReported by [ka1n4t](https://github.com/ka1n4t)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-10-10 at 1 21 13 PM\" src=\"https://user-images.githubusercontent.com/7253840/95663316-7de28b80-0afb-11eb-999d-a6526cf78709.png\">",
+            "link": "https://github.com/advisories/GHSA-r89v-cgv7-3jhx",
+            "cve": "CVE-2020-26231",
+            "branches": {
+                "1.0.x": {
+                    "time": 1606164858,
+                    "versions": [
+                        "= 1.0.469"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
+        },
+        "CVE-2020-15247": {
+            "title": "### Impact\nAn authenticated backend user with the `cms.manage_pages`, `cms.manage_layouts`, or `cms.manage_partials` permissions who would **normally** not be permitted to provide PHP code to be executed by the CMS due to `cms.enableSafeMode` being enabled is able to write specific Twig code to escape the Twig sandbox and execute arbitrary PHP.\n\nThis is not a problem for anyone that trusts their users with those permissions to normally write & manage PHP within the CMS by not having `cms.enableSafeMode` enabled, but would be a problem for anyone relying on `cms.enableSafeMode` to ensure that users with those permissions in production do not have access to write & execute arbitrary PHP.\n\n### Patches\nIssue has been patched in Build 469 (v1.0.469) and v1.1.0.\n\n### Workarounds\nApply https://github.com/octobercms/october/compare/106daa2930de4cebb18732732d47d4056f01dd5b...7cb148c1677373ac30ccfd3069d18098e403e1ca to your installation manually if unable to upgrade to Build 469.\n\n### References\nReported by [ka1n4t](https://github.com/ka1n4t)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-10-10 at 1 21 13 PM\" src=\"https://user-images.githubusercontent.com/7253840/95663316-7de28b80-0afb-11eb-999d-a6526cf78709.png\">",
+            "link": "https://github.com/advisories/GHSA-94vp-rmqv-5875",
+            "cve": "CVE-2020-15247",
+            "branches": {
+                "1.0.x": {
+                    "time": 1606160907,
+                    "versions": [
+                        ">= 1.0.319",
+                        "< 1.0.469"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
+        },
+        "CVE-2020-15246": {
+            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files on an October CMS server. The vulnerability is exploitable by unauthenticated users via a specially crafted request.\n\n### Patches\nIssue has been patched in Build 469 (v1.0.469) and v1.1.0.\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/80aab47f044a2660aa352450f55137598f362aa4 to your installation manually if unable to upgrade to Build 469.\n\n### References\nReported by [ka1n4t](https://github.com/ka1n4t)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1105\" alt=\"Screen Shot 2020-10-10 at 1 05 19 PM\" src=\"https://user-images.githubusercontent.com/7253840/95663086-4ffc4780-0af9-11eb-9bb6-fd40cf11c033.png\">",
+            "link": "https://github.com/advisories/GHSA-xwjr-6fj7-fc6h",
+            "cve": "CVE-2020-15246",
+            "branches": {
+                "1.0.x": {
+                    "time": 1606160892,
+                    "versions": [
+                        ">= 1.0.421",
+                        "< 1.0.469"
+                    ]
+                }
+            },
+            "reference": "composer://october/cms"
+        },
         "CVE-2020-5295": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-03-31 at 2 37 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78072989-44b3ac80-735d-11ea-8676-09c69f0409c4.png\">",
+            "title": "### Impact\nAn attacker can exploit this vulnerability to read local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1108\" alt=\"Screen Shot 2020-03-31 at 2 37 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78072989-44b3ac80-735d-11ea-8676-09c69f0409c4.png\">",
             "link": "https://github.com/advisories/GHSA-r23f-c2j5-rx2f",
             "cve": "CVE-2020-5295",
             "branches": {
@@ -14932,7 +16365,7 @@
             "reference": "composer://october/cms"
         },
         "CVE-2020-5296": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to delete arbitrary local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 16 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78060872-89354d00-7349-11ea-8c2b-5881b0a50736.png\">",
+            "title": "### Impact\nAn attacker can exploit this vulnerability to delete arbitrary local files of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/2b8939cc8b5b6fe81e093fe2c9f883ada4e3c8cc to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 16 53 PM\" src=\"https://user-images.githubusercontent.com/7253840/78060872-89354d00-7349-11ea-8c2b-5881b0a50736.png\">",
             "link": "https://github.com/advisories/GHSA-jv6v-fvvx-4932",
             "cve": "CVE-2020-5296",
             "branches": {
@@ -14947,7 +16380,7 @@
             "reference": "composer://october/cms"
         },
         "CVE-2020-5297": {
-            "title": "### Impact\nAn attacker can exploit this vulnerability to upload jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml files to any directory of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/6711dae8ef70caf0e94cec434498012a2ccd86b8 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 21 10 PM\" src=\"https://user-images.githubusercontent.com/7253840/78061230-255f5400-734a-11ea-92b4-1120f6960505.png\">",
+            "title": "### Impact\nAn attacker can exploit this vulnerability to upload jpg, jpeg, bmp, png, webp, gif, ico, css, js, woff, woff2, svg, ttf, eot, json, md, less, sass, scss, xml files to any directory of an October CMS server. The vulnerability is only exploitable by an authenticated backend user with the `cms.manage_assets` permission.\n\n### Patches\nIssue has been patched in Build 466 (v1.0.466).\n\n### Workarounds\nApply https://github.com/octobercms/october/commit/6711dae8ef70caf0e94cec434498012a2ccd86b8 to your installation manually if unable to upgrade to Build 466.\n\n### References\nReported by [Sivanesh Ashok](https://stazot.com/)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"1241\" alt=\"Screen Shot 2020-03-31 at 12 21 10 PM\" src=\"https://user-images.githubusercontent.com/7253840/78061230-255f5400-734a-11ea-92b4-1120f6960505.png\">",
             "link": "https://github.com/advisories/GHSA-9722-rr68-rfpg",
             "cve": "CVE-2020-5297",
             "branches": {
@@ -14980,8 +16413,37 @@
         }
     },
     "october/rain": {
+        "CVE-2021-3311": {
+            "title": "### Impact\nWhen logging out, the session ID was not invalidated. This is not a problem while the user is logged out, but as soon as the user logs back in the old session ID would be valid again; which means that anyone that gained access to the old session cookie would be able to act as the logged in user. This is not a major concern for the majority of cases, since it requires a malicious party gaining access to the session cookie in the first place, but nevertheless has been fixed.\n\n### Patches\nIssue has been patched in Build 472 (v1.0.472) and v1.1.2.\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/642f597489e6f644d4bd9a0c267e864cabead024 to your installation manually if unable to upgrade to Build 472 or v1.1.2.\n\n### References\n- Reported by Anisio (Brazilian Information Security Analyst)\n- http://cve.circl.lu/cve/CVE-2021-3311\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"699\" alt=\"Screen Shot 2021-02-07 at 11 50 35 PM\" src=\"https://user-images.githubusercontent.com/7253840/107180881-51eaf000-699f-11eb-8828-333128faf2a6.png\">",
+            "link": "https://github.com/advisories/GHSA-7ggw-h8pp-r95r",
+            "cve": "CVE-2021-3311",
+            "branches": {
+                "1.1.x": {
+                    "time": 1612924355,
+                    "versions": [
+                        ">= 1.1.0",
+                        "< 1.1.2"
+                    ]
+                }
+            },
+            "reference": "composer://october/rain"
+        },
+        "CVE-2021-3311-3": {
+            "title": "### Impact\nWhen logging out, the session ID was not invalidated. This is not a problem while the user is logged out, but as soon as the user logs back in the old session ID would be valid again; which means that anyone that gained access to the old session cookie would be able to act as the logged in user. This is not a major concern for the majority of cases, since it requires a malicious party gaining access to the session cookie in the first place, but nevertheless has been fixed.\n\n### Patches\nIssue has been patched in Build 472 (v1.0.472) and v1.1.2.\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/642f597489e6f644d4bd9a0c267e864cabead024 to your installation manually if unable to upgrade to Build 472 or v1.1.2.\n\n### References\n- Reported by Anisio (Brazilian Information Security Analyst)\n- http://cve.circl.lu/cve/CVE-2021-3311\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"699\" alt=\"Screen Shot 2021-02-07 at 11 50 35 PM\" src=\"https://user-images.githubusercontent.com/7253840/107180881-51eaf000-699f-11eb-8828-333128faf2a6.png\">",
+            "link": "https://github.com/advisories/GHSA-7ggw-h8pp-r95r",
+            "cve": "CVE-2021-3311",
+            "branches": {
+                "1.0.x": {
+                    "time": 1612924355,
+                    "versions": [
+                        "< 1.0.472"
+                    ]
+                }
+            },
+            "reference": "composer://october/rain"
+        },
         "CVE-2020-15128": {
-            "title": "### Impact\nPreviously encrypted cookie values were not tied to the name of the cookie the value belonged to. This meant that certain classes of attacks that took advantage of other theoretical vulnerabilities in user facing code (nothing exploitable in the core project itself) had a higher chance of succeeding. \n\nSpecifically, if your usage exposed a way for users to provide unfiltered user input and have it returned to them as an encrypted cookie (ex. storing a user provided search query in a cookie) they could then use the generated cookie in place of other more tightly controlled cookies; or if your usage exposed the plaintext version of an encrypted cookie at any point to the user they could theoretically provide encrypted content from your application back to it as an encrypted cookie and force the framework to decrypt it for them. \n\n### Patches\nIssue has been patched in Build 468 (v1.0.468).\n\n>**NOTE**: If you are using the cookie session driver, all of your session data will be invalidated. All other session drivers should smoothly upgrade to the changes (although the backend authentication persist cookie will also be invalidated requiring users to login again once their current session expires).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/28310d4fb336a1741b39498f4474497644a6875c to your installation manually if unable to upgrade to Build 468.\n\n### References\n- https://blog.laravel.com/laravel-cookie-security-releases\n- https://github.com/laravel/framework/compare/4c7d118181d6c7f1f883643702df807ced016c5e...a731824421f9ebc586728ea9c7cff231a249aaa9\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [octobercms@luketowers.ca](mailto:octobercms@luketowers.ca) & [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that it is not directly exploitable within the core but requires other security vulnerabilities within the application to have an effect and the severity of its effect depends entirely on the severity of those other holes in the application's defences.\n\n### Acknowledgements\n\nThanks to [Takashi Terada of Mitsui Bussan Secure Directions, Inc.](https://www.linkedin.com/in/takeshi-terada-b570a6100/) for finding the original issue in Laravel and @taylorotwell for sharing the report with the October CMS team.",
+            "title": "### Impact\nPreviously encrypted cookie values were not tied to the name of the cookie the value belonged to. This meant that certain classes of attacks that took advantage of other theoretical vulnerabilities in user facing code (nothing exploitable in the core project itself) had a higher chance of succeeding. \n\nSpecifically, if your usage exposed a way for users to provide unfiltered user input and have it returned to them as an encrypted cookie (ex. storing a user provided search query in a cookie) they could then use the generated cookie in place of other more tightly controlled cookies; or if your usage exposed the plaintext version of an encrypted cookie at any point to the user they could theoretically provide encrypted content from your application back to it as an encrypted cookie and force the framework to decrypt it for them. \n\n### Patches\nIssue has been patched in Build 468 (v1.0.468).\n\n>**NOTE**: If you are using the cookie session driver, all of your session data will be invalidated. All other session drivers should smoothly upgrade to the changes (although the backend authentication persist cookie will also be invalidated requiring users to login again once their current session expires).\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/28310d4fb336a1741b39498f4474497644a6875c to your installation manually if unable to upgrade to Build 468.\n\n### References\n- https://blog.laravel.com/laravel-cookie-security-releases\n- https://github.com/laravel/framework/compare/4c7d118181d6c7f1f883643702df807ced016c5e...a731824421f9ebc586728ea9c7cff231a249aaa9\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat Assessment\nAssessed as Low given that it is not directly exploitable within the core but requires other security vulnerabilities within the application to have an effect and the severity of its effect depends entirely on the severity of those other holes in the application's defences.\n\n### Acknowledgements\n\nThanks to [Takashi Terada of Mitsui Bussan Secure Directions, Inc.](https://www.linkedin.com/in/takeshi-terada-b570a6100/) for finding the original issue in Laravel and @taylorotwell for sharing the report with the October CMS team.",
             "link": "https://github.com/advisories/GHSA-55mm-5399-7r63",
             "cve": "CVE-2020-15128",
             "branches": {
@@ -15067,6 +16529,35 @@
         }
     },
     "openmage/magento-lts": {
+        "CVE-2020-15244": {
+            "title": "### Impact\nThis vulnerability allows an admin user to generate soap credentials that can be used to trigger RCE via PHP Object Injection through product attributes and a product.\n\n### Patches\nThe latest OpenMage Versions up from 19.4.7 and 20.0.3 have this Issue solved\n\n### Credits\nCredit to Luke Rodgers for reporting",
+            "link": "https://github.com/advisories/GHSA-jrgf-vfw2-hj26",
+            "cve": "CVE-2020-15244",
+            "branches": {
+                "20.0.x": {
+                    "time": 1604077566,
+                    "versions": [
+                        ">= 20.0.0",
+                        "< 20.0.4"
+                    ]
+                }
+            },
+            "reference": "composer://openmage/magento-lts"
+        },
+        "CVE-2020-15244-31": {
+            "title": "### Impact\nThis vulnerability allows an admin user to generate soap credentials that can be used to trigger RCE via PHP Object Injection through product attributes and a product.\n\n### Patches\nThe latest OpenMage Versions up from 19.4.7 and 20.0.3 have this Issue solved\n\n### Credits\nCredit to Luke Rodgers for reporting",
+            "link": "https://github.com/advisories/GHSA-jrgf-vfw2-hj26",
+            "cve": "CVE-2020-15244",
+            "branches": {
+                "19.4.x": {
+                    "time": 1604077566,
+                    "versions": [
+                        "< 19.4.8"
+                    ]
+                }
+            },
+            "reference": "composer://openmage/magento-lts"
+        },
         "CVE-2020-15151": {
             "title": "### Impact\nThis vulnerability allows to circumvent the **formkey protection** in the Admin Interface and increases the attack surface for  **Cross Site Request Forgery** attacks \n\n### Patches\nThe latest OpenMage Versions up from 19.4.6 and 20.0.2 have this Issue solved\n\n\n### References\nRelated to Adobes CVE-2020-9690 ( https://helpx.adobe.com/security/products/magento/apsb20-47.html )\nfixed in Magento2 https://github.com/magento/magento2/commit/52d72b8010c9cecb5b8e3d98ec5edc1ddcc65fb4\nas part of 2.4.0/2.3.5-p2",
             "link": "https://github.com/advisories/GHSA-crf2-xm6x-46p6",
@@ -15082,7 +16573,7 @@
             },
             "reference": "composer://openmage/magento-lts"
         },
-        "CVE-2020-15151-30": {
+        "CVE-2020-15151-59": {
             "title": "### Impact\nThis vulnerability allows to circumvent the **formkey protection** in the Admin Interface and increases the attack surface for  **Cross Site Request Forgery** attacks \n\n### Patches\nThe latest OpenMage Versions up from 19.4.6 and 20.0.2 have this Issue solved\n\n\n### References\nRelated to Adobes CVE-2020-9690 ( https://helpx.adobe.com/security/products/magento/apsb20-47.html )\nfixed in Magento2 https://github.com/magento/magento2/commit/52d72b8010c9cecb5b8e3d98ec5edc1ddcc65fb4\nas part of 2.4.0/2.3.5-p2",
             "link": "https://github.com/advisories/GHSA-crf2-xm6x-46p6",
             "cve": "CVE-2020-15151",
@@ -15197,6 +16688,100 @@
             "reference": "composer://paragonie/random_compat"
         }
     },
+    "passbolt/passbolt_api": {
+        "2019-02-11-1": {
+            "title": "Remote code execution",
+            "link": "https://www.passbolt.com/incidents/20190211_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": 1549972800,
+                    "versions": [
+                        "<2.7.0"
+                    ]
+                }
+            }
+        },
+        "2019-02-11-2": {
+            "title": "Retrieval of HTTP-only cookies",
+            "link": "https://www.passbolt.com/incidents/20190211_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": 1549972800,
+                    "versions": [
+                        "<2.7.0"
+                    ]
+                }
+            }
+        },
+        "2019-02-11-3": {
+            "title": "E-mail HTML injection",
+            "link": "https://www.passbolt.com/incidents/20190211_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": 1549972800,
+                    "versions": [
+                        "<2.7.0"
+                    ]
+                }
+            }
+        },
+        "2019-08-07-1": {
+            "title": "Stored XSS on first/last name during setup",
+            "link": "https://www.passbolt.com/incidents/20190807_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<2.11.0"
+                    ]
+                }
+            }
+        },
+        "2019-08-07-2": {
+            "title": "Stored XSS in tags autocomplete dropdown",
+            "link": "https://www.passbolt.com/incidents/20190807_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<2.11.0"
+                    ]
+                }
+            }
+        },
+        "2019-08-07-3": {
+            "title": "Tabnabbing when opening URI with menu \"Open URI in a new tab\"",
+            "link": "https://www.passbolt.com/incidents/20190807_multiple_vulnerabilities",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": null,
+                    "versions": [
+                        "<2.11.0"
+                    ]
+                }
+            }
+        },
+        "CVE-2017-1000442": {
+            "title": "XSS in the url field on the password workspace grid and sidebar",
+            "link": "https://www.passbolt.com/incidents/20170914_xss_on_resource_urls",
+            "cve": "CVE-2017-1000442",
+            "reference": "composer://passbolt/passbolt_api",
+            "branches": {
+                "master": {
+                    "time": 1505399400,
+                    "versions": [
+                        "<1.6.5"
+                    ]
+                }
+            }
+        }
+    },
     "paypal/merchant-sdk-php": {
         "CVE-2017-6099": {
             "title": "Cross-site scripting (XSS) vulnerability in Paypal-Merchant-SDK-PHP",
@@ -15234,6 +16819,34 @@
                 }
             },
             "reference": "composer://pear/archive_tar"
+        },
+        "CVE-2020-28949": {
+            "title": "Potential file overwrite if archive filename starts with file://",
+            "link": "https://github.com/pear/Archive_Tar/issues/33",
+            "cve": "CVE-2020-28949",
+            "branches": {
+                "1.x": {
+                    "time": 1605830400,
+                    "versions": [
+                        "<1.4.11"
+                    ]
+                }
+            },
+            "reference": "composer://pear/archive_tar"
+        },
+        "CVE-2020-36193": {
+            "title": "Allows write operations with Directory Traversal due to inadequate checking of symbolic links",
+            "link": "https://github.com/pear/Archive_Tar/commit/cde460582ff389404b5b3ccb59374e9b389de916",
+            "cve": "CVE-2020-36193",
+            "branches": {
+                "1.x": {
+                    "time": 1610928000,
+                    "versions": [
+                        "<1.4.12"
+                    ]
+                }
+            },
+            "reference": "composer://pear/archive_tar"
         }
     },
     "personnummer/personnummer": {
@@ -15254,7 +16867,7 @@
     },
     "phpfastcache/phpfastcache": {
         "CVE-2019-16774": {
-            "title": "## Object injection in cookie driver\r\n\r\n### Impact\r\nAn possible object injection has been discovered in cookie driver prior 5.0.13 versions (of 5.x releases).\r\n\r\n### Patches\r\nThe issue has been addressed by enforcing JSON conversion when deserializing\r\n\r\n### Workarounds\r\nIf you can't fix it, use another driver such as \"Files\" (Filesystem)\r\n\r\n### References\r\nFixing release: https://github.com/PHPSocialNetwork/phpfastcache/releases/tag/5.0.13\r\n\r\n### For more information\r\nIf you have any questions or comments about this advisory:\r\n* Open an issue in [the issue tracker](https://github.com/PHPSocialNetwork/phpfastcache/issues)\r\n* Email us at [security@geolim4.com](mailto:security@geolim4.com)\r\n\r\n",
+            "title": "## Object injection in cookie driver\n\n### Impact\nAn possible object injection has been discovered in cookie driver prior 5.0.13 versions (of 5.x releases).\n\n### Patches\nThe issue has been addressed by enforcing JSON conversion when deserializing\n\n### Workarounds\nIf you can't fix it, use another driver such as \"Files\" (Filesystem)\n\n### References\nFixing release: https://github.com/PHPSocialNetwork/phpfastcache/releases/tag/5.0.13\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [the issue tracker](https://github.com/PHPSocialNetwork/phpfastcache/issues)\n* Email us at [security@geolim4.com](mailto:security@geolim4.com)",
             "link": "https://github.com/advisories/GHSA-484f-743f-6jx2",
             "cve": "CVE-2019-16774",
             "branches": {
@@ -15386,19 +16999,137 @@
         }
     },
     "phpmyadmin/phpmyadmin": {
-        "CVE-2019-18622": {
-            "title": "An issue was discovered in phpMyAdmin before 4.9.2. A crafted database/table name can be used to trigger a SQL injection attack through the designer feature.",
-            "link": "https://github.com/advisories/GHSA-jgjc-332c-8cmc",
-            "cve": "CVE-2019-18622",
+        "CVE-2020-10802": {
+            "title": "SQL injection relating to searching",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-3/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-10802",
             "branches": {
                 "4.9.x": {
-                    "time": 1579211775,
+                    "time": 1579385583,
                     "versions": [
-                        "< 4.9.2"
+                        ">=4.9.0",
+                        "<4.9.5"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1579385583,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.2"
                     ]
                 }
-            },
-            "reference": "composer://phpmyadmin/phpmyadmin"
+            }
+        },
+        "CVE-2020-10803": {
+            "title": "SQL injection relating to data display",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-4/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-10803",
+            "branches": {
+                "4.9.x": {
+                    "time": 1583429689,
+                    "versions": [
+                        ">=3.4",
+                        "<4.9.5"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1583429689,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2020-10804": {
+            "title": "SQL injection with processing username",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-2/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-10804",
+            "branches": {
+                "4.9.x": {
+                    "time": 1584569813,
+                    "versions": [
+                        ">=4.9.0",
+                        "<4.9.5"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1584569813,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.2"
+                    ]
+                }
+            }
+        },
+        "CVE-2020-26934": {
+            "title": "XSS relating to the transformation feature",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-5/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-26934",
+            "branches": {
+                "4.9.x": {
+                    "time": 1589718407,
+                    "versions": [
+                        ">=4.9.0",
+                        "<4.9.6"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1589718407,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.3"
+                    ]
+                }
+            }
+        },
+        "CVE-2020-26935": {
+            "title": "SQL injection vulnerability in SearchController",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-6/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-26935",
+            "branches": {
+                "4.9.x": {
+                    "time": 1593798358,
+                    "versions": [
+                        ">=4.9.0",
+                        "<4.9.6"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1593798358,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.3"
+                    ]
+                }
+            }
+        },
+        "CVE-2020-5504": {
+            "title": "SQL injection in user accounts page",
+            "link": "https://www.phpmyadmin.net/security/PMASA-2020-1/",
+            "reference": "composer://phpmyadmin/phpmyadmin",
+            "cve": "CVE-2020-5504",
+            "branches": {
+                "4.x": {
+                    "time": 1577886899,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.9.4"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1577886899,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.0.1"
+                    ]
+                }
+            }
         }
     },
     "phpoffice/phpexcel": {
@@ -15441,6 +17172,20 @@
                     "time": 1561985700,
                     "versions": [
                         "<1.8.0"
+                    ]
+                }
+            },
+            "reference": "composer://phpoffice/phpspreadsheet"
+        },
+        "CVE-2020-7776": {
+            "title": "XSS Vulnerability in HTML Writer",
+            "link": "https://github.com/PHPOffice/PhpSpreadsheet/pull/1719",
+            "cve": "CVE-2020-7776",
+            "branches": {
+                "master": {
+                    "time": 1609442400,
+                    "versions": [
+                        "<1.16.0"
                     ]
                 }
             },
@@ -15504,6 +17249,20 @@
         }
     },
     "pimcore/pimcore": {
+        "CVE-2021-23340": {
+            "title": "This affects the package pimcore/pimcore before 6.8.8. A Local FIle Inclusion vulnerability exists in the downloadCsvAction function of the CustomReportController class (bundles/AdminBundle/Controller/Reports/CustomReportController.php). An authenticated user can reach this function with a GET request at the following endpoint: /admin/reports/custom-report/download-csv?exportFile=&91;filename]. Since exportFile variable is not sanitized, an attacker can exploit a local file inclusion vulnerability.",
+            "link": "https://github.com/advisories/GHSA-h7f9-cvh5-qw7f",
+            "cve": "CVE-2021-23340",
+            "branches": {
+                "6.8.x": {
+                    "time": 1614270766,
+                    "versions": [
+                        "< 6.8.8"
+                    ]
+                }
+            },
+            "reference": "composer://pimcore/pimcore"
+        },
         "CVE-2019-10763": {
             "title": "pimcore/pimcore before 6.3.0 is vulnerable to SQL Injection. An attacker with limited privileges (classes permission) can achieve a SQL injection that can lead in data leakage. The vulnerability can be exploited via 'id', 'storeId', 'pageSize' and 'tables' parameters, using a payload for trigger a time based or error based sql injection.",
             "link": "https://github.com/advisories/GHSA-fpff-384j-vxq7",
@@ -15517,6 +17276,22 @@
                 }
             },
             "reference": "composer://pimcore/pimcore"
+        }
+    },
+    "pocketmine/pocketmine-mp": {
+        "2020-11-11": {
+            "title": "### Impact\nSpecially crafted `InventoryTransactionPacket`s sent by malicious clients were able to exploit the behaviour of `InventoryTransaction->findResultItem()` and cause it to take an abnormally long time to execute (causing an apparent server freeze).\n\nThe affected code is intended to compact conflicting `InventoryActions` which are in the same `InventoryTransaction` by flattening them into a single action. When multiple pathways to a result existed, the complexity of this flattening became exponential.\n\nThe problem was fixed by bailing when ambiguities are detected.\n\n**At the time of writing, this exploit is being used in the wild by attackers to deny service to servers.**\n\n### Patches\nUpgrade to 3.15.4 or newer.\n\n### Workarounds\nNo practical workarounds are possible, short of backporting the fix or implementing checks in a plugin listening to `DataPacketReceiveEvent`.\n\n### References\nc368ebb5e74632bc622534b37cd1447b97281e20\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [team@pmmp.io](mailto:team@pmmp.io)",
+            "link": "https://github.com/advisories/GHSA-8jq6-w5cg-wm45",
+            "cve": null,
+            "branches": {
+                "3.15.x": {
+                    "time": 1605130698,
+                    "versions": [
+                        "< 3.15.4"
+                    ]
+                }
+            },
+            "reference": "composer://pocketmine/pocketmine-mp"
         }
     },
     "prestashop/autoupgrade": {
@@ -15569,6 +17344,38 @@
             "reference": "composer://prestashop/gamification"
         }
     },
+    "prestashop/productcomments": {
+        "CVE-2020-26248": {
+            "title": "### Impact\nAn attacker can use a Blind SQL injection to retrieve data or stop the MySQL service.\n\n### Patches\nThe problem is fixed in 4.2.1",
+            "link": "https://github.com/advisories/GHSA-5v44-7647-xfw9",
+            "cve": "CVE-2020-26248",
+            "branches": {
+                "4.2.x": {
+                    "time": 1611178433,
+                    "versions": [
+                        ">= 4.0.0",
+                        "< 4.2.1"
+                    ]
+                }
+            },
+            "reference": "composer://prestashop/productcomments"
+        },
+        "CVE-2020-26225": {
+            "title": "### Impact\nAn attacker could inject malicious web code into the users' web browsers by creating a malicious link.\n\n### Patches\nThe problem is fixed in 4.2.0\n\n### References\n[Cross-site Scripting (XSS) - Reflected (CWE-79) ](https://cwe.mitre.org/data/definitions/79.html)",
+            "link": "https://github.com/advisories/GHSA-58w4-w77w-qv3w",
+            "cve": "CVE-2020-26225",
+            "branches": {
+                "4.2.x": {
+                    "time": 1605561809,
+                    "versions": [
+                        ">= 4.0.0",
+                        "< 4.2.0"
+                    ]
+                }
+            },
+            "reference": "composer://prestashop/productcomments"
+        }
+    },
     "prestashop/ps_facetedsearch": {
         "2020-01-07": {
             "title": "### Impact\n\nWe have identified that some ps_facetedsearch module ZIP archives have been built with phpunit dev dependencies. PHPUnit contains a php script that would allow, on a webserver, an attacker to perform a RCE.\n\nThis vulnerability impacts\n- phpunit before 4.8.28 and 5.x before 5.6.3 as reported in [CVE-2017-9841](https://nvd.nist.gov/vuln/detail/CVE-2017-9841)\n- phpunit >= 5.63 before 7.5.19 and 8.5.1 (this is a newly found vulnerability that is currently being submitted as a CVE after disclosure was provided to phpunit maintainers)\n\n### Patches\n\nIn the [security patch](https://github.com/PrestaShop/ps_facetedsearch/releases/tag/v3.4.1), we look for the unwanted vendor/phpunit folder and remove it if we find it. This allows users to fix the security issue when upgrading.\n\n### Workarounds\nUsers can also simply remove the unwanted vendor/phpunit folder.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-9841\n\n### For more information\nIf you have any questions or comments about this advisory, email us at security@prestashop.com",
@@ -15601,7 +17408,7 @@
             },
             "reference": "composer://privatebin/privatebin"
         },
-        "CVE-2020-5223-86": {
+        "CVE-2020-5223-115": {
             "title": "On 24th of December 2019 one of the [property based unit tests](https://github.com/PrivateBin/PrivateBin/blob/master/tst/README.md#property-based-unit-testing) reported a [failure](https://travis-ci.org/PrivateBin/PrivateBin/jobs/629180605#L782). Upon investigation, [@elrido](https://github.com/elrido) discovered that the failure was due to unescaped HTML, which allowed the user provided attachment file name to inject HTML under certain conditions leading to a persistent [Cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability. After committing an [initial fix](https://github.com/PrivateBin/PrivateBin/commit/8d0ac336d23cd8c98e71d5f21cdadcae9c8a26e6) to the master branch, the [issue was reported](https://github.com/PrivateBin/PrivateBin/issues/554) on 25th of December. Vulnerability write-up done by [@rugk](https://github.com/rugk) and [@elrido](https://github.com/elrido).  \nThe vulnerability has been fixed in [PrivateBin v1.3.2 & v1.2.2](https://privatebin.info/news/v1.3.2-v1.2.2-release.html). Admins are urged to upgrade to these versions to protect the affected users.\n\n## Affected versions\n\nAny PrivateBin version since 1.2.\n\n## Conditions\n\n* The configuration setting `fileupload` has to be enabled, as 1.3 displays an error when trying to open a paste with attachment.\n* The CSP header rules don't get applied. For example:\n  * They are unsupported or disabled in the visitors browser.\n  * They are filtered out by a some proxy server at the server or client side.\n  * The header is disabled/commented in the PHP-logic.\n  * The rules have been relaxed in the `cspheader` configuration setting.\n* A paste with a malicious filename is created.\n* A visitor of that paste clicks on the \"Clone\" button.\n\n## Proof of concept\n\nThe following method is just one possibility to exploit this issue and is provided as a proof of concept with steps to reproduce the issue. To avoid having to create an actual file with a rogue filename, one could use the [Python CLI client for PrivateBin](https://github.com/r4sas/PBinCLI/) and [edit line 56 in `format.py`](https://github.com/r4sas/PBinCLI/blob/682b47fbd3e24a8a53c3b484ba896a5dbc85cda2/pbincli/format.py#L56) as follows:\n\n```diff\n-        self._attachment_name = path_leaf(path)\n+        self._attachment_name = '<script>alert(\"\u2639\ufe0f\");//<a'\n```\n\nThe paste then can be created on a vulnerable instance:\n\n```shell\n$ python pbincli/cli.py send -t \" \" -f /dev/null -s https://privatebin.net/\n```\n\nVisiting the created paste on a vulnerable instance, with `fileupload` enabled and the CSP header weakened or disabled, and clicking the clone button will insert the HTML unescaped. In the above example, a pop-up would appear, when the script is executed.\n\n## Impact\n\nOn a vulnerable site pastes with malicious filenames can be created and users visiting these could inadvertently trigger the code execution when they click the \"Clone\" button. They could be instigated to do so via social engineering, like a paste text suggesting to \"clone and share\" the paste in question.\n\nThe attached file itself doesn't have to be empty and could be an image or document that would still be displayed inline as usual. The execution of the script triggered by clicking on the \"Clone\" button may occur silently in the background without showing any noticeable signs in browser. It may for instance be used to track visitors, start drive-by-downloads or similar. While we focus on script injection here, as it is the easiest exploit vector, it has to be said that anything else can be injected like CSS, images, videos, although the default CSP will block inline CSS and images, e.g.\n\nOn first visit, the filename isn't visible and is properly escaped when inserted into the download attribute. Only when clicking the \"Download attachment\" link would open a file save dialog with an odd name pre-filled, although browsers will convert illegal characters into valid ones, so it may not be identical to the one provided. Only when the \"Clone\" button has been clicked and after the exploit has already been triggered, the filename gets displayed. Note that an attacker can of course prevent this indicator of compromise to be shown and e.g. change the displayed text or obfuscate the filename by starting it with something harmless, like `image.png`, before opening the HTML tag.\n\n### Impact restrictions\n\nThe impact is mitigated by the fact that the vulnerability is, as far as our investigation concluded, paste-specific, i.e. opening a vulnerable paste can only compromise this one paste and no other pastes.\n\nFurthermore, as stated before, the impact is mitigated by the fact that we deploy a strong [CSP](https://content-security-policy.com/) that, by default, does not allow inline JS or other potentially easy methods that would allow an easy exploitation of the vulnerability.  \nThat said, we have to make users aware, that there may always be tricks to bypass such a CSP and the simple injection of HTML tags, e.g. destroying, faking or somehow phishing an HTML page does always remain a possibility.\n\nAs such, we treat this as a security vulnerability with medium severity. It is critical on it's own, but we believe that the deployed security mechanisms should prevent an exploit in practice in most cases.\n\n## Real-life impact\n\nWe checked all instances listed in the [PrivateBin directory in the Wiki](https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Directory) and didn't find any 1.1, 1.2 or 1.3 instances that had the CSP headers disabled or in a state we know to be vulnerable. We used the following script, that may be adapted to check the CSP headers of any single instance:\n\n```shell\nfor URL in $(\n    curl -s https://raw.githubusercontent.com/wiki/PrivateBin/PrivateBin/PrivateBin-Directory.md | grep -Po '^http.*?(?= )'\n)\ndo\n    echo -n \"$URL: \"\n    curl -sLI $URL | grep -Poi 'content-security-policy.*script-src.?\\K.*?(?=;)' || echo 'No CSP detected!'\ndone\n```\n\nSome of the above sites do offer file uploads. On these instances, it is still possible that a visitor could have CSP support disabled in their browser, i.e. via a transparent proxy at their internet uplink or due to a browser plugin or some other locally installed, misguided security solution.\n\n**Important:** This scan is only a cursory check and _must not_ be taken as a security analysis of any means! You are always responsible for the security of your own instance. Please do check it manually!\n\n## Mitigation\n\nAs server administrators can't detect if a paste contains file attachments at all (apart from their size) in version 1.3 and due to the encrypted filename in older versions, as well as the risk for clients that don't apply the CSP settings, we urge them to upgrade to versions 1.3.2 or 1.2.2.\n\nIf you use v1.3, you could disable the `fileupload` setting to prevent pastes from getting displayed that may contain this vulnerability. Note that this will break all existing pastes with uploads, however, so we do _not_ recommend this, but advise you to upgrade to a fixed version instead.\n\n## Further information\n\nWe want to make potential third-party client authors aware of this vulnerability and urge them to double-check their implementations. If they develop a client that displays untrusted foreign data from a paste in a HTML site, please make sure to escape it to prevent XSS attacks. Such attacks can only be prevented when the paste is displayed, a mitigation when a paste is created is pointless, as a different client can be used during creation.\n\nWe do also acknowledge and want to highlight the benefit of the CSP, which has first been [introduced in PrivateBin v1.0](https://github.com/PrivateBin/PrivateBin/issues/10).\n\nHowever, we want to make you again aware that a whitelist-based CSP as we use, may [sometimes still be bypassed](https://csp.withgoogle.com/docs/faq.html#problems-with-whitelists), e.g. if you host a copy of the Angular library on the same domain as your PrivateBin instance.\nWe are aware of that and [do consider](https://github.com/PrivateBin/PrivateBin/issues/108) upgrading to a stronger CSP in the future.\n\n### Issue discovery\n\nWhile it is satisfying that our hard work on introducing unit tests has payed off in the discovery and mitigation of this vulnerability, it does also show a limitation of unit testing. A third party doing a code review would have certainly focused on how the project handles user provided input and may have discovered this much quicker.\n\nThe discovery wasn't due to the unit test checking for HTML input to get properly escaped, on the contrary, the test assumed input would not be changed. So other instances of HTML tags generated would have happily passed the test. Only when the test generated a fragment of a link (`<a`) it failed, because the DOM silently removed it when it inserted the string, as links within links aren't allowed. While the test was written to throw arbitrary strings at the `AttachmentViewer.moveAttachmentTo()` method, the test would only check that these got inserted into the DOM unchanged, oblivious of their potential significance when interpreted as HTML.\n\nThe [test had been introduced](https://github.com/PrivateBin/PrivateBin/commit/39860dfdc434c00d18342b4fb3bc6f5d0960030d) on December 3rd, 2017, 570 commits ago. Every commit on master and in PRs since introduction in that commit triggers these tests to run for every supported PHP version. Additional test cycles get run on developers local environments during working on commits. Hence the test suite must have run a few thousand times, testing 100 random strings each time. And only after more then 2 years a string containing `<a` got generated, triggered the error condition and 22 shrinks later the smallest failing test case was presented as:\n\n```\nFailed after 65 tests and 22 shrinks. rngState: 8b8f0d4ec2a67139b5; Counterexample: \"image/png\"; \"\"; \"\\u0000\"; \"<a\"; \"\";\n```\n\nDiscussion about a potential problem with that code, [did spark last September](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34943221), when the vulnerable code part was changed to the one before before the current fix, but was [incorrectly judged](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34944396) as not being a problem, because all of our translation strings are hardcoded. The fact that we do actually add some untrusted user-provided content, wasn't considered at that point.\n\nIt should also be mentioned, that the coverage report released for version 1.3.1 did highlight the line that caused this vulnerability as not being covered during testing:\n\n![Coverage report for version 1.3.1 showing missing test coverage for line causing vulnerability]({static}/img/vulnerability-2020-01-11/coverage.png)\n\nSo, in conclusion, it is great to have all of these tools at our disposal, but the code quality would benefit a lot more from having more eyeballs and brains on it.\n\n## Timeline\n\n* 2019-12-24 \u2013 Property based unit test fails in a commit pushed to a PR.\n* 2019-12-25 \u2013 Issue investigated, preliminary patch and issue description published.\n* 2019-12-30 \u2013 Further investigations, proof-of-concept exploit demonstrated on a vulnerable test instance.\n* 2020-01-03 \u2013 Discussed broader mitigation of user provided content injections, reviewed other possible cases.\n* 2020-01-04 \u2013 Published a second patch based on review, escapes HTML in translation.\n* 2020-01-05 \u2013 Started writing vulnerability report.\n* 2020-01-07 \u2013 Backported fix for 1.2.1.\n* 2020-01-11 \u2013 [Release published](https://github.com/PrivateBin/PrivateBin/releases/tag/1.3.2).\n* 2020-01-11 \u2013 Vulnerability details published.",
             "link": "https://github.com/advisories/GHSA-8j72-p2wm-6738",
             "cve": "CVE-2020-5223",
@@ -15666,7 +17473,7 @@
             },
             "reference": "composer://pterodactyl/panel"
         },
-        "2020-10-08-5": {
+        "2020-10-08-34": {
             "title": "### Impact\nAn XSS vulnerability exists in versions of Pterodactyl Panel before 0.7.19. Affected versions do not properly sanitize account names before rendering them to the dropdown selector in the admin area when creating or modifying a server.\n\n### Patches\nThis XSS has been addressed in 0.7.19 and will be rolled forwards into the 1.0-rc.7 release.\n\n### Workarounds\nNo workaround exists without manual patching. See https://github.com/pterodactyl/panel/pull/2441/files for the files changed.\n\n### For more information\nIf you have any questions or comments about this advisory please reach out on Discord, or by emailing `dane` at `pterodactyl` dot `io`.\n\n_Thank you to Sergej for the responsible disclosure of this issue._",
             "link": "https://github.com/advisories/GHSA-5822-pw57-vv37",
             "cve": null,
@@ -16012,6 +17819,48 @@
         }
     },
     "shopware/core": {
+        "2020-12-21": {
+            "title": "### Impact\nAuthenticated Server Side Request Forgery\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://reqon.nl\">REQON B.V.</a> for reporting this issue.",
+            "link": "https://github.com/advisories/GHSA-8pfh-mm2g-hmc3",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573684,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/core"
+        },
+        "2020-12-21-15": {
+            "title": "### Impact\n\nInformation exposure via query strings in URL\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://www.vater-it.de/\">Oliver Herrmann</a> for reporting this issue.",
+            "link": "https://github.com/advisories/GHSA-cq6h-w3mc-57f4",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573676,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/core"
+        },
+        "2020-12-21-17": {
+            "title": "### Impact\nAuthenticated Privilege Escalation\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020",
+            "link": "https://github.com/advisories/GHSA-5q58-x5h2-v5rx",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573668,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/core"
+        },
         "2020-10-19": {
             "title": "### Impact\n Denial of Service via Cache Flooding\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-p68v-frgx-4rjp",
@@ -16026,7 +17875,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-10-19-1": {
+        "2020-10-19-32": {
             "title": "### Impact\nAuthenticated XML External Entity Processing\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-8xv9-qcr9-ww9j",
             "cve": null,
@@ -16054,7 +17903,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-09-23-19": {
+        "2020-09-23-48": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -16070,6 +17919,76 @@
         }
     },
     "shopware/platform": {
+        "2021-02-10": {
+            "title": "### Impact\nLeak of information via Store-API\n\n### Patches\nWe recommend to update to the current version 6.3.5.1. You can get the update to 6.3.5.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\nThe vulnerability could only be fixed by changing the API system, which involves a non-backward-compatible change. Only consumers of the Store-API should be affected by this change. Please check your plugins if you have it in use. Detailed technical information can be found in the upgrade information.\n\nhttps://github.com/shopware/platform/blob/v6.3.5.1/UPGRADE-6.3.md#6351\n\n### Workarounds\nFor older versions of 6.1 and 6.2, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-02-2021",
+            "link": "https://github.com/advisories/GHSA-f2vv-h5x4-57gr",
+            "cve": null,
+            "branches": {
+                "6.3.5.x": {
+                    "time": 1612924341,
+                    "versions": [
+                        "<= 6.3.5.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/platform"
+        },
+        "2021-02-10-4": {
+            "title": "### Impact\nGeneration of fake documents via public GET-call\n\n### Patches\nWe recommend to update to the current version 6.3.5.1. You can get the update to 6.3.5.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-02-2021",
+            "link": "https://github.com/advisories/GHSA-jvg4-9rc2-wvcr",
+            "cve": null,
+            "branches": {
+                "6.3.5.x": {
+                    "time": 1612924327,
+                    "versions": [
+                        "<= 6.3.5.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/platform"
+        },
+        "2020-12-21": {
+            "title": "### Impact\nAuthenticated Server Side Request Forgery\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://reqon.nl\">REQON B.V.</a> for reporting this issue.",
+            "link": "https://github.com/advisories/GHSA-8pfh-mm2g-hmc3",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573684,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/platform"
+        },
+        "2020-12-21-16": {
+            "title": "### Impact\n\nInformation exposure via query strings in URL\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://www.vater-it.de/\">Oliver Herrmann</a> for reporting this issue.",
+            "link": "https://github.com/advisories/GHSA-cq6h-w3mc-57f4",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573676,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/platform"
+        },
+        "2020-12-21-18": {
+            "title": "### Impact\nAuthenticated Privilege Escalation\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020",
+            "link": "https://github.com/advisories/GHSA-5q58-x5h2-v5rx",
+            "cve": null,
+            "branches": {
+                "6.3.4.x": {
+                    "time": 1608573668,
+                    "versions": [
+                        "<= 6.3.4.0"
+                    ]
+                }
+            },
+            "reference": "composer://shopware/platform"
+        },
         "2020-10-19": {
             "title": "### Impact\n Denial of Service via Cache Flooding\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-p68v-frgx-4rjp",
@@ -16084,7 +18003,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-10-19-2": {
+        "2020-10-19-33": {
             "title": "### Impact\nAuthenticated XML External Entity Processing\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-8xv9-qcr9-ww9j",
             "cve": null,
@@ -16112,7 +18031,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-09-23-20": {
+        "2020-09-23-49": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -18866,6 +20785,34 @@
                 }
             },
             "reference": "composer://smarty/smarty"
+        },
+        "CVE-2021-26119": {
+            "title": "template_object Sandbox Escape PHP Code Injection",
+            "link": "https://srcincite.io/blog/2021/02/18/smarty-template-engine-multiple-sandbox-escape-vulnerabilities.html",
+            "cve": "CVE-2021-26119",
+            "branches": {
+                "master": {
+                    "time": 1611526406,
+                    "versions": [
+                        "<=3.1.38"
+                    ]
+                }
+            },
+            "reference": "composer://smarty/smarty"
+        },
+        "CVE-2021-26120": {
+            "title": "Smarty_Internal_Runtime_TplFunction Sandbox Escape PHP Code Injection",
+            "link": "https://srcincite.io/blog/2021/02/18/smarty-template-engine-multiple-sandbox-escape-vulnerabilities.html",
+            "cve": "CVE-2021-26120",
+            "branches": {
+                "master": {
+                    "time": 1611528247,
+                    "versions": [
+                        "<=3.1.38"
+                    ]
+                }
+            },
+            "reference": "composer://smarty/smarty"
         }
     },
     "socalnick/scn-social-auth": {
@@ -18881,6 +20828,21 @@
                 }
             },
             "reference": "composer://socalnick/scn-social-auth"
+        }
+    },
+    "socialiteproviders/steam": {
+        "2021-01-29": {
+            "title": "Authentication bypass via attacker provided openid server",
+            "link": "https://github.com/SocialiteProviders/Steam/security/advisories/GHSA-hhw9-35p2-q2c5",
+            "branches": {
+                "1.0": {
+                    "time": null,
+                    "versions": [
+                        "<1.1"
+                    ]
+                }
+            },
+            "reference": "composer://socialiteproviders/steam"
         }
     },
     "spoonity/tcpdf": {
@@ -19032,7 +20994,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-31": {
+        "CVE-2020-15132-60": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -19047,7 +21009,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-32": {
+        "CVE-2020-15132-61": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -19602,52 +21564,6 @@
                 }
             },
             "reference": "composer://sylius/sylius"
-        }
-    },
-    "sylius\\sylius": {
-        "CVE-2020-15245": {
-            "title": "### Impact\nThe user may register in a shop by email mail@example.com, verify it, change it to the mail another@domain.com and stay verified and enabled. This may lead to having accounts addressed to totally different emails, that were verified. Note, that this way one is not able to take over any existing account (guest or normal one).\n\n### Patches\nPatch has been provided for Sylius 1.6.x and newer - 1.6.9, 1.7.9, 1.8.3. Versions older than 1.6 are not covered by our security support anymore.\n\n### Workarounds\nIf for whatever reason you are not able to upgrade your application version, you may resolve this issue on your own by creating a custom event listener, which will listen to the `sylius.customer.pre_update` event. You can determine that email has been changed if customer email and user username are different. They are synchronized later on. Pay attention, to email changing behavior for administrators. You may need to skip this logic for them. In order to achieve this, you should either check master request path info, if it does not contain `/admin` prefix or adjust event triggered during customer update in the shop. You can find more information on how to customize the event here.\n\n### Acknowledgements\n\nThis security issue has been reported by Mircea Silviu (@decemvre), thanks a lot!\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Email us at [security@sylius.com](mailto:security@sylius.com)",
-            "link": "https://github.com/advisories/GHSA-6gw4-x63h-5499",
-            "cve": "CVE-2020-15245",
-            "branches": {
-                "1.8.x": {
-                    "time": 1603140059,
-                    "versions": [
-                        ">= 1.8.0",
-                        "< 1.8.3"
-                    ]
-                }
-            },
-            "reference": "composer://sylius\\sylius"
-        },
-        "CVE-2020-15245-3": {
-            "title": "### Impact\nThe user may register in a shop by email mail@example.com, verify it, change it to the mail another@domain.com and stay verified and enabled. This may lead to having accounts addressed to totally different emails, that were verified. Note, that this way one is not able to take over any existing account (guest or normal one).\n\n### Patches\nPatch has been provided for Sylius 1.6.x and newer - 1.6.9, 1.7.9, 1.8.3. Versions older than 1.6 are not covered by our security support anymore.\n\n### Workarounds\nIf for whatever reason you are not able to upgrade your application version, you may resolve this issue on your own by creating a custom event listener, which will listen to the `sylius.customer.pre_update` event. You can determine that email has been changed if customer email and user username are different. They are synchronized later on. Pay attention, to email changing behavior for administrators. You may need to skip this logic for them. In order to achieve this, you should either check master request path info, if it does not contain `/admin` prefix or adjust event triggered during customer update in the shop. You can find more information on how to customize the event here.\n\n### Acknowledgements\n\nThis security issue has been reported by Mircea Silviu (@decemvre), thanks a lot!\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Email us at [security@sylius.com](mailto:security@sylius.com)",
-            "link": "https://github.com/advisories/GHSA-6gw4-x63h-5499",
-            "cve": "CVE-2020-15245",
-            "branches": {
-                "1.7.x": {
-                    "time": 1603140059,
-                    "versions": [
-                        ">= 1.7.0",
-                        "< 1.7.9"
-                    ]
-                }
-            },
-            "reference": "composer://sylius\\sylius"
-        },
-        "CVE-2020-15245-4": {
-            "title": "### Impact\nThe user may register in a shop by email mail@example.com, verify it, change it to the mail another@domain.com and stay verified and enabled. This may lead to having accounts addressed to totally different emails, that were verified. Note, that this way one is not able to take over any existing account (guest or normal one).\n\n### Patches\nPatch has been provided for Sylius 1.6.x and newer - 1.6.9, 1.7.9, 1.8.3. Versions older than 1.6 are not covered by our security support anymore.\n\n### Workarounds\nIf for whatever reason you are not able to upgrade your application version, you may resolve this issue on your own by creating a custom event listener, which will listen to the `sylius.customer.pre_update` event. You can determine that email has been changed if customer email and user username are different. They are synchronized later on. Pay attention, to email changing behavior for administrators. You may need to skip this logic for them. In order to achieve this, you should either check master request path info, if it does not contain `/admin` prefix or adjust event triggered during customer update in the shop. You can find more information on how to customize the event here.\n\n### Acknowledgements\n\nThis security issue has been reported by Mircea Silviu (@decemvre), thanks a lot!\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Email us at [security@sylius.com](mailto:security@sylius.com)",
-            "link": "https://github.com/advisories/GHSA-6gw4-x63h-5499",
-            "cve": "CVE-2020-15245",
-            "branches": {
-                "1.6.x": {
-                    "time": 1603140059,
-                    "versions": [
-                        "< 1.6.9"
-                    ]
-                }
-            },
-            "reference": "composer://sylius\\sylius"
         }
     },
     "symbiote/silverstripe-multivaluefield": {
@@ -26493,10 +28409,10 @@
             },
             "reference": "composer://twig/twig"
         },
-        "2015-08-12": {
+        "CVE-2015-7809": {
             "title": "Remote code execution in templates",
             "link": "https://symfony.com/blog/security-release-twig-1-20-0",
-            "cve": null,
+            "cve": "CVE-2015-7809",
             "branches": {
                 "1.x": {
                     "time": 1439394830,
@@ -26507,10 +28423,10 @@
             },
             "reference": "composer://twig/twig"
         },
-        "2019-03-12": {
+        "CVE-2019-9942": {
             "title": "Sandbox Information Disclosure",
             "link": "https://symfony.com/blog/twig-sandbox-information-disclosure",
-            "cve": null,
+            "cve": "CVE-2019-9942",
             "branches": {
                 "1.x": {
                     "time": 1552394101,
@@ -29337,6 +31253,76 @@
             },
             "reference": "composer://typo3/cms"
         },
+        "2020-11-17-2": {
+            "title": "TYPO3-CORE-SA-2020-010: Cross-Site Scripting in Fluid view helpers",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-010/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:00",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-11-17 08:49:54",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.23"
+                    ]
+                },
+                "8.x": {
+                    "time": "2020-11-17 08:55:33",
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.38"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-11-17-3": {
+            "title": "TYPO3-CORE-SA-2020-011: Cleartext storage of session identifier",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-011/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:11",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-11-17 08:50:08",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.23"
+                    ]
+                },
+                "8.x": {
+                    "time": "2020-11-17 08:55:33",
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.38"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2020-11-17-4": {
+            "title": "TYPO3-CORE-SA-2020-012: XML External Entity in Dashboard Widget",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-012/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:21",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
         "CVE-2014-3941": {
             "title": "Possible Host Spoofing through SERVER_NAME",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
@@ -30414,6 +32400,76 @@
                 }
             },
             "reference": "composer://typo3/cms-core"
+        },
+        "2020-11-17-2": {
+            "title": "TYPO3-CORE-SA-2020-010: Cross-Site Scripting in Fluid view helpers",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-010/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:00",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-11-17 08:49:54",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.23"
+                    ]
+                },
+                "8.x": {
+                    "time": "2020-11-17 08:55:33",
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.38"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-11-17-3": {
+            "title": "TYPO3-CORE-SA-2020-011: Cleartext storage of session identifier",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-011/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:11",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                },
+                "9.x": {
+                    "time": "2020-11-17 08:50:08",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.23"
+                    ]
+                },
+                "8.x": {
+                    "time": "2020-11-17 08:55:33",
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.7.38"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2020-11-17-4": {
+            "title": "TYPO3-CORE-SA-2020-012: XML External Entity in Dashboard Widget",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2020-012/",
+            "branches": {
+                "10.x": {
+                    "time": "2020-11-17 08:51:21",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.10"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
         }
     },
     "typo3/flow": {
@@ -30728,7 +32784,7 @@
             },
             "reference": "composer://usmanhalalit/pixie"
         },
-        "CVE-2019-10766-124": {
+        "CVE-2019-10766-153": {
             "title": "Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.",
             "link": "https://github.com/advisories/GHSA-68wg-qv6r-j4vp",
             "cve": "CVE-2019-10766",
@@ -30759,7 +32815,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19634-52": {
+        "CVE-2019-19634-81": {
             "title": "class.upload.php in verot.net class.upload through 1.0.3 and 2.x through 2.0.4, as used in the K2 extension for Joomla! and other products, omits .pht from the set of dangerous file extensions, a similar issue to CVE-2019-19576.",
             "link": "https://github.com/advisories/GHSA-2gc7-w4hw-rr2m",
             "cve": "CVE-2019-19634",
@@ -30788,7 +32844,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19576-85": {
+        "CVE-2019-19576-114": {
             "title": "class.upload.php in verot.net class.upload before 1.0.3 and 2.x before 2.0.4, as used in the K2 extension for Joomla! and other products, omits .phar from the set of dangerous file extensions.",
             "link": "https://github.com/advisories/GHSA-r5gm-4p5w-pq2p",
             "cve": "CVE-2019-19576",
@@ -30801,6 +32857,50 @@
                 }
             },
             "reference": "composer://verot/class.upload.php"
+        }
+    },
+    "vrana/adminer": {
+        "CVE-2018-7667": {
+            "title": "### Impact\nAll users are affected.\n\n### Patches\n* Unsuccessfully patched by 0fae40fb, included in version [4.4.0](https://github.com/vrana/adminer/releases/tag/v4.4.0).\n* Patched by 35bfaa75, included in version [4.7.8](https://github.com/vrana/adminer/releases/tag/v4.7.8).\n\n### Workarounds\nProtect access to Adminer also by other means, e.g. by HTTP password, IP address limiting or by OTP [plugin](https://www.adminer.org/plugins/).\n\n### References\n* http://hyp3rlinx.altervista.org/advisories/ADMINER-UNAUTHENTICATED-SERVER-SIDE-REQUEST-FORGERY.txt\n* https://sourceforge.net/p/adminer/bugs-and-features/769/\n* https://gusralph.info/adminer-ssrf-bypass-cve-2018-7667/ (CVE-2020-28654)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at 35bfaa75.",
+            "link": "https://github.com/advisories/GHSA-43f8-p5w3-5m25",
+            "cve": "CVE-2018-7667",
+            "branches": {
+                "4.7.x": {
+                    "time": 1613078440,
+                    "versions": [
+                        "< 4.7.8"
+                    ]
+                }
+            },
+            "reference": "composer://vrana/adminer"
+        },
+        "CVE-2020-35572": {
+            "title": "### Impact\nUsers of Adminer versions supporting SQL command (most versions, e.g. MySQL) using browsers not encoding URL parameters before sending to server (likely Edge, not Chrome, not Firefox) are affected.\n\n### Patches\nPatched by 5c395afc, included in version [4.7.9](https://github.com/vrana/adminer/releases/tag/v4.7.9).\n\n### Workarounds\nUse browser which encodes URL parameters (e.g. Chrome or Firefox).\n\n### References\nhttps://sourceforge.net/p/adminer/bugs-and-features/775/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at https://github.com/vrana/adminer/security/advisories/GHSA-9pgx-gcph-mpqr",
+            "link": "https://github.com/advisories/GHSA-9pgx-gcph-mpqr",
+            "cve": "CVE-2020-35572",
+            "branches": {
+                "4.7.x": {
+                    "time": 1613076148,
+                    "versions": [
+                        "< 4.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://vrana/adminer"
+        },
+        "CVE-2021-21311": {
+            "title": "### Impact\nUsers of Adminer versions bundling all drivers (e.g. `adminer.php`) are affected.\n\n### Patches\nPatched by ccd2374b, included in version [4.7.9](https://github.com/vrana/adminer/releases/tag/v4.7.9).\n\n### Workarounds\n* Use a single driver version (e.g. `adminer-mysql.php`).\n* Protect access to Adminer also by other means, e.g. by HTTP password, IP address limiting or by OTP [plugin](https://www.adminer.org/plugins/).\n\n### References\nhttps://github.com/vrana/adminer/files/5957311/Adminer.SSRF.pdf\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at ccd2374b.",
+            "link": "https://github.com/advisories/GHSA-x5r2-hj5c-8jx6",
+            "cve": "CVE-2021-21311",
+            "branches": {
+                "4.7.x": {
+                    "time": 1613076179,
+                    "versions": [
+                        "< 4.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://vrana/adminer"
         }
     },
     "wallabag/tcpdf": {
