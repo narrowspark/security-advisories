@@ -21641,6 +21641,79 @@
             "reference": "composer://symbiote/silverstripe-multivaluefield"
         }
     },
+    "symbiote/silverstripe-queuedjobs": {
+        "CVE-2021-27938": {
+            "title": "CVE-2021-27938: XSS in CreateQueuedJobTask",
+            "link": "https://www.silverstripe.org/download/security-releases/cve-2021-27938",
+            "cve": "CVE-2021-27938",
+            "branches": {
+                "3.0.x": {
+                    "time": 1615941120,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.2"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1615941120,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.4"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.7"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.2"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.4"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.3"
+                    ]
+                },
+                "4.4.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.4.0",
+                        "<4.4.3"
+                    ]
+                },
+                "4.5.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.5.0",
+                        "<4.5.1"
+                    ]
+                },
+                "4.6.x": {
+                    "time": 1615941960,
+                    "versions": [
+                        ">=4.6.0",
+                        "<4.6.4"
+                    ]
+                }
+            },
+            "reference": "composer://symbiote/silverstripe-queuedjobs"
+        }
+    },
     "symbiote/silverstripe-versionedfiles": {
         "CVE-2019-16409": {
             "title": "In the Versioned Files module through 2.0.3 for SilverStripe 3.x, unpublished versions of files are publicly exposed to anyone who can guess their URL. This guess could be highly informed by a basic understanding of the symbiote/silverstripe-versionedfiles source code. (Users who upgrade from SilverStripe 3.x to 4.x and had Versioned Files installed have no further need for this module, because the 4.x release has built-in versioning. However, nothing in the upgrade process automates the destruction of these insecure artefacts, nor alerts the user to the criticality of destruction.)",
@@ -31381,6 +31454,216 @@
             },
             "reference": "composer://typo3/cms"
         },
+        "2021-03-16-1": {
+            "title": "TYPO3-CORE-SA-2021-001: Open Redirection in Login Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-001/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:01",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:01:50",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:07",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-2": {
+            "title": "TYPO3-CORE-SA-2021-002: Unrestricted File Upload in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-002/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:23",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:09",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:27",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-3": {
+            "title": "TYPO3-CORE-SA-2021-003: Broken Access Control in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-003/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:40",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:31",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:43",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-4": {
+            "title": "TYPO3-CORE-SA-2021-004: Cross-Site Scripting in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-004/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:55",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:46",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-5": {
+            "title": "TYPO3-CORE-SA-2021-005: Denial of Service in Page Error Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-005/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:00:29",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:06",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:04",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-6": {
+            "title": "TYPO3-CORE-SA-2021-006: Cleartext storage of session identifier",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-006/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:00:50",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:23",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:23",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-7": {
+            "title": "TYPO3-CORE-SA-2021-007: Cross-Site Scripting in Content Preview",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-007/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:01:14",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:36",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
+        "2021-03-16-8": {
+            "title": "TYPO3-CORE-SA-2021-008: Cross-Site Scripting in Content Preview",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-008/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:01:32",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:54",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms"
+        },
         "CVE-2014-3941": {
             "title": "Possible Host Spoofing through SERVER_NAME",
             "link": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2014-001/",
@@ -32524,6 +32807,216 @@
                     "versions": [
                         ">=10.0.0",
                         "<10.4.10"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-1": {
+            "title": "TYPO3-CORE-SA-2021-001: Open Redirection in Login Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-001/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:01",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:01:50",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:07",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-2": {
+            "title": "TYPO3-CORE-SA-2021-002: Unrestricted File Upload in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-002/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:23",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:09",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:27",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-3": {
+            "title": "TYPO3-CORE-SA-2021-003: Broken Access Control in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-003/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:40",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:31",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:57:43",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-4": {
+            "title": "TYPO3-CORE-SA-2021-004: Cross-Site Scripting in Form Framework",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-004/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 08:59:55",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:02:46",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-5": {
+            "title": "TYPO3-CORE-SA-2021-005: Denial of Service in Page Error Handling",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-005/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:00:29",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:06",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:04",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-6": {
+            "title": "TYPO3-CORE-SA-2021-006: Cleartext storage of session identifier",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-006/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:00:50",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:23",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:23",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-7": {
+            "title": "TYPO3-CORE-SA-2021-007: Cross-Site Scripting in Content Preview",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-007/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:01:14",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:36",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/cms-core"
+        },
+        "2021-03-16-8": {
+            "title": "TYPO3-CORE-SA-2021-008: Cross-Site Scripting in Content Preview",
+            "link": "https://typo3.org/security/advisory/typo3-core-sa-2021-008/",
+            "branches": {
+                "10.x": {
+                    "time": "2021-03-16 09:01:32",
+                    "versions": [
+                        ">=10.0.0",
+                        "<10.4.14"
+                    ]
+                },
+                "11.x": {
+                    "time": "2021-03-16 09:03:54",
+                    "versions": [
+                        ">=11.0.0",
+                        "<11.1.1"
+                    ]
+                },
+                "9.x": {
+                    "time": "2021-03-16 08:58:42",
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.5.25"
                     ]
                 }
             },
