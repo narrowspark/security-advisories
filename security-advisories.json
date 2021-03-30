@@ -829,7 +829,7 @@
             },
             "reference": "composer://centreon/centreon"
         },
-        "CVE-2019-16194-120": {
+        "CVE-2019-16194-144": {
             "title": "SQL injection vulnerabilities in Centreon through 19.04 allow attacks via the svc_id parameter in include/monitoring/status/Services/xml/makeXMLForOneService.php.",
             "link": "https://github.com/advisories/GHSA-wgjx-hm34-qgf7",
             "cve": "CVE-2019-16194",
@@ -1404,7 +1404,7 @@
             },
             "reference": "composer://derhansen/sf_event_mgt"
         },
-        "CVE-2020-25026-85": {
+        "CVE-2020-25026-109": {
             "title": "A missing access check in the backend module allows an authenticated backend user to export participant data for events which the user does not have access to, resulting in Information Disclosure. \n\nAnother missing access check in the backend module allows an authenticated backend user to send emails to event participants for events which the user does not have access to, resulting in Broken Access Control.\n\nExternal reference: [https://typo3.org/security/advisory/typo3-ext-sa-2020-017](https://typo3.org/security/advisory/typo3-ext-sa-2020-017)",
             "link": "https://github.com/advisories/GHSA-g8rg-7rpr-cwr2",
             "cve": "CVE-2020-25026",
@@ -8438,7 +8438,7 @@
             },
             "reference": "composer://ezsystems/ezplatform-rest"
         },
-        "2021-03-11-37": {
+        "2021-03-11-61": {
             "title": "This Security Advisory is about a vulnerability in eZ Platform v1.13, v2.5, and v3.2, and in Ibexa DXP and Ibexa Open Source v3.3. The /user/sessions endpoint can let an attacker detect if a given username or email refers to a valid account. This can be detected through differences in the response data or response time of certain requests. The fix ensures neither attack is possible. The fix is distributed via Composer.\n\nIf you come across a security issue in our products, here is how you can report it to us: https://doc.ibexa.co/en/latest/guide/reporting_issues/#toc",
             "link": "https://github.com/advisories/GHSA-7vwg-39h8-8qp8",
             "cve": null,
@@ -8978,6 +8978,22 @@
                 }
             },
             "reference": "composer://flarum/tags"
+        }
+    },
+    "fluidtypo3/vhs": {
+        "CVE-2021-28381": {
+            "title": "The vhs (aka VHS: Fluid ViewHelpers) extension before 5.1.1 for TYPO3 allows SQL injection via isLanguageViewHelper.",
+            "link": "https://github.com/advisories/GHSA-wq4r-8342-jmc9",
+            "cve": "CVE-2021-28381",
+            "branches": {
+                "5.1.x": {
+                    "time": 1617049484,
+                    "versions": [
+                        "< 5.1.1"
+                    ]
+                }
+            },
+            "reference": "composer://fluidtypo3/vhs"
         }
     },
     "fooman/tcpdf": {
@@ -10725,7 +10741,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8126-200": {
+        "CVE-2019-8126-224": {
             "title": "An XML entity injection vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated admin user can craft document type definition for an XML representing XML layout. The crafted document type definition and XML layout allow processing of external entities which can lead to information disclosure.",
             "link": "https://github.com/advisories/GHSA-427g-2r83-3ccm",
             "cve": "CVE-2019-8126",
@@ -10755,7 +10771,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8121-201": {
+        "CVE-2019-8121-225": {
             "title": "An insecure component vulnerability exists in Magento 2.1 prior to 2.1.19, Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3. Magento 2 codebase leveraged outdated versions of JS libraries (Bootstrap, jquery, Knockout) with known security vulnerabilities.",
             "link": "https://github.com/advisories/GHSA-89ch-hqf9-rgp3",
             "cve": "CVE-2019-8121",
@@ -10785,7 +10801,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8135-202": {
+        "CVE-2019-8135-226": {
             "title": "A remote code execution vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. Dependency injection through Symphony framework allows service identifiers to be derived from user controlled data, which can lead to remote code execution.",
             "link": "https://github.com/advisories/GHSA-3q5x-7mxp-rp6j",
             "cve": "CVE-2019-8135",
@@ -10815,7 +10831,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8133-203": {
+        "CVE-2019-8133-227": {
             "title": "A security bypass vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. A user with privileges to generate sitemaps can bypass configuration that restricts directory access. The bypass allows overwrite of a subset of configuration files which can lead to denial of service.",
             "link": "https://github.com/advisories/GHSA-62fx-3v4f-mwxm",
             "cve": "CVE-2019-8133",
@@ -10845,7 +10861,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8145-204": {
+        "CVE-2019-8145-228": {
             "title": "A stored cross-site scripting (XSS) vulnerability exists in Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1. An authenticated user can inject arbitrary JavaScript code into the attribute set name when listing the products.",
             "link": "https://github.com/advisories/GHSA-xv69-f7x5-r4qw",
             "cve": "CVE-2019-8145",
@@ -10875,7 +10891,7 @@
             },
             "reference": "composer://magento/community-edition"
         },
-        "CVE-2019-8233-205": {
+        "CVE-2019-8233-229": {
             "title": "In Magento 2.2 prior to 2.2.10, Magento 2.3 prior to 2.3.3 or 2.3.2-p1, an unauthenticated user can inject arbitrary JavaScript code as a result of the sanitization engine ignoring HTML comments.",
             "link": "https://github.com/advisories/GHSA-fm68-89m8-4gjj",
             "cve": "CVE-2019-8233",
@@ -16083,6 +16099,436 @@
             "reference": "composer://monolog/monolog"
         }
     },
+    "moodle/moodle": {
+        "CVE-2021-20280": {
+            "title": "Text-based feedback answers required additional sanitizing to prevent stored XSS and blind SSRF risks in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-x2jp-hh65-4xvf",
+            "cve": "CVE-2021-20280",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050535,
+                    "versions": [
+                        "< 3.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20280-4": {
+            "title": "Text-based feedback answers required additional sanitizing to prevent stored XSS and blind SSRF risks in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-x2jp-hh65-4xvf",
+            "cve": "CVE-2021-20280",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050535,
+                    "versions": [
+                        ">= 3.8",
+                        "< 3.8.8"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20280-5": {
+            "title": "Text-based feedback answers required additional sanitizing to prevent stored XSS and blind SSRF risks in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-x2jp-hh65-4xvf",
+            "cve": "CVE-2021-20280",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050535,
+                    "versions": [
+                        ">= 3.9",
+                        "< 3.9.5"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20280-6": {
+            "title": "Text-based feedback answers required additional sanitizing to prevent stored XSS and blind SSRF risks in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-x2jp-hh65-4xvf",
+            "cve": "CVE-2021-20280",
+            "branches": {
+                "3.10.x": {
+                    "time": 1617050535,
+                    "versions": [
+                        ">= 3.10",
+                        "< 3.10.2"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25700": {
+            "title": "In moodle, some database module web services allowed students to add entries within groups they did not belong to. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-7h8v-2v8x-h264",
+            "cve": "CVE-2020-25700",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050539,
+                    "versions": [
+                        "< 3.5.15"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25700-7": {
+            "title": "In moodle, some database module web services allowed students to add entries within groups they did not belong to. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-7h8v-2v8x-h264",
+            "cve": "CVE-2020-25700",
+            "branches": {
+                "3.7.x": {
+                    "time": 1617050539,
+                    "versions": [
+                        ">= 3.7.0",
+                        "< 3.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25700-8": {
+            "title": "In moodle, some database module web services allowed students to add entries within groups they did not belong to. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-7h8v-2v8x-h264",
+            "cve": "CVE-2020-25700",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050539,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25700-9": {
+            "title": "In moodle, some database module web services allowed students to add entries within groups they did not belong to. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-7h8v-2v8x-h264",
+            "cve": "CVE-2020-25700",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050539,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.3"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25698": {
+            "title": "Users' enrollment capabilities were not being sufficiently checked in Moodle when they are restored into an existing course. This could lead to them unenrolling users without having permission to do so. Versions affected: 3.5 to 3.5.14, 3.7 to 3.7.8, 3.8 to 3.8.5, 3.9 to 3.9.2 and earlier unsupported versions. Fixed in 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-vxhx-gmhm-623c",
+            "cve": "CVE-2020-25698",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050566,
+                    "versions": [
+                        "< 3.5.15"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25698-10": {
+            "title": "Users' enrollment capabilities were not being sufficiently checked in Moodle when they are restored into an existing course. This could lead to them unenrolling users without having permission to do so. Versions affected: 3.5 to 3.5.14, 3.7 to 3.7.8, 3.8 to 3.8.5, 3.9 to 3.9.2 and earlier unsupported versions. Fixed in 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-vxhx-gmhm-623c",
+            "cve": "CVE-2020-25698",
+            "branches": {
+                "3.7.x": {
+                    "time": 1617050566,
+                    "versions": [
+                        ">= 3.7.0",
+                        "< 3.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25698-11": {
+            "title": "Users' enrollment capabilities were not being sufficiently checked in Moodle when they are restored into an existing course. This could lead to them unenrolling users without having permission to do so. Versions affected: 3.5 to 3.5.14, 3.7 to 3.7.8, 3.8 to 3.8.5, 3.9 to 3.9.2 and earlier unsupported versions. Fixed in 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-vxhx-gmhm-623c",
+            "cve": "CVE-2020-25698",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050566,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25698-12": {
+            "title": "Users' enrollment capabilities were not being sufficiently checked in Moodle when they are restored into an existing course. This could lead to them unenrolling users without having permission to do so. Versions affected: 3.5 to 3.5.14, 3.7 to 3.7.8, 3.8 to 3.8.5, 3.9 to 3.9.2 and earlier unsupported versions. Fixed in 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-vxhx-gmhm-623c",
+            "cve": "CVE-2020-25698",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050566,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.3"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25701": {
+            "title": "If the upload course tool in Moodle was used to delete an enrollment method which did not exist or was not already enabled, the tool would erroneously enable that enrollment method. This could lead to unintended users gaining access to the course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-c9hq-g4q8-w893",
+            "cve": "CVE-2020-25701",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050575,
+                    "versions": [
+                        "< 3.5.15"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25701-13": {
+            "title": "If the upload course tool in Moodle was used to delete an enrollment method which did not exist or was not already enabled, the tool would erroneously enable that enrollment method. This could lead to unintended users gaining access to the course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-c9hq-g4q8-w893",
+            "cve": "CVE-2020-25701",
+            "branches": {
+                "3.7.x": {
+                    "time": 1617050575,
+                    "versions": [
+                        ">= 3.7.0",
+                        "< 3.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25701-14": {
+            "title": "If the upload course tool in Moodle was used to delete an enrollment method which did not exist or was not already enabled, the tool would erroneously enable that enrollment method. This could lead to unintended users gaining access to the course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-c9hq-g4q8-w893",
+            "cve": "CVE-2020-25701",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050575,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25701-15": {
+            "title": "If the upload course tool in Moodle was used to delete an enrollment method which did not exist or was not already enabled, the tool would erroneously enable that enrollment method. This could lead to unintended users gaining access to the course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-c9hq-g4q8-w893",
+            "cve": "CVE-2020-25701",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050575,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.3"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25699": {
+            "title": "In moodle, insufficient capability checks could lead to users with the ability to course restore adding additional capabilities to roles within that course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-h77r-rp97-7rv4",
+            "cve": "CVE-2020-25699",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050581,
+                    "versions": [
+                        "< 3.5.15"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25699-16": {
+            "title": "In moodle, insufficient capability checks could lead to users with the ability to course restore adding additional capabilities to roles within that course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-h77r-rp97-7rv4",
+            "cve": "CVE-2020-25699",
+            "branches": {
+                "3.7.x": {
+                    "time": 1617050581,
+                    "versions": [
+                        ">= 3.7.0",
+                        "< 3.7.9"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25699-17": {
+            "title": "In moodle, insufficient capability checks could lead to users with the ability to course restore adding additional capabilities to roles within that course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-h77r-rp97-7rv4",
+            "cve": "CVE-2020-25699",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050581,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.6"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25699-18": {
+            "title": "In moodle, insufficient capability checks could lead to users with the ability to course restore adding additional capabilities to roles within that course. Versions affected: 3.9 to 3.9.2, 3.8 to 3.8.5, 3.7 to 3.7.8, 3.5 to 3.5.14 and earlier unsupported versions. This is fixed in moodle 3.9.3, 3.8.6, 3.7.9, 3.5.15, and 3.10.",
+            "link": "https://github.com/advisories/GHSA-h77r-rp97-7rv4",
+            "cve": "CVE-2020-25699",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050581,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.3"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25702": {
+            "title": "In Moodle, it was possible to include JavaScript when re-naming content bank items. Versions affected: 3.9 to 3.9.2. This is fixed in moodle 3.9.3 and 3.10.",
+            "link": "https://github.com/advisories/GHSA-pgcp-m69h-p2gr",
+            "cve": "CVE-2020-25702",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050588,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.3"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25628": {
+            "title": "The filter in the tag manager required extra sanitizing to prevent a reflected XSS risk. This affects 3.9 to 3.9.1, 3.8 to 3.8.4, 3.7 to 3.7.7, 3.5 to 3.5.13 and earlier unsupported versions. Fixed in 3.9.2, 3.8.5, 3.7.8 and 3.5.14.",
+            "link": "https://github.com/advisories/GHSA-5x33-h32w-6vr2",
+            "cve": "CVE-2020-25628",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050595,
+                    "versions": [
+                        "< 3.5.14"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25628-19": {
+            "title": "The filter in the tag manager required extra sanitizing to prevent a reflected XSS risk. This affects 3.9 to 3.9.1, 3.8 to 3.8.4, 3.7 to 3.7.7, 3.5 to 3.5.13 and earlier unsupported versions. Fixed in 3.9.2, 3.8.5, 3.7.8 and 3.5.14.",
+            "link": "https://github.com/advisories/GHSA-5x33-h32w-6vr2",
+            "cve": "CVE-2020-25628",
+            "branches": {
+                "3.7.x": {
+                    "time": 1617050595,
+                    "versions": [
+                        ">= 3.7.0",
+                        "< 3.7.8"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25628-20": {
+            "title": "The filter in the tag manager required extra sanitizing to prevent a reflected XSS risk. This affects 3.9 to 3.9.1, 3.8 to 3.8.4, 3.7 to 3.7.7, 3.5 to 3.5.13 and earlier unsupported versions. Fixed in 3.9.2, 3.8.5, 3.7.8 and 3.5.14.",
+            "link": "https://github.com/advisories/GHSA-5x33-h32w-6vr2",
+            "cve": "CVE-2020-25628",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050595,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.5"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2020-25628-21": {
+            "title": "The filter in the tag manager required extra sanitizing to prevent a reflected XSS risk. This affects 3.9 to 3.9.1, 3.8 to 3.8.4, 3.7 to 3.7.7, 3.5 to 3.5.13 and earlier unsupported versions. Fixed in 3.9.2, 3.8.5, 3.7.8 and 3.5.14.",
+            "link": "https://github.com/advisories/GHSA-5x33-h32w-6vr2",
+            "cve": "CVE-2020-25628",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050595,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.2"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20281": {
+            "title": "It was possible for some users without permission to view other users' full names to do so via the online users block in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-93wh-35r4-6qmw",
+            "cve": "CVE-2021-20281",
+            "branches": {
+                "3.5.x": {
+                    "time": 1617050603,
+                    "versions": [
+                        "< 3.5.17"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20281-22": {
+            "title": "It was possible for some users without permission to view other users' full names to do so via the online users block in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-93wh-35r4-6qmw",
+            "cve": "CVE-2021-20281",
+            "branches": {
+                "3.8.x": {
+                    "time": 1617050603,
+                    "versions": [
+                        ">= 3.8.0",
+                        "< 3.8.8"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20281-23": {
+            "title": "It was possible for some users without permission to view other users' full names to do so via the online users block in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-93wh-35r4-6qmw",
+            "cve": "CVE-2021-20281",
+            "branches": {
+                "3.9.x": {
+                    "time": 1617050603,
+                    "versions": [
+                        ">= 3.9.0",
+                        "< 3.9.5"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        },
+        "CVE-2021-20281-24": {
+            "title": "It was possible for some users without permission to view other users' full names to do so via the online users block in moodle before 3.10.2, 3.9.5, 3.8.8, 3.5.17.",
+            "link": "https://github.com/advisories/GHSA-93wh-35r4-6qmw",
+            "cve": "CVE-2021-20281",
+            "branches": {
+                "3.10.x": {
+                    "time": 1617050603,
+                    "versions": [
+                        ">= 3.10.0",
+                        "< 3.10.2"
+                    ]
+                }
+            },
+            "reference": "composer://moodle/moodle"
+        }
+    },
     "namshi/jose": {
         "2015-02-19": {
             "title": "Attackers able to impersonate users",
@@ -16465,7 +16911,7 @@
             },
             "reference": "composer://october/rain"
         },
-        "CVE-2021-3311-38": {
+        "CVE-2021-3311-62": {
             "title": "### Impact\nWhen logging out, the session ID was not invalidated. This is not a problem while the user is logged out, but as soon as the user logs back in the old session ID would be valid again; which means that anyone that gained access to the old session cookie would be able to act as the logged in user. This is not a major concern for the majority of cases, since it requires a malicious party gaining access to the session cookie in the first place, but nevertheless has been fixed.\n\n### Patches\nIssue has been patched in Build 472 (v1.0.472) and v1.1.2.\n\n### Workarounds\nApply https://github.com/octobercms/library/commit/642f597489e6f644d4bd9a0c267e864cabead024 to your installation manually if unable to upgrade to Build 472 or v1.1.2.\n\n### References\n- Reported by Anisio (Brazilian Information Security Analyst)\n- http://cve.circl.lu/cve/CVE-2021-3311\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [hello@octobercms.com](mailto:hello@octobercms.com)\n\n### Threat assessment:\n<img width=\"699\" alt=\"Screen Shot 2021-02-07 at 11 50 35 PM\" src=\"https://user-images.githubusercontent.com/7253840/107180881-51eaf000-699f-11eb-8828-333128faf2a6.png\">",
             "link": "https://github.com/advisories/GHSA-7ggw-h8pp-r95r",
             "cve": "CVE-2021-3311",
@@ -16581,7 +17027,7 @@
             },
             "reference": "composer://openmage/magento-lts"
         },
-        "CVE-2020-15244-66": {
+        "CVE-2020-15244-90": {
             "title": "### Impact\nThis vulnerability allows an admin user to generate soap credentials that can be used to trigger RCE via PHP Object Injection through product attributes and a product.\n\n### Patches\nThe latest OpenMage Versions up from 19.4.7 and 20.0.3 have this Issue solved\n\n### Credits\nCredit to Luke Rodgers for reporting",
             "link": "https://github.com/advisories/GHSA-jrgf-vfw2-hj26",
             "cve": "CVE-2020-15244",
@@ -16610,7 +17056,7 @@
             },
             "reference": "composer://openmage/magento-lts"
         },
-        "CVE-2020-15151-94": {
+        "CVE-2020-15151-118": {
             "title": "### Impact\nThis vulnerability allows to circumvent the **formkey protection** in the Admin Interface and increases the attack surface for  **Cross Site Request Forgery** attacks \n\n### Patches\nThe latest OpenMage Versions up from 19.4.6 and 20.0.2 have this Issue solved\n\n\n### References\nRelated to Adobes CVE-2020-9690 ( https://helpx.adobe.com/security/products/magento/apsb20-47.html )\nfixed in Magento2 https://github.com/magento/magento2/commit/52d72b8010c9cecb5b8e3d98ec5edc1ddcc65fb4\nas part of 2.4.0/2.3.5-p2",
             "link": "https://github.com/advisories/GHSA-crf2-xm6x-46p6",
             "cve": "CVE-2020-15151",
@@ -17331,6 +17777,22 @@
             "reference": "composer://pocketmine/pocketmine-mp"
         }
     },
+    "pressbooks/pressbooks": {
+        "CVE-2021-3271": {
+            "title": "PressBooks 5.17.3 contains a cross-site scripting (XSS). Stored XSS can be submitted via the Book Info's Long Description Body, and all actions to open or preview the books page will result in the triggering the stored XSS.",
+            "link": "https://github.com/advisories/GHSA-9652-78hp-w58c",
+            "cve": "CVE-2021-3271",
+            "branches": {
+                "5.18.x": {
+                    "time": 1617048459,
+                    "versions": [
+                        "< 5.18.0"
+                    ]
+                }
+            },
+            "reference": "composer://pressbooks/pressbooks"
+        }
+    },
     "prestashop/autoupgrade": {
         "2020-01-08": {
             "title": "### Impact\n\nWe have identified that some autoupgrade module ZIP archives have been built with phpunit dev dependencies. PHPUnit contains a php script that would allow, on a webserver, an attacker to perform a RCE.\n\nThis vulnerability impacts\n- phpunit before 4.8.28 and 5.x before 5.6.3 as reported in [CVE-2017-9841](https://nvd.nist.gov/vuln/detail/CVE-2017-9841)\n- phpunit >= 5.63 before 7.5.19 and 8.5.1 (this is a newly found vulnerability that is currently being submitted as a CVE after disclosure was provided to phpunit maintainers)\n\nYou can read PrestaShop official statement about this vulnerability [here](https://build.prestashop.com/news/critical-security-vulnerability-in-prestashop-modules/).\n\n### Patches\n\nIn the [security patch](https://github.com/PrestaShop/autoupgrade/releases/tag/v4.10.1), we look for the unwanted vendor/phpunit folder and remove it if we find it. This allows users to fix the security issue when upgrading.\n\n### Workarounds\nUsers can also simply remove the unwanted vendor/phpunit folder.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2017-9841\n\n### For more information\nIf you have any questions or comments about this advisory, email us at security@prestashop.com",
@@ -17445,7 +17907,7 @@
             },
             "reference": "composer://privatebin/privatebin"
         },
-        "CVE-2020-5223-150": {
+        "CVE-2020-5223-174": {
             "title": "On 24th of December 2019 one of the [property based unit tests](https://github.com/PrivateBin/PrivateBin/blob/master/tst/README.md#property-based-unit-testing) reported a [failure](https://travis-ci.org/PrivateBin/PrivateBin/jobs/629180605#L782). Upon investigation, [@elrido](https://github.com/elrido) discovered that the failure was due to unescaped HTML, which allowed the user provided attachment file name to inject HTML under certain conditions leading to a persistent [Cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) vulnerability. After committing an [initial fix](https://github.com/PrivateBin/PrivateBin/commit/8d0ac336d23cd8c98e71d5f21cdadcae9c8a26e6) to the master branch, the [issue was reported](https://github.com/PrivateBin/PrivateBin/issues/554) on 25th of December. Vulnerability write-up done by [@rugk](https://github.com/rugk) and [@elrido](https://github.com/elrido).  \nThe vulnerability has been fixed in [PrivateBin v1.3.2 & v1.2.2](https://privatebin.info/news/v1.3.2-v1.2.2-release.html). Admins are urged to upgrade to these versions to protect the affected users.\n\n## Affected versions\n\nAny PrivateBin version since 1.2.\n\n## Conditions\n\n* The configuration setting `fileupload` has to be enabled, as 1.3 displays an error when trying to open a paste with attachment.\n* The CSP header rules don't get applied. For example:\n  * They are unsupported or disabled in the visitors browser.\n  * They are filtered out by a some proxy server at the server or client side.\n  * The header is disabled/commented in the PHP-logic.\n  * The rules have been relaxed in the `cspheader` configuration setting.\n* A paste with a malicious filename is created.\n* A visitor of that paste clicks on the \"Clone\" button.\n\n## Proof of concept\n\nThe following method is just one possibility to exploit this issue and is provided as a proof of concept with steps to reproduce the issue. To avoid having to create an actual file with a rogue filename, one could use the [Python CLI client for PrivateBin](https://github.com/r4sas/PBinCLI/) and [edit line 56 in `format.py`](https://github.com/r4sas/PBinCLI/blob/682b47fbd3e24a8a53c3b484ba896a5dbc85cda2/pbincli/format.py#L56) as follows:\n\n```diff\n-        self._attachment_name = path_leaf(path)\n+        self._attachment_name = '<script>alert(\"\u2639\ufe0f\");//<a'\n```\n\nThe paste then can be created on a vulnerable instance:\n\n```shell\n$ python pbincli/cli.py send -t \" \" -f /dev/null -s https://privatebin.net/\n```\n\nVisiting the created paste on a vulnerable instance, with `fileupload` enabled and the CSP header weakened or disabled, and clicking the clone button will insert the HTML unescaped. In the above example, a pop-up would appear, when the script is executed.\n\n## Impact\n\nOn a vulnerable site pastes with malicious filenames can be created and users visiting these could inadvertently trigger the code execution when they click the \"Clone\" button. They could be instigated to do so via social engineering, like a paste text suggesting to \"clone and share\" the paste in question.\n\nThe attached file itself doesn't have to be empty and could be an image or document that would still be displayed inline as usual. The execution of the script triggered by clicking on the \"Clone\" button may occur silently in the background without showing any noticeable signs in browser. It may for instance be used to track visitors, start drive-by-downloads or similar. While we focus on script injection here, as it is the easiest exploit vector, it has to be said that anything else can be injected like CSS, images, videos, although the default CSP will block inline CSS and images, e.g.\n\nOn first visit, the filename isn't visible and is properly escaped when inserted into the download attribute. Only when clicking the \"Download attachment\" link would open a file save dialog with an odd name pre-filled, although browsers will convert illegal characters into valid ones, so it may not be identical to the one provided. Only when the \"Clone\" button has been clicked and after the exploit has already been triggered, the filename gets displayed. Note that an attacker can of course prevent this indicator of compromise to be shown and e.g. change the displayed text or obfuscate the filename by starting it with something harmless, like `image.png`, before opening the HTML tag.\n\n### Impact restrictions\n\nThe impact is mitigated by the fact that the vulnerability is, as far as our investigation concluded, paste-specific, i.e. opening a vulnerable paste can only compromise this one paste and no other pastes.\n\nFurthermore, as stated before, the impact is mitigated by the fact that we deploy a strong [CSP](https://content-security-policy.com/) that, by default, does not allow inline JS or other potentially easy methods that would allow an easy exploitation of the vulnerability.  \nThat said, we have to make users aware, that there may always be tricks to bypass such a CSP and the simple injection of HTML tags, e.g. destroying, faking or somehow phishing an HTML page does always remain a possibility.\n\nAs such, we treat this as a security vulnerability with medium severity. It is critical on it's own, but we believe that the deployed security mechanisms should prevent an exploit in practice in most cases.\n\n## Real-life impact\n\nWe checked all instances listed in the [PrivateBin directory in the Wiki](https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Directory) and didn't find any 1.1, 1.2 or 1.3 instances that had the CSP headers disabled or in a state we know to be vulnerable. We used the following script, that may be adapted to check the CSP headers of any single instance:\n\n```shell\nfor URL in $(\n    curl -s https://raw.githubusercontent.com/wiki/PrivateBin/PrivateBin/PrivateBin-Directory.md | grep -Po '^http.*?(?= )'\n)\ndo\n    echo -n \"$URL: \"\n    curl -sLI $URL | grep -Poi 'content-security-policy.*script-src.?\\K.*?(?=;)' || echo 'No CSP detected!'\ndone\n```\n\nSome of the above sites do offer file uploads. On these instances, it is still possible that a visitor could have CSP support disabled in their browser, i.e. via a transparent proxy at their internet uplink or due to a browser plugin or some other locally installed, misguided security solution.\n\n**Important:** This scan is only a cursory check and _must not_ be taken as a security analysis of any means! You are always responsible for the security of your own instance. Please do check it manually!\n\n## Mitigation\n\nAs server administrators can't detect if a paste contains file attachments at all (apart from their size) in version 1.3 and due to the encrypted filename in older versions, as well as the risk for clients that don't apply the CSP settings, we urge them to upgrade to versions 1.3.2 or 1.2.2.\n\nIf you use v1.3, you could disable the `fileupload` setting to prevent pastes from getting displayed that may contain this vulnerability. Note that this will break all existing pastes with uploads, however, so we do _not_ recommend this, but advise you to upgrade to a fixed version instead.\n\n## Further information\n\nWe want to make potential third-party client authors aware of this vulnerability and urge them to double-check their implementations. If they develop a client that displays untrusted foreign data from a paste in a HTML site, please make sure to escape it to prevent XSS attacks. Such attacks can only be prevented when the paste is displayed, a mitigation when a paste is created is pointless, as a different client can be used during creation.\n\nWe do also acknowledge and want to highlight the benefit of the CSP, which has first been [introduced in PrivateBin v1.0](https://github.com/PrivateBin/PrivateBin/issues/10).\n\nHowever, we want to make you again aware that a whitelist-based CSP as we use, may [sometimes still be bypassed](https://csp.withgoogle.com/docs/faq.html#problems-with-whitelists), e.g. if you host a copy of the Angular library on the same domain as your PrivateBin instance.\nWe are aware of that and [do consider](https://github.com/PrivateBin/PrivateBin/issues/108) upgrading to a stronger CSP in the future.\n\n### Issue discovery\n\nWhile it is satisfying that our hard work on introducing unit tests has payed off in the discovery and mitigation of this vulnerability, it does also show a limitation of unit testing. A third party doing a code review would have certainly focused on how the project handles user provided input and may have discovered this much quicker.\n\nThe discovery wasn't due to the unit test checking for HTML input to get properly escaped, on the contrary, the test assumed input would not be changed. So other instances of HTML tags generated would have happily passed the test. Only when the test generated a fragment of a link (`<a`) it failed, because the DOM silently removed it when it inserted the string, as links within links aren't allowed. While the test was written to throw arbitrary strings at the `AttachmentViewer.moveAttachmentTo()` method, the test would only check that these got inserted into the DOM unchanged, oblivious of their potential significance when interpreted as HTML.\n\nThe [test had been introduced](https://github.com/PrivateBin/PrivateBin/commit/39860dfdc434c00d18342b4fb3bc6f5d0960030d) on December 3rd, 2017, 570 commits ago. Every commit on master and in PRs since introduction in that commit triggers these tests to run for every supported PHP version. Additional test cycles get run on developers local environments during working on commits. Hence the test suite must have run a few thousand times, testing 100 random strings each time. And only after more then 2 years a string containing `<a` got generated, triggered the error condition and 22 shrinks later the smallest failing test case was presented as:\n\n```\nFailed after 65 tests and 22 shrinks. rngState: 8b8f0d4ec2a67139b5; Counterexample: \"image/png\"; \"\"; \"\\u0000\"; \"<a\"; \"\";\n```\n\nDiscussion about a potential problem with that code, [did spark last September](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34943221), when the vulnerable code part was changed to the one before before the current fix, but was [incorrectly judged](https://github.com/PrivateBin/PrivateBin/pull/508#commitcomment-34944396) as not being a problem, because all of our translation strings are hardcoded. The fact that we do actually add some untrusted user-provided content, wasn't considered at that point.\n\nIt should also be mentioned, that the coverage report released for version 1.3.1 did highlight the line that caused this vulnerability as not being covered during testing:\n\n![Coverage report for version 1.3.1 showing missing test coverage for line causing vulnerability]({static}/img/vulnerability-2020-01-11/coverage.png)\n\nSo, in conclusion, it is great to have all of these tools at our disposal, but the code quality would benefit a lot more from having more eyeballs and brains on it.\n\n## Timeline\n\n* 2019-12-24 \u2013 Property based unit test fails in a commit pushed to a PR.\n* 2019-12-25 \u2013 Issue investigated, preliminary patch and issue description published.\n* 2019-12-30 \u2013 Further investigations, proof-of-concept exploit demonstrated on a vulnerable test instance.\n* 2020-01-03 \u2013 Discussed broader mitigation of user provided content injections, reviewed other possible cases.\n* 2020-01-04 \u2013 Published a second patch based on review, escapes HTML in translation.\n* 2020-01-05 \u2013 Started writing vulnerability report.\n* 2020-01-07 \u2013 Backported fix for 1.2.1.\n* 2020-01-11 \u2013 [Release published](https://github.com/PrivateBin/PrivateBin/releases/tag/1.3.2).\n* 2020-01-11 \u2013 Vulnerability details published.",
             "link": "https://github.com/advisories/GHSA-8j72-p2wm-6738",
             "cve": "CVE-2020-5223",
@@ -17510,7 +17972,7 @@
             },
             "reference": "composer://pterodactyl/panel"
         },
-        "2020-10-08-69": {
+        "2020-10-08-93": {
             "title": "### Impact\nAn XSS vulnerability exists in versions of Pterodactyl Panel before 0.7.19. Affected versions do not properly sanitize account names before rendering them to the dropdown selector in the admin area when creating or modifying a server.\n\n### Patches\nThis XSS has been addressed in 0.7.19 and will be rolled forwards into the 1.0-rc.7 release.\n\n### Workarounds\nNo workaround exists without manual patching. See https://github.com/pterodactyl/panel/pull/2441/files for the files changed.\n\n### For more information\nIf you have any questions or comments about this advisory please reach out on Discord, or by emailing `dane` at `pterodactyl` dot `io`.\n\n_Thank you to Sergej for the responsible disclosure of this issue._",
             "link": "https://github.com/advisories/GHSA-5822-pw57-vv37",
             "cve": null,
@@ -17870,7 +18332,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-12-21-50": {
+        "2020-12-21-74": {
             "title": "### Impact\n\nInformation exposure via query strings in URL\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://www.vater-it.de/\">Oliver Herrmann</a> for reporting this issue.",
             "link": "https://github.com/advisories/GHSA-cq6h-w3mc-57f4",
             "cve": null,
@@ -17884,7 +18346,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-12-21-52": {
+        "2020-12-21-76": {
             "title": "### Impact\nAuthenticated Privilege Escalation\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020",
             "link": "https://github.com/advisories/GHSA-5q58-x5h2-v5rx",
             "cve": null,
@@ -17912,7 +18374,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-10-19-67": {
+        "2020-10-19-91": {
             "title": "### Impact\nAuthenticated XML External Entity Processing\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-8xv9-qcr9-ww9j",
             "cve": null,
@@ -17940,7 +18402,7 @@
             },
             "reference": "composer://shopware/core"
         },
-        "2020-09-23-83": {
+        "2020-09-23-107": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -17970,7 +18432,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2021-03-12-35": {
+        "2021-03-12-59": {
             "title": "### Impact\nPotential session hijacking of store customers.\n\n### Patches\nWe recommend to update to the current version 6.3.5.2. You can get the update to 6.3.5.2 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-03-2021",
             "link": "https://github.com/advisories/GHSA-h9q8-5gv2-v6mg",
             "cve": null,
@@ -17998,7 +18460,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2021-02-10-39": {
+        "2021-02-10-63": {
             "title": "### Impact\nGeneration of fake documents via public GET-call\n\n### Patches\nWe recommend to update to the current version 6.3.5.1. You can get the update to 6.3.5.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-02-2021",
             "link": "https://github.com/advisories/GHSA-jvg4-9rc2-wvcr",
             "cve": null,
@@ -18026,7 +18488,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-12-21-51": {
+        "2020-12-21-75": {
             "title": "### Impact\n\nInformation exposure via query strings in URL\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020\n\n### Credits\nWe would like to thank <a rel=\"noopener\" href=\"https://www.vater-it.de/\">Oliver Herrmann</a> for reporting this issue.",
             "link": "https://github.com/advisories/GHSA-cq6h-w3mc-57f4",
             "cve": null,
@@ -18040,7 +18502,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-12-21-53": {
+        "2020-12-21-77": {
             "title": "### Impact\nAuthenticated Privilege Escalation\n\n### Patches\nWe recommend to update to the current version 6.3.4.1. You can get the update to 6.3.4.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\n\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-12-2020",
             "link": "https://github.com/advisories/GHSA-5q58-x5h2-v5rx",
             "cve": null,
@@ -18068,7 +18530,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-10-19-68": {
+        "2020-10-19-92": {
             "title": "### Impact\nAuthenticated XML External Entity Processing\n\n### Patches\nWe recommend to update to the current version 6.3.2.1. You can get the update to 6.3.2.1 regularly via the Auto-Updater or directly via the download overview.\n\nhttps://www.shopware.com/en/download/#shopware-6\n\n### Workarounds\nFor older versions of 6.1 and 6.2 the corresponding changes are also available via plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### For more information\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-10-2020",
             "link": "https://github.com/advisories/GHSA-8xv9-qcr9-ww9j",
             "cve": null,
@@ -18096,7 +18558,7 @@
             },
             "reference": "composer://shopware/platform"
         },
-        "2020-09-23-84": {
+        "2020-09-23-108": {
             "title": "### Impact\nRCE in Third Party Library\n\n### Patches\nWe recommend to update to the current version 6.3.1.1. You can get the update to 6.3.1.1 regularly via the Auto-Updater or directly via the download overview. \n\nFor older versions you can use the Security Plugin:\nhttps://store.shopware.com/en/detail/index/sArticle/518463/number/Swag136939272659\n\n### References\nhttps://docs.shopware.com/en/shopware-6-en/security-updates/security-update-09-2020",
             "link": "https://github.com/advisories/GHSA-qvc5-cfrr-384v",
             "cve": null,
@@ -21059,7 +21521,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-95": {
+        "CVE-2020-15132-119": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -21074,7 +21536,7 @@
             },
             "reference": "composer://sulu/sulu"
         },
-        "CVE-2020-15132-96": {
+        "CVE-2020-15132-120": {
             "title": "### Impact\n\n_What kind of vulnerability is it? Who is impacted?_\n\nThis vulnerability consists of a few related issues:\n\n#### Forget password leaks information if the user exists\n\nWhen the \"Forget password\" feature on the login screen is used, Sulu asks the user for a username or email address. If the given string is not found, a response with a `400` error code is returned, along with a error message saying that this user name does not exist:\n\n```json\n{\n    \"code\": 0,\n    \"message\": \"Entity with the type \\u0022Sulu\\\\Bundle\\\\SecurityBundle\\\\Entity\\\\User\\u0022 and the id \\u0022asdf\\u0022 not found.\"\n}\n```\n\nThis enables attackers to retrieve valid usernames.\n\n#### Forgot password leaks user email if user exists\n\nThe response of the \"Forgot Password\" request returns the email address to which the email was sent, if the operation was successful:\n\n```json\n{\"email\":\"admin@localhost.local\"}\n```\n\nThis information should not be exposed, as it can be used to gather email addresses.\n\n#### Response time of login gives hint if the username exists\n\nIf the username the user enters in the login screen does not exists, the request responds much faster than if the username exists. This again allows attackers to retrieve valid usernames.\n\n#### Reset Token for Forgot Password feature is not hashed\n\nThe reset token in the user database table is not hashed. That means that somebody could try to request a new password using the Forgot Password feature, and look that up in the database, if the attacker somehow got access to the database. Hashing the reset token would fix that problem.\n\n### Patches\n\nThis problem was fixed in Release 1.6.34, 2.0.10 and 2.1.1.\n\n### Workarounds\n\nOverride the files manually in your project and change them accordingly.",
             "link": "https://github.com/advisories/GHSA-wfm4-pq59-wg6r",
             "cve": "CVE-2020-15132",
@@ -31791,7 +32253,7 @@
             },
             "reference": "composer://typo3/cms-backend"
         },
-        "CVE-2021-21370-9": {
+        "CVE-2021-21370-33": {
             "title": "> ### Meta\n> * CVSS: `AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (4.1)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that content elements of type _menu_ are vulnerable to cross-site scripting when their referenced items get previewed in the page module. A valid backend user account is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 7.6.51, 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to TYPO3 contributor Oliver Bartsch who reported and fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-008](https://typo3.org/security/advisory/typo3-core-sa-2021-008)",
             "link": "https://github.com/advisories/GHSA-x7hc-x7fm-f7qh",
             "cve": "CVE-2021-21370",
@@ -31806,7 +32268,7 @@
             },
             "reference": "composer://typo3/cms-backend"
         },
-        "CVE-2021-21370-10": {
+        "CVE-2021-21370-34": {
             "title": "> ### Meta\n> * CVSS: `AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (4.1)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that content elements of type _menu_ are vulnerable to cross-site scripting when their referenced items get previewed in the page module. A valid backend user account is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 7.6.51, 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to TYPO3 contributor Oliver Bartsch who reported and fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-008](https://typo3.org/security/advisory/typo3-core-sa-2021-008)",
             "link": "https://github.com/advisories/GHSA-x7hc-x7fm-f7qh",
             "cve": "CVE-2021-21370",
@@ -31821,7 +32283,7 @@
             },
             "reference": "composer://typo3/cms-backend"
         },
-        "CVE-2021-21370-11": {
+        "CVE-2021-21370-35": {
             "title": "> ### Meta\n> * CVSS: `AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (4.1)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that content elements of type _menu_ are vulnerable to cross-site scripting when their referenced items get previewed in the page module. A valid backend user account is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 7.6.51, 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to TYPO3 contributor Oliver Bartsch who reported and fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-008](https://typo3.org/security/advisory/typo3-core-sa-2021-008)",
             "link": "https://github.com/advisories/GHSA-x7hc-x7fm-f7qh",
             "cve": "CVE-2021-21370",
@@ -31836,7 +32298,7 @@
             },
             "reference": "composer://typo3/cms-backend"
         },
-        "CVE-2021-21370-12": {
+        "CVE-2021-21370-36": {
             "title": "> ### Meta\n> * CVSS: `AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (4.1)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that content elements of type _menu_ are vulnerable to cross-site scripting when their referenced items get previewed in the page module. A valid backend user account is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 7.6.51, 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to TYPO3 contributor Oliver Bartsch who reported and fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-008](https://typo3.org/security/advisory/typo3-core-sa-2021-008)",
             "link": "https://github.com/advisories/GHSA-x7hc-x7fm-f7qh",
             "cve": "CVE-2021-21370",
@@ -31866,7 +32328,7 @@
             },
             "reference": "composer://typo3/cms-backend"
         },
-        "CVE-2021-21340-22": {
+        "CVE-2021-21340-46": {
             "title": "> ### Meta\n> * CVSS: `AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (5.0)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that database fields used as _descriptionColumn_ are vulnerable to cross-site scripting when their content gets previewed in the page module. A valid backend user account is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 framework merger Andreas Fernandez who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-007](https://typo3.org/security/advisory/typo3-core-sa-2021-007)",
             "link": "https://github.com/advisories/GHSA-fjh3-g8gq-9q92",
             "cve": "CVE-2021-21340",
@@ -33139,7 +33601,7 @@
     },
     "typo3/cms-form": {
         "CVE-2021-21358": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (5.0)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that the Form Designer backend module of the Form Framework is vulnerable to cross-site scripting. A valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 10.4.14 or 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 framework merger Andreas Fernandez who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-004](https://typo3.org/security/advisory/typo3-core-sa-2021-004)",
+            "title": "\n### Problem\nIt has been discovered that the Form Designer backend module of the Form Framework is vulnerable to cross-site scripting. A valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 10.4.14 or 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 framework merger Andreas Fernandez who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-004](https://typo3.org/security/advisory/typo3-core-sa-2021-004)",
             "link": "https://github.com/advisories/GHSA-x79j-wgqv-g8h2",
             "cve": "CVE-2021-21358",
             "branches": {
@@ -33153,8 +33615,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21358-15": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N/E:F/RL:O/RC:C` (5.0)\n> * CWE-79\n> * Status: **DRAFT**\n\n### Problem\nIt has been discovered that the Form Designer backend module of the Form Framework is vulnerable to cross-site scripting. A valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 10.4.14 or 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 framework merger Andreas Fernandez who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-004](https://typo3.org/security/advisory/typo3-core-sa-2021-004)",
+        "CVE-2021-21358-39": {
+            "title": "\n### Problem\nIt has been discovered that the Form Designer backend module of the Form Framework is vulnerable to cross-site scripting. A valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 10.4.14 or 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 framework merger Andreas Fernandez who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-004](https://typo3.org/security/advisory/typo3-core-sa-2021-004)",
             "link": "https://github.com/advisories/GHSA-x79j-wgqv-g8h2",
             "cve": "CVE-2021-21358",
             "branches": {
@@ -33169,7 +33631,7 @@
             "reference": "composer://typo3/cms-form"
         },
         "CVE-2021-21357": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H/E:H/RL:O/RC:C` (7.9)\n> * CWE-20, CWE-22, CWE-434\n> * Status: **DRAFT**\n\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
+            "title": "\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
             "link": "https://github.com/advisories/GHSA-3vg7-jw9m-pc3f",
             "cve": "CVE-2021-21357",
             "branches": {
@@ -33183,8 +33645,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21357-16": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H/E:H/RL:O/RC:C` (7.9)\n> * CWE-20, CWE-22, CWE-434\n> * Status: **DRAFT**\n\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
+        "CVE-2021-21357-40": {
+            "title": "\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
             "link": "https://github.com/advisories/GHSA-3vg7-jw9m-pc3f",
             "cve": "CVE-2021-21357",
             "branches": {
@@ -33198,8 +33660,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21357-17": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H/E:H/RL:O/RC:C` (7.9)\n> * CWE-20, CWE-22, CWE-434\n> * Status: **DRAFT**\n\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
+        "CVE-2021-21357-41": {
+            "title": "\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
             "link": "https://github.com/advisories/GHSA-3vg7-jw9m-pc3f",
             "cve": "CVE-2021-21357",
             "branches": {
@@ -33213,8 +33675,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21357-18": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H/E:H/RL:O/RC:C` (7.9)\n> * CWE-20, CWE-22, CWE-434\n> * Status: **DRAFT**\n\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
+        "CVE-2021-21357-42": {
+            "title": "\n### Problem\nDue to improper input validation, attackers can by-pass restrictions of predefined options and submit arbitrary data in the Form Designer backend module of the Form Framework.\n\nIn the default configuration of the Form Framework this allows attackers to explicitly allow arbitrary mime-types for file uploads - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_. Besides that, attackers can persist those files in any writable directory of the corresponding TYPO3 installation.\n\nA valid backend user account with access to the form module is needed to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\n### Credits\nThanks to Richie Lee who reported this issue and to TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-003](https://typo3.org/security/advisory/typo3-core-sa-2021-003)",
             "link": "https://github.com/advisories/GHSA-3vg7-jw9m-pc3f",
             "cve": "CVE-2021-21357",
             "branches": {
@@ -33229,7 +33691,7 @@
             "reference": "composer://typo3/cms-form"
         },
         "CVE-2021-21355": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L/E:F/RL:O/RC:C` (8.0)\n> * CWE-434, CWE-552\n> * Status: **DRAFT**\n\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
+            "title": "\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
             "link": "https://github.com/advisories/GHSA-2r6j-862c-m2v2",
             "cve": "CVE-2021-21355",
             "branches": {
@@ -33243,8 +33705,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21355-19": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L/E:F/RL:O/RC:C` (8.0)\n> * CWE-434, CWE-552\n> * Status: **DRAFT**\n\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
+        "CVE-2021-21355-43": {
+            "title": "\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
             "link": "https://github.com/advisories/GHSA-2r6j-862c-m2v2",
             "cve": "CVE-2021-21355",
             "branches": {
@@ -33258,8 +33720,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21355-20": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L/E:F/RL:O/RC:C` (8.0)\n> * CWE-434, CWE-552\n> * Status: **DRAFT**\n\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
+        "CVE-2021-21355-44": {
+            "title": "\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
             "link": "https://github.com/advisories/GHSA-2r6j-862c-m2v2",
             "cve": "CVE-2021-21355",
             "branches": {
@@ -33273,8 +33735,8 @@
             },
             "reference": "composer://typo3/cms-form"
         },
-        "CVE-2021-21355-21": {
-            "title": "> ### Meta\n> * CVSS: `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L/E:F/RL:O/RC:C` (8.0)\n> * CWE-434, CWE-552\n> * Status: **DRAFT**\n\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
+        "CVE-2021-21355-45": {
+            "title": "\n### Problem\nDue to the lack of ensuring file extensions belong to configured allowed mime-types, attackers can upload arbitrary data with arbitrary file extensions - however, default _fileDenyPattern_ successfully blocked files like _.htaccess_ or _malicious.php_.\n\nTYPO3 Extbase extensions, which implement a file upload and do not implement a custom _TypeConverter_ to transform uploaded files into _FileReference_ domain model objects are affected by the vulnerability as well, since the _UploadedFileReferenceConverter_ of _ext:form_ handles the file upload and will accept files of any mime-type which are persisted to the default location.\n\nIn any way, uploaded files are placed in the default location _/fileadmin/user_upload/_, in most scenarios keeping the submitted filename - which allows attackers to directly reference files, or even correctly guess filenames used by other individuals, disclosing this information.\n\nNo authentication is required to exploit this vulnerability.\n\n### Solution\nUpdate to TYPO3 versions 8.7.40, 9.5.25, 10.4.14, 11.1.1 that fix the problem described.\n\nType converter _UploadedFileReferenceConverter_ is not registered globally anymore and just handles uploaded files within the scope of the Form Framework. Guessable storage location has changed from _/fileadmin/user_upload/form\\_\\<random-hash\\>/_ to _/fileadmin/form_uploads/<random-40-bit>_. Allowed mime-types must match expected file extensions (e.g. _application/pdf_ must be _.pdf_, and cannot be _.html_).\n\nExtbase extensions, who rely on the global availability of the _UploadedFileReferenceConverter_ must now implement a custom _TypeConverter_ to handle file uploads or explicitly implement the ext:form _UploadedFileReferenceConverter_ with appropriate setting for accepted mime-types.\n\n### Credits\nThanks to Sebastian Michaelsen, Marc Lindemann, Oliver Eglseder, Markus Volkmer, Jakob Kunzmann, Johannes Regner, Richie Lee who reported this issue, and to TYPO3 core & security team members Oliver Hader & Benni Mack, as well as TYPO3 contributor Ralf Zimmermann who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2021-002](https://typo3.org/security/advisory/typo3-core-sa-2021-002)",
             "link": "https://github.com/advisories/GHSA-2r6j-862c-m2v2",
             "cve": "CVE-2021-21355",
             "branches": {
@@ -33601,7 +34063,7 @@
             },
             "reference": "composer://usmanhalalit/pixie"
         },
-        "CVE-2019-10766-188": {
+        "CVE-2019-10766-212": {
             "title": "Pixie versions 1.0.x before 1.0.3, and 2.0.x before 2.0.2 allow SQL Injection in the limit() function due to improper sanitization.",
             "link": "https://github.com/advisories/GHSA-68wg-qv6r-j4vp",
             "cve": "CVE-2019-10766",
@@ -33632,7 +34094,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19634-116": {
+        "CVE-2019-19634-140": {
             "title": "class.upload.php in verot.net class.upload through 1.0.3 and 2.x through 2.0.4, as used in the K2 extension for Joomla! and other products, omits .pht from the set of dangerous file extensions, a similar issue to CVE-2019-19576.",
             "link": "https://github.com/advisories/GHSA-2gc7-w4hw-rr2m",
             "cve": "CVE-2019-19634",
@@ -33661,7 +34123,7 @@
             },
             "reference": "composer://verot/class.upload.php"
         },
-        "CVE-2019-19576-149": {
+        "CVE-2019-19576-173": {
             "title": "class.upload.php in verot.net class.upload before 1.0.3 and 2.x before 2.0.4, as used in the K2 extension for Joomla! and other products, omits .phar from the set of dangerous file extensions.",
             "link": "https://github.com/advisories/GHSA-r5gm-4p5w-pq2p",
             "cve": "CVE-2019-19576",
