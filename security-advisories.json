@@ -34139,47 +34139,19 @@
         }
     },
     "vrana/adminer": {
-        "CVE-2018-7667": {
-            "title": "### Impact\nAll users are affected.\n\n### Patches\n* Unsuccessfully patched by 0fae40fb, included in version [4.4.0](https://github.com/vrana/adminer/releases/tag/v4.4.0).\n* Patched by 35bfaa75, included in version [4.7.8](https://github.com/vrana/adminer/releases/tag/v4.7.8).\n\n### Workarounds\nProtect access to Adminer also by other means, e.g. by HTTP password, IP address limiting or by OTP [plugin](https://www.adminer.org/plugins/).\n\n### References\n* http://hyp3rlinx.altervista.org/advisories/ADMINER-UNAUTHENTICATED-SERVER-SIDE-REQUEST-FORGERY.txt\n* https://sourceforge.net/p/adminer/bugs-and-features/769/\n* https://gusralph.info/adminer-ssrf-bypass-cve-2018-7667/ (CVE-2020-28654)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at 35bfaa75.",
-            "link": "https://github.com/advisories/GHSA-43f8-p5w3-5m25",
-            "cve": "CVE-2018-7667",
+        "2019-01-20": {
+            "title": "Adminer script versions up to 4.6.2 contains file disclosure vulnerability",
+            "link": "https://sansec.io/research/adminer-4.6.2-file-disclosure-vulnerability",
+            "reference": "composer://vrana/adminer",
+            "cve": null,
             "branches": {
-                "4.7.x": {
-                    "time": 1613078440,
+                "master": {
+                    "time": 1530144000,
                     "versions": [
-                        "< 4.7.8"
+                        "<4.6.3"
                     ]
                 }
-            },
-            "reference": "composer://vrana/adminer"
-        },
-        "CVE-2020-35572": {
-            "title": "### Impact\nUsers of Adminer versions supporting SQL command (most versions, e.g. MySQL) using browsers not encoding URL parameters before sending to server (likely Edge, not Chrome, not Firefox) are affected.\n\n### Patches\nPatched by 5c395afc, included in version [4.7.9](https://github.com/vrana/adminer/releases/tag/v4.7.9).\n\n### Workarounds\nUse browser which encodes URL parameters (e.g. Chrome or Firefox).\n\n### References\nhttps://sourceforge.net/p/adminer/bugs-and-features/775/\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at https://github.com/vrana/adminer/security/advisories/GHSA-9pgx-gcph-mpqr",
-            "link": "https://github.com/advisories/GHSA-9pgx-gcph-mpqr",
-            "cve": "CVE-2020-35572",
-            "branches": {
-                "4.7.x": {
-                    "time": 1613076148,
-                    "versions": [
-                        "< 4.7.9"
-                    ]
-                }
-            },
-            "reference": "composer://vrana/adminer"
-        },
-        "CVE-2021-21311": {
-            "title": "### Impact\nUsers of Adminer versions bundling all drivers (e.g. `adminer.php`) are affected.\n\n### Patches\nPatched by ccd2374b, included in version [4.7.9](https://github.com/vrana/adminer/releases/tag/v4.7.9).\n\n### Workarounds\n* Use a single driver version (e.g. `adminer-mysql.php`).\n* Protect access to Adminer also by other means, e.g. by HTTP password, IP address limiting or by OTP [plugin](https://www.adminer.org/plugins/).\n\n### References\nhttps://github.com/vrana/adminer/files/5957311/Adminer.SSRF.pdf\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Comment at ccd2374b.",
-            "link": "https://github.com/advisories/GHSA-x5r2-hj5c-8jx6",
-            "cve": "CVE-2021-21311",
-            "branches": {
-                "4.7.x": {
-                    "time": 1613076179,
-                    "versions": [
-                        "< 4.7.9"
-                    ]
-                }
-            },
-            "reference": "composer://vrana/adminer"
+            }
         }
     },
     "wallabag/tcpdf": {
