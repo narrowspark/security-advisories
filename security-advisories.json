@@ -34232,6 +34232,22 @@
             "reference": "composer://wallabag/tcpdf"
         }
     },
+    "wikimedia/parsoid": {
+        "CVE-2021-30458": {
+            "title": "Parsoid comment fostering allows for inserting mostly arbitrary <meta> tags",
+            "link": "https://phabricator.wikimedia.org/T279451",
+            "cve": "CVE-2021-30458",
+            "branches": {
+                "0.12.x": {
+                    "time": 1617860160,
+                    "versions": [
+                        "<0.12.2"
+                    ]
+                }
+            },
+            "reference": "composer://wikimedia/parsoid"
+        }
+    },
     "willdurand/js-translation-bundle": {
         "2014-07-29-1": {
             "title": "Fixed potential path traversal attack and remote code injection",
