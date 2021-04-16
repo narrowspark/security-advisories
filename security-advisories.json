@@ -15347,6 +15347,41 @@
             },
             "reference": "composer://mautic/core"
         },
+        "CVE-2021-27908": {
+            "title": "Secret data exfiltration via symfony parameters",
+            "link": "https://github.com/mautic/mautic/security/advisories/GHSA-4hjq-422q-4vpx",
+            "cve": "CVE-2021-27908",
+            "branches": {
+                "3.3": {
+                    "time": 1616444100,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.2"
+                    ]
+                },
+                "3.2": {
+                    "time": null,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.1": {
+                    "time": null,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.0": {
+                    "time": null,
+                    "versions": [
+                        "<3.1.0"
+                    ]
+                }
+            },
+            "reference": "composer://mautic/core"
+        },
         "CVE-2021-3142": {
             "title": "Mautic core - Moderately Critical - XSS vulnerability when creating/editing a company",
             "link": "https://www.mautic.org/blog/community/security-release-all-versions-mautic-prior-2-16-5-and-3-2-4",
@@ -16593,6 +16628,294 @@
                 }
             },
             "reference": "composer://namshi/jose"
+        }
+    },
+    "neos/flow": {
+        "2012-03-28": {
+            "title": "Insecure Unserialize Vulnerability in FLOW3",
+            "link": "https://www.neos.io/blog/flow-sa-2012-001.html",
+            "cve": null,
+            "branches": {
+                "1.0.x": {
+                    "time": 1332927157,
+                    "versions": [
+                        ">=1.0.0",
+                        "<1.0.4"
+                    ]
+                }
+            },
+            "reference": "composer://neos/flow"
+        },
+        "2015-11-23": {
+            "title": "Arbitrary file upload and XML External Entity processing",
+            "link": "https://www.neos.io/blog/flow-sa-2015-001.html",
+            "cve": null,
+            "branches": {
+                "2.3.x": {
+                    "time": 1448270640,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.7"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1448270640,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://neos/flow"
+        },
+        "2016-11-01": {
+            "title": "Time-Based Information Disclosure Vulnerability in Flow",
+            "link": "https://www.neos.io/blog/flow-sa-2016-001.html",
+            "cve": null,
+            "branches": {
+                "2.3.x": {
+                    "time": 1478019600,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.16"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1478019600,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.10"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1478019600,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.7"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1478019600,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.7"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1478019600,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.5"
+                    ]
+                }
+            },
+            "reference": "composer://neos/flow"
+        },
+        "2017-04-12": {
+            "title": "Flow Bugfix Releases for Entity Security",
+            "link": "https://www.neos.io/blog/flow-bugfix-releases-for-entity-security.html",
+            "cve": null,
+            "branches": {
+                "3.0.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.12"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.10"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.13"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.13"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://neos/flow"
+        },
+        "CVE-2013-7082": {
+            "title": "Cross-Site Scripting in TYPO3 Flow",
+            "link": "https://www.neos.io/blog/flow-sa-2013-001.html",
+            "cve": "CVE-2013-7082",
+            "branches": {
+                "1.1.x": {
+                    "time": 1386683046,
+                    "versions": [
+                        ">=1.1.0",
+                        "<1.1.1"
+                    ]
+                },
+                "2.0.x": {
+                    "time": 1386676034,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.1"
+                    ]
+                }
+            },
+            "reference": "composer://neos/flow"
+        }
+    },
+    "neos/neos": {
+        "2015-03-28": {
+            "title": "Privilege Escalation in TYPO3 Neos",
+            "link": "https://www.neos.io/blog/neos-sa-2015-001.html",
+            "cve": null,
+            "branches": {
+                "1.1.x": {
+                    "time": 1427567185,
+                    "versions": [
+                        ">=1.1.0",
+                        "<1.1.3"
+                    ]
+                },
+                "1.2.x": {
+                    "time": 1427567069,
+                    "versions": [
+                        ">=1.2.0",
+                        "<1.2.3"
+                    ]
+                }
+            },
+            "reference": "composer://neos/neos"
+        },
+        "2015-11-23": {
+            "title": "XSS vulnerabilities in Neos",
+            "link": "https://www.neos.io/blog/neos-sa-2015-002.html",
+            "cve": null,
+            "branches": {
+                "1.2.x": {
+                    "time": 1448312580,
+                    "versions": [
+                        ">=1.2.0",
+                        "<1.2.13"
+                    ]
+                },
+                "2.0.x": {
+                    "time": 1448312580,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.0.4"
+                    ]
+                }
+            },
+            "reference": "composer://neos/neos"
+        },
+        "2019-06-17": {
+            "title": "Information Disclosure Security Note",
+            "link": "https://www.neos.io/blog/neos-workspace-disclosure-security.html",
+            "cve": null,
+            "branches": {
+                "2.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.9.99"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.20"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.18"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.14"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.23"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.17"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.16"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.3"
+                    ]
+                }
+            },
+            "reference": "composer://neos/neos"
+        }
+    },
+    "neos/swiftmailer": {
+        "2017-01-06": {
+            "title": "Security fix for Flow Swift Mailer package",
+            "link": "https://www.neos.io/blog/flow-sa-2017-01.html",
+            "cve": null,
+            "branches": {
+                "4.1.x": {
+                    "time": 1483722000,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.99"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1483722000,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.5"
+                    ]
+                }
+            },
+            "reference": "composer://neos/swiftmailer"
         }
     },
     "nette/application": {
@@ -33896,7 +34219,7 @@
     "typo3/flow": {
         "2012-03-28": {
             "title": "Insecure Unserialize Vulnerability in FLOW3",
-            "link": "https://www.neos.io/news/flow-sa-2012-001.html",
+            "link": "https://www.neos.io/blog/flow-sa-2012-001.html",
             "cve": null,
             "branches": {
                 "1.0.x": {
@@ -33911,7 +34234,7 @@
         },
         "2015-11-23": {
             "title": "Arbitrary file upload and XML External Entity processing",
-            "link": "https://www.neos.io/news/flow-sa-2015-001.html",
+            "link": "https://www.neos.io/blog/flow-sa-2015-001.html",
             "cve": null,
             "branches": {
                 "2.3.x": {
@@ -33974,9 +34297,52 @@
             },
             "reference": "composer://typo3/flow"
         },
+        "2017-04-12": {
+            "title": "Flow Bugfix Releases for Entity Security",
+            "link": "https://www.neos.io/blog/flow-bugfix-releases-for-entity-security.html",
+            "cve": null,
+            "branches": {
+                "3.0.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.12"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.10"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.13"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.13"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1492016400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.6"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/flow"
+        },
         "CVE-2013-7082": {
             "title": "Cross-Site Scripting in TYPO3 Flow",
-            "link": "https://www.neos.io/news/flow-sa-2013-001.html",
+            "link": "https://www.neos.io/blog/flow-sa-2013-001.html",
             "cve": "CVE-2013-7082",
             "branches": {
                 "1.1.x": {
@@ -34000,7 +34366,7 @@
     "typo3/neos": {
         "2015-03-28": {
             "title": "Privilege Escalation in TYPO3 Neos",
-            "link": "https://www.neos.io/news/neos-sa-2015-001.html",
+            "link": "https://www.neos.io/blog/neos-sa-2015-001.html",
             "cve": null,
             "branches": {
                 "1.1.x": {
@@ -34022,7 +34388,7 @@
         },
         "2015-11-23": {
             "title": "XSS vulnerabilities in Neos",
-            "link": "https://www.neos.io/news/neos-sa-2015-002.html",
+            "link": "https://www.neos.io/blog/neos-sa-2015-002.html",
             "cve": null,
             "branches": {
                 "1.2.x": {
@@ -34037,6 +34403,77 @@
                     "versions": [
                         ">=2.0.0",
                         "<2.0.4"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/neos"
+        },
+        "2019-06-17": {
+            "title": "Information Disclosure Security Note",
+            "link": "https://www.neos.io/blog/neos-workspace-disclosure-security.html",
+            "cve": null,
+            "branches": {
+                "2.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.3.99"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.0.20"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.1.18"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.2.14"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.3.23"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.0.17"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.16"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.2.12"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1560790800,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.3.3"
                     ]
                 }
             },
@@ -34113,6 +34550,30 @@
                 }
             },
             "reference": "composer://typo3/phar-stream-wrapper"
+        }
+    },
+    "typo3/swiftmailer": {
+        "2017-01-06": {
+            "title": "Security fix for Flow Swift Mailer package",
+            "link": "https://www.neos.io/blog/flow-sa-2017-01.html",
+            "cve": null,
+            "branches": {
+                "4.1.x": {
+                    "time": 1483722000,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.1.99"
+                    ]
+                },
+                "5.4.x": {
+                    "time": 1483722000,
+                    "versions": [
+                        ">=5.4.0",
+                        "<5.4.5"
+                    ]
+                }
+            },
+            "reference": "composer://typo3/swiftmailer"
         }
     },
     "typo3fluid/fluid": {
