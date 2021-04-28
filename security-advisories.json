@@ -904,6 +904,27 @@
                 }
             },
             "reference": "composer://composer/composer"
+        },
+        "CVE-2021-29472": {
+            "title": "Missing argument delimiter can lead to command execution via VCS repository URLs or source download URLs on systems with Mercurial",
+            "link": "https://github.com/composer/composer/security/advisories/GHSA-h5h8-pc6h-jvvx",
+            "cve": "CVE-2021-29472",
+            "branches": {
+                "2.0.x": {
+                    "time": 1619522168,
+                    "versions": [
+                        ">=2.0.0-alpha1",
+                        "<2.0.13"
+                    ]
+                },
+                "1.10.x": {
+                    "time": 1619521845,
+                    "versions": [
+                        "<1.10.22"
+                    ]
+                }
+            },
+            "reference": "composer://composer/composer"
         }
     },
     "contao-components/mediaelement": {
@@ -18482,6 +18503,23 @@
                 }
             },
             "reference": "composer://rainlab/debugbar-plugin"
+        }
+    },
+    "rmccue/requests": {
+        "CVE-2021-29476": {
+            "title": "Insecure Deserialization of untrusted data",
+            "link": "https://github.com/WordPress/Requests/security/advisories/GHSA-52qp-jpq7-6c54",
+            "cve": "CVE-2021-29476",
+            "reference": "composer://rmccue/requests",
+            "branches": {
+                "1.x": {
+                    "time": 1604393480,
+                    "versions": [
+                        ">=1.6.0",
+                        "<1.8.0"
+                    ]
+                }
+            }
         }
     },
     "robrichards/xmlseclibs": {
