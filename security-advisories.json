@@ -9357,6 +9357,20 @@
         }
     },
     "getkirby/cms": {
+        "CVE-2021-29460": {
+            "title": "### Impact\n\nAn editor with write access to the Kirby Panel can upload an SVG or XML file that contains harmful content like `<script>` tags. The direct link to that file can be sent to other users or visitors of the site. If the victim opens that link in a browser where they are logged in to Kirby, the script will run and can for example trigger requests to Kirby's API with the permissions of the victim.\n\nThis vulnerability is critical if you might have potential attackers in your group of authenticated Panel users. They can escalate their privileges if they get access to the Panel session of an admin user. Depending on your site, other JavaScript-powered attacks are possible.\n\nVisitors without Panel access can only use this attack vector if your site allows SVG or XML file uploads in frontend forms and you don't already validate or sanitize uploaded SVG or XML files.\n\nThe attack requires user interaction by another user or visitor and *cannot* be automated.\n\n### Patches\n\n#### Uploads in the Panel\n\nThe problem has been patched in [Kirby 3.5.4](https://github.com/getkirby/kirby/releases/tag/3.5.4) by validating uploaded SVG and XML files and rejecting potentially harmful files. Please update to this or a [later version](https://github.com/getkirby/kirby/releases/) to fix the vulnerability.\n\n#### Frontend upload forms\n\nFrontend upload forms need to be patched separately depending on how they store the uploaded file(s). If you use `File::create()`, you are protected by updating to Kirby 3.5.4+.\n\n#### Validate existing files\n\nAlready uploaded files are *not* automatically validated again. If you are not sure if you have been impacted by this vulnerability in the past, we recommend to run all site files through the validator classes after updating to Kirby 3.5.4. You can use the following test script by pasting it into a template or uploading it to your web root:\n\n```php\n<?php\n\n@include_once __DIR__ . '/kirby/bootstrap.php';\n\nif (version_compare(kirby()->version(), '3.5.4', '<') === true) {\n  die('This script requires Kirby 3.5.4+.');\n}\n\n$objects = [\n  // the site itself\n  site(),\n\n  // all pages and drafts\n  ...site()->index(true)->values(),\n\n  // all users\n  ...kirby()->users()->values()\n];\n\n$errors = false;\nforeach ($objects as $object) {\n  foreach ($object->files() as $file) {\n    try {\n      // validate the contents lazily\n      // (if a validator exists)\n      $file->validateContents(true);\n    } catch (\\Kirby\\Exception\\InvalidArgumentException $e) {\n      echo $file->id() . ': ' . $e->getMessage() . \"<br>\\n\";\n      $errors = true;\n    }\n  }\n}\n\nif ($errors === false) {\n  echo 'No validation errors found.';\n}\n```\n\nYou only need to run this validator script once as future uploads will automatically be validated. If the script prints \"No validation errors found\", you have not been impacted by the vulnerability so far.\n\nErrors that it lists may or may not be critical as our validator classes also catch files with an invalid data structure or less harmful attacks like the [\"billion laughs\" denial-of-service attack](https://en.wikipedia.org/wiki/Billion_laughs_attack) or the usage of external sources. We recommend to review and fix each listed error manually until the script no longer finds any validation errors.\n\n**Please delete the script again after you have used it.**\n\n### Workarounds\n\nIf you cannot update to Kirby 3.5.4, you can disable the upload of SVG and XML files in your [file blueprints](https://getkirby.com/docs/reference/panel/blueprints/file#accept) and validate or replace your already uploaded files once.\n\n### Credits\n\nThanks to @sreenathr10 for reporting the problem.",
+            "link": "https://github.com/advisories/GHSA-qgp4-5qx6-548g",
+            "cve": "CVE-2021-29460",
+            "branches": {
+                "3.5.x": {
+                    "time": 1619803806,
+                    "versions": [
+                        "< 3.5.4"
+                    ]
+                }
+            },
+            "reference": "composer://getkirby/cms"
+        },
         "CVE-2020-26253": {
             "title": "### Impact\n\n#### About our registration block\n\nIn order to protect new installations on public servers that don't have an admin account for the Panel yet, we block account registration there by default. This is a security feature, which we implemented years ago in Kirby 2. It helps to avoid that you forget registering your first admin account on a public server. \n\nIn this case \u2013 without our security block \u2013 someone else might theoretically be able to find your site, find out it's running on Kirby, find the Panel and then register the account first. It's an unlikely situation, but it's still a certain risk.\n\nTo be able to register the first Panel account on a public server, you have to enforce the installer via a config setting. This helps to push all users to the best practice of registering your first Panel account on your local machine and upload it together with the rest of the site. \n\n#### The issue\n\nAs noted by [Jukka Rautanen](https://github.com/jukra), this installation block implementation in Kirby versions before 3.3.6 still assumed that .dev domains are local domains, which is no longer true. In the meantime, those domains became publicly available. This means that our installation block is no longer working as expected if you use a .dev domain for your Kirby site.\n\nIn fixing this issue, we've also found out that the local installation check may also fail if your site is behind a reverse proxy. \n\n#### Am I affected?\n\nYou are only affected if:\n\n1. you use a .dev domain or your site is behind a reverse proxy &\n2. you have not yet registered your first Panel account on the public server & \n3. someone finds your site and tries to login at `yourdomain.dev/panel` before you register your first account.\n\nYou are not affected if you have already created one or multiple Panel accounts (no matter if on a .dev domain or behind a reverse proxy).\n\n### Patches\n\nThe problem has been patched in [Kirby 2.5.14](https://github.com/getkirby-v2/panel/releases/tag/2.5.14) and [Kirby 3.3.6](https://github.com/getkirby/kirby/releases/tag/3.3.6). Please update to one of these or a [later version](https://github.com/getkirby/kirby/releases) to fix the vulnerability.\n\nNote Kirby 2 reaches end of life on December 31, 2020. We therefore recommend to upgrade your Kirby 2 sites to Kirby 3. If you cannot upgrade, we still recommend to update to Kirby 2.5.14.\n\n### Workarounds\n\nKirby 2 sites on older releases can also be patched by applying the [changes from this commit](https://github.com/getkirby-v2/panel/commit/7f9ac1876bacb89fd8f142f5e561a02ebb725baa).",
             "link": "https://github.com/advisories/GHSA-2ccx-2gf3-8xvv",
@@ -9875,6 +9889,35 @@
                     "versions": [
                         ">=8.0.0",
                         "<8.24.0"
+                    ]
+                }
+            },
+            "reference": "composer://illuminate/database"
+        },
+        "2021-04-28": {
+            "title": "SQL Server LIMIT / OFFSET SQL Injection",
+            "link": "https://github.com/laravel/framework/security/advisories/GHSA-4mg9-vhxq-vm7j",
+            "cve": null,
+            "branches": {
+                "6.x": {
+                    "time": 1619615899,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.26"
+                    ]
+                },
+                "7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=7.0.0",
+                        "<8.0.0"
+                    ]
+                },
+                "8.x": {
+                    "time": 1588084489,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.40.0"
                     ]
                 }
             },
@@ -10550,6 +10593,35 @@
                     "versions": [
                         ">=8.0.0",
                         "<8.24.0"
+                    ]
+                }
+            },
+            "reference": "composer://laravel/framework"
+        },
+        "2021-04-28": {
+            "title": "SQL Server LIMIT / OFFSET SQL Injection",
+            "link": "https://github.com/laravel/framework/security/advisories/GHSA-4mg9-vhxq-vm7j",
+            "cve": null,
+            "branches": {
+                "6.x": {
+                    "time": 1619615899,
+                    "versions": [
+                        ">=6.0.0",
+                        "<6.20.26"
+                    ]
+                },
+                "7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=7.0.0",
+                        "<8.0.0"
+                    ]
+                },
+                "8.x": {
+                    "time": 1588084489,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.40.0"
                     ]
                 }
             },
