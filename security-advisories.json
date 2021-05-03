@@ -18057,6 +18057,21 @@
                 }
             },
             "reference": "composer://phpmailer/phpmailer"
+        },
+        "CVE-2020-36326": {
+            "title": "Object injection via local phar file",
+            "link": "https://github.com/PHPMailer/PHPMailer/releases/tag/v6.4.1",
+            "cve": "CVE-2020-36326",
+            "branches": {
+                "6.x": {
+                    "time": 1619698560,
+                    "versions": [
+                        ">=6.1.8",
+                        "<6.4.1"
+                    ]
+                }
+            },
+            "reference": "composer://phpmailer/phpmailer"
         }
     },
     "phpmussel/phpmussel": {
