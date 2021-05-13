@@ -5060,6 +5060,105 @@
                 }
             },
             "reference": "composer://drupal/core"
+        },
+        "CVE-2020-13672": {
+            "title": "Drupal core - Critical - Cross-site scripting - SA-CORE-2021-002",
+            "link": "https://www.drupal.org/sa-core-2021-002",
+            "cve": "CVE-2020-13672",
+            "branches": {
+                "7.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.80"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.9.0"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.14"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.12"
+                    ]
+                },
+                "9.1.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=9.1.0",
+                        "<9.1.7"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/core"
         }
     },
     "drupal/drupal": {
@@ -8240,6 +8339,105 @@
                 }
             },
             "reference": "composer://drupal/drupal"
+        },
+        "CVE-2020-13672": {
+            "title": "Drupal core - Critical - Cross-site scripting - SA-CORE-2021-002",
+            "link": "https://www.drupal.org/sa-core-2021-002",
+            "cve": "CVE-2020-13672",
+            "branches": {
+                "7.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=7.0.0",
+                        "<7.80"
+                    ]
+                },
+                "8.0.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.0.0",
+                        "<8.1.0"
+                    ]
+                },
+                "8.1.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.1.0",
+                        "<8.2.0"
+                    ]
+                },
+                "8.2.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.2.0",
+                        "<8.3.0"
+                    ]
+                },
+                "8.3.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.3.0",
+                        "<8.4.0"
+                    ]
+                },
+                "8.4.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.4.0",
+                        "<8.5.0"
+                    ]
+                },
+                "8.5.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.5.0",
+                        "<8.6.0"
+                    ]
+                },
+                "8.6.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.6.0",
+                        "<8.7.0"
+                    ]
+                },
+                "8.7.x": {
+                    "time": null,
+                    "versions": [
+                        ">=8.7.0",
+                        "<8.8.0"
+                    ]
+                },
+                "8.8.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=8.8.0",
+                        "<8.9.0"
+                    ]
+                },
+                "8.9.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=8.9.0",
+                        "<8.9.14"
+                    ]
+                },
+                "9.0.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=9.0.0",
+                        "<9.0.12"
+                    ]
+                },
+                "9.1.x": {
+                    "time": 1619028120,
+                    "versions": [
+                        ">=9.1.0",
+                        "<9.1.7"
+                    ]
+                }
+            },
+            "reference": "composer://drupal/drupal"
         }
     },
     "dweeves/magmi": {
@@ -10896,6 +11094,100 @@
             "reference": "composer://league/commonmark"
         }
     },
+    "lexik/jwt-authentication-bundle": {
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "2.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.0.0",
+                        "<2.1.0"
+                    ]
+                },
+                "2.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.1.0",
+                        "<2.2.0"
+                    ]
+                },
+                "2.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.2.0",
+                        "<2.3.0"
+                    ]
+                },
+                "2.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.3.0",
+                        "<2.4.0"
+                    ]
+                },
+                "2.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.4.0",
+                        "<2.5.0"
+                    ]
+                },
+                "2.5.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.5.0",
+                        "<2.6.0"
+                    ]
+                },
+                "2.6.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.6.0",
+                        "<2.7.0"
+                    ]
+                },
+                "2.7.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.7.0",
+                        "<2.8.0"
+                    ]
+                },
+                "2.8.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.8.0",
+                        "<2.9.0"
+                    ]
+                },
+                "2.9.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.9.0",
+                        "<2.10.0"
+                    ]
+                },
+                "2.10.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.10.0",
+                        "<2.10.7"
+                    ]
+                },
+                "2.11.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.11.0",
+                        "<2.11.3"
+                    ]
+                }
+            },
+            "reference": "composer://lexik/jwt-authentication-bundle"
+        }
+    },
     "librenms/librenms": {
         "CVE-2020-35700": {
             "title": "A second-order SQL injection issue in Widgets/TopDevicesController.php (aka the Top Devices dashboard widget) of LibreNMS before 21.1.0 allows remote authenticated attackers to execute arbitrary SQL commands via the sort_order parameter against the /ajax/form/widget-settings endpoint.",
@@ -10968,7 +11260,7 @@
             "reference": "composer://librenms/librenms"
         },
         "CVE-2019-12463": {
-            "title": "An issue was discovered in LibreNMS 1.50.1. The scripts that handle graphing options (includes/html/graphs/common.inc.php and includes/html/graphs/graphs.inc.php) do not sufficiently validate or encode several fields of user supplied input. Some parameters are filtered with mysqli_real_escape_string, which is only useful for preventing SQL injection attacks; other parameters are unfiltered. This allows an attacker to inject RRDtool syntax with newline characters via the html/graph.php and html/graph-realtime.php scripts. RRDtool syntax is quite versatile and an attacker could leverage this to perform a number of attacks, including disclosing directory structure and filenames, disclosing file content, denial of service, or writing arbitrary files. NOTE: relative to CVE-2019-10665, this requires authentication and the pathnames differ.",
+            "title": "An issue was discovered in LibreNMS 1.50.1. The scripts that handle graphing options (includes/html/graphs/common.inc.php and includes/html/graphs/graphs.inc.php) do not sufficiently validate or encode several fields of user supplied input. Some parameters are filtered with mysqli_real_escape_string, which is only useful for preventing SQL injection attacks; other parameters are unfiltered. This allows an attacker to inject RRDtool syntax with newline characters via the html/graph.php and html/graph-realtime.php scripts. RRDtool syntax is quite versatile and an attacker could leverage this to perform a number of attacks, including disclosing directory structure and filenames, disclosing file content, denial of service, or writing arbitrary files. NOTE, relative to CVE-2019-10665, this requires authentication and the pathnames differ.",
             "link": "https://github.com/advisories/GHSA-w5r2-gvgf-mpm8",
             "cve": "CVE-2019-12463",
             "branches": {
@@ -24699,6 +24991,51 @@
             "reference": "composer://symfony/intl"
         }
     },
+    "symfony/maker-bundle": {
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "1.27.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=1.27.0",
+                        "<1.28.0"
+                    ]
+                },
+                "1.28.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=1.28.0",
+                        "<1.29.0"
+                    ]
+                },
+                "1.29.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=1.29.0",
+                        "<1.30.0"
+                    ]
+                },
+                "1.30.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=1.30.0",
+                        "<1.31.0"
+                    ]
+                },
+                "1.31.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=1.31.0",
+                        "<1.31.1"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/maker-bundle"
+        }
+    },
     "symfony/mime": {
         "CVE-2019-18888": {
             "title": "CVE-2019-18888: Prevent argument injection in a MimeTypeGuesser",
@@ -25791,6 +26128,112 @@
                 }
             },
             "reference": "composer://symfony/security"
+        },
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "2.8.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.8.0",
+                        "<3.0.0"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.48"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.3.0"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.4.0",
+                        "<4.4.23"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.1.0"
+                    ]
+                },
+                "5.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.2.0"
+                    ]
+                },
+                "5.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security"
         }
     },
     "symfony/security-bundle": {
@@ -26123,6 +26566,112 @@
                 }
             },
             "reference": "composer://symfony/security-core"
+        },
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "2.8.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.8.0",
+                        "<3.0.0"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.48"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.3.0"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.4.0",
+                        "<4.4.23"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.1.0"
+                    ]
+                },
+                "5.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.2.0"
+                    ]
+                },
+                "5.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.8"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security-core"
         }
     },
     "symfony/security-csrf": {
@@ -26315,6 +26864,112 @@
                     "versions": [
                         ">=4.0.0",
                         "<4.0.11"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security-guard"
+        },
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "2.8.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.8.0",
+                        "<3.0.0"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.48"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.3.0"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.4.0",
+                        "<4.4.23"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.1.0"
+                    ]
+                },
+                "5.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.2.0"
+                    ]
+                },
+                "5.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.8"
                     ]
                 }
             },
@@ -26873,6 +27528,28 @@
                     "versions": [
                         ">=5.0.0",
                         "<5.0.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/security-http"
+        },
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "5.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.2.0"
+                    ]
+                },
+                "5.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.8"
                     ]
                 }
             },
@@ -29575,6 +30252,112 @@
                     "versions": [
                         ">=5.0.0",
                         "<5.0.7"
+                    ]
+                }
+            },
+            "reference": "composer://symfony/symfony"
+        },
+        "CVE-2021-21424": {
+            "title": "CVE-2021-21424: Prevent user enumeration via response content in authentication mechanisms",
+            "link": "https://symfony.com/cve-2021-21424",
+            "cve": "CVE-2021-21424",
+            "branches": {
+                "2.8.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=2.8.0",
+                        "<3.0.0"
+                    ]
+                },
+                "3.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.0.0",
+                        "<3.1.0"
+                    ]
+                },
+                "3.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.1.0",
+                        "<3.2.0"
+                    ]
+                },
+                "3.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.2.0",
+                        "<3.3.0"
+                    ]
+                },
+                "3.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.3.0",
+                        "<3.4.0"
+                    ]
+                },
+                "3.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=3.4.0",
+                        "<3.4.48"
+                    ]
+                },
+                "4.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.0.0",
+                        "<4.1.0"
+                    ]
+                },
+                "4.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.1.0",
+                        "<4.2.0"
+                    ]
+                },
+                "4.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.2.0",
+                        "<4.3.0"
+                    ]
+                },
+                "4.3.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.3.0",
+                        "<4.4.0"
+                    ]
+                },
+                "4.4.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=4.4.0",
+                        "<4.4.23"
+                    ]
+                },
+                "5.0.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.0.0",
+                        "<5.1.0"
+                    ]
+                },
+                "5.1.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.1.0",
+                        "<5.2.0"
+                    ]
+                },
+                "5.2.x": {
+                    "time": 1620806400,
+                    "versions": [
+                        ">=5.2.0",
+                        "<5.2.8"
                     ]
                 }
             },
