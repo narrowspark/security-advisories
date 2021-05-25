@@ -1546,6 +1546,36 @@
             "reference": "composer://derhansen/sf_event_mgt"
         }
     },
+    "directmailteam/direct-mail": {
+        "CVE-2020-12697": {
+            "title": "The direct_mail extension through 5.2.3 for TYPO3 allows Denial of Service via log entries.",
+            "link": "https://github.com/advisories/GHSA-5gm6-r79q-hfgw",
+            "cve": "CVE-2020-12697",
+            "branches": {
+                "5.2.x": {
+                    "time": 1621875512,
+                    "versions": [
+                        "< 5.2.4"
+                    ]
+                }
+            },
+            "reference": "composer://directmailteam/direct-mail"
+        },
+        "CVE-2020-12699": {
+            "title": "The direct_mail extension through 5.2.3 for TYPO3 has an Open Redirect via jumpUrl.",
+            "link": "https://github.com/advisories/GHSA-952m-m83c-3xm6",
+            "cve": "CVE-2020-12699",
+            "branches": {
+                "5.2.x": {
+                    "time": 1621875517,
+                    "versions": [
+                        "< 5.2.4"
+                    ]
+                }
+            },
+            "reference": "composer://directmailteam/direct-mail"
+        }
+    },
     "doctrine/annotations": {
         "CVE-2015-5723": {
             "title": "Security Misconfiguration Vulnerability in various Doctrine projects",
