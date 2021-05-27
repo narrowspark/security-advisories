@@ -10496,6 +10496,29 @@
             "reference": "composer://kitodo/presentation"
         }
     },
+    "klaviyo/magento2-extension": {
+        "2021-05-25-1": {
+            "title": "Read private customer data reclaiming carts",
+            "link": "https://gist.github.com/JeroenBoersma/f5864a45e3df63b198a57abdff366df2",
+            "branches": {
+                "1.x": {
+                    "time": "2021-05-25 13:46:00",
+                    "versions": [
+                        ">=1.0.0",
+                        "<2.0.0"
+                    ]
+                },
+                "2.x": {
+                    "time": "2021-05-25 13:46:00",
+                    "versions": [
+                        ">=2.0.0",
+                        "<3.0.0"
+                    ]
+                }
+            },
+            "reference": "composer://klaviyo/magento2-extension"
+        }
+    },
     "kreait/firebase-php": {
         "CVE-2018-1000025": {
             "title": "Incorrect Access Control vulnerability in src/Firebase/Auth/IdTokenVerifier.php does not verify for token signature that can result in JWT with any email address and user ID could be forged from an actual token, or from thin air.",
